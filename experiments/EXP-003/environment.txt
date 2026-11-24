@@ -1,0 +1,1 @@
+Linux x86_64 6.8.0-138-generic; Python 3.11.9; PyTorch 2.4.1+cu118; CUDA toolkit version 11.8; cuDNN 90100; numpy 1.26.4; matplotlib 3.10.0; bundled SpikingJelly version not identified; 8 x RTX 4090 24564 MiB each (visible; none used); Intel Xeon Platinum 8352V, 144 logical CPUs; RAM 503 GiB, available 402 GiB at check; /home/hym 28T available at check.

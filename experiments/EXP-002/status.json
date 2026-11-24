@@ -1,0 +1,5 @@
+{
+  "execution_status": "BLOCKED",
+  "reason": "无已确认兼容、可溯源的训练权重；未核验实际网络有效输入固定及无副作用采集。",
+  "scientific_status": "UNTESTED"
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "EXP-001-RUN-002",
+  "synthetic_only": true,
+  "cases": 5760,
+  "r1_float64": {
+    "count": 20160,
+    "max": 1.0563782526629338e-15,
+    "mean": 5.62609811940268e-17,
+    "failure_fraction": 0.0
+  },
+  "r2_float64": {
+    "count": 20160,
+    "max": 3.381133756812988e-15,
+    "mean": 7.709415026551471e-17,
+    "failure_fraction": 0.0
+  },
+  "baseline_cases": 480,
+  "baseline_max_trajectory_difference": 0.0,
+  "baseline_r1_float32": {
+    "count": 1680,
+    "max": 1.9223951142066653e-07,
+    "mean": 1.2372554030246196e-08,
+    "failure_fraction": 0.0
+  },
+  "exact_boundary_ge_spikes": true,
+  "exact_boundary_gt_spikes": false,
+  "failures": [],
+  "wall_seconds": 20.785488605499268
+}
