@@ -1,0 +1,29 @@
+# Local credentials and machine-specific files
+.env
+.env.*
+!.env.example
+.local/
+.ssh/
+*.pem
+*.key
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Datasets and large generated experiment files
+/dataset/
+/datasets/
+/data/
+/checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.npy
+*.npz
+events.out.tfevents.*
