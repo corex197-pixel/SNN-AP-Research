@@ -1,0 +1,4 @@
+round: ROUND-001
+experiment: EXP-002
+theory_version: v0.1.0
+protocol: ../../research/ROUND-001-TASK.md
