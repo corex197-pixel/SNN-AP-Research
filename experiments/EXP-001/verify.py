@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'Activity-Pruning-SNN-main'))
 from models.submodules.layers import ATLIF, Surrogate
-OUT=ROOT/'experiments/EXP-001/runs/EXP-001-RUN-001'
+OUT=ROOT/'experiments/EXP-001/runs/EXP-001-RUN-002'
 
 def simulate(x,tau,theta,u0,ge=True):
     u=u0.clone(); X=torch.zeros_like(u); O=X.clone(); leak=X.clone(); reset=X.clone(); ms=[]; us=[]; ss=[]
@@ -75,7 +75,7 @@ def main():
         plt.figure(); [plt.plot(z[:,0],z[:,i],label=['theta','FR','O','D_leak','D_reset','D_res'][i]) for i in cols];plt.xlabel('theta');plt.ylabel(ylabel if False else name);plt.legend();plt.tight_layout();plt.savefig(figures/(name+'.png'));plt.close()
     plt.figure(); plt.hist(np.log10(np.maximum(errors,1e-20)),bins=40);plt.xlabel('log10 R1 normalized error (zeros clipped at 1e-20)');plt.ylabel('neuron cases');plt.tight_layout();plt.savefig(figures/'identity_error.png');plt.close()
     def summary(v,tol): return {'count':len(v),'max':max(v),'mean':float(np.mean(v)),'failure_fraction':float(np.mean(np.array(v)>tol))}
-    result={'run_id':'EXP-001-RUN-001','synthetic_only':True,'cases':len(rows),'r1_float64':summary(errors,1e-10),'r2_float64':summary(r2errors,1e-10),'baseline_cases':real_checks,'baseline_max_trajectory_difference':real_max,'baseline_r1_float32':summary(real_r1,1e-5),'exact_boundary_ge_spikes':True,'exact_boundary_gt_spikes':False,'failures':failures,'wall_seconds':time.time()-start}
+    result={'run_id':'EXP-001-RUN-002','synthetic_only':True,'cases':len(rows),'r1_float64':summary(errors,1e-10),'r2_float64':summary(r2errors,1e-10),'baseline_cases':real_checks,'baseline_max_trajectory_difference':real_max,'baseline_r1_float32':summary(real_r1,1e-5),'exact_boundary_ge_spikes':True,'exact_boundary_gt_spikes':False,'failures':failures,'wall_seconds':time.time()-start}
     (OUT/'metrics.json').write_text(json.dumps(result,indent=2)+'\n'); print(json.dumps(result,indent=2));
     if failures: sys.exit(1)
 if __name__=='__main__': main()
