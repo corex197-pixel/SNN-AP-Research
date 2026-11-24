@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'Activity-Pruning-SNN-main'))
 from models.submodules.layers import ATLIF, Surrogate
-OUT=ROOT/'experiments/EXP-001/runs/EXP-001-RUN-002'
+OUT=ROOT/'experiments/EXP-001/runs/EXP-001-RUN-003'
 
 def simulate(x,tau,theta,u0,ge=True):
     u=u0.clone(); X=torch.zeros_like(u); O=X.clone(); leak=X.clone(); reset=X.clone(); ms=[]; us=[]; ss=[]
@@ -24,7 +24,7 @@ def simulate(x,tau,theta,u0,ge=True):
 
 def main():
     start=time.time(); OUT.mkdir(parents=True,exist_ok=False)
-    rows=[]; errors=[]; r2errors=[]; real_checks=0; real_max=0.; real_r1=[]; failures=[]
+    rows=[]; errors=[]; r2errors=[]; real_checks=0; real_max=0.; real_r1=[]; real_r2=[]; failures=[]
     for T,tau,theta,kind,uinit,seed,shape,ge in itertools.product([1,4,8,16,64],[0.,.5,.9,1.],[.5,1.,2.],['constant','impulse','nonnegative','signed'],[0.,-.35],[0,1,2],[(1,),(2,3)], [True,False]):
         g=torch.Generator().manual_seed(seed); sz=(T,)+shape
         if kind=='constant': x=torch.full(sz,.6,dtype=torch.float64)
@@ -55,6 +55,20 @@ def main():
             prev=torch.cat([torch.zeros_like(u[:1]),u[:-1]])
             X=xf.sum(0); O=out.sum(0); L=((1-tau)*prev).sum(0); D=(s*(m-theta)).sum(0); R=u[-1]
             err=(X-O-L-D-R).abs()/(1+X.abs()+O.abs()+L.abs()+D.abs()+R.abs()); real_r1.extend(err.flatten().tolist())
+            # Independent actual second-threshold forward, with captured pre-reset states.
+            module2=ATLIF(T=T,thresh=theta*1.5,tau=tau,sp=0).eval(); seen2=[]
+            def capture2(ctx,input,thre,sp):
+                seen2.append(input.detach().clone()); return original(ctx,input,thre,sp)
+            Surrogate.forward=staticmethod(capture2)
+            try:
+                with torch.no_grad(): out_hi=module2(xf)
+            finally: Surrogate.forward=staticmethod(original)
+            mh=torch.stack(seen2); sh=out_hi/(theta*1.5); uh=(1-sh)*mh
+            ph=torch.cat([torch.zeros_like(uh[:1]),uh[:-1]])
+            Oh=out_hi.sum(0); Lh=((1-tau)*ph).sum(0); Dh=(sh*(mh-theta*1.5)).sum(0); Rh=uh[-1]
+            dO=Oh-O; dL=Lh-L; dD=Dh-D; dR=Rh-R
+            e2=(dO+dL+dD+dR).abs()/(1+dO.abs()+dL.abs()+dD.abs()+dR.abs());real_r2.extend(e2.flatten().tolist())
+            if e2.max().item()>1e-5: failures.append(f'baseline R2 mismatch {rows[-1]}')
             if dif>1e-5 or err.max().item()>1e-5: failures.append(f'baseline mismatch {rows[-1]} diff={dif}')
     # Exact threshold edge distinguishes >= from >; both must preserve the identity.
     edge=torch.tensor([[1.]],dtype=torch.float64)
@@ -75,7 +89,7 @@ def main():
         plt.figure(); [plt.plot(z[:,0],z[:,i],label=['theta','FR','O','D_leak','D_reset','D_res'][i]) for i in cols];plt.xlabel('theta');plt.ylabel(ylabel if False else name);plt.legend();plt.tight_layout();plt.savefig(figures/(name+'.png'));plt.close()
     plt.figure(); plt.hist(np.log10(np.maximum(errors,1e-20)),bins=40);plt.xlabel('log10 R1 normalized error (zeros clipped at 1e-20)');plt.ylabel('neuron cases');plt.tight_layout();plt.savefig(figures/'identity_error.png');plt.close()
     def summary(v,tol): return {'count':len(v),'max':max(v),'mean':float(np.mean(v)),'failure_fraction':float(np.mean(np.array(v)>tol))}
-    result={'run_id':'EXP-001-RUN-002','synthetic_only':True,'cases':len(rows),'r1_float64':summary(errors,1e-10),'r2_float64':summary(r2errors,1e-10),'baseline_cases':real_checks,'baseline_max_trajectory_difference':real_max,'baseline_r1_float32':summary(real_r1,1e-5),'exact_boundary_ge_spikes':True,'exact_boundary_gt_spikes':False,'failures':failures,'wall_seconds':time.time()-start}
+    result={'run_id':'EXP-001-RUN-003','synthetic_only':True,'cases':len(rows),'r1_float64':summary(errors,1e-10),'r2_float64':summary(r2errors,1e-10),'baseline_cases':real_checks,'baseline_max_trajectory_difference':real_max,'baseline_r1_float32':summary(real_r1,1e-5),'baseline_r2_float32':summary(real_r2,1e-5),'exact_boundary_ge_spikes':True,'exact_boundary_gt_spikes':False,'failures':failures,'wall_seconds':time.time()-start}
     (OUT/'metrics.json').write_text(json.dumps(result,indent=2)+'\n'); print(json.dumps(result,indent=2));
     if failures: sys.exit(1)
 if __name__=='__main__': main()
