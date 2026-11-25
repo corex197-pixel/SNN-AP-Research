@@ -32,11 +32,18 @@ try:
  for epoch in range(1,201):
   if time.time()>=stop:raise TimeoutError('budget safety margin reached before epoch')
   if subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()!=code or sha(SPLIT)!=EXPECTED_SPLIT:raise RuntimeError('code version or split changed')
-  model.train();ep=time.monotonic();lr=opt.param_groups[0]['lr'];n=0;correct=0;ls=0.;skips=0;steps=0;activity=Activity(model)
+  model.train();ep=time.monotonic();low_memory_since=None;slow_since=None;recent_steps=[];lr=opt.param_groups[0]['lr'];n=0;correct=0;ls=0.;skips=0;steps=0;activity=Activity(model)
   try:
    for x,y in train:
     if time.time()>=stop:raise TimeoutError('budget safety margin reached during epoch')
-    x=x.cuda(non_blocking=True);y=y.cuda(non_blocking=True);loss,logits,skipped=train_step(model,opt,scaler,x,y);n+=len(y);ls+=loss.item()*len(y);correct+=(logits.argmax(1)==y).sum().item();steps+=1;skips+=int(skipped);consecutive=consecutive+1 if skipped else 0
+    batch_start=time.monotonic();x=x.cuda(non_blocking=True);y=y.cuda(non_blocking=True);loss,logits,skipped=train_step(model,opt,scaler,x,y);n+=len(y);ls+=loss.item()*len(y);correct+=(logits.argmax(1)==y).sum().item();steps+=1;skips+=int(skipped);consecutive=consecutive+1 if skipped else 0
+    recent_steps.append(time.monotonic()-batch_start)
+    if len(recent_steps)>30:recent_steps.pop(0)
+    now=time.monotonic();free_bytes,_=torch.cuda.mem_get_info()
+    low_memory_since=(low_memory_since or now) if free_bytes<1024**3 else None
+    slow_since=(slow_since or now) if len(recent_steps)==30 and sum(recent_steps)/len(recent_steps)>0.95 else None
+    if low_memory_since and now-low_memory_since>120:raise RuntimeError('shared GPU free memory below 1 GiB continuously for 120s')
+    if slow_since and now-slow_since>300:raise RuntimeError('shared GPU step time above 0.95 seconds continuously for 300s')
     if consecutive>=10:raise RuntimeError('10 consecutive AMP skipped steps')
    tr=activity.rows()
   finally:activity.close()
