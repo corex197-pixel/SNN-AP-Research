@@ -48,8 +48,8 @@ def model_create():return ResNet20(T=8,activation=ATLIF,activation_kwargs={'T':8
 def opt_create(model):return create_optimizer_v2(model,opt='sgd',lr=.1,weight_decay=5e-4)
 def sched_create(opt):return create_scheduler_v2(opt,sched='cosine',num_epochs=200,cooldown_epochs=10,min_lr=1e-6,warmup_lr=0.,warmup_epochs=0)[0]
 def seed_all(seed=42):
- random.seed(seed);np.random.seed(seed);torch.manual_seed(seed)
- if torch.cuda.is_available():torch.cuda.manual_seed_all(seed)
+ random.seed(seed);np.random.seed(seed);torch.random.default_generator.manual_seed(seed)
+ if torch.cuda.is_available():torch.cuda.manual_seed(seed)
  torch.backends.cudnn.deterministic=True;torch.backends.cudnn.benchmark=False
 
 def transforms_pair():
