@@ -19,10 +19,10 @@ from utils.augment import Cutout
 DATA='/home/hym/dataset/cifar10'
 SPLIT=ROOT/'experiments/EXP-004/splits/indices.json'
 def rng_get():
- return {'python':random.getstate(),'numpy':np.random.get_state(),'torch':torch.get_rng_state(),'cuda':torch.cuda.get_rng_state_all() if torch.cuda.is_initialized() else None}
+ return {'python':random.getstate(),'numpy':np.random.get_state(),'torch':torch.get_rng_state(),'cuda':torch.cuda.get_rng_state(torch.cuda.current_device()) if torch.cuda.is_initialized() else None}
 def rng_set(r):
  random.setstate(r['python']);np.random.set_state(r['numpy']);torch.set_rng_state(r['torch'])
- if r['cuda'] is not None:torch.cuda.set_rng_state_all(r['cuda'])
+ if r['cuda'] is not None:torch.cuda.set_rng_state(r['cuda'],torch.cuda.current_device())
 @contextlib.contextmanager
 def isolated_eval(model):
  modes={m:m.training for m in model.modules()}; rng=rng_get()
