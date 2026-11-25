@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 from core import ROOT,seed_all,model_create,opt_create,loaders,step,evaluate
 p=argparse.ArgumentParser();p.add_argument('--run-id',required=True);p.add_argument('--device',type=int,required=True);a=p.parse_args()
-if a.run_id!='EXP-004-BENCH-01':sys.exit('unapproved benchmark id')
+if a.run_id not in ('EXP-004-BENCH-01','EXP-004-BENCH-01-RUN-002'):sys.exit('unapproved benchmark id')
 out=ROOT/'experiments/EXP-004/bench'/a.run_id;out.mkdir(exist_ok=False,parents=True)
 started=time.monotonic();cpu=time.process_time();begin=datetime.datetime.now(datetime.timezone.utc).isoformat();result={'run_id':a.run_id,'start_utc':begin,'device_index':a.device,'warmup_target':10,'measurement_target':50,'batch_size':128,'T':8,'amp':True,'status':'RUNNING','train_batch_seconds':[],'data_load_seconds':[],'amp_skipped_steps':0}
 try:

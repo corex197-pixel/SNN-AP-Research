@@ -1,0 +1,21 @@
+{
+  "run_id": "EXP-004-BENCH-01",
+  "start_utc": "2026-11-25T03:41:05.727074+00:00",
+  "device_index": 6,
+  "warmup_target": 10,
+  "measurement_target": 50,
+  "batch_size": 128,
+  "T": 8,
+  "amp": true,
+  "status": "FAILED",
+  "train_batch_seconds": [],
+  "data_load_seconds": [],
+  "amp_skipped_steps": 0,
+  "error": "RuntimeError('CUDA error: invalid device ordinal\\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\\n')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/EXP-004/controlled/benchmark.py\", line 10, in <module>\n    torch.cuda.set_device(a.device);device=torch.device('cuda',a.device);torch.set_num_threads(4);seed_all();result['gpu_name']=torch.cuda.get_device_name(device);result['initial_free_bytes'],result['total_bytes']=torch.cuda.mem_get_info(device)\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/cuda/__init__.py\", line 420, in set_device\n    torch._C._cuda_setDevice(device)\nRuntimeError: CUDA error: invalid device ordinal\nCUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.\nFor debugging consider passing CUDA_LAUNCH_BLOCKING=1\nCompile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.\n\n",
+  "peak_allocated_bytes": 0,
+  "peak_reserved_bytes": 0,
+  "end_utc": "2026-11-25T03:41:05.876319+00:00",
+  "wall_seconds": 0.14930890104733407,
+  "process_cpu_seconds": 0.03649088299999903
+}

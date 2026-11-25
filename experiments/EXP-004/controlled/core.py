@@ -14,7 +14,7 @@ from utils.utils import threshold_update,regularize_spike
 from spikingjelly.activation_based import functional
 from timm.optim import create_optimizer_v2
 from timm.scheduler import create_scheduler_v2
-from main import Cutout
+from utils.augment import Cutout
 
 DATA='/home/hym/dataset/cifar10'
 SPLIT=ROOT/'experiments/EXP-004/splits/indices.json'
