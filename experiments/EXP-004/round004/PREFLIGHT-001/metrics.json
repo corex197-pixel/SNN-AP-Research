@@ -1,0 +1,55 @@
+{
+  "start_utc": "2026-11-25T06:32:49.987734+00:00",
+  "status": "COMPLETED",
+  "visible_devices": 1,
+  "device": "NVIDIA GeForce RTX 4090",
+  "free_bytes": 24965152768,
+  "total_bytes": 25386352640,
+  "split": {
+    "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+    "counts": [
+      45000,
+      4500,
+      500
+    ],
+    "diagnostic_256": 256,
+    "dataset_integrity": true
+  },
+  "training_steps": {
+    "warmup": 10,
+    "timed": 10,
+    "mean_seconds": 0.1893788894172758,
+    "peak_allocated_bytes": 4792191488,
+    "peak_reserved_bytes": 4940890112,
+    "amp_enabled": true
+  },
+  "validation": {
+    "count": 256,
+    "layers": 19,
+    "finite": true
+  },
+  "isolation_resume": {
+    "model_diff": 0.0,
+    "optimizer_diff": 0.0,
+    "scaler_diff": 0.0,
+    "cuda_rng_equal": true,
+    "includes_bn_and_threshold": true,
+    "best_score_restored": 0.42
+  },
+  "amp_overflow": {
+    "update_v": 0.0,
+    "lr": 0.1,
+    "theta_before": 1.0000659227371216,
+    "theta_after": 1.0000659227371216,
+    "delta_theta": 0.0,
+    "expected_delta": 0.0,
+    "absolute_error": 0.0,
+    "weights_and_threshold_unchanged_before_manual_update": true,
+    "optimizer_state_diff": 0.0,
+    "scaler_before": 65536.0,
+    "scaler_after": 32768.0,
+    "forward_statistics_finite": true
+  },
+  "end_utc": "2026-11-25T06:32:58.868410+00:00",
+  "wall_seconds": 8.880718395113945
+}

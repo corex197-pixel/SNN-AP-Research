@@ -1,0 +1,7 @@
+{
+  "approved_gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "start_utc": "2026-11-25T06:32:46.377541+00:00",
+  "deadline_utc": "2026-11-25T14:32:46.377541+00:00",
+  "maximum_gpu_seconds": 28800,
+  "preflight_seconds_limit": 600
+}

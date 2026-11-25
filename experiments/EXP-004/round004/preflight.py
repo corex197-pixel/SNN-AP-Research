@@ -3,7 +3,7 @@ from pathlib import Path
 import torch
 from torch import nn
 from common import *
-OUT=ROOT/'experiments/EXP-004/round004/PREFLIGHT-001'
+OUT=ROOT/'experiments/EXP-004/round004/PREFLIGHT-002'
 OUT.mkdir(parents=True,exist_ok=False); start=time.monotonic();result={'start_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'status':'RUNNING'}
 try:
  if torch.cuda.device_count()!=1 or not torch.cuda.is_available():raise RuntimeError('expected exactly one visible GPU')
@@ -41,11 +41,12 @@ try:
   def forward(self,x):return self.head(self.n(self.fc(x).unsqueeze(0).repeat(4,1,1)))
  tiny=Tiny().to(device);o=torch.optim.SGD(tiny.parameters(),lr=.1,momentum=.9);sc=torch.cuda.amp.GradScaler();xx=torch.ones(8,4,device=device);yy=torch.zeros(8,dtype=torch.long,device=device)
  train_step(tiny,o,sc,xx,yy);o.zero_grad(set_to_none=True)
+ with torch.no_grad(): tiny.fc.weight.zero_();tiny.fc.bias.fill_(1.05)
  with torch.cuda.amp.autocast():loss=nn.functional.cross_entropy(tiny(xx).mean(0),yy)
  v=tiny.n.update_value;before_theta=tiny.n.thresh.item();before={n:p.detach().clone() for n,p in tiny.named_parameters()};before_opt=copy.deepcopy(o.state_dict());sc.scale(loss).backward();tiny.fc.weight.grad.fill_(float('inf'));scale_before=sc.get_scale();sc.step(o)
  params_unchanged=all(torch.equal(before[n],p) for n,p in tiny.named_parameters());optimizer_diff=compare(before_opt,o.state_dict());threshold_update(tiny,.1);sc.update();after=tiny.n.thresh.item();delta=after-before_theta
  result['amp_overflow']={'update_v':v,'lr':.1,'theta_before':before_theta,'theta_after':after,'delta_theta':delta,'expected_delta':.1*v,'absolute_error':abs(delta-.1*v),'weights_and_threshold_unchanged_before_manual_update':params_unchanged,'optimizer_state_diff':optimizer_diff,'scaler_before':scale_before,'scaler_after':sc.get_scale(),'forward_statistics_finite':math.isfinite(v)}
- if not(params_unchanged and optimizer_diff==0 and math.isfinite(v) and sc.get_scale()<scale_before and abs(delta-.1*v)<1e-5):raise RuntimeError('AMP overflow preservation test failed')
+ if not(params_unchanged and optimizer_diff==0 and math.isfinite(v) and v>0 and sc.get_scale()<scale_before and abs(delta-.1*v)<1e-5):raise RuntimeError('AMP overflow preservation test failed')
  ck.unlink();result['status']='COMPLETED'
 except BaseException as e:result.update(status='FAILED',error=repr(e),traceback=traceback.format_exc())
 finally:
