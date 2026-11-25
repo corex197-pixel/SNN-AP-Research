@@ -1,0 +1,20 @@
+{
+  "command": [
+    "experiments/EXP-001/verify.py",
+    "--run-id",
+    "EXP-001-RUN-004",
+    "--config",
+    "experiments/EXP-001/config.yaml"
+  ],
+  "code_sha": "b61a7609e63a0c3e6cfec773d3775ac5a29aa66a",
+  "tracked_changes_present": false,
+  "python": "3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "torch": "2.4.1+cu118",
+  "numpy": "1.26.4",
+  "start_time_utc": "2026-11-25T02:44:33.472556+00:00",
+  "status": "COMPLETED",
+  "end_time_utc": "2026-11-25T02:44:59.980125+00:00",
+  "wall_seconds": 26.507549609988928,
+  "process_cpu_seconds": 27.479020536
+}

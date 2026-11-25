@@ -1,0 +1,5 @@
+{
+  "actual_code_sha": "b61a7609e63a0c3e6cfec773d3775ac5a29aa66a",
+  "command": "python experiments/ROUND-002-SMOKE/smoke.py",
+  "synthetic": true
+}

@@ -1,0 +1,9 @@
+Duplicate ID attempted; exit=1; metrics.csv SHA-256 before and after 5d226abef867fd916bd003b12bfed04b2cfc8d2f4b1058ce4e082a34787d5190.
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/EXP-001/verify.py", line 153, in <module>
+    OUT.mkdir(parents=True,exist_ok=False)
+  File "/opt/conda/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/home/hym/keyan1/experiments/EXP-001/runs/EXP-001-RUN-004'
+
+After this check CSV line endings were normalized from CRLF to LF for Git; content unchanged; stored file SHA-256: 562f3776deded793188444fca7485bb2e95181d987e93aae180f98e5afe5d47a.

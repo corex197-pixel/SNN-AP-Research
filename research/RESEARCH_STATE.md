@@ -1,9 +1,10 @@
-# ROUND-001 科研状态
+# ROUND-002 科研状态
 
-- Q-001 主线；Q-002 竞争解释；理论 v0.1.0；DEC-001 CONTINUE。
-- EXP-000 COMPLETED：代码及环境审查完成；未发现可溯源可靠权重。
-- EXP-001 PARTIAL：合成 R1/R2 和实际 ATLIF 前向 R1/R2 数值通过；独立无捕获对照未完成。详见 ../experiments/EXP-001/REPORT.md。
-- EXP-002 BLOCKED：无可靠权重及实际网络捕获核验；EXP-003 BLOCKED：进入门槛无结果。
-- H-001/H-002 均 UNTESTED；H-003 INSUFFICIENT_EVIDENCE。无真实模型性能或因果结论。
-- baseline 导入 `52878cff06f6378fa155c032b7acd23883a72e4a`，最终有效合成运行代码 `a90a09ba8b1cd34d943774db275c5aefb58f7bb5`。未训练、未下载数据、未使用 GPU；两次有效测试合计墙钟约 43 秒，CPU 时间未单独测量。
-- 下一步提供可验证权重、来源与配置；先补无捕获对照及实际网络输入和模块可采集性核验，再按原协议评估 EXP-002 前置条件。
+DEC-002 REPAIR；Q-001 主线、Q-002 竞争解释；理论 v0.1.0。H-001/H-002 UNTESTED；H-003 INSUFFICIENT_EVIDENCE。
+
+- EXP-000 COMPLETED；ROUND-001 结果 `77cb77619ff011f8f78fb3e0c7ef1a0a4cb31c29`。
+- EXP-001 COMPLETED（合成机制及单元测试范围）：RUN-004 495 组捕获对照通过；独立模拟及实际 ATLIF R1/R2 通过。实际重置状态由 m 和 s 重建，不是独立观测。
+- 随机初始化网络工程冒烟完成（非 EXP-002，不能推断任务性能），19 个 ATLIF 执行一次；发现 eval 非零 sp 累积 update_value。
+- EXP-002/003 保持 BLOCKED：无可追溯权重及完整真实网络干预验证；EXP-004 PLANNED（存在阻塞）：独立验证入口与 eval 状态策略待解决，正式训练资源未获批。
+- 本轮代码 `b61a7609e63a0c3e6cfec773d3775ac5a29aa66a`；CPU-only，RUN-004 进程 CPU 27.48 秒，冒烟进程 CPU 1.52 秒；未测其他核查工具总 CPU，未训练、未使用 GPU。
+- 下一步：确认数据拆分及验证状态策略，开发并测试独立验证入口，测算资源并申请正式训练预算。
