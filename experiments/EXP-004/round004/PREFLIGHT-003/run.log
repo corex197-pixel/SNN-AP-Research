@@ -1,0 +1,43 @@
+/home/hym/keyan1/experiments/EXP-004/round004/shared_amp_check.py:17: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  tiny=Tiny().cuda();o=torch.optim.SGD(tiny.parameters(),lr=.1,momentum=.9);sc=torch.cuda.amp.GradScaler();xx=torch.ones(8,4,device='cuda');yy=torch.zeros(8,dtype=torch.long,device='cuda')
+/home/hym/keyan1/experiments/EXP-004/round004/common.py:49: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=True):
+/home/hym/keyan1/experiments/EXP-004/round004/shared_amp_check.py:21: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():loss=nn.functional.cross_entropy(tiny(xx).mean(0),yy)
+{
+  "status": "COMPLETED",
+  "start_utc": "2026-11-25T06:45:04.143193+00:00",
+  "cuda_visible_devices": "GPU-1118b368-bc7d-543a-1b80-f79a13730e24",
+  "device_count": 1,
+  "device_name": "NVIDIA GeForce RTX 4090",
+  "free_bytes": 18378457088,
+  "total_bytes": 25386352640,
+  "split": {
+    "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+    "counts": [
+      45000,
+      4500,
+      500
+    ],
+    "diagnostic_256": 256,
+    "dataset_integrity": true
+  },
+  "normal_step_loss": 0.3115234375,
+  "normal_step_skipped": false,
+  "amp_overflow": {
+    "v": 0.015206329757347703,
+    "lr": 0.1,
+    "theta_before": 1.0002095699310303,
+    "theta_after": 1.00173020362854,
+    "delta_theta": 0.0015206336975097656,
+    "expected_delta": 0.0015206329757347704,
+    "absolute_error": 7.217749952402597e-10,
+    "optimizer_parameters_unchanged": true,
+    "optimizer_state_unchanged": true,
+    "scaler_before": 65536.0,
+    "scaler_after": 32768.0,
+    "forward_statistics_finite": true
+  },
+  "end_utc": "2026-11-25T06:45:05.942262+00:00",
+  "wall_seconds": 1.7991433900315315
+}

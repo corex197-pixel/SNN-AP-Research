@@ -6,7 +6,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from common import *
 from utils.utils import SOPMonitor
-out=ROOT/'experiments/EXP-004/runs/EXP-004-RUN-001';status=json.loads((out/'status.json').read_text())
+out=ROOT/'experiments/EXP-004/runs'/sys.argv[1];status=json.loads((out/'status.json').read_text())
 if status['status']!='COMPLETED':sys.exit('training incomplete')
 if time.time()>=datetime.datetime.fromisoformat(status['deadline_utc']).timestamp()-90:sys.exit('budget margin prevents final validation')
 model=model_create().cuda();ck=torch.load(out/'checkpoint_best_validation.pth',map_location='cpu',weights_only=False);model.load_state_dict(ck['model']);_,val=loaders();met,layers=validate(model,val,'cuda')
@@ -18,7 +18,7 @@ try:
 finally:mon.remove_hooks()
 checkpoints=[]
 for name in ['checkpoint_latest.pth','checkpoint_best_validation.pth']:
- path=out/name;obj=torch.load(path,map_location='cpu',weights_only=False);checkpoints.append({'path':str(path),'sha256':sha(path),'size_bytes':path.stat().st_size,'epoch':obj['epoch']+1,'training_run_id':'EXP-004-RUN-001','validation_best':obj['best_validation_accuracy'],'split_sha256':obj['split_sha256'],'code_sha':obj['code_sha']})
+ path=out/name;obj=torch.load(path,map_location='cpu',weights_only=False);checkpoints.append({'path':str(path),'sha256':sha(path),'size_bytes':path.stat().st_size,'epoch':obj['epoch']+1,'training_run_id':out.name,'validation_best':obj['best_validation_accuracy'],'split_sha256':obj['split_sha256'],'code_sha':obj['code_sha']})
 summary={'best_checkpoint_validation':met,'layer_metrics':layers,'parameter_count':sum(p.numel() for p in model.parameters()),'sops_per_sample':sops/count,'sops_definition':'SOPMonitor original conv hooks excluding model.skip (conv1), inputs >0 mapped to 1 and convolution with ones, across all time steps; ignores actual zero weights; excludes first conv and non-conv paths; total divided by actual sample count; not measured energy','validation_count':count,'checkpoints':checkpoints}
 (out/'final_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 with (out/'epochs.csv').open(newline='') as f:rows=list(csv.DictReader(f))

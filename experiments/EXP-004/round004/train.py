@@ -3,14 +3,14 @@ from pathlib import Path
 import yaml,torch
 from common import *
 p=argparse.ArgumentParser();p.add_argument('--run-id',required=True);p.add_argument('--deadline-utc',required=True);p.add_argument('--approved-gpu-uuid',required=True);p.add_argument('--code-sha',required=True);args=p.parse_args()
-if args.run_id!='EXP-004-RUN-001':sys.exit('run ID not authorized')
+if args.run_id not in ('EXP-004-RUN-001','EXP-004-RUN-002'):sys.exit('run ID not authorized')
 if os.environ.get('CUDA_VISIBLE_DEVICES')!=args.approved_gpu_uuid or torch.cuda.device_count()!=1:sys.exit('GPU isolation failed')
 if not torch.cuda.is_available():sys.exit('CUDA unavailable')
 deadline=datetime.datetime.fromisoformat(args.deadline_utc);assert deadline.tzinfo
 stop=deadline.timestamp()-120
 if time.time()>=stop:sys.exit('budget exhausted')
 out=ROOT/'experiments/EXP-004/runs'/args.run_id;out.mkdir(parents=True,exist_ok=False)
-cfg=yaml.safe_load((ROOT/'experiments/EXP-004/config.yaml').read_text());expected={'dataset':'CIFAR10','model':'ResNet20','seed':42,'T':8,'eta':.002,'eta2':0.,'batch_size':128,'accumulation_steps':1,'epochs':200,'optimizer':'sgd','lr':.1,'lr_scheduler':'cosine','min_lr':1e-6,'weight_decay':.0005,'amp':True,'TET':False,'data_path':'/home/hym/dataset/cifar10','num_workers':4,'label_smoothing':0,'warmup_lr':0.,'warmup_epochs':0,'save_latest':True}
+cfg=yaml.safe_load((ROOT/'experiments/EXP-004/config.yaml').read_text());cfg['min_lr']=float(cfg['min_lr']);cfg['weight_decay']=float(cfg['weight_decay']);expected={'dataset':'CIFAR10','model':'ResNet20','seed':42,'T':8,'eta':.002,'eta2':0.,'batch_size':128,'accumulation_steps':1,'epochs':200,'optimizer':'sgd','lr':.1,'lr_scheduler':'cosine','min_lr':1e-6,'weight_decay':.0005,'amp':True,'TET':False,'data_path':'/home/hym/dataset/cifar10','num_workers':4,'label_smoothing':0,'warmup_lr':0.,'warmup_epochs':0,'save_latest':True}
 if any(cfg.get(k)!=v for k,v in expected.items()):sys.exit('configuration mismatch')
 code=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
 if code!=args.code_sha or subprocess.check_output(['git','status','--porcelain','--untracked-files=no'],cwd=ROOT,text=True).strip():sys.exit('code SHA mismatch or tracked files modified')
