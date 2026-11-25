@@ -1,5 +1,7 @@
 {
-  "execution_status": "PLANNED",
-  "reason": "independent validation adapter and decision on eval update_value required before safe training; resource approval pending",
-  "scientific_status": "UNTESTED"
+  "execution_status": "IMPLEMENTED_NOT_RUN",
+  "scientific_status": "UNTESTED",
+  "formal_training": "not approved and not run",
+  "benchmark_status": "COMPLETED with RNG scope caveat",
+  "blocking": "formal training resource approval and final GPU-path validation"
 }

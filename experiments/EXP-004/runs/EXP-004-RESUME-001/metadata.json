@@ -1,0 +1,8 @@
+{
+  "command": "python experiments/EXP-004/controlled/resume_check.py",
+  "code_sha": "7afbeea1afbe80fccff16636d13457e88153102e",
+  "utc_start": null,
+  "utc_end": null,
+  "wall_seconds": null,
+  "note": "start/end and duration not captured; not inferred"
+}

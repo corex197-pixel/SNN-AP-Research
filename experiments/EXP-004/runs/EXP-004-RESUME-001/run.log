@@ -1,0 +1,17 @@
+/home/hym/keyan1/experiments/EXP-004/controlled/resume_check.py:10: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  seed_all(42);torch.set_num_threads(2);x=torch.randn(3,4);y=torch.tensor([0,1,0]);m=Net().train();opt=torch.optim.SGD(m.parameters(),lr=.1,momentum=.9);sched=sched_create(opt);scaler=torch.cuda.amp.GradScaler(enabled=False)
+/home/hym/keyan1/experiments/EXP-004/controlled/core.py:68: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=scaler.is_enabled()):
+/home/hym/keyan1/experiments/EXP-004/controlled/resume_check.py:15: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  n=Net().train();op2=torch.optim.SGD(n.parameters(),lr=.1,momentum=.9);sc2=sched_create(op2);amp2=torch.cuda.amp.GradScaler(enabled=False);epoch,best=restore(path,n,op2,sc2,amp2,'cpu');step(n,op2,amp2,x,y)
+{
+  "model_max_abs_diff": 0.0,
+  "optimizer_momentum_max_abs_diff": 0.0,
+  "restored_epoch": 0,
+  "restored_best_validation": 0.73,
+  "weights_updated": true,
+  "threshold_finite_positive": true,
+  "theta_before": 1.0,
+  "theta_after": 0.9991472959518433,
+  "pass": true
+}

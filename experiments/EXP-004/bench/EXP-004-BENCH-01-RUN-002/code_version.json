@@ -1,0 +1,5 @@
+{
+  "actual_code_sha": "4d8272eee513ae5e303d9a8cb3cc97d4aec82b68",
+  "command": "python -u experiments/EXP-004/controlled/benchmark.py --run-id EXP-004-BENCH-01-RUN-002 --device 6",
+  "note": "training device 6; old seed/isolation used manual_seed_all and get_rng_state_all, which can initialize/touch other CUDA devices; fixed in later commit. No training computation was scheduled on those other devices."
+}

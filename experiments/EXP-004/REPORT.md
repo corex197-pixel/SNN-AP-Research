@@ -11,3 +11,28 @@
 单卡候选 RTX 4090 24GiB；可见 8 张不是已批准训练资源。2026-11-25 检查 GPU 空闲显存约 1.5–24.2 GiB，随共享负载变化；正式 batch=128 是否适合单卡未验证。未执行任何训练吞吐或显存基准，所以不能可靠估计训练总时长或峰值显存；需要经批准后做受控训练步基准，再以 200×ceil(45000/128) 步与实际吞吐估算（不含验证与 I/O）。训练时长和 GPU 数量须审批，当前轮的 1 小时只覆盖本轮冒烟，不授权完整训练。
 
 后续候选命令（当前不可安全运行）：进入 baseline 目录后 `python main.py --config=../experiments/EXP-004/config.yaml`。该命令仍使用官方测试集做选择，必须先完成适配、测试及预算批准。论文 91.06%、FR 0.043、SOP 48.85M 仅作文献参考，并非本项目结果或通过门槛。
+
+
+## ROUND-003 Controlled Baseline — IMPLEMENTED_NOT_RUN
+
+完整 200 epoch 正式训练未执行、未授权。实现入口 `controlled/train.py` 与独立 `controlled/final_test.py`；源 baseline 核心代码未修改。前者仅加载 CIFAR 官方训练来源的训练/验证子集；以验证 accuracy 严格大于才更新最佳（平局保留早期），样本加权损失与准确率；后者检查预锁定 checkpoint SHA，并对单个输出路径拒绝覆盖。该路径级约束不是全局测试集使用次数治理，须以科研流程控制。
+
+### 数据划分
+
+`split.py` 以 torchvision 完整性检查通过的本地 CIFAR-10 train 为来源，RandomState(2026) 按类洗牌：45000/4500/500，每类分别 4500/450/50；互斥并集 50000。诊断池使用独立 RandomState(2026) 无放回固定抽取 256。索引和批文件 SHA256 存于 `splits/indices.json`，此文件 SHA256 `69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165`。验证和诊断使用确定性变换；训练沿用 RandomCrop、HorizontalFlip、Cutout 和原始 sequential sampler（未 shuffle）。CIFAR 完整性检查可能读取测试文件进行哈希，但未加载测试样本作为训练或选模。训练集比作者完整训练集少 10%，不可声称原论文同条件复现。
+
+### A/B/C 与检查点
+
+`runs/EXP-004-CHECK-002/check.log`：eval 前累计值 0.123；原始未隔离验证后 0.1242488673；隔离后 0.123。执行同一步训练，D_theta_B=0.000124812126，D_theta_C=0；权重、BN 和优化器 C/A 最大差均 0；B/C 评估输出最大差 0；异常退出状态及 RNG 恢复通过。R13 的 lr*V_val 预测在浮点精度内一致；该示例非真实正式训练污染量。使用小型 CPU 网络，不能外推到整个训练。
+
+`runs/EXP-004-RESUME-001/run.log`：CPU 小型网络的检查点恢复后下一训练步，模型参数与优化器动量最大差均 0，恢复最佳验证准确率 0.73、epoch 0；观察到权重和阈值更新且阈值有限正值。未完成正式 ResNet-20 AMP 情况的跨中断训练一致性测试；不能把 CPU 小模型测试当完整训练验收。`eval` 隔离保留进入时非零 update_value、模式、BN buffers、阈值、ATLIF 统计、memory 状态及当前设备 RNG；其他未知模块自定义可变属性无法保证覆盖。
+
+### GPU 资源测量
+
+用户批准单卡测量；RUN-001 因 baseline main.py 导入强制 `CUDA_VISIBLE_DEVICES=4`，所选 ordinal 6 无效，未执行训练；保留失败记录。移除副作用后 RUN-002 使用物理 GPU 6 RTX 4090（开始空闲 23.25 GiB），10 批预热、50 批测量、3 批验证，不保存模型。测量前 6 号利用率为 0%，设备使用情况原文在 metrics.json。同步计时，batch=128、T=8、AMP GradScaler 启用；期间检测到 0 次 scaler 降低（0 不证明溢出行为已完整验证）。训练时间均值 0.1981s、中位数 0.1972s、P90 0.2021s；数据加载等待均值 0.000330s；含加载平均吞吐 645.2 样本/s；3 验证 batch 0.607s。峰值 allocated 4.46 GiB、reserved 4.60 GiB，含隔离状态快照。完整 200 epoch 线性估计 4.28 小时（352 训练和 36 验证批次/epoch），不含完整日志、checkpoint、竞争负载、测试及波动，非预算保证。
+
+基准运行时旧版本 `manual_seed_all()` 及 `get_rng_state_all()` 可能初始化或触及其他可见 GPU 的 RNG 状态；实际训练计算只安排于 GPU 6。已修复为仅操作当前设备 RNG；该修复后的 GPU 路径尚未重新测量。此行为与单卡隔离预期不符，如实保留。核心 AMP 跳步后原代码仍无条件执行手动阈值更新；本适配保留该行为，尚未人为触发 overflow 验证，需理论研究员评估。
+
+### 未完成及批准
+
+EXP-004 仍 IMPLEMENTED_NOT_RUN，EXP-002/003 BLOCKED，H-001/H-002 UNTESTED。正式训练前应审阅 AMP overflow、最终代码单卡 GPU 状态隔离及 AMP checkpoint 恢复，用户须单独批准约 4.28 小时估计之外的实际单卡预算和最大停止条件。配置为 `config.yaml`；候选命令见 `controlled/README.md`，未运行。随机临时模型的损失和短基准不是科研性能结果。

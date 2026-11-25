@@ -1,0 +1,5 @@
+{
+  "actual_code_sha": "df4c72431ce737717635d1ac21e9dd6e774450dc",
+  "command": "python -u experiments/EXP-004/controlled/benchmark.py --run-id EXP-004-BENCH-01 --device 6",
+  "reason": "original main.py import forced CUDA_VISIBLE_DEVICES=4, so ordinal 6 invalid; no training batches executed"
+}

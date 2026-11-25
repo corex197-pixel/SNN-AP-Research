@@ -1,0 +1,8 @@
+{
+  "command": "python experiments/EXP-004/controlled/split.py && python experiments/EXP-004/controlled/check.py",
+  "code_sha": "b526c9f451649c78cbd6ded1dc877c9a98e61da1",
+  "utc_start": null,
+  "utc_end": null,
+  "wall_seconds": null,
+  "note": "start/end and duration not captured; not inferred"
+}
