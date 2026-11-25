@@ -1,7 +1,7 @@
 {
-  "execution_status": "IMPLEMENTED_NOT_RUN",
+  "execution_status": "BLOCKED",
+  "formal_training": "not started",
+  "blocking": "no actually idle GPU; nonzero-activity AMP overflow preflight incomplete",
   "scientific_status": "UNTESTED",
-  "formal_training": "not approved and not run",
-  "benchmark_status": "COMPLETED with RNG scope caveat",
-  "blocking": "formal training resource approval and final GPU-path validation"
+  "planned_run_id": "EXP-004-RUN-001"
 }

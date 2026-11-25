@@ -1,0 +1,22 @@
+{
+  "start_utc": "2026-11-25T06:33:35.524658+00:00",
+  "status": "FAILED",
+  "visible_devices": 1,
+  "device": "NVIDIA GeForce RTX 4090",
+  "free_bytes": 8285323264,
+  "total_bytes": 25386352640,
+  "split": {
+    "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+    "counts": [
+      45000,
+      4500,
+      500
+    ],
+    "diagnostic_256": 256,
+    "dataset_integrity": true
+  },
+  "error": "RuntimeError('GPU free memory below 8 GiB')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/EXP-004/round004/preflight.py\", line 11, in <module>\n    if free<8*1024**3:raise RuntimeError('GPU free memory below 8 GiB')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: GPU free memory below 8 GiB\n",
+  "end_utc": "2026-11-25T06:33:37.127693+00:00",
+  "wall_seconds": 1.6030788561329246
+}

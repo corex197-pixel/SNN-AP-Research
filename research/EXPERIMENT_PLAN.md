@@ -6,3 +6,5 @@
 ROUND-002 修复与冒烟协议见 ROUND-002-TASK.md；EXP-004 尚未正式训练，安全入口、数据划分和资源预算待解决，见 ../experiments/EXP-004/REPORT.md。
 
 ROUND-003 协议见 ROUND-003-TASK.md；用户只授权 EXP-004-BENCH-01 单卡测量，不授权完整训练。已固定分层索引及独立验证入口；完成正式 GPU 路径审查与资源批准后方可启动训练。
+
+ROUND-004 预注册任务与用户单卡八小时批准见 ROUND-004-TASK.md；因缺少实际空闲 GPU，非零活动 AMP 前置验证和正式训练尚未完成。
