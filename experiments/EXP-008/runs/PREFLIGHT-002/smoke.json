@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "sp_zero_vs_baseline_logits_max_abs": 0.0,
+  "sp_zero_vs_baseline_non_threshold_grad_max_abs": 0.0,
+  "teacher_unchanged_after_student_step": true,
+  "teacher_no_grad": true,
+  "student_thresholds_unchanged_after_step": true,
+  "gradient_tensor_count": 65,
+  "wall_seconds": 1.8157899000216275,
+  "cpu_seconds": 1.809323965,
+  "utc": "2026-11-26T14:03:18.802576+00:00"
+}

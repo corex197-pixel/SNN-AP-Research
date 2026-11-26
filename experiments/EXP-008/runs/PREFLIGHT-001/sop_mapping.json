@@ -1,0 +1,22 @@
+{
+  "conv2_x.0.residual_function.0": "conv1.2",
+  "conv2_x.0.residual_function.3": "conv2_x.0.residual_function.2",
+  "conv2_x.1.residual_function.0": "conv2_x.0.act",
+  "conv2_x.1.residual_function.3": "conv2_x.1.residual_function.2",
+  "conv2_x.2.residual_function.0": "conv2_x.1.act",
+  "conv2_x.2.residual_function.3": "conv2_x.2.residual_function.2",
+  "conv3_x.0.residual_function.0": "conv2_x.2.act",
+  "conv3_x.0.residual_function.3": "conv3_x.0.residual_function.2",
+  "conv3_x.0.shortcut.0": "conv2_x.2.act",
+  "conv3_x.1.residual_function.0": "conv3_x.0.act",
+  "conv3_x.1.residual_function.3": "conv3_x.1.residual_function.2",
+  "conv3_x.2.residual_function.0": "conv3_x.1.act",
+  "conv3_x.2.residual_function.3": "conv3_x.2.residual_function.2",
+  "conv4_x.0.residual_function.0": "conv3_x.2.act",
+  "conv4_x.0.residual_function.3": "conv4_x.0.residual_function.2",
+  "conv4_x.0.shortcut.0": "conv3_x.2.act",
+  "conv4_x.1.residual_function.0": "conv4_x.0.act",
+  "conv4_x.1.residual_function.3": "conv4_x.1.residual_function.2",
+  "conv4_x.2.residual_function.0": "conv4_x.1.act",
+  "conv4_x.2.residual_function.3": "conv4_x.2.residual_function.2"
+}
