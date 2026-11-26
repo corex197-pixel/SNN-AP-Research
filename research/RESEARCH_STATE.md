@@ -12,3 +12,8 @@ GPU benchmark RUN-002（代码 `4d8272eee513ae5e303d9a8cb3cc97d4aec82b68`）完�
 ## ROUND-004 — 前置检查受阻
 
 用户批准单 RTX 4090、含前置检查的 8 小时上限以及 EXP-004-RUN-001 一次 200 epoch 训练。协议与代码见 ROUND-004-TASK.md、experiments/EXP-004/round004/。前置检查 PREFLIGHT-001 的单卡、划分、GPU A/C、检查点一致性通过，但 AMP 受控测试的活动量为 0，不能充分验证手动更新；PREFLIGHT-002 启动时 GPU 已被其他进程占用，可用显存低于 8 GiB，故中止。当前无实际空闲 GPU；正式训练未启动。GPU 预算记录见 round004/budget.json，不延长既定绝对截止时间。H-001/H-002 UNTESTED。
+
+
+## ROUND-004 正式运行审计 — PARTIAL
+
+EXP-004-RUN-002 仅完成 37/200 轮；训练与监护进程均已退出，原状态仍为 RUNNING，确切退出时间和原因未知。最佳验证第 34 轮 accuracy 0.814、loss 0.5378644655、FR_global 0.0576531808、FR_author 0.0489380468。最新和最佳检查点哈希与指标记录一致，已在 CPU 验证可读及参数有限；续训未测试。无最终 SOP 数据，未使用正式测试集。H-001/H-002 UNTESTED，EXP-002/003 BLOCKED。详见 ../experiments/EXP-004/REPORT.md 及 audit_summary.json。

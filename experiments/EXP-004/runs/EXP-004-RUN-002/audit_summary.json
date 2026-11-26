@@ -1,0 +1,68 @@
+{
+  "run_id": "EXP-004-RUN-002",
+  "execution_status": "PARTIAL",
+  "reason": "training and monitor processes absent; last persisted status RUNNING; no recorded exit reason; interrupted or externally terminated, exact cause unknown",
+  "completed_epochs": 37,
+  "best_epoch": 34,
+  "best_validation_accuracy": 0.814,
+  "best_validation_loss": 0.5378644655015733,
+  "best_validation_fr_global": 0.057653180771979735,
+  "best_validation_fr_author": 0.04893804684891338,
+  "amp_skipped_steps_total": 4,
+  "recorded_epoch_wall_seconds_sum": 3829.3006450717803,
+  "training_start_utc": "2026-11-25T06:46:28.385714+00:00",
+  "last_complete_epoch_status_mtime_utc": "2026-11-25T07:50:19.799763+00:00",
+  "last_persisted_log_mtime_utc": "2026-11-25T07:50:20.018763+00:00",
+  "actual_process_exit_time_utc": null,
+  "actual_gpu_occupancy_seconds": null,
+  "gpu_uuid": "GPU-1118b368-bc7d-543a-1b80-f79a13730e24",
+  "gpu_peak_allocated_bytes": 4792494080,
+  "gpu_peak_reserved_bytes": 4890558464,
+  "sops": null,
+  "parameter_count": 1084605,
+  "final_summary_exists": false,
+  "checkpoint_manifest": [
+    {
+      "path": "/home/hym/keyan1/experiments/EXP-004/runs/EXP-004-RUN-002/checkpoint_latest.pth",
+      "sha256": "a82200f20b07fe328b285f2b191d8df7c62811fada5c00bd5e94f2164f4f4b02",
+      "size_bytes": 8788026,
+      "epoch": 37,
+      "best_validation_accuracy": 0.814,
+      "code_sha": "365da5f0c371b2f9f010f44b8327a0e489184a17",
+      "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+      "model_tensors": 147,
+      "optimizer_state_entries": 84,
+      "scaler_state": {
+        "scale": 131072.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 669
+      },
+      "finite_model_parameters": true,
+      "load_test": "CPU load and metadata integrity only; training continuation untested"
+    },
+    {
+      "path": "/home/hym/keyan1/experiments/EXP-004/runs/EXP-004-RUN-002/checkpoint_best_validation.pth",
+      "sha256": "bdc36b9f9ed2c8d2d8b3517f5146b7d6913d2eb2db44141ad60a6978f3ba4eba",
+      "size_bytes": 8788026,
+      "epoch": 34,
+      "best_validation_accuracy": 0.814,
+      "code_sha": "365da5f0c371b2f9f010f44b8327a0e489184a17",
+      "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+      "model_tensors": 147,
+      "optimizer_state_entries": 84,
+      "scaler_state": {
+        "scale": 262144.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 1089
+      },
+      "finite_model_parameters": true,
+      "load_test": "CPU load and metadata integrity only; training continuation untested"
+    }
+  ],
+  "official_test_used": false,
+  "scope": "partial training; metrics from recorded validation at epoch 34, not a post-hoc re-evaluation"
+}
