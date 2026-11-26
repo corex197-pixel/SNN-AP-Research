@@ -20,3 +20,11 @@ bootstrap_replicates: 2000
 gpu_wall_budget_seconds: 1800
 cpu_time_budget_seconds: 1800
 validation_reserve_seconds: 300
+
+B2_invalid_initial_order: append_in_module_order_after_initially_valid_ranked_modules
+B2_cycle: advance_cursor_after_each_acceptance
+recovery_run: EXP-007-RUN-002
+prior_invalid_run_wall_seconds: 88.6646831498947
+prior_invalid_run_cpu_seconds: 88.43350992100001
+recovery_process_wall_budget_seconds: 1710
+recovery_cpu_safety_limit_seconds: 1610

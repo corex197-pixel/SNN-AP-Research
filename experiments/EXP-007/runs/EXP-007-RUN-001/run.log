@@ -1,0 +1,85 @@
+{"event": "accepted", "method": "B2", "step": 1, "module": "conv4_x.0.residual_function.2", "savings": 0.006193351028419003, "remaining_seconds": 1767.8057752021123}
+{"event": "accepted", "method": "B2", "step": 2, "module": "conv4_x.0.residual_function.2", "savings": 0.013925750544519166, "remaining_seconds": 1759.7512412141077}
+{"event": "accepted", "method": "B2", "step": 3, "module": "conv4_x.0.residual_function.2", "savings": 0.02591865746572164, "remaining_seconds": 1751.5082394499332}
+{"event": "accepted", "method": "B2", "step": 4, "module": "conv4_x.0.residual_function.2", "savings": 0.04717515698844943, "remaining_seconds": 1743.3817674641032}
+{"event": "accepted", "method": "B2", "step": 5, "module": "conv2_x.1.act", "savings": 0.05997081170606511, "remaining_seconds": 1736.516623896081}
+{"event": "accepted", "method": "B2", "step": 6, "module": "conv2_x.1.act", "savings": 0.09202751206477788, "remaining_seconds": 1729.609262749087}
+{"event": "accepted", "method": "B2", "step": 7, "module": "conv4_x.0.act", "savings": 0.10589722647469835, "remaining_seconds": 1722.4350661430508}
+{"event": "accepted", "method": "M1", "step": 1, "module": "conv4_x.0.residual_function.2", "savings": 0.006193351028419003, "remaining_seconds": 1722.3907486291137}
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-008/tcap.py", line 194, in <module>
+    try:r=main();result.update(execution_status=r['execution_status'])
+          ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-008/tcap.py", line 147, in main
+    selected['B2']=search('B2');selected['M1']=search('M1')
+                                               ^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-008/tcap.py", line 136, in search
+    nxt=levels[pos+1];v=vector.copy();v[i]=nxt;(res,_),cached=calc(v,method);dc=(current['SOPs']-res['SOPs'])/C0;valid=dc>=.005;score=(res['loss']-current['loss'])/dc if valid else None
+                                                              ^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-008/tcap.py", line 108, in calc
+    summary,layer,_=evaluate(alpha,cal,ids,'calibration',method);cache[key]=(summary,layer);return cache[key],False
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-008/tcap.py", line 89, in evaluate
+    guard();n=len(y);idx=ids_[count:count+n];x=x.cuda();y=y.cuda();monitor.clear_recorded_data();logits=model(x).mean(0);loss=F.cross_entropy(logits,y,reduction='none');pred=logits.argmax(1)
+                                                                                                        ^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py", line 80, in forward
+    x = self.conv2_x(x)
+        ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py", line 40, in forward
+    x = self.residual_function(x) + self.shortcut(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1603, in _call_impl
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/models/submodules/layers.py", line 95, in forward
+    spike, thre_updates = self.act(mem, self.thresh, self.sp)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/autograd/function.py", line 574, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/models/submodules/layers.py", line 63, in forward
+    thre_updates = (sp * zif_backward(input-thre, thre) * out).sum(0).mean().item()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+{
+  "execution_status": "PARTIAL",
+  "start_utc": "2026-11-26T13:08:54.486989+00:00",
+  "error": "KeyboardInterrupt()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-008/tcap.py\", line 194, in <module>\n    try:r=main();result.update(execution_status=r['execution_status'])\n          ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-008/tcap.py\", line 147, in main\n    selected['B2']=search('B2');selected['M1']=search('M1')\n                                               ^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-008/tcap.py\", line 136, in search\n    nxt=levels[pos+1];v=vector.copy();v[i]=nxt;(res,_),cached=calc(v,method);dc=(current['SOPs']-res['SOPs'])/C0;valid=dc>=.005;score=(res['loss']-current['loss'])/dc if valid else None\n                                                              ^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-008/tcap.py\", line 108, in calc\n    summary,layer,_=evaluate(alpha,cal,ids,'calibration',method);cache[key]=(summary,layer);return cache[key],False\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-008/tcap.py\", line 89, in evaluate\n    guard();n=len(y);idx=ids_[count:count+n];x=x.cuda();y=y.cuda();monitor.clear_recorded_data();logits=model(x).mean(0);loss=F.cross_entropy(logits,y,reduction='none');pred=logits.argmax(1)\n                                                                                                        ^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py\", line 80, in forward\n    x = self.conv2_x(x)\n        ^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py\", line 219, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py\", line 40, in forward\n    x = self.residual_function(x) + self.shortcut(x)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py\", line 219, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1603, in _call_impl\n    result = forward_call(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/models/submodules/layers.py\", line 95, in forward\n    spike, thre_updates = self.act(mem, self.thresh, self.sp)\n                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/autograd/function.py\", line 574, in apply\n    return super().apply(*args, **kwargs)  # type: ignore[misc]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/models/submodules/layers.py\", line 63, in forward\n    thre_updates = (sp * zif_backward(input-thre, thre) * out).sum(0).mean().item()\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyboardInterrupt\n",
+  "end_utc": "2026-11-26T13:10:23.151601+00:00",
+  "wall_seconds": 88.6646831498947,
+  "process_cpu_seconds": 88.43350992100001
+}

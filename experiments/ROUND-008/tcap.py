@@ -13,13 +13,13 @@ ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'experiments
 from core import model_create,isolated_eval,transforms_pair,DATA,ATLIF
 from utils.utils import SOPMonitor
 from spikingjelly.activation_based import functional
-MODEL=ROOT/'experiments/EXP-004/runs/EXP-004-RUN-003/checkpoint_best_validation.pth';SPLIT=ROOT/'experiments/EXP-004/splits/indices.json';IDS=ROOT/'experiments/EXP-007/calibration_indices.json';OUT=ROOT/'experiments/EXP-007/runs/EXP-007-RUN-001'
+MODEL=ROOT/'experiments/EXP-004/runs/EXP-004-RUN-003/checkpoint_best_validation.pth';SPLIT=ROOT/'experiments/EXP-004/splits/indices.json';IDS=ROOT/'experiments/EXP-007/calibration_indices.json';OUT=ROOT/'experiments/EXP-007/runs/EXP-007-RUN-002'
 MSHA='c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a';SSHA='69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165';ISHA='b849b74ef19cb4a09df756c54871122f3b02aa047c704d0436feab15a38bde52'
 levels=[1.,1.1,1.25,1.5,2.];uniforms=[1.,1.05,1.1,1.15,1.2,1.25,1.3,1.4,1.5,1.75,2.];start=time.monotonic();cpu=time.process_time();beg=datetime.datetime.now(datetime.timezone.utc).isoformat();counter=0;cache={};physical=[]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def guard():
- if time.monotonic()-start>1700:raise TimeoutError('GPU wall budget safety limit')
- if time.process_time()-cpu>1700:raise TimeoutError('CPU time budget safety limit')
+ if time.monotonic()-start>1610:raise TimeoutError('GPU wall budget safety limit')
+ if time.process_time()-cpu>1610:raise TimeoutError('CPU time budget safety limit')
 def writejson(p,x):p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(x,indent=2,allow_nan=False)+'\n')
 def appendcsv(path,rows):
  if not rows:return
@@ -106,7 +106,7 @@ def main():
   key=tuple(alpha)
   if key in cache and (method in ('B1','shared_initial') or (method in ('B2','M1') and sum(v!=1. for v in alpha)==1 and max(alpha)==1.1)):return cache[key],True
   summary,layer,_=evaluate(alpha,cal,ids,'calibration',method);cache[key]=(summary,layer);return cache[key],False
- def remaining():return 1800-(time.monotonic()-start)
+ def remaining():return 1710-(time.monotonic()-start)
  alpha0=[1.]*19;(basecal,baselayers),_=calc(alpha0,'shared_baseline');C0=basecal['SOPs'];writejson(OUT/'calibration_baseline.json',basecal)
  def hist(method,iteration,module,old,new,cand,current,cached,valid,dc,score,reason):
   appendcsv(OUT/'candidate_history.csv',[{'method':method,'iteration':iteration,'module':module,'from_alpha':old,'to_alpha':new,'eval_id':cand['eval_id'],'cached':cached,'calibration_loss':cand['loss'],'calibration_accuracy':cand['accuracy'],'calibration_SOPs':cand['SOPs'],'delta_loss':cand['loss']-current['loss'],'delta_c':dc,'score':score if valid else '', 'valid':valid,'reason':reason,'total_savings':1-cand['SOPs']/C0}])
@@ -123,9 +123,9 @@ def main():
   if remaining()<300:raise TimeoutError('validation reserve reached during initial ranking')
   vec=alpha0.copy();vec[i]=1.1;(res,_),cached=calc(vec,'shared_initial');dc=(C0-res['SOPs'])/C0;valid=dc>=.005;score=(res['loss']-basecal['loss'])/dc if valid else None
   hist('shared_initial',0,names[i],1.,1.1,res,basecal,cached,valid,dc,score,'eligible' if valid else 'below_delta_cost');initial.append((i,score,dc,valid))
- ranking=[i for i,score,dc,valid in sorted((z for z in initial if z[3]),key=lambda z:(z[1],-z[2],z[0]))];writejson(OUT/'static_order.json',{'module_indices':ranking,'module_names':[names[i] for i in ranking],'invalid_initial':[names[i] for i,score,dc,valid in initial if not valid]})
+ ranking=[i for i,score,dc,valid in sorted((z for z in initial if z[3]),key=lambda z:(z[1],-z[2],z[0]))]+[i for i,score,dc,valid in initial if not valid];writejson(OUT/'static_order.json',{'module_indices':ranking,'module_names':[names[i] for i in ranking],'invalid_initial':[names[i] for i,score,dc,valid in initial if not valid]})
  def search(method):
-  vector=alpha0.copy();current=basecal;accepted=0;stop_reason='maximum_accepted_actions';indices=ranking if method=='B2' else list(range(19));round_index=0
+  vector=alpha0.copy();current=basecal;accepted=0;stop_reason='maximum_accepted_actions';indices=ranking if method=='B2' else list(range(19));round_index=0;cursor=0
   while accepted<12:
    if remaining()<300:stop_reason='budget_validation_reserve';break
    candidates=[];round_index+=1
@@ -139,8 +139,8 @@ def main():
    if stop_reason=='budget_validation_reserve':break
    if not candidates:stop_reason='no_valid_candidate';break
    window=[c for c in candidates if .10<=c['savings']<=.12];pool=window if window else candidates
-   chosen=min(pool,key=(lambda z:(z['score'],-z['dc'],z['i'])) if method=='M1' else (lambda z:ranking.index(z['i'])))
-   i=chosen['i'];old=vector[i];vector=chosen['vector'];current=chosen['result'];accepted+=1;action(method,accepted,names[i],old,vector[i],current,chosen['dc'],chosen['score']);writejson(OUT/(method+'_progress.json'),{'alpha':vector,'accepted':accepted,'calibration':current})
+   chosen=min(pool,key=(lambda z:(z['score'],-z['dc'],z['i'])) if method=='M1' else (lambda z:(ranking.index(z['i'])-cursor)%len(ranking)))
+   i=chosen['i'];old=vector[i];vector=chosen['vector'];current=chosen['result'];accepted+=1;cursor=(ranking.index(i)+1)%len(ranking) if method=='B2' else cursor;action(method,accepted,names[i],old,vector[i],current,chosen['dc'],chosen['score']);writejson(OUT/(method+'_progress.json'),{'alpha':vector,'accepted':accepted,'calibration':current})
    print(json.dumps({'event':'accepted','method':method,'step':accepted,'module':names[i],'savings':chosen['savings'],'remaining_seconds':remaining()}),flush=True)
    if chosen['savings']>=.10:stop_reason='target_reached';break
   return {'alpha':vector,'calibration':current,'accepted_actions':accepted,'stop_reason':stop_reason,'target_met':1-current['SOPs']/C0>=.10}

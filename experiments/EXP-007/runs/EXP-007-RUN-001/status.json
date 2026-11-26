@@ -1,0 +1,5 @@
+{
+  "execution_status": "INVALID",
+  "reason": "B2 implementation exhausted first-ranked layer instead of rotating through fixed ranking; stopped before complete search/validation",
+  "preserve_raw_history": true
+}
