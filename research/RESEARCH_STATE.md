@@ -17,3 +17,6 @@ GPU benchmark RUN-002（代码 `4d8272eee513ae5e303d9a8cb3cc97d4aec82b68`）完�
 ## ROUND-004 正式运行审计 — PARTIAL
 
 EXP-004-RUN-002 仅完成 37/200 轮；训练与监护进程均已退出，原状态仍为 RUNNING，确切退出时间和原因未知。最佳验证第 34 轮 accuracy 0.814、loss 0.5378644655、FR_global 0.0576531808、FR_author 0.0489380468。最新和最佳检查点哈希与指标记录一致，已在 CPU 验证可读及参数有限；续训未测试。无最终 SOP 数据，未使用正式测试集。H-001/H-002 UNTESTED，EXP-002/003 BLOCKED。详见 ../experiments/EXP-004/REPORT.md 及 audit_summary.json。
+
+
+ROUND-005 预注册：用户已批准单卡7小时；恢复前测试和续训结果以 round005/SUPERVISOR-001/status.json 及独立恢复段实际记录为准。父运行永久保留 PARTIAL，不重置随机种子或200轮调度器。

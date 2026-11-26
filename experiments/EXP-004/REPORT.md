@@ -106,3 +106,8 @@ PREFLIGHT-002 加入要求 v>0 的检查，但执行开始时原空闲设备被�
 ### 证据与后续
 
 原始 `epochs.csv`、`layers.csv`、`run.log`、`watcher.log` 和 `status.original.json` 均保留。8 张图由已有 37 轮 CSV 在 CPU 上绘制，只表示部分训练。`audit_summary.json` 为本次整理，不能代替缺失的原始 `final_summary.json`。没有运行正式测试集，没有续训、没有额外 GPU 计算，也没有运行 EXP-002/003。由于训练不完整、缺少受控最终 SOP 评价和理论研究员审查，尚不能作为已完成的 200 轮 baseline 或用于判断 H-001/H-002。下一步的 GPU 评价和续训均需单独授权。
+
+
+## ROUND-005 预注册
+
+用户授权单卡7小时预算，包括恢复检查、剩余163轮及最终验证。仅从第37轮最新检查点恢复，保留第34轮历史最佳。恢复前 GPU 对照必须通过；若失败不启动续训。续训、测试和最终结果以 round005/SUPERVISOR-001 和 runs/EXP-004-RUN-003 实际记录为准。
