@@ -13,3 +13,9 @@ ROUND-007 初步创新性风险排查，非系统查重：
 - Wang et al., [Adaptive Calibration: A Unified Conversion Framework of Spiking Neural Network](https://arxiv.org/abs/2412.16219).
 - Shi, Bu, Yu, [UniSparse: Combining Weight Pruning and Spike Sparsification in Spiking Neural Networks](https://proceedings.mlr.press/v306/shi26a.html), ICML 2026.
 - [Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications](https://doi.org/10.3389/fnins.2020.00662), 2020.
+
+## ROUND-009 相关工作与创新风险
+- Thomas Louis et al., On Reducing Activity with Distillation and Regularization for Energy Efficient Spiking Neural Networks (2024), https://arxiv.org/abs/2406.18350
+- Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications (2020), https://doi.org/10.3389/fnins.2020.00662
+- Xinyu Shi et al., UniSparse: Combining Weight Pruning and Spike Sparsification in Spiking Neural Networks, ICML 2026, https://proceedings.mlr.press/v306/shi26a.html
+知识蒸馏、活动正则化和SynOps优化已有研究；本方案是借鉴成熟思想的AT-LIF先导改进，独立学术创新性尚未证明。

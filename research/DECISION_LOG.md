@@ -17,3 +17,6 @@ DEC-006 — CONTINUE：EXP-004 Controlled Baseline 通过理论验收；H-001/H-
 DEC-007 — REFINE + REPLICATE：原H-001的当前反对证据保留，原主线不得作为普遍补偿不足继续推进；Q-001A仅针对前部探索发现开展固定独立样本验证，条件性运行反事实，不无限更换干预条件。
 
 DEC-008 — PIVOT + IMPLEMENT：保留H-001/H-004限定条件证据与H-005证据不足，暂停幅值补偿主线；转向校准任务损失与实际SOPs联合驱动的TCAP候选活动剪枝。TCAP是工作名称，不宣称原创性；不训练。
+
+## DEC-009 — PIVOT + IMPLEMENT
+理论研究员确认H-006 INSUFFICIENT_EVIDENCE，停止当前TCAP动态贪心方案，不推广为该类方法普遍无效。转向AT-LIF固定阈值短期预算约束微调和自蒸馏，按ROUND-009预注册先导验证；H-001至H-005历史状态保留。
