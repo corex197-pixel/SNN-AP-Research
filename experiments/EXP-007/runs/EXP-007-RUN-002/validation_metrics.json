@@ -1,0 +1,518 @@
+{
+  "B0": {
+    "summary": {
+      "loss": 0.28307441925777166,
+      "accuracy": 0.9171111111111111,
+      "SOPs": 55023981.39022222,
+      "FR_global": 0.05353907606336806,
+      "FR_author": 0.046908090042507254,
+      "samples": 4500,
+      "batches": 141,
+      "elapsed_seconds": 8.776849927846342,
+      "eval_id": 221
+    },
+    "layers": {
+      "conv1.2": {
+        "FR": 0.07066424814860026,
+        "spike_count": 83358939,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07065858739487668
+      },
+      "conv2_x.0.residual_function.2": {
+        "FR": 0.05310949198404948,
+        "spike_count": 62650506,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.0531047542044457
+      },
+      "conv2_x.0.act": {
+        "FR": 0.0707068354288737,
+        "spike_count": 83409177,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07070081842706558
+      },
+      "conv2_x.1.residual_function.2": {
+        "FR": 0.03848340267605252,
+        "spike_count": 45396869,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03848222029124591
+      },
+      "conv2_x.1.act": {
+        "FR": 0.0719065212673611,
+        "spike_count": 84824384,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07190057588807235
+      },
+      "conv2_x.2.residual_function.2": {
+        "FR": 0.03918722025553385,
+        "spike_count": 46227126,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03918126694699551
+      },
+      "conv2_x.2.act": {
+        "FR": 0.08018159400092231,
+        "spike_count": 94586057,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.08017456903525279
+      },
+      "conv3_x.0.residual_function.2": {
+        "FR": 0.04261186896430121,
+        "spike_count": 25133503,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.04260728781950389
+      },
+      "conv3_x.0.act": {
+        "FR": 0.06627547200520834,
+        "spike_count": 39090864,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.06626969093972064
+      },
+      "conv3_x.1.residual_function.2": {
+        "FR": 0.01592273627387153,
+        "spike_count": 9391612,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.01591955414900543
+      },
+      "conv3_x.1.act": {
+        "FR": 0.07852777099609375,
+        "spike_count": 46317564,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.07852004944009984
+      },
+      "conv3_x.2.residual_function.2": {
+        "FR": 0.02217859395345052,
+        "spike_count": 13081467,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.022175684381038584
+      },
+      "conv3_x.2.act": {
+        "FR": 0.07321874491373698,
+        "spike_count": 43186173,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.07321051536722387
+      },
+      "conv4_x.0.residual_function.2": {
+        "FR": 0.032868794759114583,
+        "spike_count": 9693402,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03286536805173184
+      },
+      "conv4_x.0.act": {
+        "FR": 0.03239923095703125,
+        "spike_count": 9554922,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03239477847484832
+      },
+      "conv4_x.1.residual_function.2": {
+        "FR": 0.012089267306857639,
+        "spike_count": 3565270,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.012086181775897953
+      },
+      "conv4_x.1.act": {
+        "FR": 0.03842796834309896,
+        "spike_count": 11332869,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03842290513058926
+      },
+      "conv4_x.2.residual_function.2": {
+        "FR": 0.015137705485026041,
+        "spike_count": 4464291,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.015135580428103184
+      },
+      "conv4_x.2.act": {
+        "FR": 0.037446902804904515,
+        "spike_count": 11043541,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.037443322661920644
+      }
+    }
+  },
+  "B1": {
+    "summary": {
+      "loss": 0.28050099616934693,
+      "accuracy": 0.9117777777777778,
+      "SOPs": 47501319.424,
+      "FR_global": 0.04656060216046762,
+      "FR_author": 0.04017110791122704,
+      "samples": 4500,
+      "batches": 141,
+      "elapsed_seconds": 8.734375450061634,
+      "eval_id": 222
+    },
+    "layers": {
+      "conv1.2": {
+        "FR": 0.0589227040608724,
+        "spike_count": 69508050,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.058917916074712216
+      },
+      "conv2_x.0.residual_function.2": {
+        "FR": 0.04306640370686849,
+        "spike_count": 50803197,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.04306298215338524
+      },
+      "conv2_x.0.act": {
+        "FR": 0.06360461764865451,
+        "spike_count": 75031060,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.06359955740313157
+      },
+      "conv2_x.1.residual_function.2": {
+        "FR": 0.035074212816026476,
+        "spike_count": 41375225,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03507267481891821
+      },
+      "conv2_x.1.act": {
+        "FR": 0.06556923675537109,
+        "spike_count": 77348619,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.06556415354951899
+      },
+      "conv2_x.2.residual_function.2": {
+        "FR": 0.036196804470486114,
+        "spike_count": 42699488,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03619127391923404
+      },
+      "conv2_x.2.act": {
+        "FR": 0.07143813578287761,
+        "spike_count": 84271854,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07143110011486296
+      },
+      "conv3_x.0.residual_function.2": {
+        "FR": 0.035364976671006944,
+        "spike_count": 20859112,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.03536017769617392
+      },
+      "conv3_x.0.act": {
+        "FR": 0.05791220431857639,
+        "spike_count": 34158008,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.05790830301054825
+      },
+      "conv3_x.1.residual_function.2": {
+        "FR": 0.01476629638671875,
+        "spike_count": 8709516,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.014763903110585314
+      },
+      "conv3_x.1.act": {
+        "FR": 0.06763241407606337,
+        "spike_count": 39891221,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.06762622907652076
+      },
+      "conv3_x.2.residual_function.2": {
+        "FR": 0.02017774115668403,
+        "spike_count": 11901316,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.020175575364566017
+      },
+      "conv3_x.2.act": {
+        "FR": 0.06098803371853299,
+        "spike_count": 35972206,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.060981039967097285
+      },
+      "conv4_x.0.residual_function.2": {
+        "FR": 0.027223626030815972,
+        "spike_count": 8028574,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.027221080428319618
+      },
+      "conv4_x.0.act": {
+        "FR": 0.026075629340277778,
+        "spike_count": 7690016,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.026071823066008006
+      },
+      "conv4_x.1.residual_function.2": {
+        "FR": 0.009512742784288195,
+        "spike_count": 2805422,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.009509813701007383
+      },
+      "conv4_x.1.act": {
+        "FR": 0.030690487331814235,
+        "spike_count": 9050993,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.030685906376399046
+      },
+      "conv4_x.2.residual_function.2": {
+        "FR": 0.01078056165907118,
+        "spike_count": 3179317,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.010778493407770252
+      },
+      "conv4_x.2.act": {
+        "FR": 0.02833285861545139,
+        "spike_count": 8355700,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.028329047074554657
+      }
+    }
+  },
+  "B2": {
+    "summary": {
+      "loss": 0.3131222577292383,
+      "accuracy": 0.9008888888888889,
+      "SOPs": 48753861.91644444,
+      "FR_global": 0.047788118740210786,
+      "FR_author": 0.04150304284368091,
+      "samples": 4500,
+      "batches": 141,
+      "elapsed_seconds": 8.67555722501129,
+      "eval_id": 223
+    },
+    "layers": {
+      "conv1.2": {
+        "FR": 0.06258733537462023,
+        "spike_count": 73831025,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.06258262133767419
+      },
+      "conv2_x.0.residual_function.2": {
+        "FR": 0.05507045491536458,
+        "spike_count": 64963752,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.05506587434322276
+      },
+      "conv2_x.0.act": {
+        "FR": 0.06834228261311849,
+        "spike_count": 80619837,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.06833669581311815
+      },
+      "conv2_x.1.residual_function.2": {
+        "FR": 0.03836773512098524,
+        "spike_count": 45260422,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03836639722188314
+      },
+      "conv2_x.1.act": {
+        "FR": 0.04801337432861328,
+        "spike_count": 56638881,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.04800827198840202
+      },
+      "conv2_x.2.residual_function.2": {
+        "FR": 0.034551264444986976,
+        "spike_count": 40758330,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03454606330141108
+      },
+      "conv2_x.2.act": {
+        "FR": 0.07452857632107204,
+        "spike_count": 87917486,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07452234934407768
+      },
+      "conv3_x.0.residual_function.2": {
+        "FR": 0.04004840596516927,
+        "spike_count": 23621511,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.04004409668293405
+      },
+      "conv3_x.0.act": {
+        "FR": 0.0524057362874349,
+        "spike_count": 30910161,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.05240043782173319
+      },
+      "conv3_x.1.residual_function.2": {
+        "FR": 0.015754067314995658,
+        "spike_count": 9292127,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.015751128839262832
+      },
+      "conv3_x.1.act": {
+        "FR": 0.06951455349392362,
+        "spike_count": 41001352,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.06950735606200306
+      },
+      "conv3_x.2.residual_function.2": {
+        "FR": 0.02120321994357639,
+        "spike_count": 12506168,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.02120115942988835
+      },
+      "conv3_x.2.act": {
+        "FR": 0.06630814107259114,
+        "spike_count": 39110133,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.06630061129306225
+      },
+      "conv4_x.0.residual_function.2": {
+        "FR": 0.02584771050347222,
+        "spike_count": 7622800,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.0258454275469408
+      },
+      "conv4_x.0.act": {
+        "FR": 0.025664232042100693,
+        "spike_count": 7568690,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.025660842192088456
+      },
+      "conv4_x.1.residual_function.2": {
+        "FR": 0.012200137668185763,
+        "spike_count": 3597967,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.012197903707517799
+      },
+      "conv4_x.1.act": {
+        "FR": 0.033775492350260415,
+        "spike_count": 9960798,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.033771894333210394
+      },
+      "conv4_x.2.residual_function.2": {
+        "FR": 0.013505696614583333,
+        "spike_count": 3982992,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.013504531535696475
+      },
+      "conv4_x.2.act": {
+        "FR": 0.030947852240668403,
+        "spike_count": 9126893,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03094415123581041
+      }
+    }
+  },
+  "M1": {
+    "summary": {
+      "loss": 0.32730996507468374,
+      "accuracy": 0.8993333333333333,
+      "SOPs": 49262350.62755556,
+      "FR_global": 0.048259244909609,
+      "FR_author": 0.04201014104197389,
+      "samples": 4500,
+      "batches": 141,
+      "elapsed_seconds": 8.875119110103697,
+      "eval_id": 224
+    },
+    "layers": {
+      "conv1.2": {
+        "FR": 0.07066424814860026,
+        "spike_count": 83358939,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07065858739487668
+      },
+      "conv2_x.0.residual_function.2": {
+        "FR": 0.05310949198404948,
+        "spike_count": 62650506,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.0531047542044457
+      },
+      "conv2_x.0.act": {
+        "FR": 0.04684689500596788,
+        "spike_count": 55262846,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.04684108690167149
+      },
+      "conv2_x.1.residual_function.2": {
+        "FR": 0.04114620802137587,
+        "spike_count": 48538042,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.04114504959566374
+      },
+      "conv2_x.1.act": {
+        "FR": 0.06304644775390625,
+        "spike_count": 74372616,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.06304007591085231
+      },
+      "conv2_x.2.residual_function.2": {
+        "FR": 0.03864615715874566,
+        "spike_count": 45588862,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.03864051568592694
+      },
+      "conv2_x.2.act": {
+        "FR": 0.07626471794976128,
+        "spike_count": 89965522,
+        "neuron_time_states": 1179648000,
+        "author_batch_mean_fr": 0.07625713483661624
+      },
+      "conv3_x.0.residual_function.2": {
+        "FR": 0.042522867838541666,
+        "spike_count": 25081008,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.04251819772923247
+      },
+      "conv3_x.0.act": {
+        "FR": 0.04157294209798177,
+        "spike_count": 24520719,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.041567632999825986
+      },
+      "conv3_x.1.residual_function.2": {
+        "FR": 0.018411066691080728,
+        "spike_count": 10859289,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.018407638022240172
+      },
+      "conv3_x.1.act": {
+        "FR": 0.06459036933051215,
+        "spike_count": 38096950,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.06458202997843425
+      },
+      "conv3_x.2.residual_function.2": {
+        "FR": 0.021802000257703992,
+        "spike_count": 12859343,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.02180030329007629
+      },
+      "conv3_x.2.act": {
+        "FR": 0.06357476976182726,
+        "spike_count": 37497925,
+        "neuron_time_states": 589824000,
+        "author_batch_mean_fr": 0.0635666955447366
+      },
+      "conv4_x.0.residual_function.2": {
+        "FR": 0.026298109266493057,
+        "spike_count": 7755628,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.026295957497671142
+      },
+      "conv4_x.0.act": {
+        "FR": 0.0319813232421875,
+        "spike_count": 9431676,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03197768393983232
+      },
+      "conv4_x.1.residual_function.2": {
+        "FR": 0.011851681179470486,
+        "spike_count": 3495203,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.011849511599709801
+      },
+      "conv4_x.1.act": {
+        "FR": 0.03701024373372396,
+        "spike_count": 10914765,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03700547725596326
+      },
+      "conv4_x.2.residual_function.2": {
+        "FR": 0.014177042643229167,
+        "spike_count": 4180980,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.014175828974297705
+      },
+      "conv4_x.2.act": {
+        "FR": 0.03476216973198785,
+        "spike_count": 10251781,
+        "neuron_time_states": 294912000,
+        "author_batch_mean_fr": 0.03475851843543087
+      }
+    }
+  }
+}

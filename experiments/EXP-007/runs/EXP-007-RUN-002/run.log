@@ -1,0 +1,23 @@
+{"event": "accepted", "method": "B2", "step": 1, "module": "conv4_x.0.residual_function.2", "savings": 0.006193351028419003, "remaining_seconds": 1677.6581732439809}
+{"event": "accepted", "method": "B2", "step": 2, "module": "conv2_x.1.act", "savings": 0.01851821275886667, "remaining_seconds": 1658.2746878799517}
+{"event": "accepted", "method": "B2", "step": 3, "module": "conv4_x.0.act", "savings": 0.02997197630672299, "remaining_seconds": 1638.9946639409754}
+{"event": "accepted", "method": "B2", "step": 4, "module": "conv2_x.2.residual_function.2", "savings": 0.03700045886428405, "remaining_seconds": 1619.7782579699997}
+{"event": "accepted", "method": "B2", "step": 5, "module": "conv3_x.0.act", "savings": 0.06332246281476628, "remaining_seconds": 1600.9642613050528}
+{"event": "accepted", "method": "B2", "step": 6, "module": "conv1.2", "savings": 0.08266375959009176, "remaining_seconds": 1582.0107697050553}
+{"event": "accepted", "method": "B2", "step": 7, "module": "conv2_x.1.act", "savings": 0.1131522216063583, "remaining_seconds": 1562.994042342063}
+{"event": "accepted", "method": "M1", "step": 1, "module": "conv4_x.0.residual_function.2", "savings": 0.006193351028419003, "remaining_seconds": 1562.9701374720316}
+{"event": "accepted", "method": "M1", "step": 2, "module": "conv2_x.0.act", "savings": 0.015300550771209065, "remaining_seconds": 1543.6878277258947}
+{"event": "accepted", "method": "M1", "step": 3, "module": "conv3_x.0.act", "savings": 0.04191915439679106, "remaining_seconds": 1524.6971857689787}
+{"event": "accepted", "method": "M1", "step": 4, "module": "conv2_x.0.act", "savings": 0.07060763555046679, "remaining_seconds": 1505.7444887219463}
+{"event": "accepted", "method": "M1", "step": 5, "module": "conv3_x.0.act", "savings": 0.10493163399969563, "remaining_seconds": 1486.4057125500403}
+{"event": "validation", "method": "B0", "accuracy": 0.9171111111111111, "SOPs": 55023981.39022222}
+{"event": "validation", "method": "B1", "accuracy": 0.9117777777777778, "SOPs": 47501319.424}
+{"event": "validation", "method": "B2", "accuracy": 0.9008888888888889, "SOPs": 48753861.91644444}
+{"event": "validation", "method": "M1", "accuracy": 0.8993333333333333, "SOPs": 49262350.62755556}
+{
+  "execution_status": "COMPLETED",
+  "start_utc": "2026-11-26T13:11:36.735171+00:00",
+  "end_utc": "2026-11-26T13:15:56.902091+00:00",
+  "wall_seconds": 260.1669771319721,
+  "process_cpu_seconds": 260.58914752299995
+}

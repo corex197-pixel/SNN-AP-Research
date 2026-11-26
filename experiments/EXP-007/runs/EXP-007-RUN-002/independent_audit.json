@@ -1,0 +1,61 @@
+{
+  "accepted_B2_and_M1_actions_recomputed_from_candidate_history": true,
+  "B2_round_robin_and_window_priority": true,
+  "M1_dynamic_score_and_window_priority": true,
+  "validation_sample_pairing": true,
+  "validation_per_sample_rows": 18000,
+  "validation_unique_samples": 4500,
+  "validation_SOP_batch_recomputed": true,
+  "M1_vs_B1_B2_bootstrap_recomputed_matches": true,
+  "baseline_sha256_unchanged": "c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a",
+  "calibration_index_sha256": "b849b74ef19cb4a09df756c54871122f3b02aa047c704d0436feab15a38bde52",
+  "prelock_utc": "2026-11-26T13:15:20.330166+00:00",
+  "candidate_counts": {
+    "B1": 11,
+    "shared_initial": 19,
+    "B2": 133,
+    "M1": 95
+  },
+  "physical_costs": [
+    {
+      "source": "shared_baseline",
+      "physical_evaluations": 1,
+      "images_processed": 500,
+      "forward_batches": 16,
+      "seconds": 1.022276207106188
+    },
+    {
+      "source": "shared_initial",
+      "physical_evaluations": 19,
+      "images_processed": 9500,
+      "forward_batches": 304,
+      "seconds": 18.99970567994751
+    },
+    {
+      "source": "B1",
+      "physical_evaluations": 10,
+      "images_processed": 5000,
+      "forward_batches": 160,
+      "seconds": 9.889882605988532
+    },
+    {
+      "source": "B2",
+      "physical_evaluations": 114,
+      "images_processed": 57000,
+      "forward_batches": 1824,
+      "seconds": 113.39555922430009
+    },
+    {
+      "source": "M1",
+      "physical_evaluations": 76,
+      "images_processed": 38000,
+      "forward_batches": 1216,
+      "seconds": 75.64531852980144
+    }
+  ],
+  "run1_code_error": "B2 did not cycle through static ranking; invalidated and stopped; no validation used",
+  "prior_run_internal_wall_seconds": 88.6646831498947,
+  "prior_run_process_cpu_seconds": 88.43350992100001,
+  "successful_run_internal_wall_seconds": 260.1669771319721,
+  "successful_run_process_cpu_seconds": 260.58914752299995
+}

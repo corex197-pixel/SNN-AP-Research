@@ -1,0 +1,8 @@
+{
+  "execution_status": "COMPLETED",
+  "run_id": "EXP-007-RUN-002",
+  "previous_run": "EXP-007-RUN-001 INVALID",
+  "scientific_status": "UNTESTED",
+  "screen_signal": false,
+  "theoretical_review": "pending"
+}
