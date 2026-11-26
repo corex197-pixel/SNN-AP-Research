@@ -372,3 +372,8 @@ Gain_G2_vs_G3 = mean(loss_G3 - loss_G2)
 ## v0.1.1 — 验证状态污染（R13）
 
 在相同训练梯度和学习率 lr 下，评估积累 V_val 导致下一次手动更新相对于隔离评估多出 Δθ_contamination = lr * V_val。该式为本项目推导，依赖手动更新确实执行；实际污染规模未预设，不是原论文定理。v0.1.0 的 R1–R12 保持不变。
+
+
+## v0.1.2：R14 辅助可恢复性上界
+
+定义 A[b] 为 K_ref>0 且 K_alpha>0 的位置集合，I_abs[b]=sum_i,t |x_ref|。在 I_abs>0、非 eligible 位置系数固定为1的 R9/R10 下，E_floor[b]=sum_{i not in A[b]} |O_alpha-O_ref| / I_abs[b]。R_E_max=1-mean(E_floor)/mean(E_G1)，仅当 mean(E_G1)>0 且均值采用一致有效样本时定义。因非 eligible 项不能被改变，E_G2>=E_floor，故 R_E<=R_E_max；系数裁剪可能使实际恢复低于此上界。R14 是辅助指标，不更改原预注册门槛；不是任务损失或物理能量定理。
