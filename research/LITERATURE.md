@@ -6,3 +6,10 @@
 - Shi, Ding, Hao, Yu (ICLR 2024), [Towards Energy Efficient Spiking Neural Networks](https://proceedings.iclr.cc/paper_files/paper/2024/hash/dd3c889922df2112a5b1769e3c19e28e-Abstract-Conference.html).
 
 残余膜电位、软重置及相关误差已有文献；不宣称原创性。
+
+
+ROUND-007 初步创新性风险排查，非系统查重：
+
+- Wang et al., [Adaptive Calibration: A Unified Conversion Framework of Spiking Neural Network](https://arxiv.org/abs/2412.16219).
+- Shi, Bu, Yu, [UniSparse: Combining Weight Pruning and Spike Sparsification in Spiking Neural Networks](https://proceedings.mlr.press/v306/shi26a.html), ICML 2026.
+- [Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications](https://doi.org/10.3389/fnins.2020.00662), 2020.

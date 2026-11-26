@@ -1,0 +1,8 @@
+round: ROUND-007
+experiment: EXP-006
+prerequisite: EXP005_H004_gate_and_clipped_attainable_recovery_ge_0.50
+groups: [G0_reference, G1_alpha_1.5, G2_reference_positionwise, G3_permuted_eligible, G4_uniform_eligible]
+clip_interval: [0.25, 4.0]
+bootstrap_seed: 2027
+bootstrap_replicates: 2000
+permutation_seed: 2028
