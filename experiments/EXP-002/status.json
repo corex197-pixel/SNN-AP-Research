@@ -1,5 +1,8 @@
 {
-  "execution_status": "BLOCKED",
-  "reason": "无已确认兼容、可溯源的训练权重；未核验实际网络有效输入固定及无副作用采集。",
-  "scientific_status": "UNTESTED"
+  "execution_status": "COMPLETED",
+  "scientific_status": "UNTESTED",
+  "run_id": "EXP-002-RUN-001",
+  "primary_gate_met": false,
+  "EXP003_entry_met": false,
+  "theory_review": "primary predefined criterion provides evidence against practically large H-001 in this condition"
 }

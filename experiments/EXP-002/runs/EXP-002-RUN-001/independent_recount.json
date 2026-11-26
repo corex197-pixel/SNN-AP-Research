@@ -1,0 +1,29 @@
+{
+  "spike_1to0": 428770,
+  "spike_0to1": 108962,
+  "neuron_time_states": 33554432,
+  "silent_numerator": 239651,
+  "silent_denominator": 430237,
+  "mean_loss_ref": 0.3267883088458941,
+  "mean_loss_alpha": 0.302382573472787,
+  "E_NA_count": 0,
+  "delta_O": {
+    "signed_mean": -0.5221412383668849,
+    "abs_mean": 0.8347775439863199
+  },
+  "delta_D_leak": {
+    "signed_mean": 0.23745036289052868,
+    "abs_mean": 0.2456516870489794
+  },
+  "delta_D_reset": {
+    "signed_mean": -0.21800320328520684,
+    "abs_mean": 0.25711195302847045
+  },
+  "delta_D_res": {
+    "signed_mean": 0.5026940226299281,
+    "abs_mean": 0.6780585471841475
+  },
+  "independent_bootstrap_CI_recomputed_from_per_sample_matches": true,
+  "bootstrap_seed": 2027,
+  "bootstrap_replicates": 2000
+}

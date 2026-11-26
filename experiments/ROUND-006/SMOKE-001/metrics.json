@@ -1,0 +1,38 @@
+{
+  "baseline_logit_max_diff": 0.0,
+  "replay_output_max_diff": 0.0,
+  "reconstructed_charge_max_diff": 0.0,
+  "order": [
+    "conv1.2",
+    "conv2_x.0.residual_function.2",
+    "conv2_x.0.act",
+    "conv2_x.1.residual_function.2",
+    "conv2_x.1.act",
+    "conv2_x.2.residual_function.2",
+    "conv2_x.2.act",
+    "conv3_x.0.residual_function.2",
+    "conv3_x.0.act",
+    "conv3_x.1.residual_function.2",
+    "conv3_x.1.act",
+    "conv3_x.2.residual_function.2",
+    "conv3_x.2.act",
+    "conv4_x.0.residual_function.2",
+    "conv4_x.0.act",
+    "conv4_x.1.residual_function.2",
+    "conv4_x.1.act",
+    "conv4_x.2.residual_function.2",
+    "conv4_x.2.act"
+  ],
+  "target_input_shape": [
+    8,
+    1,
+    64,
+    16,
+    16
+  ],
+  "target_time_steps": 8,
+  "state_and_exception_restored": true,
+  "effective_input_equal": true,
+  "raw_spikes_match": true,
+  "derived_u_is_reconstructed": true
+}

@@ -1,0 +1,6 @@
+{
+  "status": "BLOCKED",
+  "reason": "original EXP-002 gate not met",
+  "H001_gate_met": false,
+  "loss_gate_met": false
+}

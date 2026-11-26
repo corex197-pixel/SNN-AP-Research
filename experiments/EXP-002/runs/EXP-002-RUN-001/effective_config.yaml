@@ -1,0 +1,19 @@
+round: ROUND-006
+theory_version: v0.1.2
+checkpoint_sha256: c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a
+split_sha256: 69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165
+sample_source: diagnostic_256_official_training_indices
+samples: 256
+batch_size: 32
+precision: float32
+T: 8
+tau: 0.9
+primary_module: conv3_x.1.residual_function.2
+primary_alpha: 1.5
+alphas: [1.0, 1.25, 1.5, 2.0]
+bootstrap_replicates: 2000
+bootstrap_seed: 2027
+permutation_seed: 2028
+r1_r2_tolerance: 0.00001
+gpu_wall_budget_seconds: 1800
+cpu_time_budget_seconds: 1800

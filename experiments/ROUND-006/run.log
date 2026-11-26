@@ -1,0 +1,32 @@
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 32}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 64}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 96}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 128}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 160}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 192}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 224}
+{"event": "EXP-002_batch", "layer": "conv3_x.1.residual_function.2", "samples_done": 256}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 32}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 64}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 96}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 128}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 160}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 192}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 224}
+{"event": "EXP-002_batch", "layer": "conv1.2", "samples_done": 256}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 32}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 64}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 96}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 128}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 160}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 192}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 224}
+{"event": "EXP-002_batch", "layer": "conv4_x.2.act", "samples_done": 256}
+{
+  "execution_status": "COMPLETED",
+  "start_utc": "2026-11-26T11:24:10.681028+00:00",
+  "EXP003_entry_met": false,
+  "end_utc": "2026-11-26T11:24:32.764713+00:00",
+  "wall_seconds": 22.083769515156746,
+  "process_cpu_seconds": 24.459669135
+}
