@@ -111,3 +111,8 @@ PREFLIGHT-002 加入要求 v>0 的检查，但执行开始时原空闲设备被�
 ## ROUND-005 预注册
 
 用户授权单卡7小时预算，包括恢复检查、剩余163轮及最终验证。仅从第37轮最新检查点恢复，保留第34轮历史最佳。恢复前 GPU 对照必须通过；若失败不启动续训。续训、测试和最终结果以 round005/SUPERVISOR-001 和 runs/EXP-004-RUN-003 实际记录为准。
+
+
+## ROUND-005 恢复运行
+
+父运行 EXP-004-RUN-002 保留 PARTIAL；恢复段 EXP-004-RUN-003 状态 COMPLETED，最近完成 Epoch 200，全程最佳 Epoch 194，最佳验证准确率 0.9171111111111111。执行代码 `03def08d9fab5c37968a2a2eaa37675666cb4110`；详细退出记录、GPU 预算及检查点哈希见 round005/SUPERVISOR-001/delivery.json；正式运行数据见 runs/EXP-004-RUN-003/。最终固定验证 已产生 final_summary.json。不使用正式测试集，H-001/H-002 保持 UNTESTED。

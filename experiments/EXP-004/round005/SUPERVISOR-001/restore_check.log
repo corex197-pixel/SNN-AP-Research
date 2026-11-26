@@ -1,0 +1,45 @@
+/home/hym/keyan1/experiments/EXP-004/round005/restore_check.py:20: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  model=model_create().cuda();opt=opt_create(model);sched=sched_create(opt);scaler=torch.cuda.amp.GradScaler();train,val=loaders()
+/home/hym/keyan1/experiments/EXP-004/round004/common.py:49: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=True):
+{
+  "status": "COMPLETED",
+  "start_utc": "2026-11-26T02:35:04.873900+00:00",
+  "cuda_visible_devices": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "device": "NVIDIA GeForce RTX 4090",
+  "visible_devices": 1,
+  "initial_free_bytes": 24965152768,
+  "split": {
+    "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+    "counts": [
+      45000,
+      4500,
+      500
+    ],
+    "diagnostic_256": 256,
+    "dataset_integrity": true
+  },
+  "input_max_diff": 0.0,
+  "initial_diff": {
+    "model": 0.0,
+    "optimizer": 0.0,
+    "scheduler": 0.0,
+    "scaler": 0.0,
+    "atlif_state": 0.0
+  },
+  "post_step_diff": {
+    "model": 0.0,
+    "optimizer": 0.0,
+    "scheduler": 0.0,
+    "scaler": 0.0,
+    "atlif_state": 0.0
+  },
+  "parameter_change_max": 26.471435546875,
+  "threshold_change_max": 0.00017547607421875,
+  "starting_lr": 0.09179045016473283,
+  "parent_epoch": 37,
+  "parent_hashes_unchanged": true,
+  "worker_policy": "4 workers, persistent_workers=False; workers respawn per epoch from restored torch CPU RNG; fixed input comparison reproduced; interrupted unobserved trajectory cannot be proven bitwise identical",
+  "end_utc": "2026-11-26T02:35:10.155858+00:00",
+  "wall_seconds": 5.282006717054173
+}

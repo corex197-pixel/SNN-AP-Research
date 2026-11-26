@@ -1,11 +1,10 @@
 {
-  "execution_status": "PARTIAL",
+  "execution_status": "COMPLETED",
   "scientific_status": "UNTESTED",
-  "run_id": "EXP-004-RUN-002",
-  "completed_epochs": 37,
-  "best_epoch": 34,
-  "best_validation_accuracy": 0.814,
-  "stopped_reason": "unknown; process absent without final status",
-  "sops": "NA",
-  "checkpoint_manifest": "runs/EXP-004-RUN-002/audit_summary.json"
+  "parent_run_id": "EXP-004-RUN-002",
+  "run_id": "EXP-004-RUN-003",
+  "completed_epochs": 200,
+  "best_epoch": 194,
+  "best_validation_accuracy": 0.9171111111111111,
+  "final_evaluation_available": true
 }

@@ -20,3 +20,8 @@ EXP-004-RUN-002 仅完成 37/200 轮；训练与监护进程均已退出，原�
 
 
 ROUND-005 预注册：用户已批准单卡7小时；恢复前测试和续训结果以 round005/SUPERVISOR-001/status.json 及独立恢复段实际记录为准。父运行永久保留 PARTIAL，不重置随机种子或200轮调度器。
+
+
+## ROUND-005 恢复运行
+
+父运行 EXP-004-RUN-002 保留 PARTIAL；恢复段 EXP-004-RUN-003 状态 COMPLETED，最近完成 Epoch 200，全程最佳 Epoch 194，最佳验证准确率 0.9171111111111111。执行代码 `03def08d9fab5c37968a2a2eaa37675666cb4110`；详细退出记录、GPU 预算及检查点哈希见 round005/SUPERVISOR-001/delivery.json；正式运行数据见 runs/EXP-004-RUN-003/。最终固定验证 已产生 final_summary.json。不使用正式测试集，H-001/H-002 保持 UNTESTED。
