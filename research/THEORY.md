@@ -398,3 +398,6 @@ R21: 固定训练权重W，min L_task(W,theta)，subject to C(W,theta)<=C_target
 
 ## v0.1.5 — R23–R27 预算约束自蒸馏
 R23：z=mean_t(logits)，CE=CE(z,y)，学生阈值固定为原阈值1.25倍；原AT-LIF动力学和替代梯度保留，关闭手动阈值更新。R24：KD=3² KL(softmax(z_teacher/3)||softmax(z_student/3))；教师冻结。R25：对实际被监控卷积，按输入位置的有效卷积扇出加权 ATLIF输出/固定阈值，按实际batch归一；多分支分别计数。该前向等价推导依赖正阈值及卷积输入确实来自ATLIF；反向为替代梯度，非硬阈值有限差分导数。R26：L_SOP=relu(C_proxy/54945117.504-0.8)²。R27：联合目标CE+0.5 KD+10 L_SOP。KD和活动正则化为成熟思路，性能恢复待验证。
+
+## v0.1.6 — R28–R31
+R28：C_proxy/C0≤0.8时平方hinge及其参数梯度为零，当前先导实验不能识别预算约束效果。R29：直接连接BN的神经元在gamma>0时，a≥mu+sqrt(var+eps)/gamma*(theta-beta-tau*u_prev)；gamma<0不等式反向，gamma=0不可除，残差项须显式包含。R30：用同一参考阈值theta_ref定义theta=alpha theta_ref，避免对已缩放学生阈值重复缩放；预算以实际SOP计数匹配。R31：沿除通道外所有维度，以count/mean/M2采用Chan合并，var=M2/count（总体方差），依实际前向顺序逐层校准且其余参数保持不变。R29是代数推导，R31为待验证候选程序。

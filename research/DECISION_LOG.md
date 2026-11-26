@@ -20,3 +20,6 @@ DEC-008 — PIVOT + IMPLEMENT：保留H-001/H-004限定条件证据与H-005证�
 
 ## DEC-009 — PIVOT + IMPLEMENT
 理论研究员确认H-006 INSUFFICIENT_EVIDENCE，停止当前TCAP动态贪心方案，不推广为该类方法普遍无效。转向AT-LIF固定阈值短期预算约束微调和自蒸馏，按ROUND-009预注册先导验证；H-001至H-005历史状态保留。
+
+## DEC-010 — REFINE + IMPLEMENT
+H-007对本轮预期回升为CURRENT_EVIDENCE_AGAINST但约束作用不可识别，H-008 INSUFFICIENT_EVIDENCE。暂停额外微调，转向已有检查点同预算评价和BN校准先导；保留ROUND-009所有结果及梯度检查时序偏差。

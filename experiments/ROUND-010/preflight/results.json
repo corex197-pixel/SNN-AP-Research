@@ -1,0 +1,221 @@
+{
+  "status": "PASSED",
+  "checks": {
+    "synthetic_population_mean_max_error": 2.7755575615628914e-17,
+    "synthetic_population_var_max_error": 6.661338147750939e-16,
+    "BN_order": [
+      "conv1.1",
+      "conv2_x.0.residual_function.1",
+      "conv2_x.0.residual_function.4",
+      "conv2_x.1.residual_function.1",
+      "conv2_x.1.residual_function.4",
+      "conv2_x.2.residual_function.1",
+      "conv2_x.2.residual_function.4",
+      "conv3_x.0.residual_function.1",
+      "conv3_x.0.residual_function.4",
+      "conv3_x.0.shortcut.1",
+      "conv3_x.1.residual_function.1",
+      "conv3_x.1.residual_function.4",
+      "conv3_x.2.residual_function.1",
+      "conv3_x.2.residual_function.4",
+      "conv4_x.0.residual_function.1",
+      "conv4_x.0.residual_function.4",
+      "conv4_x.0.shortcut.1",
+      "conv4_x.1.residual_function.1",
+      "conv4_x.1.residual_function.4",
+      "conv4_x.2.residual_function.1",
+      "conv4_x.2.residual_function.4"
+    ],
+    "ATLIF_order": [
+      "conv1.2",
+      "conv2_x.0.residual_function.2",
+      "conv2_x.0.act",
+      "conv2_x.1.residual_function.2",
+      "conv2_x.1.act",
+      "conv2_x.2.residual_function.2",
+      "conv2_x.2.act",
+      "conv3_x.0.residual_function.2",
+      "conv3_x.0.act",
+      "conv3_x.1.residual_function.2",
+      "conv3_x.1.act",
+      "conv3_x.2.residual_function.2",
+      "conv3_x.2.act",
+      "conv4_x.0.residual_function.2",
+      "conv4_x.0.act",
+      "conv4_x.1.residual_function.2",
+      "conv4_x.1.act",
+      "conv4_x.2.residual_function.2",
+      "conv4_x.2.act"
+    ],
+    "BN_input_shapes": {
+      "conv1.1": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv2_x.0.residual_function.1": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv2_x.0.residual_function.4": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv2_x.1.residual_function.1": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv2_x.1.residual_function.4": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv2_x.2.residual_function.1": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv2_x.2.residual_function.4": [
+        8,
+        4,
+        32,
+        32,
+        32
+      ],
+      "conv3_x.0.residual_function.1": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv3_x.0.residual_function.4": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv3_x.0.shortcut.1": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv3_x.1.residual_function.1": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv3_x.1.residual_function.4": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv3_x.2.residual_function.1": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv3_x.2.residual_function.4": [
+        8,
+        4,
+        64,
+        16,
+        16
+      ],
+      "conv4_x.0.residual_function.1": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ],
+      "conv4_x.0.residual_function.4": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ],
+      "conv4_x.0.shortcut.1": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ],
+      "conv4_x.1.residual_function.1": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ],
+      "conv4_x.1.residual_function.4": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ],
+      "conv4_x.2.residual_function.1": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ],
+      "conv4_x.2.residual_function.4": [
+        8,
+        4,
+        128,
+        8,
+        8
+      ]
+    },
+    "BN_layout": "T,B,C,H,W",
+    "hook_max_logit_difference": 0.0,
+    "SOP_repeat_absolute_difference": 0.0,
+    "only_allowed_BN_buffers_modified": true,
+    "original_weight_affine_threshold_unchanged": true,
+    "independent_candidates_unpolluted": true,
+    "original_checkpoint_hashes_unchanged": true,
+    "alpha_1_25_from_baseline_verified": true,
+    "small_calibration_batches": [
+      4,
+      1
+    ],
+    "small_adaptive_wall_seconds": 0.1144669249188155,
+    "small_sequential_wall_seconds": 2.173075837083161,
+    "state_reset_update_values_zero": true
+  },
+  "start_utc": "2026-11-26T15:00:18.576911+00:00",
+  "end_utc": "2026-11-26T15:00:22.958638+00:00",
+  "wall_seconds": 4.381958198966458,
+  "cpu_seconds": 5.1098180000000015,
+  "forwards": 49,
+  "samples": 127
+}

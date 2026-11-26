@@ -19,3 +19,10 @@ ROUND-007 初步创新性风险排查，非系统查重：
 - Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications (2020), https://doi.org/10.3389/fnins.2020.00662
 - Xinyu Shi et al., UniSparse: Combining Weight Pruning and Spike Sparsification in Spiking Neural Networks, ICML 2026, https://proceedings.mlr.press/v306/shi26a.html
 知识蒸馏、活动正则化和SynOps优化已有研究；本方案是借鉴成熟思想的AT-LIF先导改进，独立学术创新性尚未证明。
+
+## ROUND-010 BN相关工作与创新风险
+- EagleEye: Fast Sub-Net Evaluation for Efficient Neural Network Pruning, ECCV 2020, https://arxiv.org/abs/2007.02491
+- Wu and Johnson, Rethinking "Batch" in BatchNorm, 2021, https://arxiv.org/abs/2105.07576
+- Membrane Potential Batch Normalization for Spiking Neural Networks, ICCV 2023.
+- Spiking Neural Networks Calibration, ICML 2021, https://proceedings.mlr.press/v139/li21d.html
+普通BN统计重新校准已有相关研究，逐层候选方法尚未证明独立创新性。

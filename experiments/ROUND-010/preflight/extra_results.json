@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "BN_buffers_finite_nonnegative": true,
+  "all_BN_batch_counts_2": true,
+  "parameters_and_nonBN_buffers_unchanged": true,
+  "last_batch": 1,
+  "wall_seconds": 1.7497892989777029,
+  "cpu_seconds": 2.427026,
+  "forwards": 2,
+  "samples": 5
+}

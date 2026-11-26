@@ -12,6 +12,9 @@ H-005 INSUFFICIENT_EVIDENCE：若H-004获支持，固定目标模块动力学的
 
 H-006 INSUFFICIENT_EVIDENCE：在相近全网络SOPs预算下，动态重算真实前向边际代价的阈值分配方法，相对统一缩放与静态排序具有更好的任务性能权衡；仅为先导候选。
 
-H-007 UNTESTED：在本协议中，固定阈值后的普通微调可能导致SOPs回升，显式预算约束可能缓解回升。
+H-007 CURRENT_EVIDENCE_AGAINST：仅针对当前协议下预期普通微调SOP回升的预测；预算约束干预效果不可识别。原假设：在本协议中，固定阈值后的普通微调可能导致SOPs回升，显式预算约束可能缓解回升。
 
-H-008 UNTESTED：在相近实际SOPs预算下，自蒸馏可能改善高活动稀疏AT-LIF的任务性能。
+H-008 INSUFFICIENT_EVIDENCE：原假设：在相近实际SOPs预算下，自蒸馏可能改善高活动稀疏AT-LIF的任务性能。
+
+H-009 UNTESTED：固定权重阈值与输入时，BN batch模式相对eval模式可能导致具有实际幅度的全网络SOP变化。
+H-010 UNTESTED：在相近计算预算下，逐层推理状态BN总体统计校准可能改善任务性能。
