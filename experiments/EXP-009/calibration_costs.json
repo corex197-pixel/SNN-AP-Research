@@ -1,0 +1,32 @@
+[
+  {
+    "group": "C0",
+    "seconds": 4.8491903729736805,
+    "forwards": 48,
+    "samples": 6000
+  },
+  {
+    "group": "C1",
+    "seconds": 5.0316951451823115,
+    "forwards": 48,
+    "samples": 6000
+  },
+  {
+    "group": "C2",
+    "seconds": 4.868912536883727,
+    "forwards": 48,
+    "samples": 6000
+  },
+  {
+    "group": "C3",
+    "seconds": 9.528935121139511,
+    "forwards": 104,
+    "samples": 13000
+  },
+  {
+    "group": "M3",
+    "seconds": 80.32333087502047,
+    "forwards": 1144,
+    "samples": 143000
+  }
+]

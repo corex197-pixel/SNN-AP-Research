@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED",
+  "code_sha": "b6d48fbe24db8ee26ea814cef02ec91673174e3d",
+  "start_utc": "2026-11-26T15:03:51.154774+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "preflight": "PASSED",
+  "partial": {},
+  "end_utc": "2026-11-26T15:06:24.566962+00:00",
+  "wall_seconds_including_preflight": 159.5490492619574,
+  "cpu_seconds_including_preflight": 161.19098800000003,
+  "forwards": 1856,
+  "samples": 232000
+}

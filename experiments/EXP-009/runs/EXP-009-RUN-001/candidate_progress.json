@@ -1,0 +1,19 @@
+{
+  "group": "C2",
+  "alpha": 2.0,
+  "row": {
+    "group": "C2",
+    "alpha": 2.0,
+    "accuracy": 0.732,
+    "loss": 0.911067273098859,
+    "SOPs": 19278856.768,
+    "FR_global": 0.019538417650305707,
+    "FR_author": 0.01597708375776312,
+    "savings_vs_C0_cal": 0.6491252582235973,
+    "candidate_wall_seconds": 0.3856272140983492,
+    "full_network_forwards": 4,
+    "processed_samples": 500,
+    "peak_allocated_bytes": 853381120
+  },
+  "utc": "2026-11-26T15:04:07.937688+00:00"
+}

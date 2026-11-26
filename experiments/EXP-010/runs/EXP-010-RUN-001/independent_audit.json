@@ -1,0 +1,27 @@
+{
+  "validation_sample_ids_unique_and_paired": true,
+  "validation_samples": 4500,
+  "bootstraps_independently_recomputed": true,
+  "selection_recomputed_from_all_calibration_candidates": true,
+  "candidate_BN_statistics_finite_and_nonnegative": true,
+  "adaptive_BN_batch_count_four_and_M3_zero": true,
+  "B0_P0_difference_vs_EXP008": {
+    "B0_accuracy": 0.0,
+    "B0_loss": 0.0,
+    "B0_SOP": 0.0,
+    "P0_accuracy": 0.0,
+    "P0_loss": 0.0,
+    "P0_SOP": 0.0
+  },
+  "checkpoints_sha256": {
+    "baseline": "c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a",
+    "F0": "18116a671abb235fc56f67e9b4d02feb55bcbde7f0e311f55e23b7e7cab42d2a",
+    "F2": "47ec18bee4fc1ac6c50af170abcbac9d3461576d977429d0aacce208845b2078"
+  },
+  "selection_locked_before_validation": true,
+  "BN_mode_output_difference_scope": "sample-and-spatial-weighted channel means and channel population variances; not elementwise paired difference",
+  "preflight_max_population_mean_error": 2.7755575615628914e-17,
+  "preflight_max_population_variance_error": 6.661338147750939e-16,
+  "cpu_seconds": 1.827141972,
+  "wall_seconds": 1.827586729079485
+}

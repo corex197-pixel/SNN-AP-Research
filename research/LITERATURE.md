@@ -23,6 +23,6 @@ ROUND-007 初步创新性风险排查，非系统查重：
 ## ROUND-010 BN相关工作与创新风险
 - EagleEye: Fast Sub-Net Evaluation for Efficient Neural Network Pruning, ECCV 2020, https://arxiv.org/abs/2007.02491
 - Wu and Johnson, Rethinking "Batch" in BatchNorm, 2021, https://arxiv.org/abs/2105.07576
-- Membrane Potential Batch Normalization for Spiking Neural Networks, ICCV 2023.
-- Spiking Neural Networks Calibration, ICML 2021, https://proceedings.mlr.press/v139/li21d.html
+- Membrane Potential Batch Normalization for Spiking Neural Networks, ICCV 2023, https://openaccess.thecvf.com/content/ICCV2023/html/Guo_Membrane_Potential_Batch_Normalization_for_Spiking_Neural_Networks_ICCV_2023_paper.html.
+- A Free Lunch From ANN: Towards Efficient, Accurate Spiking Neural Networks Calibration, ICML 2021, https://proceedings.mlr.press/v139/li21d.html
 普通BN统计重新校准已有相关研究，逐层候选方法尚未证明独立创新性。

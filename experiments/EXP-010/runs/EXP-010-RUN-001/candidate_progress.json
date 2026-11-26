@@ -1,0 +1,19 @@
+{
+  "group": "M3",
+  "alpha": 1.1749999999999998,
+  "row": {
+    "group": "M3",
+    "alpha": 1.1749999999999998,
+    "accuracy": 0.926,
+    "loss": 0.2673874377475415,
+    "SOPs": 37460968.384,
+    "FR_global": 0.03835968548318614,
+    "FR_author": 0.031216157718600465,
+    "savings_vs_C0_cal": 0.3182112525340598,
+    "candidate_wall_seconds": 6.130084585864097,
+    "full_network_forwards": 88,
+    "processed_samples": 11000,
+    "peak_allocated_bytes": 853381120
+  },
+  "utc": "2026-11-26T15:05:42.110998+00:00"
+}

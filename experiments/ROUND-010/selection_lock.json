@@ -1,0 +1,14 @@
+{
+  "locked_utc": "2026-11-26T15:05:42.143315+00:00",
+  "code_sha": "b6d48fbe24db8ee26ea814cef02ec91673174e3d",
+  "selection_inputs": "calibration only",
+  "completed_groups": [
+    "C0",
+    "C1",
+    "C2",
+    "C3",
+    "M3"
+  ],
+  "partial": {},
+  "validation_not_accessed_before_lock": true
+}

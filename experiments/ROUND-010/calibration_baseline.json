@@ -1,0 +1,11 @@
+{
+  "calibration_SOPs": 54945125.632,
+  "previous_reference": 54945117.504,
+  "difference": 8.127999998629093,
+  "batch_sizes": [
+    128,
+    128,
+    128,
+    116
+  ]
+}

@@ -1,0 +1,18 @@
+import csv,json,math,hashlib,time,resource
+from pathlib import Path
+import numpy as np
+R=Path('/home/hym/keyan1');O=R/'experiments/ROUND-010';A=R/'experiments/EXP-009/runs/EXP-009-RUN-001';B=R/'experiments/EXP-010/runs/EXP-010-RUN-001';t=time.monotonic();cpu=time.process_time();m=json.loads((O/'metrics.json').read_text());lock=json.loads((O/'selection_lock.json').read_text());assert lock['validation_not_accessed_before_lock'] and m['status']=='COMPLETED';rs=list(csv.DictReader((O/'validation_per_sample.csv').open()));groups={}
+for x in rs:groups.setdefault(x['tag'],[]).append(x)
+ids=[x['sample_id'] for x in groups['B0']];assert len(ids)==4500 and len(set(ids))==4500 and all([x['sample_id'] for x in v]==ids for v in groups.values());rng=np.random.default_rng(2027);ix=rng.integers(0,4500,(2000,4500))
+for key,res in m['paired_bootstrap'].items():
+ a,b=key.split('_vs_')
+ for metric in ['correct','loss']:
+  d=np.array([float(x[metric])-float(y[metric]) for x,y in zip(groups[a],groups[b])]);assert abs(d.mean()-res[metric]['delta'])<1e-12 and np.allclose(np.quantile(d[ix].mean(1),[.025,.975]),res[metric]['ci95'])
+for path in [A,B]:
+ rows=list(csv.DictReader((path/'candidate_history.csv').open()));selected=json.loads((path/'selected_configs.json').read_text())
+ for group,targets in selected.items():
+  relevant=[x for x in rows if x['group']==group];assert len(relevant)>=12
+  for target,choice in targets.items():
+   t0=float(target);hits=[x for x in relevant if t0<=float(x['savings_vs_C0_cal'])<=t0+.02];pool=hits or relevant;best=min(pool,key=lambda x:(abs(float(x['savings_vs_C0_cal'])-t0),float(x['alpha'])));assert abs(float(best['alpha'])-choice['alpha'])<1e-10 and bool(hits)==choice['matched_window']
+bs=list(csv.DictReader((B/'bn_statistics.csv').open()));assert all(math.isfinite(float(z['running_mean'])) and math.isfinite(float(z['running_var'])) and float(z['running_var'])>=0 for z in bs);assert all(int(z['num_batches_tracked'])==(4 if z['group']=='C3' else 0) for z in bs)
+cal=json.loads((O/'calibration_baseline.json').read_text());ss={x['tag']:x for x in m['summary']};b0=ss['B0'];p0=ss['P0'];reference={'B0_accuracy':b0['accuracy']-0.9171111111111111,'B0_loss':b0['loss']-0.28356405380945504,'B0_SOP':b0['SOPs']-55023962.13333333,'P0_accuracy':p0['accuracy']-0.908,'P0_loss':p0['loss']-0.2760692870493078,'P0_SOP':p0['SOPs']-43652928.192};assert all(abs(v)<1e-9 for v in reference.values());pre=json.loads((O/'preflight/results.json').read_text());paths={'baseline':'experiments/EXP-004/runs/EXP-004-RUN-003/checkpoint_best_validation.pth','F0':'experiments/EXP-008/runs/EXP-008-F0-RUN-001/epoch-005.pth','F2':'experiments/EXP-008/runs/EXP-008-F2-RUN-001/epoch-005.pth'};hashes={k:hashlib.sha256((R/p).read_bytes()).hexdigest() for k,p in paths.items()};out={'validation_sample_ids_unique_and_paired':True,'validation_samples':4500,'bootstraps_independently_recomputed':True,'selection_recomputed_from_all_calibration_candidates':True,'candidate_BN_statistics_finite_and_nonnegative':True,'adaptive_BN_batch_count_four_and_M3_zero':True,'B0_P0_difference_vs_EXP008':reference,'checkpoints_sha256':hashes,'selection_locked_before_validation':True,'BN_mode_output_difference_scope':'sample-and-spatial-weighted channel means and channel population variances; not elementwise paired difference','preflight_max_population_mean_error':pre['checks']['synthetic_population_mean_max_error'],'preflight_max_population_variance_error':pre['checks']['synthetic_population_var_max_error'],'cpu_seconds':time.process_time()-cpu,'wall_seconds':time.monotonic()-t};(O/'independent_audit.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))

@@ -1,0 +1,7 @@
+{
+  "P0_batchBN_SOP_first": 31651908.224,
+  "P0_batchBN_SOP_repeat": 31651908.224,
+  "absolute_difference": 0.0,
+  "stable_within_1e-6": true,
+  "H009_exploratory_gate": true
+}
