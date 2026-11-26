@@ -1,0 +1,62 @@
+{
+  "validation_pairing_and_unique_samples": true,
+  "validation_sample_count": 4500,
+  "bootstrap_recomputed": true,
+  "all_fifth_epoch_checkpoint_sha256_verified": true,
+  "all_five_epoch_metrics_present": true,
+  "training_first_three_batch_ids_and_augmented_image_hashes_match": true,
+  "F0_F1_model_state_identical": true,
+  "F2_M2_model_state_identical": true,
+  "constraint_groups_all_batch_violation_fractions": [
+    {
+      "group": "F1",
+      "epoch": 1,
+      "value": 0.0
+    },
+    {
+      "group": "F1",
+      "epoch": 2,
+      "value": 0.0
+    },
+    {
+      "group": "F1",
+      "epoch": 3,
+      "value": 0.0
+    },
+    {
+      "group": "F1",
+      "epoch": 4,
+      "value": 0.0
+    },
+    {
+      "group": "F1",
+      "epoch": 5,
+      "value": 0.0
+    },
+    {
+      "group": "M2",
+      "epoch": 1,
+      "value": 0.0
+    },
+    {
+      "group": "M2",
+      "epoch": 2,
+      "value": 0.0
+    },
+    {
+      "group": "M2",
+      "epoch": 3,
+      "value": 0.0
+    },
+    {
+      "group": "M2",
+      "epoch": 4,
+      "value": 0.0
+    },
+    {
+      "group": "M2",
+      "epoch": 5,
+      "value": 0.0
+    }
+  ]
+}

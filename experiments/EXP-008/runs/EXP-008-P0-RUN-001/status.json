@@ -1,0 +1,20 @@
+{
+  "run_id": "EXP-008-P0-RUN-001",
+  "execution_status": "COMPLETED",
+  "evaluation": {
+    "group": "P0",
+    "accuracy": 0.908,
+    "loss": 0.2760692870493078,
+    "SOPs": 43652928.192,
+    "FR_global": 0.042975313048431836,
+    "FR_author": 0.036813159286975865,
+    "parameter_count": 1084605,
+    "eval_seconds": 4.121345697902143,
+    "n": 4500,
+    "sop_savings": 0.20665603676047883
+  },
+  "checkpoint_path": "experiments/EXP-004/runs/EXP-004-RUN-003/checkpoint_best_validation.pth",
+  "checkpoint_sha256": "c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a",
+  "threshold_multiplier": 1.25,
+  "memory_peak_separately_recorded": false
+}

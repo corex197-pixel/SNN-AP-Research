@@ -1,0 +1,268 @@
+/home/hym/keyan1/experiments/ROUND-009/train.py:99: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  opt=create_optimizer_v2(model,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);proxy=Proxy(model);fixed={n:p.detach().clone() for n,p in model.named_parameters() if n.endswith('thresh')}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F0", "epoch": 1, "batch": 0, "loss": 0.5567657351493835, "wall_s": 10.257708563935012, "cpu_s": 19.103622858999998}
+{"group": "F0", "epoch": 1, "batch": 40, "loss": 0.47615349292755127, "wall_s": 18.064193149795756, "cpu_s": 27.021690859}
+{"group": "F0", "epoch": 1, "batch": 80, "loss": 0.42907315492630005, "wall_s": 25.703865536954254, "cpu_s": 34.759045859}
+{"group": "F0", "epoch": 1, "batch": 120, "loss": 0.4066566228866577, "wall_s": 33.337198114953935, "cpu_s": 42.484989859}
+{"group": "F0", "epoch": 1, "batch": 160, "loss": 0.44306907057762146, "wall_s": 40.98034212295897, "cpu_s": 50.230855859}
+{"group": "F0", "epoch": 1, "batch": 200, "loss": 0.4486764073371887, "wall_s": 48.64911276078783, "cpu_s": 58.001489859}
+{"group": "F0", "epoch": 1, "batch": 240, "loss": 0.35098204016685486, "wall_s": 56.276205526897684, "cpu_s": 65.733033859}
+{"group": "F0", "epoch": 1, "batch": 280, "loss": 0.47760331630706787, "wall_s": 63.8427467928268, "cpu_s": 73.40922585899999}
+{"group": "F0", "epoch": 1, "batch": 320, "loss": 0.3772646486759186, "wall_s": 71.59845703886822, "cpu_s": 81.260373859}
+{"event": "epoch_complete", "group": "F0", "epoch": 1, "samples": 45000, "batches": 352, "train_accuracy": 0.8493777777777778, "train_CE": 0.44121591220961676, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 31437419.424711112, "train_total_loss": 0.44121591220961676, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.005, "successful_steps_cumulative": 350, "amp_skips_cumulative": 2, "epoch_seconds": 67.98343206010759}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F0", "epoch": 2, "batch": 0, "loss": 0.3330831825733185, "wall_s": 78.77837452292442, "cpu_s": 113.14274685899998}
+{"group": "F0", "epoch": 2, "batch": 40, "loss": 0.42074719071388245, "wall_s": 86.65997272985987, "cpu_s": 121.129986859}
+{"group": "F0", "epoch": 2, "batch": 80, "loss": 0.45921778678894043, "wall_s": 94.3505099338945, "cpu_s": 128.90805685900003}
+{"group": "F0", "epoch": 2, "batch": 120, "loss": 0.37822842597961426, "wall_s": 102.16142911883071, "cpu_s": 136.82236685900003}
+{"group": "F0", "epoch": 2, "batch": 160, "loss": 0.4450214207172394, "wall_s": 109.85258086584508, "cpu_s": 144.629615859}
+{"group": "F0", "epoch": 2, "batch": 200, "loss": 0.4581950008869171, "wall_s": 117.59806248592213, "cpu_s": 152.483454859}
+{"group": "F0", "epoch": 2, "batch": 240, "loss": 0.3634779751300812, "wall_s": 125.2244588159956, "cpu_s": 160.227107859}
+{"group": "F0", "epoch": 2, "batch": 280, "loss": 0.36920273303985596, "wall_s": 132.8862527399324, "cpu_s": 168.006497859}
+{"group": "F0", "epoch": 2, "batch": 320, "loss": 0.4088001847267151, "wall_s": 140.50917179696262, "cpu_s": 175.745082859}
+{"event": "epoch_complete", "group": "F0", "epoch": 2, "samples": 45000, "batches": 352, "train_accuracy": 0.856, "train_CE": 0.41862367687225344, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 32553092.530844446, "train_total_loss": 0.41862367687225344, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.004532091636218621, "successful_steps_cumulative": 702, "amp_skips_cumulative": 2, "epoch_seconds": 68.01405604812317}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F0", "epoch": 3, "batch": 0, "loss": 0.4297168552875519, "wall_s": 147.4260042218957, "cpu_s": 207.726216859}
+{"group": "F0", "epoch": 3, "batch": 40, "loss": 0.43113282322883606, "wall_s": 154.9064143698197, "cpu_s": 215.309138859}
+{"group": "F0", "epoch": 3, "batch": 80, "loss": 0.42032870650291443, "wall_s": 162.30771898198873, "cpu_s": 222.82578085900002}
+{"group": "F0", "epoch": 3, "batch": 120, "loss": 0.32860860228538513, "wall_s": 170.05629872879945, "cpu_s": 230.685963859}
+{"group": "F0", "epoch": 3, "batch": 160, "loss": 0.3126221001148224, "wall_s": 177.94550272496417, "cpu_s": 238.673804859}
+{"group": "F0", "epoch": 3, "batch": 200, "loss": 0.3882591128349304, "wall_s": 185.84861268498935, "cpu_s": 246.68809585900001}
+{"group": "F0", "epoch": 3, "batch": 240, "loss": 0.3200463354587555, "wall_s": 193.74856407591142, "cpu_s": 254.69353585899998}
+{"group": "F0", "epoch": 3, "batch": 280, "loss": 0.3990228474140167, "wall_s": 201.7417766128201, "cpu_s": 262.801439859}
+{"group": "F0", "epoch": 3, "batch": 320, "loss": 0.32492363452911377, "wall_s": 209.59333358891308, "cpu_s": 270.75829485900005}
+{"event": "epoch_complete", "group": "F0", "epoch": 3, "samples": 45000, "batches": 352, "train_accuracy": 0.8646222222222222, "train_CE": 0.3860316137101915, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 32868966.575288888, "train_total_loss": 0.3860316137101915, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.003307091636218621, "successful_steps_cumulative": 1054, "amp_skips_cumulative": 2, "epoch_seconds": 68.89519320311956}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F0", "epoch": 4, "batch": 0, "loss": 0.2644549012184143, "wall_s": 217.09784079086967, "cpu_s": 302.47142685899996}
+{"group": "F0", "epoch": 4, "batch": 40, "loss": 0.29143059253692627, "wall_s": 225.08962636091746, "cpu_s": 310.581815859}
+{"group": "F0", "epoch": 4, "batch": 80, "loss": 0.35393252968788147, "wall_s": 233.11730536282994, "cpu_s": 318.71472485899994}
+{"group": "F0", "epoch": 4, "batch": 120, "loss": 0.4009861350059509, "wall_s": 241.1214213888161, "cpu_s": 326.83557485899996}
+{"group": "F0", "epoch": 4, "batch": 160, "loss": 0.27594491839408875, "wall_s": 249.11904669483192, "cpu_s": 334.94137385899995}
+{"group": "F0", "epoch": 4, "batch": 200, "loss": 0.2797359824180603, "wall_s": 257.0887761078775, "cpu_s": 343.020854859}
+{"group": "F0", "epoch": 4, "batch": 240, "loss": 0.26686567068099976, "wall_s": 265.21055826195516, "cpu_s": 351.258612859}
+{"group": "F0", "epoch": 4, "batch": 280, "loss": 0.33752402663230896, "wall_s": 273.4631729098037, "cpu_s": 359.6090128589999}
+{"group": "F0", "epoch": 4, "batch": 320, "loss": 0.3010373115539551, "wall_s": 281.5207452189643, "cpu_s": 367.770090859}
+{"event": "epoch_complete", "group": "F0", "epoch": 4, "samples": 45000, "batches": 352, "train_accuracy": 0.8726666666666667, "train_CE": 0.3640707620037927, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 33088026.688355554, "train_total_loss": 0.3640707620037927, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.001792908363781379, "successful_steps_cumulative": 1406, "amp_skips_cumulative": 2, "epoch_seconds": 70.87697527813725}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F0", "epoch": 5, "batch": 0, "loss": 0.3409435451030731, "wall_s": 288.6508165888954, "cpu_s": 400.690769859}
+{"group": "F0", "epoch": 5, "batch": 40, "loss": 0.29862573742866516, "wall_s": 296.5707458888646, "cpu_s": 408.716160859}
+{"group": "F0", "epoch": 5, "batch": 80, "loss": 0.38411402702331543, "wall_s": 304.54024157184176, "cpu_s": 416.77531385900005}
+{"group": "F0", "epoch": 5, "batch": 120, "loss": 0.26327231526374817, "wall_s": 312.52575664781034, "cpu_s": 424.87371085899997}
+{"group": "F0", "epoch": 5, "batch": 160, "loss": 0.251751571893692, "wall_s": 320.59594544093125, "cpu_s": 433.05495785899996}
+{"group": "F0", "epoch": 5, "batch": 200, "loss": 0.34388890862464905, "wall_s": 328.75697321095504, "cpu_s": 441.328359859}
+{"group": "F0", "epoch": 5, "batch": 240, "loss": 0.31319528818130493, "wall_s": 336.9234961248003, "cpu_s": 449.61063185899997}
+{"group": "F0", "epoch": 5, "batch": 280, "loss": 0.3411697745323181, "wall_s": 344.9596002569888, "cpu_s": 457.763103859}
+{"group": "F0", "epoch": 5, "batch": 320, "loss": 0.2433040589094162, "wall_s": 352.75293640000746, "cpu_s": 465.644907859}
+{"event": "epoch_complete", "group": "F0", "epoch": 5, "samples": 45000, "batches": 352, "train_accuracy": 0.8817111111111111, "train_CE": 0.3446176204893324, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 33270962.945777778, "train_total_loss": 0.3446176204893324, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.000567908363781379, "successful_steps_cumulative": 1758, "amp_skips_cumulative": 2, "epoch_seconds": 70.5976833740715}
+/home/hym/keyan1/experiments/ROUND-009/train.py:99: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  opt=create_optimizer_v2(model,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);proxy=Proxy(model);fixed={n:p.detach().clone() for n,p in model.named_parameters() if n.endswith('thresh')}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F1", "epoch": 1, "batch": 0, "loss": 0.5567657351493835, "wall_s": 364.5164321279153, "cpu_s": 504.33995385900005}
+{"group": "F1", "epoch": 1, "batch": 40, "loss": 0.47615349292755127, "wall_s": 372.92224731692113, "cpu_s": 512.833383859}
+{"group": "F1", "epoch": 1, "batch": 80, "loss": 0.42907315492630005, "wall_s": 381.38156743883155, "cpu_s": 521.3758668589999}
+{"group": "F1", "epoch": 1, "batch": 120, "loss": 0.4066566228866577, "wall_s": 389.8854922319297, "cpu_s": 529.964124859}
+{"group": "F1", "epoch": 1, "batch": 160, "loss": 0.44306907057762146, "wall_s": 398.3687589818146, "cpu_s": 538.523124859}
+{"group": "F1", "epoch": 1, "batch": 200, "loss": 0.4486764073371887, "wall_s": 406.87454525684007, "cpu_s": 547.124078859}
+{"group": "F1", "epoch": 1, "batch": 240, "loss": 0.35098204016685486, "wall_s": 415.3327531898394, "cpu_s": 555.6878138589999}
+{"group": "F1", "epoch": 1, "batch": 280, "loss": 0.47760331630706787, "wall_s": 423.8581804698333, "cpu_s": 564.3240578589999}
+{"group": "F1", "epoch": 1, "batch": 320, "loss": 0.3772646486759186, "wall_s": 432.26403428800404, "cpu_s": 572.8232248589999}
+{"event": "epoch_complete", "group": "F1", "epoch": 1, "samples": 45000, "batches": 352, "train_accuracy": 0.8493777777777778, "train_CE": 0.44121591220961676, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 31437419.424711112, "train_total_loss": 0.44121591220961676, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.005, "successful_steps_cumulative": 350, "amp_skips_cumulative": 2, "epoch_seconds": 74.77989114983939}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F1", "epoch": 2, "batch": 0, "loss": 0.3330831825733185, "wall_s": 439.91029714094475, "cpu_s": 605.043569859}
+{"group": "F1", "epoch": 2, "batch": 40, "loss": 0.42074719071388245, "wall_s": 448.44324231985956, "cpu_s": 613.6910538589999}
+{"group": "F1", "epoch": 2, "batch": 80, "loss": 0.45921778678894043, "wall_s": 456.9067068749573, "cpu_s": 622.2508258589999}
+{"group": "F1", "epoch": 2, "batch": 120, "loss": 0.37822842597961426, "wall_s": 465.3030274210032, "cpu_s": 630.7558838589999}
+{"group": "F1", "epoch": 2, "batch": 160, "loss": 0.4450214207172394, "wall_s": 473.7428893549368, "cpu_s": 639.3039378589999}
+{"group": "F1", "epoch": 2, "batch": 200, "loss": 0.4581950008869171, "wall_s": 482.3688495699316, "cpu_s": 648.037820859}
+{"group": "F1", "epoch": 2, "batch": 240, "loss": 0.3634779751300812, "wall_s": 490.8814267530106, "cpu_s": 656.6497838589999}
+{"group": "F1", "epoch": 2, "batch": 280, "loss": 0.36920273303985596, "wall_s": 499.2728246299084, "cpu_s": 665.1348098589999}
+{"group": "F1", "epoch": 2, "batch": 320, "loss": 0.4088001847267151, "wall_s": 507.61006658384576, "cpu_s": 673.569890859}
+{"event": "epoch_complete", "group": "F1", "epoch": 2, "samples": 45000, "batches": 352, "train_accuracy": 0.856, "train_CE": 0.41862367687225344, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 32553092.530844446, "train_total_loss": 0.41862367687225344, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.004532091636218621, "successful_steps_cumulative": 702, "amp_skips_cumulative": 2, "epoch_seconds": 74.54722020006739}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F1", "epoch": 3, "batch": 0, "loss": 0.4297168552875519, "wall_s": 515.1026094858535, "cpu_s": 706.2902708589999}
+{"group": "F1", "epoch": 3, "batch": 40, "loss": 0.43113282322883606, "wall_s": 523.5906697509345, "cpu_s": 714.880557859}
+{"group": "F1", "epoch": 3, "batch": 80, "loss": 0.42032870650291443, "wall_s": 532.2750697818119, "cpu_s": 723.6765798590001}
+{"group": "F1", "epoch": 3, "batch": 120, "loss": 0.32860860228538513, "wall_s": 540.7381338528357, "cpu_s": 732.259222859}
+{"group": "F1", "epoch": 3, "batch": 160, "loss": 0.3126221001148224, "wall_s": 549.1603029000107, "cpu_s": 740.7742208589999}
+{"group": "F1", "epoch": 3, "batch": 200, "loss": 0.3882591128349304, "wall_s": 557.4660471878015, "cpu_s": 749.164222859}
+{"group": "F1", "epoch": 3, "batch": 240, "loss": 0.3200463354587555, "wall_s": 565.7065098059829, "cpu_s": 757.481733859}
+{"group": "F1", "epoch": 3, "batch": 280, "loss": 0.3990228474140167, "wall_s": 574.114103092812, "cpu_s": 765.969376859}
+{"group": "F1", "epoch": 3, "batch": 320, "loss": 0.32492363452911377, "wall_s": 582.5121564958245, "cpu_s": 774.477797859}
+{"event": "epoch_complete", "group": "F1", "epoch": 3, "samples": 45000, "batches": 352, "train_accuracy": 0.8646222222222222, "train_CE": 0.3860316137101915, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 32868966.575288888, "train_total_loss": 0.3860316137101915, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.003307091636218621, "successful_steps_cumulative": 1054, "amp_skips_cumulative": 2, "epoch_seconds": 74.36038715695031}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F1", "epoch": 4, "batch": 0, "loss": 0.2644549012184143, "wall_s": 590.1118994290009, "cpu_s": 807.4067128590001}
+{"group": "F1", "epoch": 4, "batch": 40, "loss": 0.29143059253692627, "wall_s": 598.5349485159386, "cpu_s": 815.946808859}
+{"group": "F1", "epoch": 4, "batch": 80, "loss": 0.35393252968788147, "wall_s": 606.8712150789797, "cpu_s": 824.3865698590001}
+{"group": "F1", "epoch": 4, "batch": 120, "loss": 0.4009861350059509, "wall_s": 615.2910757688805, "cpu_s": 832.9198728590001}
+{"group": "F1", "epoch": 4, "batch": 160, "loss": 0.27594491839408875, "wall_s": 623.6385769199114, "cpu_s": 841.376684859}
+{"group": "F1", "epoch": 4, "batch": 200, "loss": 0.2797359824180603, "wall_s": 632.0077592770103, "cpu_s": 849.8531698589999}
+{"group": "F1", "epoch": 4, "batch": 240, "loss": 0.26686567068099976, "wall_s": 640.3171642778907, "cpu_s": 858.265368859}
+{"group": "F1", "epoch": 4, "batch": 280, "loss": 0.33752402663230896, "wall_s": 648.9477041799109, "cpu_s": 867.0110128590001}
+{"group": "F1", "epoch": 4, "batch": 320, "loss": 0.3010373115539551, "wall_s": 657.145747188013, "cpu_s": 875.304098859}
+{"event": "epoch_complete", "group": "F1", "epoch": 4, "samples": 45000, "batches": 352, "train_accuracy": 0.8726666666666667, "train_CE": 0.3640707620037927, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 33088026.688355554, "train_total_loss": 0.3640707620037927, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.001792908363781379, "successful_steps_cumulative": 1406, "amp_skips_cumulative": 2, "epoch_seconds": 73.87694995803759}
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F1", "epoch": 5, "batch": 0, "loss": 0.3409435451030731, "wall_s": 664.6244381009601, "cpu_s": 908.2774158589999}
+{"group": "F1", "epoch": 5, "batch": 40, "loss": 0.29862573742866516, "wall_s": 672.9497884449083, "cpu_s": 916.7121228589998}
+{"group": "F1", "epoch": 5, "batch": 80, "loss": 0.38411402702331543, "wall_s": 681.3345866678283, "cpu_s": 925.2134888589999}
+{"group": "F1", "epoch": 5, "batch": 120, "loss": 0.26327231526374817, "wall_s": 689.6576688520145, "cpu_s": 933.6363668589998}
+{"group": "F1", "epoch": 5, "batch": 160, "loss": 0.251751571893692, "wall_s": 698.0690998579375, "cpu_s": 942.1696988589998}
+{"group": "F1", "epoch": 5, "batch": 200, "loss": 0.34388890862464905, "wall_s": 706.4751127248164, "cpu_s": 950.6935378589999}
+{"group": "F1", "epoch": 5, "batch": 240, "loss": 0.31319528818130493, "wall_s": 714.915075019002, "cpu_s": 959.2473578589999}
+{"group": "F1", "epoch": 5, "batch": 280, "loss": 0.3411697745323181, "wall_s": 723.300635621883, "cpu_s": 967.7496558589999}
+{"group": "F1", "epoch": 5, "batch": 320, "loss": 0.2433040589094162, "wall_s": 731.6556915468536, "cpu_s": 976.2184448589999}
+{"event": "epoch_complete", "group": "F1", "epoch": 5, "samples": 45000, "batches": 352, "train_accuracy": 0.8817111111111111, "train_CE": 0.3446176204893324, "train_KD": "", "train_SOP_loss": 0.0, "train_C_proxy": 33270962.945777778, "train_total_loss": 0.3446176204893324, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.000567908363781379, "successful_steps_cumulative": 1758, "amp_skips_cumulative": 2, "epoch_seconds": 73.92735551693477}
+/home/hym/keyan1/experiments/ROUND-009/train.py:99: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  opt=create_optimizer_v2(model,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);proxy=Proxy(model);fixed={n:p.detach().clone() for n,p in model.named_parameters() if n.endswith('thresh')}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F2", "epoch": 1, "batch": 0, "loss": 1.7929482460021973, "wall_s": 743.9638448338956, "cpu_s": 1015.7931308590001}
+{"group": "F2", "epoch": 1, "batch": 40, "loss": 1.2613739967346191, "wall_s": 754.4989093078766, "cpu_s": 1026.429272859}
+{"group": "F2", "epoch": 1, "batch": 80, "loss": 1.3385205268859863, "wall_s": 765.1120331839193, "cpu_s": 1037.1505888590002}
+{"group": "F2", "epoch": 1, "batch": 120, "loss": 1.0362662076950073, "wall_s": 775.7503982589114, "cpu_s": 1047.8854878590002}
+{"group": "F2", "epoch": 1, "batch": 160, "loss": 1.0723662376403809, "wall_s": 786.3313196538948, "cpu_s": 1058.572419859}
+{"group": "F2", "epoch": 1, "batch": 200, "loss": 1.0467109680175781, "wall_s": 797.2044979108032, "cpu_s": 1069.547602859}
+{"group": "F2", "epoch": 1, "batch": 240, "loss": 0.8913217782974243, "wall_s": 807.8450209798757, "cpu_s": 1080.2888418590003}
+{"group": "F2", "epoch": 1, "batch": 280, "loss": 1.2267556190490723, "wall_s": 818.5529369849246, "cpu_s": 1091.1146478590001}
+{"group": "F2", "epoch": 1, "batch": 320, "loss": 0.8460888862609863, "wall_s": 829.2077343040146, "cpu_s": 1101.8853128590001}
+{"event": "epoch_complete", "group": "F2", "epoch": 1, "samples": 45000, "batches": 352, "train_accuracy": 0.8346444444444444, "train_CE": 0.4840539510462019, "train_KD": 1.2841191263834635, "train_SOP_loss": 0.0, "train_C_proxy": 32276748.743466668, "train_total_loss": 1.1261135126749675, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.005, "successful_steps_cumulative": 349, "amp_skips_cumulative": 3, "epoch_seconds": 94.00401957007125}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F2", "epoch": 2, "batch": 0, "loss": 0.956504762172699, "wall_s": 838.5941080909688, "cpu_s": 1136.592553859}
+{"group": "F2", "epoch": 2, "batch": 40, "loss": 0.9355419874191284, "wall_s": 849.291460899869, "cpu_s": 1147.400959859}
+{"group": "F2", "epoch": 2, "batch": 80, "loss": 0.8583946228027344, "wall_s": 859.8831616910174, "cpu_s": 1158.104432859}
+{"group": "F2", "epoch": 2, "batch": 120, "loss": 0.9851871728897095, "wall_s": 870.5236678880174, "cpu_s": 1168.863282859}
+{"group": "F2", "epoch": 2, "batch": 160, "loss": 1.1075236797332764, "wall_s": 881.1413509619888, "cpu_s": 1179.595351859}
+{"group": "F2", "epoch": 2, "batch": 200, "loss": 0.8968285322189331, "wall_s": 892.0601661067922, "cpu_s": 1190.620947859}
+{"group": "F2", "epoch": 2, "batch": 240, "loss": 0.6636228561401367, "wall_s": 902.7441671418492, "cpu_s": 1201.410671859}
+{"group": "F2", "epoch": 2, "batch": 280, "loss": 0.9552441835403442, "wall_s": 913.4446579217911, "cpu_s": 1212.224590859}
+{"group": "F2", "epoch": 2, "batch": 320, "loss": 1.1248161792755127, "wall_s": 924.1834407709539, "cpu_s": 1223.075281859}
+{"event": "epoch_complete", "group": "F2", "epoch": 2, "samples": 45000, "batches": 352, "train_accuracy": 0.8495777777777778, "train_CE": 0.43691007346577115, "train_KD": 1.0228213458591038, "train_SOP_loss": 0.0, "train_C_proxy": 33658901.09937778, "train_total_loss": 0.9483207465277778, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.004532091636218621, "successful_steps_cumulative": 701, "amp_skips_cumulative": 3, "epoch_seconds": 94.20941791613586}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F2", "epoch": 3, "batch": 0, "loss": 0.8137524127960205, "wall_s": 933.6307831618469, "cpu_s": 1257.942337859}
+{"group": "F2", "epoch": 3, "batch": 40, "loss": 0.798613429069519, "wall_s": 944.3528774818406, "cpu_s": 1268.774579859}
+{"group": "F2", "epoch": 3, "batch": 80, "loss": 0.8492380380630493, "wall_s": 954.9780774440151, "cpu_s": 1279.5114138590002}
+{"group": "F2", "epoch": 3, "batch": 120, "loss": 0.918042004108429, "wall_s": 965.7719026508275, "cpu_s": 1290.413241859}
+{"group": "F2", "epoch": 3, "batch": 160, "loss": 0.7246370315551758, "wall_s": 976.4218794379849, "cpu_s": 1301.181779859}
+{"group": "F2", "epoch": 3, "batch": 200, "loss": 0.9401900768280029, "wall_s": 987.0370057979599, "cpu_s": 1311.918093859}
+{"group": "F2", "epoch": 3, "batch": 240, "loss": 0.6837475895881653, "wall_s": 997.7721772168297, "cpu_s": 1322.7738968590002}
+{"group": "F2", "epoch": 3, "batch": 280, "loss": 0.933292806148529, "wall_s": 1008.4447899628431, "cpu_s": 1333.5731508590002}
+{"group": "F2", "epoch": 3, "batch": 320, "loss": 0.876503586769104, "wall_s": 1019.1129102630075, "cpu_s": 1344.3604998590001}
+{"event": "epoch_complete", "group": "F2", "epoch": 3, "samples": 45000, "batches": 352, "train_accuracy": 0.8643777777777778, "train_CE": 0.3921778478887346, "train_KD": 0.9057159599304199, "train_SOP_loss": 0.0, "train_C_proxy": 34196698.47111111, "train_total_loss": 0.8450358270009358, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.003307091636218621, "successful_steps_cumulative": 1053, "amp_skips_cumulative": 3, "epoch_seconds": 94.32439721398987}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F2", "epoch": 4, "batch": 0, "loss": 0.7563514709472656, "wall_s": 1028.5941439259332, "cpu_s": 1379.1475878590002}
+{"group": "F2", "epoch": 4, "batch": 40, "loss": 0.6927896738052368, "wall_s": 1039.2638436239213, "cpu_s": 1389.9331718590001}
+{"group": "F2", "epoch": 4, "batch": 80, "loss": 0.7278749942779541, "wall_s": 1049.9326250478625, "cpu_s": 1400.7172388590002}
+{"group": "F2", "epoch": 4, "batch": 120, "loss": 0.712975025177002, "wall_s": 1060.588840213837, "cpu_s": 1411.4687318590002}
+{"group": "F2", "epoch": 4, "batch": 160, "loss": 0.6912916302680969, "wall_s": 1071.2255583608057, "cpu_s": 1422.2204378590002}
+{"group": "F2", "epoch": 4, "batch": 200, "loss": 0.7464480996131897, "wall_s": 1081.8207811529282, "cpu_s": 1432.9264328590002}
+{"group": "F2", "epoch": 4, "batch": 240, "loss": 0.659038245677948, "wall_s": 1092.4673383790068, "cpu_s": 1443.6685738590002}
+{"group": "F2", "epoch": 4, "batch": 280, "loss": 0.7196846008300781, "wall_s": 1103.0502494790126, "cpu_s": 1454.3628928590003}
+{"group": "F2", "epoch": 4, "batch": 320, "loss": 0.6014499664306641, "wall_s": 1113.5976679218002, "cpu_s": 1465.0118808590003}
+{"event": "epoch_complete", "group": "F2", "epoch": 4, "samples": 45000, "batches": 352, "train_accuracy": 0.8746666666666667, "train_CE": 0.35784762495888606, "train_KD": 0.8070324154112074, "train_SOP_loss": 0.0, "train_C_proxy": 34523782.34595556, "train_total_loss": 0.7613638335122003, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.001792908363781379, "successful_steps_cumulative": 1405, "amp_skips_cumulative": 3, "epoch_seconds": 93.76656022900715}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "F2", "epoch": 5, "batch": 0, "loss": 0.714293360710144, "wall_s": 1123.1221222518943, "cpu_s": 1499.6238428590002}
+{"group": "F2", "epoch": 5, "batch": 40, "loss": 0.6927109956741333, "wall_s": 1133.8146453199442, "cpu_s": 1510.429513859}
+{"group": "F2", "epoch": 5, "batch": 80, "loss": 0.7338902950286865, "wall_s": 1144.459922632901, "cpu_s": 1521.1929588590003}
+{"group": "F2", "epoch": 5, "batch": 120, "loss": 0.6108510494232178, "wall_s": 1155.2390388660133, "cpu_s": 1532.0983848590004}
+{"group": "F2", "epoch": 5, "batch": 160, "loss": 0.5863713622093201, "wall_s": 1166.2752687209286, "cpu_s": 1543.2514798590003}
+{"group": "F2", "epoch": 5, "batch": 200, "loss": 0.6898679733276367, "wall_s": 1177.2160213689785, "cpu_s": 1554.3112568590002}
+{"group": "F2", "epoch": 5, "batch": 240, "loss": 0.684435248374939, "wall_s": 1187.9685659608804, "cpu_s": 1565.191880859}
+{"group": "F2", "epoch": 5, "batch": 280, "loss": 0.7210253477096558, "wall_s": 1198.9286044768523, "cpu_s": 1576.2713478590001}
+{"group": "F2", "epoch": 5, "batch": 320, "loss": 0.6239209175109863, "wall_s": 1209.6765020748135, "cpu_s": 1587.1383498590003}
+{"event": "epoch_complete", "group": "F2", "epoch": 5, "samples": 45000, "batches": 352, "train_accuracy": 0.8838666666666667, "train_CE": 0.3371677289830314, "train_KD": 0.7480421994845072, "train_SOP_loss": 0.0, "train_C_proxy": 34657490.621866666, "train_total_loss": 0.7111888307783338, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.000567908363781379, "successful_steps_cumulative": 1757, "amp_skips_cumulative": 3, "epoch_seconds": 95.4964577301871}
+/home/hym/keyan1/experiments/ROUND-009/train.py:99: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  opt=create_optimizer_v2(model,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);proxy=Proxy(model);fixed={n:p.detach().clone() for n,p in model.named_parameters() if n.endswith('thresh')}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "M2", "epoch": 1, "batch": 0, "loss": 1.7929482460021973, "wall_s": 1223.9269641849678, "cpu_s": 1628.7102758590001}
+{"group": "M2", "epoch": 1, "batch": 40, "loss": 1.2613739967346191, "wall_s": 1235.0667262459174, "cpu_s": 1639.9551358590002}
+{"group": "M2", "epoch": 1, "batch": 80, "loss": 1.3385205268859863, "wall_s": 1246.2178743288387, "cpu_s": 1651.206108859}
+{"group": "M2", "epoch": 1, "batch": 120, "loss": 1.0362662076950073, "wall_s": 1257.2909574639052, "cpu_s": 1662.389754859}
+{"group": "M2", "epoch": 1, "batch": 160, "loss": 1.0723662376403809, "wall_s": 1268.4836050570011, "cpu_s": 1673.6970278590002}
+{"group": "M2", "epoch": 1, "batch": 200, "loss": 1.0467109680175781, "wall_s": 1279.6270344459917, "cpu_s": 1684.9614378590002}
+{"group": "M2", "epoch": 1, "batch": 240, "loss": 0.8913217782974243, "wall_s": 1290.737888152944, "cpu_s": 1696.1756148590002}
+{"group": "M2", "epoch": 1, "batch": 280, "loss": 1.2267556190490723, "wall_s": 1301.8669037688524, "cpu_s": 1707.4205348590003}
+{"group": "M2", "epoch": 1, "batch": 320, "loss": 0.8460888862609863, "wall_s": 1313.0464489769656, "cpu_s": 1718.7174108590002}
+{"event": "epoch_complete", "group": "M2", "epoch": 1, "samples": 45000, "batches": 352, "train_accuracy": 0.8346444444444444, "train_CE": 0.4840539510462019, "train_KD": 1.2841191263834635, "train_SOP_loss": 0.0, "train_C_proxy": 32276748.743466668, "train_total_loss": 1.1261135126749675, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.005, "successful_steps_cumulative": 349, "amp_skips_cumulative": 3, "epoch_seconds": 98.25687835994177}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "M2", "epoch": 2, "batch": 0, "loss": 0.956504762172699, "wall_s": 1322.8819172619842, "cpu_s": 1753.8880498590004}
+{"group": "M2", "epoch": 2, "batch": 40, "loss": 0.9355419874191284, "wall_s": 1334.006180722965, "cpu_s": 1765.1300008590003}
+{"group": "M2", "epoch": 2, "batch": 80, "loss": 0.8583946228027344, "wall_s": 1345.084961275803, "cpu_s": 1776.3211908590004}
+{"group": "M2", "epoch": 2, "batch": 120, "loss": 0.9851871728897095, "wall_s": 1356.2290303248446, "cpu_s": 1787.5733528590001}
+{"group": "M2", "epoch": 2, "batch": 160, "loss": 1.1075236797332764, "wall_s": 1367.2296098719817, "cpu_s": 1798.6798978590002}
+{"group": "M2", "epoch": 2, "batch": 200, "loss": 0.8968285322189331, "wall_s": 1378.3144311059732, "cpu_s": 1809.8630548590002}
+{"group": "M2", "epoch": 2, "batch": 240, "loss": 0.6636228561401367, "wall_s": 1389.318317756988, "cpu_s": 1820.9673778590002}
+{"group": "M2", "epoch": 2, "batch": 280, "loss": 0.9552441835403442, "wall_s": 1400.3786293319426, "cpu_s": 1832.1408198590004}
+{"group": "M2", "epoch": 2, "batch": 320, "loss": 1.1248161792755127, "wall_s": 1411.5609442109708, "cpu_s": 1843.436699859}
+{"event": "epoch_complete", "group": "M2", "epoch": 2, "samples": 45000, "batches": 352, "train_accuracy": 0.8495777777777778, "train_CE": 0.43691007346577115, "train_KD": 1.0228213458591038, "train_SOP_loss": 0.0, "train_C_proxy": 33658901.09937778, "train_total_loss": 0.9483207465277778, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.004532091636218621, "successful_steps_cumulative": 701, "amp_skips_cumulative": 3, "epoch_seconds": 97.87834560498595}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "M2", "epoch": 3, "batch": 0, "loss": 0.8137524127960205, "wall_s": 1421.5009147177916, "cpu_s": 1878.5203688590002}
+{"group": "M2", "epoch": 3, "batch": 40, "loss": 0.798613429069519, "wall_s": 1432.7957025119103, "cpu_s": 1889.9201048590003}
+{"group": "M2", "epoch": 3, "batch": 80, "loss": 0.8492380380630493, "wall_s": 1443.9190081038978, "cpu_s": 1901.1419968590003}
+{"group": "M2", "epoch": 3, "batch": 120, "loss": 0.918042004108429, "wall_s": 1455.1095187289175, "cpu_s": 1912.4290678590003}
+{"group": "M2", "epoch": 3, "batch": 160, "loss": 0.7246370315551758, "wall_s": 1466.444091991987, "cpu_s": 1923.8643558590002}
+{"group": "M2", "epoch": 3, "batch": 200, "loss": 0.9401900768280029, "wall_s": 1477.6477786039468, "cpu_s": 1935.1690738590003}
+{"group": "M2", "epoch": 3, "batch": 240, "loss": 0.6837475895881653, "wall_s": 1488.7467712289654, "cpu_s": 1946.3689048590002}
+{"group": "M2", "epoch": 3, "batch": 280, "loss": 0.933292806148529, "wall_s": 1499.7432710679714, "cpu_s": 1957.4621308590001}
+{"group": "M2", "epoch": 3, "batch": 320, "loss": 0.876503586769104, "wall_s": 1510.786159803858, "cpu_s": 1968.6035478590002}
+{"event": "epoch_complete", "group": "M2", "epoch": 3, "samples": 45000, "batches": 352, "train_accuracy": 0.8643777777777778, "train_CE": 0.3921778478887346, "train_KD": 0.9057159599304199, "train_SOP_loss": 0.0, "train_C_proxy": 34196698.47111111, "train_total_loss": 0.8450358270009358, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.003307091636218621, "successful_steps_cumulative": 1053, "amp_skips_cumulative": 3, "epoch_seconds": 98.48075896501541}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "M2", "epoch": 4, "batch": 0, "loss": 0.7563514709472656, "wall_s": 1520.7499616818968, "cpu_s": 2003.5978558590002}
+{"group": "M2", "epoch": 4, "batch": 40, "loss": 0.6927896738052368, "wall_s": 1531.9362668998074, "cpu_s": 2014.889940859}
+{"group": "M2", "epoch": 4, "batch": 80, "loss": 0.7278749942779541, "wall_s": 1543.0907450399827, "cpu_s": 2026.1459688590003}
+{"group": "M2", "epoch": 4, "batch": 120, "loss": 0.712975025177002, "wall_s": 1554.222197372932, "cpu_s": 2037.3822808590003}
+{"group": "M2", "epoch": 4, "batch": 160, "loss": 0.6912916302680969, "wall_s": 1565.3798986508045, "cpu_s": 2048.6456598590003}
+{"group": "M2", "epoch": 4, "batch": 200, "loss": 0.7464480996131897, "wall_s": 1576.349183198996, "cpu_s": 2059.719147859}
+{"group": "M2", "epoch": 4, "batch": 240, "loss": 0.659038245677948, "wall_s": 1587.4824312198907, "cpu_s": 2070.969913859}
+{"group": "M2", "epoch": 4, "batch": 280, "loss": 0.7196846008300781, "wall_s": 1598.6409803777933, "cpu_s": 2082.239527859}
+{"group": "M2", "epoch": 4, "batch": 320, "loss": 0.6014499664306641, "wall_s": 1609.726620473899, "cpu_s": 2093.430216859}
+{"event": "epoch_complete", "group": "M2", "epoch": 4, "samples": 45000, "batches": 352, "train_accuracy": 0.8746666666666667, "train_CE": 0.35784762495888606, "train_KD": 0.8070324154112074, "train_SOP_loss": 0.0, "train_C_proxy": 34523782.34595556, "train_total_loss": 0.7613638335122003, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.001792908363781379, "successful_steps_cumulative": 1405, "amp_skips_cumulative": 3, "epoch_seconds": 98.02583158691414}
+/home/hym/keyan1/experiments/ROUND-009/train.py:111: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.no_grad(),torch.cuda.amp.autocast():zt=teacher(x).mean(0).float()
+/home/hym/keyan1/experiments/ROUND-009/train.py:114: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+{"group": "M2", "epoch": 5, "batch": 0, "loss": 0.714293360710144, "wall_s": 1619.6199745018966, "cpu_s": 2128.413132859}
+{"group": "M2", "epoch": 5, "batch": 40, "loss": 0.6927109956741333, "wall_s": 1630.796115087811, "cpu_s": 2139.703227859}
+{"group": "M2", "epoch": 5, "batch": 80, "loss": 0.7338902950286865, "wall_s": 1642.027210050961, "cpu_s": 2151.040599859}
+{"group": "M2", "epoch": 5, "batch": 120, "loss": 0.6108510494232178, "wall_s": 1653.1802575648762, "cpu_s": 2162.3026918590003}
+{"group": "M2", "epoch": 5, "batch": 160, "loss": 0.5863713622093201, "wall_s": 1664.3460561318789, "cpu_s": 2173.585778859}
+{"group": "M2", "epoch": 5, "batch": 200, "loss": 0.6898679733276367, "wall_s": 1675.3739638410043, "cpu_s": 2184.730460859}
+{"group": "M2", "epoch": 5, "batch": 240, "loss": 0.684435248374939, "wall_s": 1686.41960599483, "cpu_s": 2195.877990859}
+{"group": "M2", "epoch": 5, "batch": 280, "loss": 0.7210253477096558, "wall_s": 1697.8258173919749, "cpu_s": 2207.394323859}
+{"group": "M2", "epoch": 5, "batch": 320, "loss": 0.6239209175109863, "wall_s": 1709.0455151118804, "cpu_s": 2218.726382859}
+{"event": "epoch_complete", "group": "M2", "epoch": 5, "samples": 45000, "batches": 352, "train_accuracy": 0.8838666666666667, "train_CE": 0.3371677289830314, "train_KD": 0.7480421994845072, "train_SOP_loss": 0.0, "train_C_proxy": 34657490.621866666, "train_total_loss": 0.7111888307783338, "budget_violation_batch_fraction": 0.0, "learning_rate": 0.000567908363781379, "successful_steps_cumulative": 1757, "amp_skips_cumulative": 3, "epoch_seconds": 98.77225859300233}

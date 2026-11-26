@@ -1,0 +1,10 @@
+{
+  "ratio": 0.9436097145080566,
+  "target": 0.8,
+  "loss": 0.20623746514320374,
+  "nonzero_gradient_tensors": 60,
+  "finite": true,
+  "cpu_seconds": 2.3702578780000003,
+  "wall_seconds": 1.6881982509512454,
+  "performed_after_training_start": true
+}

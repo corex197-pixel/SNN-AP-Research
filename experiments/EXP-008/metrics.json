@@ -1,0 +1,224 @@
+{
+  "status": "COMPLETED",
+  "summary": [
+    {
+      "group": "B0",
+      "accuracy": 0.9171111111111111,
+      "loss": 0.28356405380945504,
+      "SOPs": 55023962.13333333,
+      "FR_global": 0.053539032719561445,
+      "FR_author": 0.0468707097204108,
+      "parameter_count": 1084605,
+      "eval_seconds": 4.447233706945553,
+      "n": 4500,
+      "sop_savings": 0.0
+    },
+    {
+      "group": "P0",
+      "accuracy": 0.908,
+      "loss": 0.2760692870493078,
+      "SOPs": 43652928.192,
+      "FR_global": 0.042975313048431836,
+      "FR_author": 0.036813159286975865,
+      "parameter_count": 1084605,
+      "eval_seconds": 4.121345697902143,
+      "n": 4500,
+      "sop_savings": 0.20665603676047883
+    },
+    {
+      "group": "F0",
+      "accuracy": 0.898,
+      "loss": 0.31414590278950116,
+      "SOPs": 36196294.542222224,
+      "FR_global": 0.03532777286842825,
+      "FR_author": 0.03046991578493899,
+      "parameter_count": 1084605,
+      "eval_seconds": 4.408617393113673,
+      "n": 4500,
+      "epochs": 5,
+      "successful_steps": 1758,
+      "amp_skips": 2,
+      "train_and_eval_seconds": 354.35720385983586,
+      "peak_allocated_bytes": 4794270720,
+      "peak_reserved_bytes": 4955570176,
+      "sop_savings": 0.3421721530246796
+    },
+    {
+      "group": "F1",
+      "accuracy": 0.898,
+      "loss": 0.31414590278950116,
+      "SOPs": 36196294.542222224,
+      "FR_global": 0.03532777286842825,
+      "FR_author": 0.03046991578493899,
+      "parameter_count": 1084605,
+      "eval_seconds": 4.415703614009544,
+      "n": 4500,
+      "epochs": 5,
+      "successful_steps": 1758,
+      "amp_skips": 2,
+      "train_and_eval_seconds": 379.24101325985976,
+      "peak_allocated_bytes": 4800295936,
+      "peak_reserved_bytes": 5255462912,
+      "sop_savings": 0.3421721530246796
+    },
+    {
+      "group": "F2",
+      "accuracy": 0.9022222222222223,
+      "loss": 0.33312663960213024,
+      "SOPs": 38083756.75022222,
+      "FR_global": 0.03676168299873094,
+      "FR_author": 0.032103576097223495,
+      "parameter_count": 1084605,
+      "eval_seconds": 4.340185661101714,
+      "n": 4500,
+      "epochs": 5,
+      "successful_steps": 1757,
+      "amp_skips": 3,
+      "train_and_eval_seconds": 479.81727245613,
+      "peak_allocated_bytes": 4803010048,
+      "peak_reserved_bytes": 5232394240,
+      "sop_savings": 0.3078696031024053
+    },
+    {
+      "group": "M2",
+      "accuracy": 0.9022222222222223,
+      "loss": 0.33312663960213024,
+      "SOPs": 38083756.75022222,
+      "FR_global": 0.03676168299873094,
+      "FR_author": 0.032103576097223495,
+      "parameter_count": 1084605,
+      "eval_seconds": 4.489038513042033,
+      "n": 4500,
+      "epochs": 5,
+      "successful_steps": 1757,
+      "amp_skips": 3,
+      "train_and_eval_seconds": 499.8297048830427,
+      "peak_allocated_bytes": 4804690944,
+      "peak_reserved_bytes": 5234491392,
+      "sop_savings": 0.3078696031024053
+    }
+  ],
+  "paired_bootstrap": {
+    "M2_vs_F1": {
+      "correct": {
+        "delta": 0.004222222222222222,
+        "ci95": [
+          -0.0028888888888888888,
+          0.011555555555555555
+        ]
+      },
+      "loss": {
+        "delta": 0.018980736812629073,
+        "ci95": [
+          -0.0006760648886860262,
+          0.03865177138862145
+        ]
+      }
+    },
+    "F2_vs_F0": {
+      "correct": {
+        "delta": 0.004222222222222222,
+        "ci95": [
+          -0.0028888888888888888,
+          0.011555555555555555
+        ]
+      },
+      "loss": {
+        "delta": 0.018980736812629073,
+        "ci95": [
+          -0.0006760648886860262,
+          0.03865177138862145
+        ]
+      }
+    },
+    "F1_vs_F0": {
+      "correct": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "loss": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "F0_vs_P0": {
+      "correct": {
+        "delta": -0.01,
+        "ci95": [
+          -0.018,
+          -0.002
+        ]
+      },
+      "loss": {
+        "delta": 0.038076615740193415,
+        "ci95": [
+          0.019386073367198428,
+          0.05723734006212602
+        ]
+      }
+    },
+    "M2_vs_B0": {
+      "correct": {
+        "delta": -0.014888888888888889,
+        "ci95": [
+          -0.022444444444444444,
+          -0.008
+        ]
+      },
+      "loss": {
+        "delta": 0.0495625857926752,
+        "ci95": [
+          0.029000193366829775,
+          0.0700657747951782
+        ]
+      }
+    }
+  },
+  "H007_gate": false,
+  "H008_gate": false,
+  "rebound_F0": -0.1355161162642007,
+  "rebound_F1": -0.1355161162642007,
+  "screening_gate": {
+    "M2_savings_at_least_20pct": true,
+    "M2_acc_drop_at_most_1pp": false,
+    "M2_F1_budget_match": false,
+    "M2_acc_gain_at_least_0.5pp": false,
+    "parameter_count_unchanged": true,
+    "preflight_pass": true
+  },
+  "screening_signal": false,
+  "checkpoint_manifest": [
+    {
+      "group": "F0",
+      "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-F0-RUN-001/epoch-005.pth",
+      "bytes": 8775778,
+      "sha256": "18116a671abb235fc56f67e9b4d02feb55bcbde7f0e311f55e23b7e7cab42d2a"
+    },
+    {
+      "group": "F1",
+      "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-F1-RUN-001/epoch-005.pth",
+      "bytes": 8775778,
+      "sha256": "422f4a299e847c526a80eaec561b81d8f826cbd403c868ddde02b91201760d54"
+    },
+    {
+      "group": "F2",
+      "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-F2-RUN-001/epoch-005.pth",
+      "bytes": 8775778,
+      "sha256": "47ec18bee4fc1ac6c50af170abcbac9d3461576d977429d0aacce208845b2078"
+    },
+    {
+      "group": "M2",
+      "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-M2-RUN-001/epoch-005.pth",
+      "bytes": 8775778,
+      "sha256": "47d96396379a86fbb38a5f94852a6f29354163b79c817cc2511aff48784927a1"
+    }
+  ],
+  "wall_seconds_including_preflight": 1727.8811344909482,
+  "cpu_seconds_including_preflight": 2260.049698859
+}

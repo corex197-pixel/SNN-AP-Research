@@ -1,0 +1,26 @@
+[
+  {
+    "group": "F0",
+    "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-F0-RUN-001/epoch-005.pth",
+    "bytes": 8775778,
+    "sha256": "18116a671abb235fc56f67e9b4d02feb55bcbde7f0e311f55e23b7e7cab42d2a"
+  },
+  {
+    "group": "F1",
+    "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-F1-RUN-001/epoch-005.pth",
+    "bytes": 8775778,
+    "sha256": "422f4a299e847c526a80eaec561b81d8f826cbd403c868ddde02b91201760d54"
+  },
+  {
+    "group": "F2",
+    "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-F2-RUN-001/epoch-005.pth",
+    "bytes": 8775778,
+    "sha256": "47ec18bee4fc1ac6c50af170abcbac9d3461576d977429d0aacce208845b2078"
+  },
+  {
+    "group": "M2",
+    "path": "/home/hym/keyan1/experiments/EXP-008/runs/EXP-008-M2-RUN-001/epoch-005.pth",
+    "bytes": 8775778,
+    "sha256": "47d96396379a86fbb38a5f94852a6f29354163b79c817cc2511aff48784927a1"
+  }
+]
