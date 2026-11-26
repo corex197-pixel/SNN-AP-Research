@@ -390,3 +390,8 @@ R19: 对新增静默数N_silent，E_floor>=theta*N_silent/I；因此原补偿规
 R20: 最后一层后仅GAP、线性读出且时间均值分类时，Delta_z=W*GAP(Delta_O)/T；不推广到存在下游非线性的前层。
 
 clip后的逐位置最优系数 c_star 在eligible处取clip(O_ref/O_alpha,0.25,4)，非eligible取1；E_clip_min=sum_i|c_star O_alpha-O_ref|/I，R_E_attainable=1-mean(E_clip_min)/mean(E_G1)，仅有效正分母时成立。检查 R_E_attainable<=R14<=R19，所有上界仅限指定补偿规则。
+
+
+## v0.1.4 — R21/R22：任务与计算成本感知候选
+
+R21: 固定训练权重W，min L_task(W,theta)，subject to C(W,theta)<=C_target；C为本项目完整网络指定SOP口径。theta_l=alpha_l theta0_l，alpha只取固定阶梯。R22: delta_L=L(candidate)-L(current)，delta_c=[C(current)-C(candidate)]/C(v0)，score=delta_L/delta_c；只有 delta_c>=0.005 的动作有效，可有负delta_L。动态方法每个接受动作后重新测量全部可选单步动作，是贪心局部搜索，不保证全局最优；不预先宣称原创性。
