@@ -1,0 +1,8 @@
+{
+  "code_sha": "04827fe2f690bf6c3b104266af0507661ff6d951",
+  "checkpoint_sha256": "c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a",
+  "indices_sha256": "4509add9aa6573fded0022ddaf4f888f4b5f1715747e5ed59239df5683b8f066",
+  "seed_2028": "torch CPU generator; one randperm per sample in sorted index order",
+  "batch_size": 32,
+  "group_G4": "uniform eligible-only clipped aggregate ratio"
+}

@@ -1,0 +1,21 @@
+{
+  "start_utc": "2026-11-26T12:30:43.478460+00:00",
+  "code_sha": "04827fe2f690bf6c3b104266af0507661ff6d951",
+  "checkpoint_sha256": "c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a",
+  "sample_indices_sha256": "4509add9aa6573fded0022ddaf4f888f4b5f1715747e5ed59239df5683b8f066",
+  "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+  "sample_count": 244,
+  "batch_size": 32,
+  "primary_module": "conv1.2",
+  "alphas": [
+    1.0,
+    1.5
+  ],
+  "theory_version": "v0.1.3",
+  "gpu_uuid_env": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "bootstrap_seed": 2027,
+  "bootstrap_count": 2000,
+  "permutation_seed": 2028,
+  "dtype": "float32",
+  "no_test_set": true
+}

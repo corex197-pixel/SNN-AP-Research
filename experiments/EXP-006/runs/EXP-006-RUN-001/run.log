@@ -1,0 +1,24 @@
+{"event": "EXP-005", "samples": 32}
+{"event": "EXP-005", "samples": 64}
+{"event": "EXP-005", "samples": 96}
+{"event": "EXP-005", "samples": 128}
+{"event": "EXP-005", "samples": 160}
+{"event": "EXP-005", "samples": 192}
+{"event": "EXP-005", "samples": 224}
+{"event": "EXP-005", "samples": 244}
+{"event": "EXP-006", "samples": 32}
+{"event": "EXP-006", "samples": 64}
+{"event": "EXP-006", "samples": 96}
+{"event": "EXP-006", "samples": 128}
+{"event": "EXP-006", "samples": 160}
+{"event": "EXP-006", "samples": 192}
+{"event": "EXP-006", "samples": 224}
+{"event": "EXP-006", "samples": 244}
+{
+  "execution_status": "COMPLETED",
+  "start_utc": "2026-11-26T12:30:43.478460+00:00",
+  "EXP006_entry_met": true,
+  "end_utc": "2026-11-26T12:30:52.712857+00:00",
+  "wall_seconds": 9.23443435295485,
+  "process_cpu_seconds": 11.357321823000001
+}

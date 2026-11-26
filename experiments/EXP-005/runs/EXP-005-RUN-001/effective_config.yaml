@@ -1,0 +1,16 @@
+round: ROUND-007
+experiment: EXP-005
+theory_version: v0.1.3
+model_checkpoint_sha256: c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a
+indices_sha256: 4509add9aa6573fded0022ddaf4f888f4b5f1715747e5ed59239df5683b8f066
+sample_selection: sorted_remaining_diagnostic_indices
+sample_count: 244
+module: conv1.2
+alphas: [1.0, 1.5]
+T: 8
+batch_size: 32
+precision: float32
+bootstrap_replicates: 2000
+bootstrap_seed: 2027
+H004_gate: R_FR_ge_0.20_and_mean_E_ge_0.05_and_E_CI_lower_gt_0.05_and_delta_loss_ge_0.02_and_delta_loss_CI_lower_gt_0_and_controls_pass
+EXP006_gate: H004_gate_and_R_E_attainable_ge_0.50

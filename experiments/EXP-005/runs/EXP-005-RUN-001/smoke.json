@@ -1,0 +1,16 @@
+{
+  "baseline_logit_max_diff": 0.0,
+  "replay_output_max_diff": 0.0,
+  "reconstructed_charge_max_diff": 0.0,
+  "state_bn_mode_rng_hooks_restored": true,
+  "alpha_inputs_equal": true,
+  "time_steps": 8,
+  "shape": [
+    8,
+    1,
+    32,
+    32,
+    32
+  ],
+  "u_is_reconstructed": true
+}

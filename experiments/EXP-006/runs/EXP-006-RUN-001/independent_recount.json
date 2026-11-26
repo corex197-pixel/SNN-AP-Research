@@ -1,0 +1,10 @@
+{
+  "paired_sample_count": 244,
+  "bootstrap_recomputed_and_matches": true,
+  "invalid_R_loss_bootstrap": 23,
+  "invalid_R_loss_bootstrap_fraction": 0.0115,
+  "R17_max_abs_error": 2.7755575615628914e-17,
+  "R18_abs_error": 1.9850122101594536e-08,
+  "R14_R19_order_pass": true,
+  "all_E_floor_numerators_equal_R19_silent_lower_numerators": true
+}

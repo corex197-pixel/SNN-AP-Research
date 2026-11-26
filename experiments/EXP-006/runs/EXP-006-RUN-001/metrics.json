@@ -1,0 +1,91 @@
+{
+  "sample_count": 244,
+  "groups": {
+    "G0": {
+      "loss": 0.2571613638306861,
+      "accuracy": 0.9057377049180327,
+      "mean_E": 0.0,
+      "spike_count": 4507801
+    },
+    "G1": {
+      "loss": 0.40164489908590256,
+      "accuracy": 0.8565573770491803,
+      "mean_E": 0.16851421123169769,
+      "spike_count": 2505727
+    },
+    "G2": {
+      "loss": 0.3767338686770263,
+      "accuracy": 0.8442622950819673,
+      "mean_E": 0.05596652527841809,
+      "spike_count": 2505727
+    },
+    "G3": {
+      "loss": 0.43521774490599013,
+      "accuracy": 0.8483606557377049,
+      "mean_E": 0.16329323759431819,
+      "spike_count": 2505727
+    },
+    "G4": {
+      "loss": 0.4583825477659951,
+      "accuracy": 0.860655737704918,
+      "mean_E": 0.1661098879263565,
+      "spike_count": 2505727
+    }
+  },
+  "R_E": 0.6678824600646457,
+  "R_E_CI": {
+    "ci95": [
+      0.6589268007994888,
+      0.676859438599177
+    ],
+    "invalid_bootstrap": 0
+  },
+  "R_loss": 0.17241431949234431,
+  "R_loss_CI": {
+    "ci95": [
+      -0.7886789707047209,
+      0.8991353487504912
+    ],
+    "invalid_bootstrap": 23
+  },
+  "gains": {
+    "1": {
+      "estimate": 0.024911030408876277,
+      "ci95": [
+        -0.059811312169504194,
+        0.11906305423060712
+      ],
+      "invalid_bootstrap": 0
+    },
+    "3": {
+      "estimate": 0.058483876228963866,
+      "ci95": [
+        -0.03970796589050048,
+        0.15539526409319832
+      ],
+      "invalid_bootstrap": 0
+    },
+    "4": {
+      "estimate": 0.08164867908896878,
+      "ci95": [
+        -0.01629447653719683,
+        0.18180152273758587
+      ],
+      "invalid_bootstrap": 0
+    }
+  },
+  "R_E_attainable": 0.6678826092172114,
+  "R14_upper": 0.6678826092172114,
+  "R19_upper": 0.6678826092172114,
+  "eligible_ratio": 0.16900459664766906,
+  "coverage_reference_active": 0.6933951710732386,
+  "clipped_ratio": 0.0,
+  "permutation_changed_ratio": 0.43876743005406815,
+  "permutation_invalid_samples": 0,
+  "all_target_trajectories_match": true,
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 2027,
+  "permutation_seed": 2028,
+  "H005_gate_met": false,
+  "G4_specificity_gate_met": false
+}

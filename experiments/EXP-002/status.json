@@ -1,8 +1,9 @@
 {
   "execution_status": "COMPLETED",
-  "scientific_status": "UNTESTED",
+  "scientific_status": "CURRENT_EVIDENCE_AGAINST",
   "run_id": "EXP-002-RUN-001",
   "primary_gate_met": false,
   "EXP003_entry_met": false,
-  "theory_review": "primary predefined criterion provides evidence against practically large H-001 in this condition"
+  "theory_review": "primary predefined criterion provides evidence against practically large H-001 in this condition",
+  "scientific_scope": "original middle layer alpha=1.5 and original R5 gate; formal ROUND-007 adjudication"
 }
