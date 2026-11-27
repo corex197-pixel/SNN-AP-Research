@@ -29,3 +29,6 @@ H-009 CURRENT_EVIDENCE_SUPPORTS限定原诊断条件；H-010 CURRENT_EVIDENCE_AG
 
 ## DEC-012 — REPAIR + REPLICATE
 H-011 INSUFFICIENT_EVIDENCE：原筛选失败且最终模型不可分辨，不推广为代理梯度普遍无效。先修复共享阈值梯度干预尺度；仅当EXP-012的全部工程门槛通过后开展性能实验。
+
+## DEC-013 — STOP + PIVOT (ROUND-013)
+User approved stopping the current ARTG optimization direction while retaining H-012's shared-threshold gradient-scale finding. Investigate true structured internal-channel pruning; do not infer novelty for direct removal loss. No training or official test set in EXP-014.

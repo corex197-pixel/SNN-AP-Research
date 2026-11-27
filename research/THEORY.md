@@ -407,3 +407,9 @@ R28：C_proxy/C0≤0.8时平方hinge及其参数梯度为零，当前先导实�
 
 ## v0.1.8 — R40–R46：共享阈值聚合与浮点分辨率
 R40：N个共享元素下G_sum=N*G_mean；mean是有意优化尺度，不自动为代码错误。R41：正常正FP32的典型ULP=2^(floor(log2(theta))-23)，实际分别用nextafter测上下相邻值。R42：仅当优化器任务更新不可分辨时，theta_next约为theta_current+manual_delta。R43 G0-S=-sum(q*g²)，R44 G1-S=-sum(q*g)，R45 M4-S=sum(a*(s-r*g)-b*r*g/theta)。R46仅在每次共享参数调用涉及相同N时，对已反缩放的时间累积grad乘每个时间步N；不得再次乘T，不影响手动更新。可分辨更新是工程门槛，不是性能保证。
+
+## v0.1.9 — ROUND-013, structured internal-channel pruning
+R47: delete k output filters of Conv1, matching BN1 entries, and k input channels of Conv2; per-channel parameter saving ksize²(Cin+Cout)+2. ATLIF threshold and residual interface stay unchanged.
+R48: channel firing rate is positive ATLIF outputs divided by the actual T×B×H×W element count, accumulated across unequal batches.
+R49: L1 importance is the per-output-filter sum of absolute Conv1 weights.
+R50: D_c is the mean per-example cross-entropy difference between a full-network forward with channel c masked immediately after ATLIF and the original model, using temporal-mean logits. Negative differences remain negative.

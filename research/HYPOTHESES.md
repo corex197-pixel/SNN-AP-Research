@@ -23,3 +23,6 @@ H-011 INSUFFICIENT_EVIDENCE：原筛选失败且梯度规则未产生可分辨�
 
 H-012 UNTESTED：由mean恢复sum等价聚合可能产生可分辨的共享阈值优化器更新。
 H-013 UNTESTED：有效阈值任务更新下，ARTG可能比其他代理因子获得更好的精度—SOPs权衡。
+
+### ROUND-013 preregistration
+H-012: SUPPORTED (maps the researcher-provided CURRENT_EVIDENCE_SUPPORTS to the AGENTS.md enum; restricted to the tested model, checkpoint, data and SGD protocol). H-013: INSUFFICIENT_EVIDENCE; retain all exploratory 30% observations. H-014: UNTESTED, feasible low-loss genuine internal structural redundancy with the specified parameter/SOP and accuracy gates. H-015: UNTESTED, direct loss-based channel choice versus FR and L1 with prespecified accuracy and SOP gates. Formal status awaits theory review.

@@ -39,3 +39,6 @@ ROUND-007 初步创新性风险排查，非系统查重：
 - Learnable Surrogate Gradient for Direct Training Spiking Neural Networks, IJCAI 2023, https://ijcai.org/proceedings/2023/335
 - Kook et al., Stabilizing Direct Training of Spiking Neural Networks: Membrane Potential Initialization and Threshold-robust Surrogate Gradient, https://arxiv.org/abs/2511.08708
 共享参数梯度缩放与替代梯度尺度已有研究，mean改sum本身不宣称独立创新。
+
+## ROUND-013 existing work
+SCA is prior structured spike-activity channel pruning and regeneration during training: https://proceedings.mlr.press/v235/li24bz.html . UniSparse combines weight pruning and spike sparsification: https://github.com/xyshi2000/UniSparse . Direct task-loss sensitivity and structural pruning are established ideas; EXP-014 does not claim invention. See BASELINE_CANDIDATES.md for verification and unknowns.

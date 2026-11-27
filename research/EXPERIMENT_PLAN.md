@@ -32,3 +32,6 @@ G0原代码、G1公式13局部因子对齐、M4幅值和重置独立路径；同
 
 ## ROUND-012 预注册
 EXP-012 D0/G0-S/G1-S/M4-S每组最多20次batch、16次成功更新；同时满足所有数学、有限性、非零更新模块数和8 ULP向量分离门槛才运行EXP-013三组各5轮。固定原检查点及划分，动态N按实际batch计算，后缩放只作用阈值任务梯度。所有公式、门槛与固定评价详见ROUND-012-TASK.md。
+
+## EXP-014 preregistration
+Full fixed protocol: research/ROUND-013-TASK.md. Three preselected internal ATLIF modules, 25% per layer (8/16/32); baseline and independent Random, L1, firing-rate and actual loss-ranked compact models. A determines choices; disjoint B tests ranking stability only. All selections locked before 4500 validation samples. Equivalence tolerance 1e-5. Paired sample bootstrap 2000, seed 2027. No gradient training, BN recalibration, official test or extra pruning-rate search.

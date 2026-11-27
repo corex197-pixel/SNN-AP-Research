@@ -62,3 +62,6 @@ EXP-011 COMPLETED；H-011预设筛选=False。G0前四轮后因发现M4混合精
 DEC-012 REPAIR + REPLICATE；H-011 INSUFFICIENT_EVIDENCE，EXP-012 PLANNED、EXP-013 BLOCKED等待进入门槛；H-012/H-013 UNTESTED。保留ROUND-011前置异常、中断及恢复记录。
 
 EXP-012 COMPLETED，H-012工程进入门槛通过；EXP-013 COMPLETED，H-013预设筛选=False。H-012/H-013正式科学状态仍为UNTESTED，待理论研究员审查；见../experiments/EXP-012/REPORT.md和../experiments/EXP-013/REPORT.md。
+
+## ROUND-013 initiated
+DEC-013 approved STOP + PIVOT away from ARTG. EXP-012 and EXP-013 remain COMPLETED, H-012 SUPPORTED within its tested scope and H-013 INSUFFICIENT_EVIDENCE. EXP-014 is preregistered; H-014/H-015 remain UNTESTED pending theoretical review. Index split, code, and protocol committed before formal evaluation.
