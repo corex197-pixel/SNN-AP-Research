@@ -29,3 +29,6 @@ H-012: SUPPORTED (maps the researcher-provided CURRENT_EVIDENCE_SUPPORTS to the 
 
 ### ROUND-014 theory review
 H-014: CONTRADICTED only for EXP-014's three specified modules, 25% internal channel removal without fine-tuning and preregistered pilot gate; no universal claim about SNN structural redundancy. H-015: CONTRADICTED only for the fixed samples, single-channel loss ranking and simultaneous removal protocol. H-012 remains SUPPORTED within its original scoped evidence; H-013 remains INSUFFICIENT_EVIDENCE. All older hypothesis history and boundaries remain unchanged. Q-010 awaits deeper paper analysis; no new validated performance hypothesis.
+
+### ROUND-015 preregistration
+H-016 UNTESTED: fixed nominal activity fanout may differ from actual local SOP cost when effective connections change; synthetic validation does not establish importance in trained networks. H-017 UNTESTED: effective-connectivity-aware penalties may improve matched-SOP task performance; no training authorized this round.

@@ -38,3 +38,6 @@ Full fixed protocol: research/ROUND-013-TASK.md. Three preselected internal ATLI
 
 ## ROUND-014 EXP-015 preregistration
 Official UniSparse SHA b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa, MIT. Independent environment and external controlled adapters. CPU synthetic correctness and author SOP audit first; GPU short benchmark only after official CuPy forward/backward and sparse-state prerequisites, single RTX4090, at most 10 warmup plus 30 measured batches, batch256, T4, seed12450, <=600 GPU seconds, <=2700 cumulative CPU seconds. No test set, full epoch, AT-LIF tuning, or new algorithm. Full protocol: ROUND-014-TASK.md.
+
+## ROUND-015 / EXP-016 preregistration
+See ROUND-015-TASK.md. Upstream b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa; RTX4090 one GPU <=900 seconds; CPU <=2700 seconds; downloads <=200MB; dedicated dependency disk <=2GiB. CPU R57–R61 mechanism tests, official CuPy/Torch comparisons, full-model checks and only then bounded short benchmark. No 300-epoch training or official test set. All failures and skipped tests remain recorded.

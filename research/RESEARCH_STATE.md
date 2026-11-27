@@ -73,3 +73,6 @@ EXP-014-RUN-001 COMPLETED: all 224 A and B single-channel measurements and five 
 Stop active AT-LIF local-improvement route and preserve its 13 rounds. New UniSparse Q-010 is at stage-0 engineering admission, not reproduced. EXP-014 remains COMPLETED; H-014/H-015 CONTRADICTED only under the prespecified EXP-014 conditions. EXP-015 is preregistered; no additional performance hypothesis is asserted.
 
 EXP-015-RUN-001 PARTIAL; UniSparse admission BLOCKED: official CuPy backend missing. CPU weight/penalty and binary SOP synthetic tests passed, train-only loader smoke passed, but CuPy equivalence, GPU forward/backward and benchmark are untested. GPU use 0. No 300-epoch cost estimate or pretrained weights verified. See ../experiments/EXP-015/REPORT.md.
+
+## ROUND-015 preregistration
+DEC-015 REPAIR + CONTINUE: retain UniSparse as priority candidate; EXP-015 remains PARTIAL. EXP-016 tests official CuPy backend and effective-connectivity accounting. H-016 and H-017 remain UNTESTED pending researcher review. No ECAS training or official test data.
