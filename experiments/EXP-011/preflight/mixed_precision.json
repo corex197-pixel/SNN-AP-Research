@@ -1,0 +1,43 @@
+{
+  "status": "PASSED",
+  "mixed_dtype_large_upstream_cases": [
+    {
+      "case": "amplitude",
+      "threshold_grad": 28983.6875,
+      "expected": 28983.6875,
+      "normalized_error": 0.0,
+      "finite": true
+    },
+    {
+      "case": "reset",
+      "threshold_grad": 54627.93359375,
+      "expected": 54627.93359375,
+      "normalized_error": 0.0,
+      "finite": true
+    },
+    {
+      "case": "both",
+      "threshold_grad": 83611.625,
+      "expected": 83611.625,
+      "normalized_error": 0.0,
+      "finite": true
+    }
+  ],
+  "real_network_unscaled_AMP_comparison": {
+    "G1": {
+      "AMP_logit_max_absolute_difference": 0.0,
+      "AMP_non_threshold_grad_max_normalized_difference": 0.0,
+      "AMP_non_threshold_grad_global_relative_l2": 0.0,
+      "threshold_grads_finite": true
+    },
+    "M4": {
+      "AMP_logit_max_absolute_difference": 0.0,
+      "AMP_non_threshold_grad_max_normalized_difference": 0.0,
+      "AMP_non_threshold_grad_global_relative_l2": 0.0,
+      "threshold_grads_finite": true
+    }
+  },
+  "note": "FP32 preflight remains primary required tolerance; AMP comparisons measured separately",
+  "wall_seconds": 1.806350708939135,
+  "cpu_seconds": 2.050330316
+}

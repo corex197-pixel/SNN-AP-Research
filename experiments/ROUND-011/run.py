@@ -12,7 +12,9 @@ from artg import configure,DIAGNOSTICS
 from utils.utils import SOPMonitor
 from spikingjelly.activation_based import functional
 O=ROOT/'experiments/EXP-011';CONF=json.loads((O/'config.json').read_text());M=ROOT/'experiments/EXP-004/runs/EXP-004-RUN-003/checkpoint_best_validation.pth';S=ROOT/'experiments/EXP-004/splits/indices.json';I=ROOT/'experiments/EXP-007/calibration_indices.json';MAP=json.loads((ROOT/'experiments/EXP-008/runs/PREFLIGHT-001/sop_mapping.json').read_text());ck=None;start=time.monotonic();usage0=resource.getrusage(resource.RUSAGE_SELF)
-prepaths=[O/'preflight-attempt-001/status.json',O/'preflight-attempt-002/status.json',O/'preflight-attempt-003/status.json',O/'preflight/status.json',O/'preflight/amp_success.json',O/'preflight-attempt-002/gradient_diagnosis.json'];pre=[json.loads(p.read_text()) for p in prepaths];prior_wall=sum(x.get('wall_seconds',0) for x in pre);prior_cpu=sum(x.get('cpu_seconds',0) for x in pre);code=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+# The first run stopped in G0 epoch 5; its accounting already includes all earlier preflights.
+old=json.loads((O/'interruption-001/status.json').read_text());pre=[json.loads((O/'preflight'/n).read_text()) for n in ['status.json','amp_success.json','mixed_precision.json']];failed_repair=json.loads((O/'preflight-attempt-005/status.json').read_text());prior_wall=old['wall_seconds_including_preflight']+sum(x['wall_seconds'] for x in pre)+failed_repair['wall_seconds']+20.;prior_cpu=old['cpu_seconds_including_preflight']+sum(x['cpu_seconds'] for x in pre)+failed_repair['cpu_seconds']+30.;code=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+
 def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def dump(p,x):
  p.parent.mkdir(parents=True,exist_ok=True);q=p.with_suffix(p.suffix+'.tmp');q.write_text(json.dumps(x,indent=2,allow_nan=False)+'\n');os.replace(q,p)
@@ -57,11 +59,16 @@ def validate_thresholds(m):
   if isinstance(z,ATLIF) and (not torch.isfinite(z.thresh).all() or z.thresh.item()<=0):raise RuntimeError('nonfinite or nonpositive threshold')
 def safe_number(x):return x if np.isfinite(x) else str(x)
 def train_group(group,ids,baseline_init,first_batches):
- guard(reserve=180);seed_all(2030);torch.cuda.reset_peak_memory_stats();group_start=time.monotonic();run=O/'runs'/('EXP-011-'+group+'-RUN-001');run.mkdir(parents=True,exist_ok=False);m=newmodel(group,ck,1.25);m.train();mods={n:z for n,z in m.named_modules() if isinstance(z,ATLIF)};initial=digest(m)
+ guard(reserve=180);seed_all(2030);torch.cuda.reset_peak_memory_stats();group_start=time.monotonic();is_resume=(group=='G0');run=O/'runs'/('EXP-011-'+group+('-RUN-002' if is_resume else '-RUN-001'));run.mkdir(parents=True,exist_ok=False);m=newmodel(group,ck,1.25);m.train();mods={n:z for n,z in m.named_modules() if isinstance(z,ATLIF)};initial=digest(m)
  if baseline_init and initial!=baseline_init:raise RuntimeError('initial state mismatch')
- opt=create_optimizer_v2(m,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);groups=[{'weight_decay':p['weight_decay'],'count':len(p['params'])} for p in opt.param_groups];ids_opt={id(p) for g in opt.param_groups for p in g['params']};assert all(id(z.thresh) in ids_opt for z in mods.values());sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);success=skips=0;fp=[]
- dump(run/'metadata.json',{'group':group,'initial_sha256':initial,'code_sha':code,'started_utc':now(),'gpu_uuid':os.environ['CUDA_VISIBLE_DEVICES'],'optimizer_groups':groups,'diagnostic_batch_index':8,'amp_manual_update_policy':'original controlled baseline, including skipped AMP optimizer step'})
- for epoch in range(1,6):
+ opt=create_optimizer_v2(m,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);groups=[{'weight_decay':p['weight_decay'],'count':len(p['params'])} for p in opt.param_groups];ids_opt={id(p) for g in opt.param_groups for p in g['params']};assert all(id(z.thresh) in ids_opt for z in mods.values());sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);success=skips=0;fp=[];start_epoch=1
+ if is_resume:
+  parent=O/'runs/EXP-011-G0-RUN-001/epoch-004.pth';expected='bf298f71f0bf9529643dc7ab7c23f5de3b4ae1a2a70c82fa7f8f90296c74311c'
+  if sha(parent)!=expected:raise RuntimeError('G0 recovery checkpoint hash mismatch')
+  state=torch.load(parent,map_location='cpu',weights_only=False);assert state['epoch']==4 and state['group']=='G0' and state['code_sha']=='afe8596baccf5db172b9ae03cfaf3d59f198feca'
+  m.load_state_dict(state['model']);opt.load_state_dict(state['optimizer']);sched.load_state_dict(state['scheduler']);scaler.load_state_dict(state['scaler']);torch.set_rng_state(state['torch_rng']);torch.cuda.set_rng_state(state['cuda_rng']);np.random.set_state(state['numpy_rng']);random.setstate(state['python_rng']);start_epoch=5;parent_status=json.loads((parent.parent/'status.json').read_text());assert parent_status['completed_epoch']==4 and parent_status['checkpoint_sha256']==expected;success=parent_status['successful_steps'];skips=parent_status['amp_skips'];fp=copy.deepcopy(first_batches)
+ dump(run/'metadata.json',{'group':group,'initial_sha256':initial,'code_sha':code,'started_utc':now(),'gpu_uuid':os.environ['CUDA_VISIBLE_DEVICES'],'optimizer_groups':groups,'diagnostic_batch_index':8,'parent_checkpoint':str(parent) if is_resume else None,'parent_code_sha':'afe8596baccf5db172b9ae03cfaf3d59f198feca' if is_resume else None,'amp_manual_update_policy':'original controlled baseline, including skipped AMP optimizer step'})
+ for epoch in range(start_epoch,6):
   counts=right=nb=0;loss_sum=0.;tic=time.monotonic();lr=opt.param_groups[0]['lr'];data=loader(ids,True)
   for batch,(x,y,sid) in enumerate(data):
    guard(reserve=180)
@@ -122,9 +129,9 @@ def evaluate(group,source,alpha,ids,training_data,tag,detail=False):
 
 def run():
  global ck
- if pre[3]['status']!='PASSED' or pre[4]['status']!='PASSED':raise RuntimeError('required preflight failure')
+ if any(x['status']!='PASSED' for x in pre):raise RuntimeError('required preflight failure')
  if torch.cuda.device_count()!=1 or '4090' not in torch.cuda.get_device_name(0):raise RuntimeError('not exactly one RTX4090')
- torch.set_num_threads(2);torch.backends.cudnn.deterministic=True;torch.backends.cudnn.benchmark=False;hashes();ck=torch.load(M,map_location='cpu',weights_only=False);split=json.loads(S.read_text());calids=json.loads(I.read_text())['indices'];assert len(split['train'])==45000 and len(split['validation'])==4500 and len(calids)==500 and set(calids)<=set(split['train']) and not set(calids)&set(split['validation']) and not set(calids)&set(split['diagnostic']);manifest=[];init=None;fp=None
+ torch.set_num_threads(2);torch.backends.cudnn.deterministic=True;torch.backends.cudnn.benchmark=False;hashes();ck=torch.load(M,map_location='cpu',weights_only=False);split=json.loads(S.read_text());calids=json.loads(I.read_text())['indices'];assert len(split['train'])==45000 and len(split['validation'])==4500 and len(calids)==500 and set(calids)<=set(split['train']) and not set(calids)&set(split['validation']) and not set(calids)&set(split['diagnostic']);manifest=[];init=None;fp=json.loads((O/'first_batch_fingerprints.json').read_text())['reference']
  for group in CONF['groups']:
   r,init,fp=train_group(group,split['train'],init,fp);manifest.append(r);dump(O/'checkpoint_manifest.json',manifest)
  sources={r['group']:torch.load(r['path'],map_location='cpu',weights_only=False) for r in manifest};sources['C0']=ck

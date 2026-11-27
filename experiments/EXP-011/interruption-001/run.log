@@ -1,0 +1,129 @@
+/home/hym/keyan1/experiments/ROUND-011/run.py:62: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  opt=create_optimizer_v2(m,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);groups=[{'weight_decay':p['weight_decay'],'count':len(p['params'])} for p in opt.param_groups];ids_opt={id(p) for g in opt.param_groups for p in g['params']};assert all(id(z.thresh) in ids_opt for z in mods.values());sched=torch.optim.lr_scheduler.CosineAnnealingLR(opt,T_max=5,eta_min=.0001);scaler=torch.cuda.amp.GradScaler(enabled=True);success=skips=0;fp=[]
+/home/hym/keyan1/experiments/ROUND-011/run.py:72: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():z=m(x).mean(0).float();loss=F.cross_entropy(z,y)
+{"utc": "2026-11-27T02:21:18.969082+00:00", "group": "G0", "epoch": 1, "batch": 0, "wall_seconds_including_preflight": 11.630619044881314, "cpu_seconds_including_preflight": 12.789686248}
+{"utc": "2026-11-27T02:21:26.426284+00:00", "group": "G0", "epoch": 1, "batch": 40, "wall_seconds_including_preflight": 19.087824418907985, "cpu_seconds_including_preflight": 20.311372248}
+{"utc": "2026-11-27T02:21:33.874162+00:00", "group": "G0", "epoch": 1, "batch": 80, "wall_seconds_including_preflight": 26.535693112760782, "cpu_seconds_including_preflight": 27.865877248000004}
+{"utc": "2026-11-27T02:21:40.981962+00:00", "group": "G0", "epoch": 1, "batch": 120, "wall_seconds_including_preflight": 33.64349481696263, "cpu_seconds_including_preflight": 35.078544248}
+{"utc": "2026-11-27T02:21:48.360130+00:00", "group": "G0", "epoch": 1, "batch": 160, "wall_seconds_including_preflight": 41.02165398397483, "cpu_seconds_including_preflight": 42.57046424799999}
+{"utc": "2026-11-27T02:21:55.861828+00:00", "group": "G0", "epoch": 1, "batch": 200, "wall_seconds_including_preflight": 48.52335178479552, "cpu_seconds_including_preflight": 50.18294524799999}
+{"utc": "2026-11-27T02:22:03.015553+00:00", "group": "G0", "epoch": 1, "batch": 240, "wall_seconds_including_preflight": 55.67707442189567, "cpu_seconds_including_preflight": 57.441895247999994}
+{"utc": "2026-11-27T02:22:10.197861+00:00", "group": "G0", "epoch": 1, "batch": 280, "wall_seconds_including_preflight": 62.85938438982703, "cpu_seconds_including_preflight": 64.717829248}
+{"utc": "2026-11-27T02:22:17.448763+00:00", "group": "G0", "epoch": 1, "batch": 320, "wall_seconds_including_preflight": 70.1102867887821, "cpu_seconds_including_preflight": 72.038031248}
+{"event": "epoch_complete", "group": "G0", "epoch": 1, "samples": 45000, "batches": 352, "train_accuracy": 0.851, "train_loss": 0.43622410944302875, "learning_rate": 0.005, "successful_steps_cumulative": 350, "amp_skips_cumulative": 2, "epoch_seconds": 65.74608291708864}
+{"utc": "2026-11-27T02:22:24.265221+00:00", "group": "G0", "epoch": 2, "batch": 0, "wall_seconds_including_preflight": 76.92675564181991, "cpu_seconds_including_preflight": 103.062824248}
+{"utc": "2026-11-27T02:22:31.901448+00:00", "group": "G0", "epoch": 2, "batch": 40, "wall_seconds_including_preflight": 84.5629819787573, "cpu_seconds_including_preflight": 110.724761248}
+{"utc": "2026-11-27T02:22:39.265678+00:00", "group": "G0", "epoch": 2, "batch": 80, "wall_seconds_including_preflight": 91.92720016976818, "cpu_seconds_including_preflight": 118.184174248}
+{"utc": "2026-11-27T02:22:46.628624+00:00", "group": "G0", "epoch": 2, "batch": 120, "wall_seconds_including_preflight": 99.29014581278898, "cpu_seconds_including_preflight": 125.642367248}
+{"utc": "2026-11-27T02:22:53.776337+00:00", "group": "G0", "epoch": 2, "batch": 160, "wall_seconds_including_preflight": 106.43786152079701, "cpu_seconds_including_preflight": 132.891241248}
+{"utc": "2026-11-27T02:23:01.070208+00:00", "group": "G0", "epoch": 2, "batch": 200, "wall_seconds_including_preflight": 113.73173246276565, "cpu_seconds_including_preflight": 140.281825248}
+{"utc": "2026-11-27T02:23:08.199591+00:00", "group": "G0", "epoch": 2, "batch": 240, "wall_seconds_including_preflight": 120.86112762591802, "cpu_seconds_including_preflight": 147.51275724799999}
+{"utc": "2026-11-27T02:23:15.326495+00:00", "group": "G0", "epoch": 2, "batch": 280, "wall_seconds_including_preflight": 127.98801898094825, "cpu_seconds_including_preflight": 154.765184248}
+{"utc": "2026-11-27T02:23:22.438844+00:00", "group": "G0", "epoch": 2, "batch": 320, "wall_seconds_including_preflight": 135.1003671279177, "cpu_seconds_including_preflight": 161.983171248}
+{"event": "epoch_complete", "group": "G0", "epoch": 2, "samples": 45000, "batches": 352, "train_accuracy": 0.8517777777777777, "train_loss": 0.42369140622880724, "learning_rate": 0.004532091636218621, "successful_steps_cumulative": 702, "amp_skips_cumulative": 2, "epoch_seconds": 64.79366823099554}
+{"utc": "2026-11-27T02:23:29.118689+00:00", "group": "G0", "epoch": 3, "batch": 0, "wall_seconds_including_preflight": 141.78022825485095, "cpu_seconds_including_preflight": 193.14104824800003}
+{"utc": "2026-11-27T02:23:36.517399+00:00", "group": "G0", "epoch": 3, "batch": 40, "wall_seconds_including_preflight": 149.17892743088305, "cpu_seconds_including_preflight": 200.62481524800003}
+{"utc": "2026-11-27T02:23:43.767397+00:00", "group": "G0", "epoch": 3, "batch": 80, "wall_seconds_including_preflight": 156.42892120196484, "cpu_seconds_including_preflight": 207.97610724800003}
+{"utc": "2026-11-27T02:23:51.182847+00:00", "group": "G0", "epoch": 3, "batch": 120, "wall_seconds_including_preflight": 163.84437129087746, "cpu_seconds_including_preflight": 215.498959248}
+{"utc": "2026-11-27T02:23:58.485228+00:00", "group": "G0", "epoch": 3, "batch": 160, "wall_seconds_including_preflight": 171.14675581175834, "cpu_seconds_including_preflight": 222.90181524800002}
+{"utc": "2026-11-27T02:24:05.869401+00:00", "group": "G0", "epoch": 3, "batch": 200, "wall_seconds_including_preflight": 178.53092229692265, "cpu_seconds_including_preflight": 230.38877024800001}
+{"utc": "2026-11-27T02:24:13.328198+00:00", "group": "G0", "epoch": 3, "batch": 240, "wall_seconds_including_preflight": 185.98971989378333, "cpu_seconds_including_preflight": 237.93676224800004}
+{"utc": "2026-11-27T02:24:20.720979+00:00", "group": "G0", "epoch": 3, "batch": 280, "wall_seconds_including_preflight": 193.3825004559476, "cpu_seconds_including_preflight": 245.434779248}
+{"utc": "2026-11-27T02:24:27.946030+00:00", "group": "G0", "epoch": 3, "batch": 320, "wall_seconds_including_preflight": 200.60755336889997, "cpu_seconds_including_preflight": 252.762617248}
+{"event": "epoch_complete", "group": "G0", "epoch": 3, "samples": 45000, "batches": 352, "train_accuracy": 0.8642666666666666, "train_loss": 0.39022300078074135, "learning_rate": 0.003307091636218621, "successful_steps_cumulative": 1054, "amp_skips_cumulative": 2, "epoch_seconds": 65.56669013388455}
+{"utc": "2026-11-27T02:24:34.772973+00:00", "group": "G0", "epoch": 4, "batch": 0, "wall_seconds_including_preflight": 207.43450930295512, "cpu_seconds_including_preflight": 284.42319624800007}
+{"utc": "2026-11-27T02:24:42.138133+00:00", "group": "G0", "epoch": 4, "batch": 40, "wall_seconds_including_preflight": 214.79965629894286, "cpu_seconds_including_preflight": 291.84991224800007}
+{"utc": "2026-11-27T02:24:49.541154+00:00", "group": "G0", "epoch": 4, "batch": 80, "wall_seconds_including_preflight": 222.20268028788269, "cpu_seconds_including_preflight": 299.34257224800007}
+{"utc": "2026-11-27T02:24:56.938817+00:00", "group": "G0", "epoch": 4, "batch": 120, "wall_seconds_including_preflight": 229.6003412248101, "cpu_seconds_including_preflight": 306.83185624800007}
+{"utc": "2026-11-27T02:25:04.478946+00:00", "group": "G0", "epoch": 4, "batch": 160, "wall_seconds_including_preflight": 237.14046923583373, "cpu_seconds_including_preflight": 314.46179124800005}
+{"utc": "2026-11-27T02:25:12.105709+00:00", "group": "G0", "epoch": 4, "batch": 200, "wall_seconds_including_preflight": 244.76723184389994, "cpu_seconds_including_preflight": 322.1829192480001}
+{"utc": "2026-11-27T02:25:19.507983+00:00", "group": "G0", "epoch": 4, "batch": 240, "wall_seconds_including_preflight": 252.16950453585014, "cpu_seconds_including_preflight": 329.68230424800004}
+{"utc": "2026-11-27T02:25:26.532320+00:00", "group": "G0", "epoch": 4, "batch": 280, "wall_seconds_including_preflight": 259.19384316378273, "cpu_seconds_including_preflight": 336.81522824800004}
+{"utc": "2026-11-27T02:25:33.338724+00:00", "group": "G0", "epoch": 4, "batch": 320, "wall_seconds_including_preflight": 266.0002470028121, "cpu_seconds_including_preflight": 343.688555248}
+{"event": "epoch_complete", "group": "G0", "epoch": 4, "samples": 45000, "batches": 352, "train_accuracy": 0.8729333333333333, "train_loss": 0.36742119274139406, "learning_rate": 0.001792908363781379, "successful_steps_cumulative": 1406, "amp_skips_cumulative": 2, "epoch_seconds": 65.00255989888683}
+{"utc": "2026-11-27T02:25:39.872680+00:00", "group": "G0", "epoch": 5, "batch": 0, "wall_seconds_including_preflight": 272.5342174328398, "cpu_seconds_including_preflight": 374.7827412479999}
+{"utc": "2026-11-27T02:25:47.402115+00:00", "group": "G0", "epoch": 5, "batch": 40, "wall_seconds_including_preflight": 280.06363955978304, "cpu_seconds_including_preflight": 382.379196248}
+{"utc": "2026-11-27T02:25:54.799184+00:00", "group": "G0", "epoch": 5, "batch": 80, "wall_seconds_including_preflight": 287.4607092908118, "cpu_seconds_including_preflight": 389.89314424799994}
+{"utc": "2026-11-27T02:26:02.130799+00:00", "group": "G0", "epoch": 5, "batch": 120, "wall_seconds_including_preflight": 294.79232151596807, "cpu_seconds_including_preflight": 397.341787248}
+{"utc": "2026-11-27T02:26:09.046894+00:00", "group": "G0", "epoch": 5, "batch": 160, "wall_seconds_including_preflight": 301.70842795888893, "cpu_seconds_including_preflight": 404.37206424799996}
+{"utc": "2026-11-27T02:26:15.798449+00:00", "group": "G0", "epoch": 5, "batch": 200, "wall_seconds_including_preflight": 308.459980614949, "cpu_seconds_including_preflight": 411.238762248}
+{"utc": "2026-11-27T02:26:23.023397+00:00", "group": "G0", "epoch": 5, "batch": 240, "wall_seconds_including_preflight": 315.68492626794614, "cpu_seconds_including_preflight": 418.5861032479999}
+{"utc": "2026-11-27T02:26:30.331971+00:00", "group": "G0", "epoch": 5, "batch": 280, "wall_seconds_including_preflight": 322.9935015239753, "cpu_seconds_including_preflight": 426.00724024799996}
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-011/run.py", line 173, in <module>
+    try:r=run();status.update(execution_status=r['status'])
+          ^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/run.py", line 129, in run
+    r,init,fp=train_group(group,split['train'],init,fp);manifest.append(r);dump(O/'checkpoint_manifest.json',manifest)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/run.py", line 72, in train_group
+    with torch.cuda.amp.autocast():z=m(x).mean(0).float();loss=F.cross_entropy(z,y)
+                                     ^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py", line 80, in forward
+    x = self.conv2_x(x)
+        ^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py", line 40, in forward
+    x = self.residual_function(x) + self.shortcut(x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py", line 219, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/spikingjelly/activation_based/layer.py", line 171, in forward
+    x = functional.seq_to_ann_forward(x, super().forward)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/Activity-Pruning-SNN-main/spikingjelly/activation_based/functional.py", line 686, in seq_to_ann_forward
+    y = stateless_module(y)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 458, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/nn/modules/conv.py", line 454, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+{
+  "execution_status": "PARTIAL",
+  "code_sha": "afe8596baccf5db172b9ae03cfaf3d59f198feca",
+  "start_utc": "2026-11-27T02:21:17.018325+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "H-011": "UNTESTED",
+  "error": "KeyboardInterrupt()",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-011/run.py\", line 173, in <module>\n    try:r=run();status.update(execution_status=r['status'])\n          ^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/run.py\", line 129, in run\n    r,init,fp=train_group(group,split['train'],init,fp);manifest.append(r);dump(O/'checkpoint_manifest.json',manifest)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/run.py\", line 72, in train_group\n    with torch.cuda.amp.autocast():z=m(x).mean(0).float();loss=F.cross_entropy(z,y)\n                                     ^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py\", line 80, in forward\n    x = self.conv2_x(x)\n        ^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py\", line 219, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/models/resnet_cifar.py\", line 40, in forward\n    x = self.residual_function(x) + self.shortcut(x)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/container.py\", line 219, in forward\n    input = module(input)\n            ^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1553, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/module.py\", line 1562, in _call_impl\n    return forward_call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/spikingjelly/activation_based/layer.py\", line 171, in forward\n    x = functional.seq_to_ann_forward(x, super().forward)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/Activity-Pruning-SNN-main/spikingjelly/activation_based/functional.py\", line 686, in seq_to_ann_forward\n    y = stateless_module(y)\n        ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/conv.py\", line 458, in forward\n    return self._conv_forward(input, self.weight, self.bias)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/conda/lib/python3.11/site-packages/torch/nn/modules/conv.py\", line 454, in _conv_forward\n    return F.conv2d(input, weight, bias, self.stride,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nKeyboardInterrupt\n",
+  "end_utc": "2026-11-27T02:26:36.864741+00:00",
+  "wall_seconds_including_preflight": 329.52628306881525,
+  "cpu_seconds_including_preflight": 455.624234248
+}

@@ -27,6 +27,9 @@ def manual():
    if A is not None:outs.append(o);weights.append(A.to(o.dtype))
    if B is not None:outs.append(sout);weights.append(B.to(sout.dtype))
    dx,dt=torch.autograd.grad(outs,(x,theta),weights);aa=torch.zeros_like(x0) if A is None else A.to(o.dtype).to(dtype);bb=torch.zeros_like(x0) if B is None else B.to(sout.dtype).to(dtype);gg=(1-(rr-1).abs()).clamp_min(0);ex=aa*gg+bb*gg/theta0;et=(aa*(s.to(dtype)-rr*gg)-bb*rr*gg/theta0).mean();err=max(error(dx,ex),error(dt,et));results.append({'dtype':str(dtype),'case':'M4-'+case,'normalized_error':err,'tolerance':tol});assert err<tol,(dtype,case,err)
+ # Mixed precision: large fp32 upstream must not overflow a shared fp32 threshold gradient.
+ x=torch.tensor([2.],dtype=torch.float16,requires_grad=True);theta=torch.tensor(1.3,dtype=torch.float32,requires_grad=True);o,spike,_=Artg.apply(x,theta,.002,'mixed');q=torch.tensor([100000.],dtype=torch.float32);_,grad_theta=torch.autograd.grad(o,(x,theta),q);r=(x.detach()/theta.detach()).float();g=(1-((x.detach()-theta.detach())/theta.detach()).abs()).clamp_min(0).float();expected=(q*(spike.detach()-r*g)).mean();err=error(grad_theta,expected);assert torch.isfinite(grad_theta) and err<1e-5,('mixed_dtype',err,grad_theta)
+ results.append({'dtype':'float16 membrane / float32 threshold and upstream','case':'M4-amplitude-large-upstream','normalized_error':err,'tolerance':1e-5,'threshold_gradient':grad_theta.item(),'expected':expected.item()})
  save('gradient_unit_tests.json',{'cases':results,'status':'PASSED','note':'Surrogate estimates, not finite differences of hard thresholds'})
 
 def local():

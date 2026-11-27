@@ -20,8 +20,8 @@ class Artg(torch.autograd.Function):
   mem,theta,s=ctx.saved_tensors
   if a is None:a=torch.zeros_like(mem)
   if b is None:b=torch.zeros_like(mem)
-  a=a.to(mem.dtype);b=b.to(mem.dtype)
-  r=mem/theta;g=(1-((mem-theta)/theta).abs()).clamp_min(0);v1=a*s;v2=-a*r*g;v3=-b*r*g/theta
+  compute_dtype=torch.promote_types(mem.dtype,theta.dtype);a=a.to(compute_dtype);b=b.to(compute_dtype)
+  r=(mem/theta).to(compute_dtype);g=(1-((mem-theta)/theta).abs()).clamp_min(0).to(compute_dtype);v1=a*s;v2=-a*r*g;v3=-b*r*g/theta
   if DIAGNOSTICS['enabled']:
    scale=DIAGNOSTICS['scale'];DIAGNOSTICS['rows'].append({'module':ctx.name,'direct_mean':(v1/scale).mean().item(),'state_mean':(v2/scale).mean().item(),'reset_mean':(v3/scale).mean().item(),'direct_abs_mean':(v1/scale).abs().mean().item(),'state_abs_mean':(v2/scale).abs().mean().item(),'reset_abs_mean':(v3/scale).abs().mean().item()})
   # Algebraically R37; combine reset and amplitude upstream before multiplying g,

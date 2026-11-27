@@ -23,7 +23,7 @@
       "initial_scale_for_preflight_only": 1.0
     }
   },
-  "wall_seconds": 1.7995919859968126,
-  "cpu_seconds": 1.884536222,
+  "wall_seconds": 1.8412329989951104,
+  "cpu_seconds": 1.929149459,
   "note": "disposable preflight models; training uses baseline default GradScaler"
 }

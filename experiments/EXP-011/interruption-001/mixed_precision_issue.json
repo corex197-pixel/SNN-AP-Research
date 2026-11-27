@@ -1,0 +1,14 @@
+{
+  "status": "FAILED",
+  "description": "M4 prematurely casts float32 upstream gradients to float16 when membrane is float16; synthetic amp-scale upstream 100000 yielded NaN threshold gradient, violating R39. Detected after G0 start; G0 interrupted in epoch 5.",
+  "membrane_dtype": "float16",
+  "output_and_threshold_dtype": "float32",
+  "input": 2.0,
+  "threshold": 1.3,
+  "upstream": 100000.0,
+  "observed_threshold_gradient": "NaN",
+  "G0_completed_epochs": 4,
+  "G0_checkpoint": "experiments/EXP-011/runs/EXP-011-G0-RUN-001/epoch-004.pth",
+  "G1_completed_epochs": 0,
+  "M4_completed_epochs": 0
+}

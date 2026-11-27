@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 115, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 74, in main
+    manual();local();ck=torch.load(M,map_location='cpu',weights_only=False);spl=json.loads(S.read_text());ids=json.loads(I.read_text())['indices'];assert len(ids)==500 and set(ids)<=set(spl['train']) and not set(ids)&set(spl['validation']) and not set(ids)&set(spl['diagnostic'])
+    ^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 31, in manual
+    x=torch.tensor([2.],dtype=torch.float16,requires_grad=True);theta=torch.tensor(1.3,dtype=torch.float32,requires_grad=True);o,spike,_=Artg.apply(x,theta,.002,'mixed');q=torch.tensor([100000.],dtype=torch.float32);_,grad_theta=torch.autograd.grad(o,(x,theta),q);r=x.detach()/theta.detach();g=(1-((x.detach()-theta.detach())/theta.detach()).abs()).clamp_min(0);expected=(q*(spike.detach()-r*g)).mean();err=error(grad_theta,expected);assert torch.isfinite(grad_theta) and err<1e-5,('mixed_dtype',err,grad_theta)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('mixed_dtype', 0.0008255178040258379, tensor(29028.7500))
+{
+  "status": "FAILED",
+  "start_utc": "2026-11-27T02:28:21.392355+00:00",
+  "tests": {},
+  "error": "AssertionError(('mixed_dtype', 0.0008255178040258379, tensor(29028.7500)))",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 115, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 74, in main\n    manual();local();ck=torch.load(M,map_location='cpu',weights_only=False);spl=json.loads(S.read_text());ids=json.loads(I.read_text())['indices'];assert len(ids)==500 and set(ids)<=set(spl['train']) and not set(ids)&set(spl['validation']) and not set(ids)&set(spl['diagnostic'])\n    ^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 31, in manual\n    x=torch.tensor([2.],dtype=torch.float16,requires_grad=True);theta=torch.tensor(1.3,dtype=torch.float32,requires_grad=True);o,spike,_=Artg.apply(x,theta,.002,'mixed');q=torch.tensor([100000.],dtype=torch.float32);_,grad_theta=torch.autograd.grad(o,(x,theta),q);r=x.detach()/theta.detach();g=(1-((x.detach()-theta.detach())/theta.detach()).abs()).clamp_min(0);expected=(q*(spike.detach()-r*g)).mean();err=error(grad_theta,expected);assert torch.isfinite(grad_theta) and err<1e-5,('mixed_dtype',err,grad_theta)\n                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('mixed_dtype', 0.0008255178040258379, tensor(29028.7500))\n",
+  "wall_seconds": 0.1556604141369462,
+  "cpu_seconds": 0.22229449800000012,
+  "end_utc": "2026-11-27T02:28:21.548017+00:00"
+}

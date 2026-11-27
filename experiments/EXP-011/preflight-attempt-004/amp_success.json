@@ -1,0 +1,29 @@
+{
+  "status": "PASSED",
+  "groups": {
+    "G0": {
+      "successful_optimizer_step": true,
+      "non_threshold_parameters_changed": true,
+      "thresholds_positive_finite": true,
+      "loss": 0.5633735656738281,
+      "initial_scale_for_preflight_only": 1.0
+    },
+    "G1": {
+      "successful_optimizer_step": true,
+      "non_threshold_parameters_changed": true,
+      "thresholds_positive_finite": true,
+      "loss": 0.5633735656738281,
+      "initial_scale_for_preflight_only": 1.0
+    },
+    "M4": {
+      "successful_optimizer_step": true,
+      "non_threshold_parameters_changed": true,
+      "thresholds_positive_finite": true,
+      "loss": 0.5633735656738281,
+      "initial_scale_for_preflight_only": 1.0
+    }
+  },
+  "wall_seconds": 1.7995919859968126,
+  "cpu_seconds": 1.884536222,
+  "note": "disposable preflight models; training uses baseline default GradScaler"
+}
