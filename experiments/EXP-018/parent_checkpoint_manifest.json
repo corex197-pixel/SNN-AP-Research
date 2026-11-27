@@ -1,0 +1,23 @@
+[
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U0/latest.pth",
+    "sha256": "1594cbb3f65c1acf91efcbe9c0a842c9ad08fbb57dbfac2ee9333afa951439c2",
+    "bytes": 293834658,
+    "read_only": true
+  },
+  {
+    "group": "U1",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U1/latest.pth",
+    "sha256": "bbf3a5dc7c0035bbaf8c08a18f2143bbcccc920fba6e2516b86b69624f327f81",
+    "bytes": 293834658,
+    "read_only": true
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U2/latest.pth",
+    "sha256": "c4d5d9e882282c1e18ebae3134ab6a1bcbc661acb24035087d1c44f62cbc464c",
+    "bytes": 293834658,
+    "read_only": true
+  }
+]

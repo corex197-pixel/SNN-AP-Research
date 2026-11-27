@@ -1,0 +1,17 @@
+group,epoch,layer,threshold,penalized
+U0,20,static_conv.conv,0.0,False
+U0,20,conv1.conv,0.0,True
+U0,20,conv2,0.0,True
+U0,20,conv3.conv,0.0,True
+U0,20,conv4.conv,0.0,True
+U0,20,conv5,0.0,True
+U0,20,fc1,0.0,True
+U0,20,fc2,0.0,True
+U2,20,static_conv.conv,0.0,False
+U2,20,conv1.conv,0.03155498951673508,True
+U2,20,conv2,0.03155498951673508,True
+U2,20,conv3.conv,0.03155498951673508,True
+U2,20,conv4.conv,0.00788874737918377,True
+U2,20,conv5,0.00788874737918377,True
+U2,20,fc1,0.0004930467111989856,True
+U2,20,fc2,3.08154194499366e-05,True

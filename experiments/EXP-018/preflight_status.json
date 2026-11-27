@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "run_id": "EXP-018-PREFLIGHT-001",
+  "start_utc": "2026-11-27T09:26:00.582043+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "end_utc": "2026-11-27T09:26:32.275225+00:00",
+  "wall_seconds": 31.693222284317017,
+  "cpu_seconds": 34.52508599999999,
+  "peak_allocated_bytes": 12421028352
+}

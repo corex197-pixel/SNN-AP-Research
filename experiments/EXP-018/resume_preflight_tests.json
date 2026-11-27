@@ -1,0 +1,174 @@
+{
+  "status": "PASSED",
+  "groups": [
+    {
+      "group": "U0",
+      "direct_vs_saved_restored": true,
+      "direct": {
+        "model_sha256": "d0fcc1bf1fa2a28501ead717a5e8173a6f8a34b010978d0eb8b3e8bee6a94463",
+        "optimizer_sha256": "d7b6aafc219ca9a320ff903417cd889cd2030a2b327f571aa73c1f1a7a6c5694",
+        "scheduler": {
+          "param_group_field": "lr",
+          "_initial_param_group_field": "initial_lr",
+          "base_values": [
+            0.1
+          ],
+          "metric": null,
+          "t_in_epochs": true,
+          "noise_range_t": null,
+          "noise_pct": 0.67,
+          "noise_type": "normal",
+          "noise_std": 1.0,
+          "noise_seed": 42,
+          "t_initial": 300,
+          "lr_min": 0.0,
+          "cycle_mul": 1.0,
+          "cycle_decay": 0.1,
+          "cycle_limit": 1,
+          "warmup_t": 0,
+          "warmup_lr_init": 0.0,
+          "warmup_prefix": false,
+          "k_decay": 1.0,
+          "warmup_steps": [
+            1
+          ]
+        },
+        "scaler": {
+          "scale": 131072.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 1501
+        },
+        "loss": 0.6773854494094849
+      },
+      "restored": {
+        "model_sha256": "d0fcc1bf1fa2a28501ead717a5e8173a6f8a34b010978d0eb8b3e8bee6a94463",
+        "optimizer_sha256": "d7b6aafc219ca9a320ff903417cd889cd2030a2b327f571aa73c1f1a7a6c5694",
+        "scheduler": {
+          "param_group_field": "lr",
+          "_initial_param_group_field": "initial_lr",
+          "base_values": [
+            0.1
+          ],
+          "metric": null,
+          "t_in_epochs": true,
+          "noise_range_t": null,
+          "noise_pct": 0.67,
+          "noise_type": "normal",
+          "noise_std": 1.0,
+          "noise_seed": 42,
+          "t_initial": 300,
+          "lr_min": 0.0,
+          "cycle_mul": 1.0,
+          "cycle_decay": 0.1,
+          "cycle_limit": 1,
+          "warmup_t": 0,
+          "warmup_lr_init": 0.0,
+          "warmup_prefix": false,
+          "k_decay": 1.0,
+          "warmup_steps": [
+            1
+          ]
+        },
+        "scaler": {
+          "scale": 131072.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 1501
+        },
+        "loss": 0.6773854494094849
+      },
+      "lr_epoch21": 0.09890738003669029,
+      "sample_sha256": "9481c53e123092ea4449e8af8202e27249642ac303d4a4abdf5b57b53403e0e8",
+      "eval_buffers_unchanged": true
+    },
+    {
+      "group": "U2",
+      "direct_vs_saved_restored": true,
+      "direct": {
+        "model_sha256": "4a92d990019b098d5bf79b57ea48846140b95bfea81d9be846ecb80180709944",
+        "optimizer_sha256": "4674c5f3d5005bb9fc2eb87940d82bcb3450855f629d37e3e89754e91dd193c9",
+        "scheduler": {
+          "param_group_field": "lr",
+          "_initial_param_group_field": "initial_lr",
+          "base_values": [
+            0.1
+          ],
+          "metric": null,
+          "t_in_epochs": true,
+          "noise_range_t": null,
+          "noise_pct": 0.67,
+          "noise_type": "normal",
+          "noise_std": 1.0,
+          "noise_seed": 42,
+          "t_initial": 300,
+          "lr_min": 0.0,
+          "cycle_mul": 1.0,
+          "cycle_decay": 0.1,
+          "cycle_limit": 1,
+          "warmup_t": 0,
+          "warmup_lr_init": 0.0,
+          "warmup_prefix": false,
+          "k_decay": 1.0,
+          "warmup_steps": [
+            1
+          ]
+        },
+        "scaler": {
+          "scale": 131072.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 1501
+        },
+        "loss": 0.6864787936210632
+      },
+      "restored": {
+        "model_sha256": "4a92d990019b098d5bf79b57ea48846140b95bfea81d9be846ecb80180709944",
+        "optimizer_sha256": "4674c5f3d5005bb9fc2eb87940d82bcb3450855f629d37e3e89754e91dd193c9",
+        "scheduler": {
+          "param_group_field": "lr",
+          "_initial_param_group_field": "initial_lr",
+          "base_values": [
+            0.1
+          ],
+          "metric": null,
+          "t_in_epochs": true,
+          "noise_range_t": null,
+          "noise_pct": 0.67,
+          "noise_type": "normal",
+          "noise_std": 1.0,
+          "noise_seed": 42,
+          "t_initial": 300,
+          "lr_min": 0.0,
+          "cycle_mul": 1.0,
+          "cycle_decay": 0.1,
+          "cycle_limit": 1,
+          "warmup_t": 0,
+          "warmup_lr_init": 0.0,
+          "warmup_prefix": false,
+          "k_decay": 1.0,
+          "warmup_steps": [
+            1
+          ]
+        },
+        "scaler": {
+          "scale": 131072.0,
+          "growth_factor": 2.0,
+          "backoff_factor": 0.5,
+          "growth_interval": 2000,
+          "_growth_tracker": 1501
+        },
+        "loss": 0.6864787936210632
+      },
+      "lr_epoch21": 0.09890738003669029,
+      "sample_sha256": "9481c53e123092ea4449e8af8202e27249642ac303d4a4abdf5b57b53403e0e8",
+      "eval_buffers_unchanged": true
+    }
+  ],
+  "sampling_epoch21_seed": 12471,
+  "worker_seed": 99912471,
+  "formal_checkpoints_unmodified": true
+}

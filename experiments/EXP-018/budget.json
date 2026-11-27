@@ -1,0 +1,8 @@
+{
+  "start_unix": 1795771557.4115117,
+  "start_utc": "2026-11-27T09:25:57.411520+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "wall_limit_seconds": 28800,
+  "cpu_limit_seconds": 57600,
+  "prior_cpu_seconds": 34.52508599999999
+}
