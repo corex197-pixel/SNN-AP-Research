@@ -23,3 +23,6 @@ DEC-008 — PIVOT + IMPLEMENT：保留H-001/H-004限定条件证据与H-005证�
 
 ## DEC-010 — REFINE + IMPLEMENT
 H-007对本轮预期回升为CURRENT_EVIDENCE_AGAINST但约束作用不可识别，H-008 INSUFFICIENT_EVIDENCE。暂停额外微调，转向已有检查点同预算评价和BN校准先导；保留ROUND-009所有结果及梯度检查时序偏差。
+
+## DEC-011 — PIVOT + IMPLEMENT
+H-009 CURRENT_EVIDENCE_SUPPORTS限定原诊断条件；H-010 CURRENT_EVIDENCE_AGAINST限定主要20%预算与C0比较，C3比较证据不足。停止后训练阈值/BN校准作为主线，转向阈值幅值及重置路径代理梯度；统一缩放保留为强对照。

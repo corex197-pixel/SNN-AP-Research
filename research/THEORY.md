@@ -401,3 +401,6 @@ R23：z=mean_t(logits)，CE=CE(z,y)，学生阈值固定为原阈值1.25倍；�
 
 ## v0.1.6 — R28–R31
 R28：C_proxy/C0≤0.8时平方hinge及其参数梯度为零，当前先导实验不能识别预算约束效果。R29：直接连接BN的神经元在gamma>0时，a≥mu+sqrt(var+eps)/gamma*(theta-beta-tau*u_prev)；gamma<0不等式反向，gamma=0不可除，残差项须显式包含。R30：用同一参考阈值theta_ref定义theta=alpha theta_ref，避免对已缩放学生阈值重复缩放；预算以实际SOP计数匹配。R31：沿除通道外所有维度，以count/mean/M2采用Chan合并，var=M2/count（总体方差），依实际前向顺序逐层校准且其余参数保持不变。R29是代数推导，R31为待验证候选程序。
+
+## v0.1.7 — R32–R39：幅值与重置感知代理梯度
+原论文公式13局部因子g=max(1-|m/theta-1|,0)；实际代码R32为-mean(q*g*g)，论文局部对齐R33为-mean(q*g)，沿用代码均值聚合。R34硬前向软反向s；R35 ds/dm=g/theta, ds/dtheta=-r*g/theta。R36 o=theta*s，do/dm=g, do/dtheta=s-r*g。R37 独立幅值和重置上游梯度a,b时grad_m=a*g+b*g/theta。R38严格共享阈值导数是sum(a*(s-r*g)-b*r*g/theta)。R39本轮有意按当前时间步共享元素mean，时间步贡献自动累加；该缩放非严格sum链式法则。数学推导和性能假设均待验证；不宣称平方因子修正为创新。

@@ -1,0 +1,50 @@
+{
+  "status": "PASSED",
+  "T": 8,
+  "forward_spikes_outputs_membranes_reset_and_manual_update_exact": true,
+  "cases": [
+    {
+      "dtype": "torch.float64",
+      "group": "G0",
+      "input_gradient_normalized_error": 0.0,
+      "threshold_gradient_normalized_error": 3.911847865347859e-17,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "group": "G1",
+      "input_gradient_normalized_error": 0.0,
+      "threshold_gradient_normalized_error": 4.256729168243578e-17,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "group": "M4",
+      "input_gradient_normalized_error": 2.5537084969842147e-16,
+      "threshold_gradient_normalized_error": 1.3642361359401737e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float32",
+      "group": "G0",
+      "input_gradient_normalized_error": 0.0,
+      "threshold_gradient_normalized_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "group": "G1",
+      "input_gradient_normalized_error": 0.0,
+      "threshold_gradient_normalized_error": 2.3467804636158678e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "group": "M4",
+      "input_gradient_normalized_error": 1.0854039222156133e-07,
+      "threshold_gradient_normalized_error": 3.2706479850306365e-08,
+      "tolerance": 1e-05
+    }
+  ],
+  "reference": "independent explicit STE graph with per-time mean normalization and original float32 output casts; not hard finite differences"
+}

@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 104, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 63, in main
+    manual();local();ck=torch.load(M,map_location='cpu',weights_only=False);spl=json.loads(S.read_text());ids=json.loads(I.read_text())['indices'];assert len(ids)==500 and set(ids)<=set(spl['train']) and not set(ids)&set(spl['validation']) and not set(ids)&set(spl['diagnostic'])
+             ^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 57, in local
+    tests.append({'dtype':str(dtype),'group':group,'input_gradient_normalized_error':err_dx,'threshold_gradient_normalized_error':err_dt,'tolerance':tol});assert max(err_dx,err_dt)<tol,(group,dtype,err_dx,err_dt)
+                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('G0', torch.float64, 7.553950327600997e-08, 1.9332884687823375e-08)
+{
+  "status": "FAILED",
+  "start_utc": "2026-11-27T02:14:13.038435+00:00",
+  "tests": {},
+  "error": "AssertionError(('G0', torch.float64, 7.553950327600997e-08, 1.9332884687823375e-08))",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 104, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 63, in main\n    manual();local();ck=torch.load(M,map_location='cpu',weights_only=False);spl=json.loads(S.read_text());ids=json.loads(I.read_text())['indices'];assert len(ids)==500 and set(ids)<=set(spl['train']) and not set(ids)&set(spl['validation']) and not set(ids)&set(spl['diagnostic'])\n             ^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 57, in local\n    tests.append({'dtype':str(dtype),'group':group,'input_gradient_normalized_error':err_dx,'threshold_gradient_normalized_error':err_dt,'tolerance':tol});assert max(err_dx,err_dt)<tol,(group,dtype,err_dx,err_dt)\n                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('G0', torch.float64, 7.553950327600997e-08, 1.9332884687823375e-08)\n",
+  "wall_seconds": 0.1564627019688487,
+  "cpu_seconds": 0.2272149240000001,
+  "end_utc": "2026-11-27T02:14:13.194898+00:00"
+}

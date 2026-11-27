@@ -26,3 +26,9 @@ ROUND-007 初步创新性风险排查，非系统查重：
 - Membrane Potential Batch Normalization for Spiking Neural Networks, ICCV 2023, https://openaccess.thecvf.com/content/ICCV2023/html/Guo_Membrane_Potential_Batch_Normalization_for_Spiking_Neural_Networks_ICCV_2023_paper.html.
 - A Free Lunch From ANN: Towards Efficient, Accurate Spiking Neural Networks Calibration, ICML 2021, https://proceedings.mlr.press/v139/li21d.html
 普通BN统计重新校准已有相关研究，逐层候选方法尚未证明独立创新性。
+
+## ROUND-011 相关工作和创新风险
+- Learnable Surrogate Gradient for Direct Training Spiking Neural Networks, IJCAI 2023, https://ijcai.org/proceedings/2023/335
+- SpQuant-SNN: ultra-low precision membrane potential with sparse activations unlock the potential of on-device spiking neural networks, 2024, https://doi.org/10.3389/fnins.2024.1440000
+- Kook et al., Stabilizing Direct Training of Spiking Neural Networks: Membrane Potential Initialization and Threshold-robust Surrogate Gradient, 2025, https://arxiv.org/abs/2511.08708
+- ELVIA analysis, https://elvia-atlas.org/atlas/cases/neurips2025-0028-activity-pruning-for-efficient-spiking-neural-networks.html ，为待独立审查的外部分析，不是同行评审论文；2026-11-27尝试读取时外部工具返回cache miss，未能独立核验其内容。可学习阈值、替代梯度及梯度路径已有研究；本轮尚未证明独立学术创新性。

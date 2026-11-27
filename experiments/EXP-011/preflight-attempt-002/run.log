@@ -1,0 +1,22 @@
+/home/hym/keyan1/experiments/ROUND-011/preflight.py:104: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  oo=create_optimizer_v2(mm,opt='sgd',lr=.005,weight_decay=5e-4,momentum=.9,nesterov=True);sc=torch.cuda.amp.GradScaler(enabled=True);oo.zero_grad(set_to_none=True)
+/home/hym/keyan1/experiments/ROUND-011/preflight.py:105: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():ll=F.cross_entropy(mm(x).mean(0),y)
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 112, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-011/preflight.py", line 94, in main
+    assert init==reference['init'];ld=error(z.detach().cpu(),reference['z']);assert ld<=1e-5;assert all(torch.equal(spikes[n],reference['spikes'][n]) for n in spikes);assert sop==reference['sop'];gd=max(error(v,reference['grads'][n]) for n,v in grads.items() if not n.endswith('thresh'));ud=max(abs(updates[n]-reference['updates'][n]) for n in updates);records[group]={'logits_normalized_error':ld,'non_threshold_gradient_max_normalized_error':gd,'manual_update_max_absolute_difference':ud};assert gd<=1e-5 and ud<=1e-6,(group,gd,ud)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('M4', 0.0007653629520670911, 0.0)
+{
+  "status": "FAILED",
+  "start_utc": "2026-11-27T02:15:17.757850+00:00",
+  "tests": {},
+  "error": "AssertionError(('M4', 0.0007653629520670911, 0.0))",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 112, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 94, in main\n    assert init==reference['init'];ld=error(z.detach().cpu(),reference['z']);assert ld<=1e-5;assert all(torch.equal(spikes[n],reference['spikes'][n]) for n in spikes);assert sop==reference['sop'];gd=max(error(v,reference['grads'][n]) for n,v in grads.items() if not n.endswith('thresh'));ud=max(abs(updates[n]-reference['updates'][n]) for n in updates);records[group]={'logits_normalized_error':ld,'non_threshold_gradient_max_normalized_error':gd,'manual_update_max_absolute_difference':ud};assert gd<=1e-5 and ud<=1e-6,(group,gd,ud)\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('M4', 0.0007653629520670911, 0.0)\n",
+  "wall_seconds": 2.7415778320282698,
+  "cpu_seconds": 2.91068777,
+  "end_utc": "2026-11-27T02:15:20.499446+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "status": "FAILED",
+  "start_utc": "2026-11-27T02:16:31.454454+00:00",
+  "tests": {},
+  "error": "AssertionError((torch.float64, 'reset', 1.4449610876559156e-08))",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 112, in <module>\n    try:main()\n        ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 71, in main\n    manual();local();ck=torch.load(M,map_location='cpu',weights_only=False);spl=json.loads(S.read_text());ids=json.loads(I.read_text())['indices'];assert len(ids)==500 and set(ids)<=set(spl['train']) and not set(ids)&set(spl['validation']) and not set(ids)&set(spl['diagnostic'])\n    ^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-011/preflight.py\", line 29, in manual\n    dx,dt=torch.autograd.grad(outs,(x,theta),weights);aa=torch.zeros_like(x0) if A is None else A.to(o.dtype).to(dtype);bb=torch.zeros_like(x0) if B is None else B.to(sout.dtype).to(dtype);gg=(1-(rr-1).abs()).clamp_min(0);ex=aa*gg+bb*gg/theta0;et=(aa*(s.to(dtype)-rr*gg)-bb*rr*gg/theta0).mean();err=max(error(dx,ex),error(dt,et));results.append({'dtype':str(dtype),'case':'M4-'+case,'normalized_error':err,'tolerance':tol});assert err<tol,(dtype,case,err)\n                                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^^^^^\nAssertionError: (torch.float64, 'reset', 1.4449610876559156e-08)\n",
+  "wall_seconds": 0.1761859820690006,
+  "cpu_seconds": 0.3344028210000003,
+  "end_utc": "2026-11-27T02:16:31.630642+00:00"
+}

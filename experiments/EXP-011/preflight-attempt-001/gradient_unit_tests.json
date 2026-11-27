@@ -1,0 +1,66 @@
+{
+  "cases": [
+    {
+      "dtype": "torch.float64",
+      "case": "G0",
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "case": "G1",
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "case": "M4-amplitude",
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "case": "M4-reset",
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "case": "M4-both",
+      "normalized_error": 2.4627839951415936e-17,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float32",
+      "case": "G0",
+      "normalized_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "case": "G1",
+      "normalized_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "case": "M4-amplitude",
+      "normalized_error": 6.889471438097796e-09,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "case": "M4-reset",
+      "normalized_error": 0.0,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "case": "M4-both",
+      "normalized_error": 0.0,
+      "tolerance": 1e-05
+    }
+  ],
+  "status": "PASSED",
+  "note": "Surrogate estimates, not finite differences of hard thresholds"
+}

@@ -16,5 +16,7 @@ H-007 CURRENT_EVIDENCE_AGAINST：仅针对当前协议下预期普通微调SOP�
 
 H-008 INSUFFICIENT_EVIDENCE：原假设：在相近实际SOPs预算下，自蒸馏可能改善高活动稀疏AT-LIF的任务性能。
 
-H-009 UNTESTED：固定权重阈值与输入时，BN batch模式相对eval模式可能导致具有实际幅度的全网络SOP变化。
-H-010 UNTESTED：在相近计算预算下，逐层推理状态BN总体统计校准可能改善任务性能。
+H-009 CURRENT_EVIDENCE_SUPPORTS：仅限当前模型、固定500校准样本、batch128及模式干预。固定权重阈值与输入时，BN batch模式相对eval模式可能导致具有实际幅度的全网络SOP变化。
+H-010 CURRENT_EVIDENCE_AGAINST：仅限主要20%预算相对C0改善预测，相对C3仍证据不足。在相近计算预算下，逐层推理状态BN总体统计校准可能改善任务性能。
+
+H-011 UNTESTED：在相同初始化、训练和稀疏化规则及近似SOP预算下，M4优于G0、G1及简单阈值缩放。
