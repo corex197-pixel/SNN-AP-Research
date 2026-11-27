@@ -1,0 +1,6 @@
+{
+  "locked_utc": "2026-11-27T03:47:06.142038+00:00",
+  "code_sha": "071b5fb6f1dc8b9ff172d45fe13434ab7597665b",
+  "selection_inputs": "500 training-origin calibration samples and SOP only",
+  "validation_touched_before_lock": false
+}

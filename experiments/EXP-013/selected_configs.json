@@ -1,0 +1,50 @@
+{
+  "C0": {
+    "0.2": {
+      "alpha": 1.25,
+      "calibration_savings": 0.20630526325338372,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 1.4,
+      "calibration_savings": 0.31417415877099064,
+      "matched_window": true
+    }
+  },
+  "G0-S": {
+    "0.2": {
+      "alpha": 0.9,
+      "calibration_savings": 0.20824333187685373,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 1.0,
+      "calibration_savings": 0.3006935624946101,
+      "matched_window": true
+    }
+  },
+  "G1-S": {
+    "0.2": {
+      "alpha": 0.9,
+      "calibration_savings": 0.20766409738364033,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 1.025,
+      "calibration_savings": 0.317619465007396,
+      "matched_window": true
+    }
+  },
+  "M4-S": {
+    "0.2": {
+      "alpha": 0.9,
+      "calibration_savings": 0.2109927420613309,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 1.0,
+      "calibration_savings": 0.30214975980200887,
+      "matched_window": true
+    }
+  }
+}

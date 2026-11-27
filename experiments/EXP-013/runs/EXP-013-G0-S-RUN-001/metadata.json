@@ -1,0 +1,29 @@
+{
+  "group": "G0-S",
+  "initial_model_sha256": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+  "code_sha": "071b5fb6f1dc8b9ff172d45fe13434ab7597665b",
+  "diagnostic_model_reused": false,
+  "threshold_weight_decay": {
+    "conv1.2": 0.0,
+    "conv2_x.0.residual_function.2": 0.0,
+    "conv2_x.0.act": 0.0,
+    "conv2_x.1.residual_function.2": 0.0,
+    "conv2_x.1.act": 0.0,
+    "conv2_x.2.residual_function.2": 0.0,
+    "conv2_x.2.act": 0.0,
+    "conv3_x.0.residual_function.2": 0.0,
+    "conv3_x.0.act": 0.0,
+    "conv3_x.1.residual_function.2": 0.0,
+    "conv3_x.1.act": 0.0,
+    "conv3_x.2.residual_function.2": 0.0,
+    "conv3_x.2.act": 0.0,
+    "conv4_x.0.residual_function.2": 0.0,
+    "conv4_x.0.act": 0.0,
+    "conv4_x.1.residual_function.2": 0.0,
+    "conv4_x.1.act": 0.0,
+    "conv4_x.2.residual_function.2": 0.0,
+    "conv4_x.2.act": 0.0
+  },
+  "started_utc": "2026-11-27T03:29:01.465819+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5"
+}

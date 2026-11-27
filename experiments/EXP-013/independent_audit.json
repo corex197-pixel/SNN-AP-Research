@@ -1,0 +1,31 @@
+{
+  "status": "PASSED",
+  "EXP012_gate_passed": true,
+  "all_validation_samples_paired_and_unique": true,
+  "validation_samples": 4500,
+  "calibration_selection_independently_verified": true,
+  "bootstrap_independently_recomputed": true,
+  "all_15_checkpoints_hashed": true,
+  "all_final_thresholds_positive_finite": true,
+  "all_19_layers_all_5_epochs_actual_full_and_partial_batch_N_verified": true,
+  "all_group_first_batch_fingerprints_match": true,
+  "model_state_comparisons": {
+    "M4-S_vs_G0-S": {
+      "different_model_tensors": 126,
+      "different_threshold_tensors": 19,
+      "bitwise_identical": false
+    },
+    "M4-S_vs_G1-S": {
+      "different_model_tensors": 126,
+      "different_threshold_tensors": 19,
+      "bitwise_identical": false
+    },
+    "G1-S_vs_G0-S": {
+      "different_model_tensors": 126,
+      "different_threshold_tensors": 19,
+      "bitwise_identical": false
+    }
+  },
+  "cpu_seconds": 1.232854622,
+  "wall_seconds": 1.1420899131335318
+}

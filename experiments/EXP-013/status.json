@@ -1,5 +1,11 @@
 {
-  "execution_status": "PLANNED",
-  "reason": "EXP-012 intervention gate passed; awaiting fixed formal runner",
-  "H-013": "UNTESTED"
+  "execution_status": "COMPLETED",
+  "start_utc": "2026-11-27T03:29:01.138890+00:00",
+  "code_sha": "071b5fb6f1dc8b9ff172d45fe13434ab7597665b",
+  "diagnostic_code_sha": "7ca11f85d51c67b874158906819611bd88f0694e",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "H-013": "UNTESTED",
+  "end_utc": "2026-11-27T03:47:49.058889+00:00",
+  "wall_seconds_including_diagnostic": 1167.4390763447154,
+  "cpu_seconds_including_diagnostic": 1595.37976
 }
