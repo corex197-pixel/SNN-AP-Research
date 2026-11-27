@@ -17,7 +17,7 @@ for group,ss in sel.items():
   if n not in changed:assert torch.equal(sd[n],ck['model'][n]),n
  out=o/'runs/EXP-014-RUN-001'/f'{group}-compact.pth';torch.save({'model':sd,'selected_channels':ss,'source_checkpoint_sha256':'c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a','run_code_sha':status['code_sha'],'note':'CPU reconstruction of evaluated compact tensors; all unsliced tensors bitwise equal to original'},out);manifest.append({'group':group,'path':str(out),'size_bytes':out.stat().st_size,'sha256':sha(out),'unchanged_tensors_bitwise_verified':True,'sliced_tensors_bitwise_verified':True})
 (o/'checkpoint_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-with (o/'tensor_shapes.csv').open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=shapes[0]);w.writeheader();w.writerows(shapes)
+with (o/'tensor_shapes.csv').open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=shapes[0],lineterminator="\n");w.writeheader();w.writerows(shapes)
 def read(path):
  with path.open() as f:return list(csv.DictReader(f))
 a=read(o/'channel_importance_A.csv');b=read(o/'channel_importance_B.csv');rows=read(o/'summary.csv');
