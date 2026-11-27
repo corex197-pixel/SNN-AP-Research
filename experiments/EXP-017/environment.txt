@@ -1,0 +1,8 @@
+executable /home/hym/keyan1/.local/round014-venv/bin/python prefix /home/hym/keyan1/.local/round014-venv base /opt/conda
+torch 2.4.1+cu118 /opt/conda/lib/python3.11/site-packages/torch/__init__.py
+cupy 13.5.1 /home/hym/keyan1/.local/round014-venv/lib/python3.11/site-packages/cupy/__init__.py
+numpy 1.26.4 /home/heiyuming/.local/lib/python3.11/site-packages/numpy/__init__.py
+torchvision 0.19.1+cu118 /opt/conda/lib/python3.11/site-packages/torchvision/__init__.py
+timm 1.0.22 /home/heiyuming/.local/lib/python3.11/site-packages/timm/__init__.py
+spikingjelly 0.0.0.0.14 /home/hym/keyan1/.local/round014-venv/lib/python3.11/site-packages/spikingjelly/__init__.py
+compatibility_patch_target_sha256 f9e3d57779575f0053f04014714304d29c617f9f9fc6d764b136f8ab2734ec63

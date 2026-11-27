@@ -1,0 +1,31 @@
+{
+  "S300": 2633.75,
+  "S20": 348.8174265998425,
+  "S1": 17.5,
+  "lambda_ref": 2.9447029124172762e-08,
+  "K_actual_batch2_and3": [
+    {
+      "static_conv.conv": 0.0,
+      "conv1.conv": 1024.0,
+      "conv2": 1024.0,
+      "conv3.conv": 1024.0,
+      "conv4.conv": 256.0,
+      "conv5": 256.0,
+      "fc1": 16.0,
+      "fc2": 1.0
+    },
+    {
+      "static_conv.conv": 0.0,
+      "conv1.conv": 1024.0,
+      "conv2": 1024.0,
+      "conv3.conv": 1024.0,
+      "conv4.conv": 256.0,
+      "conv5": 256.0,
+      "fc1": 16.0,
+      "fc2": 1.0
+    }
+  ],
+  "derivation": "median across penalized convolution layers of q/(K*S300)",
+  "fp32_accumulation_not_exact": true,
+  "source": "UNKNOWN official paper lambda"
+}

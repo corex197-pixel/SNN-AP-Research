@@ -1,0 +1,15 @@
+{
+  "locked_utc": "2026-11-27T08:17:22.842831+00:00",
+  "lambda_weight_neuron": {
+    "U0": 0.0,
+    "U1": 2.9447029124172762e-08,
+    "U2": 8.834108737251828e-08
+  },
+  "seed": 12450,
+  "initialization_sha256": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276",
+  "planned_epochs": 20,
+  "scheduler_epochs": 300,
+  "selection": "fixed epoch20; see TASK.md",
+  "source": "R68; official value UNKNOWN",
+  "locked_before_training": true
+}

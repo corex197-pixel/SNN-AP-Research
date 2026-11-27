@@ -1,0 +1,19 @@
+{
+  "seed": 12450,
+  "groups": [
+    {
+      "group": "U0",
+      "initial_state_sha256": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276"
+    },
+    {
+      "group": "U1",
+      "initial_state_sha256": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276"
+    },
+    {
+      "group": "U2",
+      "initial_state_sha256": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276"
+    }
+  ],
+  "identical": true,
+  "model_parameters": 36720484
+}

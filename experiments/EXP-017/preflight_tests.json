@@ -1,0 +1,34 @@
+{
+  "status": "PASSED",
+  "groups": [
+    {
+      "group": "U0",
+      "lambda": 0.0,
+      "initial_hash": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276",
+      "threshold_formula_max_abs_error": 0.0,
+      "AMP_skipped": false,
+      "eval_buffers_unchanged": true
+    },
+    {
+      "group": "U1",
+      "lambda": 2.9447029124172762e-08,
+      "initial_hash": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276",
+      "threshold_formula_max_abs_error": 1.3851772461388962e-14,
+      "AMP_skipped": false,
+      "eval_buffers_unchanged": true
+    },
+    {
+      "group": "U2",
+      "lambda": 8.834108737251828e-08,
+      "initial_hash": "f076453427f96721b933ce0e068b9f191c405d8468391be60d93743f0b865276",
+      "threshold_formula_max_abs_error": 1.858183576355487e-13,
+      "AMP_skipped": false,
+      "eval_buffers_unchanged": true
+    }
+  ],
+  "K_fixed_shapes_batch2_and3": true,
+  "checkpoint_model_optimizer_scheduler_scaler_restoration": true,
+  "eval_buffers_unchanged": true,
+  "CuPy": "13.5.1",
+  "validation_and_official_test_accessed": false
+}
