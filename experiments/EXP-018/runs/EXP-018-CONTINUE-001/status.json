@@ -5,15 +5,15 @@
   "code_sha": "3c510be030909b9459c1a2d574974c07e9f88830",
   "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
   "completed": {
-    "U0": 60,
-    "U2": 60
+    "U0": 100,
+    "U2": 100
   },
-  "stage": 60,
+  "stage": 100,
   "group": "U2",
-  "epoch": 60,
-  "last_utc": "2026-11-27T10:23:44.556623+00:00",
-  "wall_seconds": 3467.1152408123016,
-  "cpu_seconds": 5513.304741999999,
+  "epoch": 100,
+  "last_utc": "2026-11-27T11:19:26.842466+00:00",
+  "wall_seconds": 6809.401231050491,
+  "cpu_seconds": 10980.378155,
   "last_stage_gate": {
     "accuracy_drop_le_5pp": true,
     "sop_savings_ge_5pct": true,

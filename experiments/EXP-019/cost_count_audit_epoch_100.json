@@ -1,0 +1,29 @@
+{
+  "status": "PASSED",
+  "C00_author_sample_weighted": 336233488.07733333,
+  "C22_author_sample_weighted": 92494797.30488889,
+  "relative_error_C00": 5.521956451291098e-09,
+  "relative_error_C22": 5.0020831865954025e-09,
+  "authors_scope": [
+    "conv1.conv",
+    "conv2",
+    "conv3.conv",
+    "conv4.conv",
+    "conv5",
+    "fc1",
+    "fc2"
+  ],
+  "samples": 4500,
+  "input_binary_verified": true,
+  "checkpoints": {
+    "U0": {
+      "sha256": "e99bbfed7fbca94b1791e26354f38364f389e07d95d35af3065795b81227ccb0",
+      "epoch": 100
+    },
+    "U2": {
+      "sha256": "881f607f378acb1dc34563d2e58a54fb39461c1ccbb9b6ba75ccb0126ee99c61",
+      "epoch": 100
+    }
+  },
+  "sum_float64": true
+}
