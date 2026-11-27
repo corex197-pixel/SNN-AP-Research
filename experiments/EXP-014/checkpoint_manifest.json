@@ -1,0 +1,34 @@
+[
+  {
+    "group": "P-Random",
+    "path": "/home/hym/keyan1/experiments/EXP-014/runs/EXP-014-RUN-001/P-Random-compact.pth",
+    "size_bytes": 4009819,
+    "sha256": "b35606850c3dcbc71fd32c77f4b3b171ddc23a04b41463deb7e0353aa1137071",
+    "unchanged_tensors_bitwise_verified": true,
+    "sliced_tensors_bitwise_verified": true
+  },
+  {
+    "group": "P-L1",
+    "path": "/home/hym/keyan1/experiments/EXP-014/runs/EXP-014-RUN-001/P-L1-compact.pth",
+    "size_bytes": 4009151,
+    "sha256": "c931fc08ef2e87e5855af09200fdfbc7f942714a5ff965644b5ad13f24ba225a",
+    "unchanged_tensors_bitwise_verified": true,
+    "sliced_tensors_bitwise_verified": true
+  },
+  {
+    "group": "P-FR",
+    "path": "/home/hym/keyan1/experiments/EXP-014/runs/EXP-014-RUN-001/P-FR-compact.pth",
+    "size_bytes": 4009151,
+    "sha256": "dea06b484b854434784132b1731429fe04273c72113e4f0cdfea452beef04e70",
+    "unchanged_tensors_bitwise_verified": true,
+    "sliced_tensors_bitwise_verified": true
+  },
+  {
+    "group": "P-Loss",
+    "path": "/home/hym/keyan1/experiments/EXP-014/runs/EXP-014-RUN-001/P-Loss-compact.pth",
+    "size_bytes": 4009453,
+    "sha256": "1d38cafb550887cfd8c7a853f18762bc5e93a71e1e1c519cfe55688f277b5e23",
+    "unchanged_tensors_bitwise_verified": true,
+    "sliced_tensors_bitwise_verified": true
+  }
+]

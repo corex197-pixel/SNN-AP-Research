@@ -32,3 +32,5 @@ H-011 INSUFFICIENT_EVIDENCE：原筛选失败且最终模型不可分辨，不�
 
 ## DEC-013 — STOP + PIVOT (ROUND-013)
 User approved stopping the current ARTG optimization direction while retaining H-012's shared-threshold gradient-scale finding. Investigate true structured internal-channel pruning; do not infer novelty for direct removal loss. No training or official test set in EXP-014.
+
+DEC-013 execution evidence: EXP-014 completed; both prespecified screening gates were not met. This is an observation for theory review, not an autonomous new research decision.

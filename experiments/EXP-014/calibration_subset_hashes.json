@@ -1,0 +1,5 @@
+{
+  "method": "SHA256 over UTF-8 compact JSON list of sorted official train IDs; separators comma and colon, no newline",
+  "A": "b2eaf7184f5c717cc3a840980b38c9eef34ffdc0bf1342a86d0870f47b1d2ad1",
+  "B": "d722083c4333e893c41992af2713e0cdd8f5287afe781eb31a49d389ef88a154"
+}

@@ -1,0 +1,1 @@
+Host: Linux; Python 3.11.9; torch 2.4.1+cu118. GPU: RTX 4090 UUID GPU-c0ba2c71-aee0-5675-4047-210764508ba5, isolated using CUDA_VISIBLE_DEVICES. Fixed CIFAR10 training-origin A/B and validation only. No official test or gradient training.

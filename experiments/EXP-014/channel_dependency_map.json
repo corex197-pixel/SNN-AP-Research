@@ -1,0 +1,83 @@
+{
+  "conv2_x.1.residual_function.2": {
+    "input_shape": [
+      8,
+      2,
+      32,
+      32,
+      32
+    ],
+    "output_shape": [
+      8,
+      2,
+      32,
+      32,
+      32
+    ],
+    "consumer_shape": [
+      8,
+      2,
+      32,
+      32,
+      32
+    ],
+    "type": "ATLIF",
+    "consumer": "conv2_x.1.residual_function.3",
+    "consumer_evidence": "nn.Sequential forward order plus identical output/input object; BasicBlock.forward uses sequential result and separate shortcut",
+    "extra_consumers": false
+  },
+  "conv3_x.1.residual_function.2": {
+    "input_shape": [
+      8,
+      2,
+      64,
+      16,
+      16
+    ],
+    "output_shape": [
+      8,
+      2,
+      64,
+      16,
+      16
+    ],
+    "consumer_shape": [
+      8,
+      2,
+      64,
+      16,
+      16
+    ],
+    "type": "ATLIF",
+    "consumer": "conv3_x.1.residual_function.3",
+    "consumer_evidence": "nn.Sequential forward order plus identical output/input object; BasicBlock.forward uses sequential result and separate shortcut",
+    "extra_consumers": false
+  },
+  "conv4_x.1.residual_function.2": {
+    "input_shape": [
+      8,
+      2,
+      128,
+      8,
+      8
+    ],
+    "output_shape": [
+      8,
+      2,
+      128,
+      8,
+      8
+    ],
+    "consumer_shape": [
+      8,
+      2,
+      128,
+      8,
+      8
+    ],
+    "type": "ATLIF",
+    "consumer": "conv4_x.1.residual_function.3",
+    "consumer_evidence": "nn.Sequential forward order plus identical output/input object; BasicBlock.forward uses sequential result and separate shortcut",
+    "extra_consumers": false
+  }
+}

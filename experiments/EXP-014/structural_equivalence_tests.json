@@ -1,0 +1,51 @@
+{
+  "synthetic": {
+    "passed": true,
+    "max_abs": 0.0,
+    "output_shape": [
+      8,
+      2,
+      4,
+      5,
+      5
+    ],
+    "threshold_equal": true,
+    "residual_addition_compatible": true,
+    "original_parameters": 453,
+    "compact_parameters": 305
+  },
+  "real": {
+    "P-Random": {
+      "passed": true,
+      "max_normalized_logits_error": 0.0,
+      "max_abs_logits_error": 0.0,
+      "prediction_disagreements": 0,
+      "spike_difference_counts": {},
+      "difference_cause": "none observed"
+    },
+    "P-L1": {
+      "passed": true,
+      "max_normalized_logits_error": 0.0,
+      "max_abs_logits_error": 0.0,
+      "prediction_disagreements": 0,
+      "spike_difference_counts": {},
+      "difference_cause": "none observed"
+    },
+    "P-FR": {
+      "passed": true,
+      "max_normalized_logits_error": 0.0,
+      "max_abs_logits_error": 0.0,
+      "prediction_disagreements": 0,
+      "spike_difference_counts": {},
+      "difference_cause": "none observed"
+    },
+    "P-Loss": {
+      "passed": true,
+      "max_normalized_logits_error": 0.0,
+      "max_abs_logits_error": 0.0,
+      "prediction_disagreements": 0,
+      "spike_difference_counts": {},
+      "difference_cause": "none observed"
+    }
+  }
+}
