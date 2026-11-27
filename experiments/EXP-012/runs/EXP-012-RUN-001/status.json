@@ -1,0 +1,10 @@
+{
+  "status": "COMPLETED",
+  "code_sha": "7ca11f85d51c67b874158906819611bd88f0694e",
+  "start_utc": "2026-11-27T03:23:13.062201+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "gate": true,
+  "end_utc": "2026-11-27T03:23:33.472775+00:00",
+  "wall_seconds_including_preflight": 24.513762189773843,
+  "cpu_seconds_including_preflight": 31.715551000000005
+}

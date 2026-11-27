@@ -67,7 +67,8 @@ def scale_thresholds(mods,shapes):
  for name,m in mods.items():
   if m.thresh.grad is None:raise RuntimeError('missing shared threshold gradient '+name)
   m.thresh.grad.mul_(shapes[name]['N'])
- if not all(torch.isfinite(m.thresh.grad).all().item() for m in mods.values()):raise FloatingPointError('nonfinite introduced by post-unscale gradient scaling')
+ for name,m in mods.items():
+  if not torch.isfinite(m.thresh.grad).all().item():raise FloatingPointError('nonfinite introduced by post-unscale gradient scaling: '+name+' N='+str(shapes[name]['N']))
 def ulps(x):
  return torch.nextafter(x,torch.full_like(x,float('inf')))-x, x-torch.nextafter(x,torch.full_like(x,float('-inf')))
 def clean(m):

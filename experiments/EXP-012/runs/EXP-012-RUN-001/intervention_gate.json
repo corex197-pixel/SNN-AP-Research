@@ -1,0 +1,902 @@
+{
+  "status": "COMPLETED",
+  "conditions": {
+    "all_sum_groups_16_successes": true,
+    "all_values_finite_positive_and_no_explosion": true,
+    "at_least_10_modules_actual_nonzero_per_sum_group": true,
+    "M4_vs_each_other_at_least_5_modules_above_8_ULP": true,
+    "identical_initialization_and_data": true,
+    "preflight_and_optimizer_checks_passed": true
+  },
+  "H012_intervention_gate": true,
+  "comparisons": {
+    "G0-S": {
+      "modules_greater_than_8_ULP": 19
+    },
+    "G1-S": {
+      "modules_greater_than_8_ULP": 19
+    }
+  },
+  "groups": {
+    "D0": {
+      "attempts": 16,
+      "successful_updates": 16,
+      "AMP_skips": 0,
+      "nonzero_optimizer_update_modules": 0,
+      "nonzero_modules": [],
+      "first_optimizer_check": [
+        {
+          "module": "conv1.2",
+          "predicted": 66.7645492553711,
+          "observed": 66.7645492553711,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.residual_function.2",
+          "predicted": 50.616920471191406,
+          "observed": 50.616920471191406,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.act",
+          "predicted": 64.2967758178711,
+          "observed": 64.2967758178711,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.residual_function.2",
+          "predicted": 41.015567779541016,
+          "observed": 41.015567779541016,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.act",
+          "predicted": 62.15208053588867,
+          "observed": 62.15208053588867,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.residual_function.2",
+          "predicted": 28.721656799316406,
+          "observed": 28.721656799316406,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.act",
+          "predicted": 63.54304885864258,
+          "observed": 63.54304885864258,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.residual_function.2",
+          "predicted": 38.77253341674805,
+          "observed": 38.77253341674805,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.act",
+          "predicted": 54.088993072509766,
+          "observed": 54.088993072509766,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.residual_function.2",
+          "predicted": 12.90113353729248,
+          "observed": 12.90113353729248,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.act",
+          "predicted": 44.53636169433594,
+          "observed": 44.53636169433594,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.residual_function.2",
+          "predicted": 19.073278427124023,
+          "observed": 19.073278427124023,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.act",
+          "predicted": 52.695926666259766,
+          "observed": 52.695926666259766,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.residual_function.2",
+          "predicted": 30.073543548583984,
+          "observed": 30.073543548583984,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.act",
+          "predicted": 28.751476287841797,
+          "observed": 28.751476287841797,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.residual_function.2",
+          "predicted": 12.628630638122559,
+          "observed": 12.628630638122559,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.act",
+          "predicted": 24.75428009033203,
+          "observed": 24.75428009033203,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.residual_function.2",
+          "predicted": 17.944164276123047,
+          "observed": 17.944164276123047,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.act",
+          "predicted": 24.632282257080078,
+          "observed": 24.632282257080078,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        }
+      ],
+      "final_thresholds": {
+        "conv1.2": 66.7653579711914,
+        "conv2_x.0.residual_function.2": 50.617408752441406,
+        "conv2_x.0.act": 64.2973861694336,
+        "conv2_x.1.residual_function.2": 41.016056060791016,
+        "conv2_x.1.act": 62.1527099609375,
+        "conv2_x.2.residual_function.2": 28.722023010253906,
+        "conv2_x.2.act": 63.54372024536133,
+        "conv3_x.0.residual_function.2": 38.7729606628418,
+        "conv3_x.0.act": 54.089603424072266,
+        "conv3_x.1.residual_function.2": 12.901247024536133,
+        "conv3_x.1.act": 44.53678894042969,
+        "conv3_x.2.residual_function.2": 19.073461532592773,
+        "conv3_x.2.act": 52.696475982666016,
+        "conv4_x.0.residual_function.2": 30.073787689208984,
+        "conv4_x.0.act": 28.751689910888672,
+        "conv4_x.1.residual_function.2": 12.628706932067871,
+        "conv4_x.1.act": 24.754474639892578,
+        "conv4_x.2.residual_function.2": 17.94425392150879,
+        "conv4_x.2.act": 24.632465362548828
+      },
+      "initial_hash": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+      "wall_seconds": 4.424426463199779,
+      "peak_allocated_bytes": 4792188416
+    },
+    "G0-S": {
+      "attempts": 16,
+      "successful_updates": 16,
+      "AMP_skips": 0,
+      "nonzero_optimizer_update_modules": 19,
+      "nonzero_modules": [
+        "conv1.2",
+        "conv2_x.0.act",
+        "conv2_x.0.residual_function.2",
+        "conv2_x.1.act",
+        "conv2_x.1.residual_function.2",
+        "conv2_x.2.act",
+        "conv2_x.2.residual_function.2",
+        "conv3_x.0.act",
+        "conv3_x.0.residual_function.2",
+        "conv3_x.1.act",
+        "conv3_x.1.residual_function.2",
+        "conv3_x.2.act",
+        "conv3_x.2.residual_function.2",
+        "conv4_x.0.act",
+        "conv4_x.0.residual_function.2",
+        "conv4_x.1.act",
+        "conv4_x.1.residual_function.2",
+        "conv4_x.2.act",
+        "conv4_x.2.residual_function.2"
+      ],
+      "first_optimizer_check": [
+        {
+          "module": "conv1.2",
+          "predicted": 66.76397705078125,
+          "observed": 66.76397705078125,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.residual_function.2",
+          "predicted": 50.616119384765625,
+          "observed": 50.616119384765625,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.act",
+          "predicted": 64.29598999023438,
+          "observed": 64.29598999023438,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.residual_function.2",
+          "predicted": 41.01469039916992,
+          "observed": 41.01469039916992,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.act",
+          "predicted": 62.1513557434082,
+          "observed": 62.1513557434082,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.residual_function.2",
+          "predicted": 28.72023582458496,
+          "observed": 28.72023582458496,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.act",
+          "predicted": 63.54217529296875,
+          "observed": 63.54217529296875,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.residual_function.2",
+          "predicted": 38.77180480957031,
+          "observed": 38.77180480957031,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.act",
+          "predicted": 54.08831024169922,
+          "observed": 54.08831024169922,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.residual_function.2",
+          "predicted": 12.90009593963623,
+          "observed": 12.90009593963623,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.act",
+          "predicted": 44.53587341308594,
+          "observed": 44.53587341308594,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.residual_function.2",
+          "predicted": 19.072235107421875,
+          "observed": 19.072235107421875,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.act",
+          "predicted": 52.695369720458984,
+          "observed": 52.695369720458984,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.residual_function.2",
+          "predicted": 30.07227325439453,
+          "observed": 30.07227325439453,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.act",
+          "predicted": 28.750391006469727,
+          "observed": 28.750391006469727,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.residual_function.2",
+          "predicted": 12.627842903137207,
+          "observed": 12.627842903137207,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.act",
+          "predicted": 24.75405502319336,
+          "observed": 24.75405502319336,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.residual_function.2",
+          "predicted": 17.943880081176758,
+          "observed": 17.943880081176758,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.act",
+          "predicted": 24.632118225097656,
+          "observed": 24.632118225097656,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        }
+      ],
+      "final_thresholds": {
+        "conv1.2": 66.74224090576172,
+        "conv2_x.0.residual_function.2": 50.58501052856445,
+        "conv2_x.0.act": 64.26362609863281,
+        "conv2_x.1.residual_function.2": 40.98359680175781,
+        "conv2_x.1.act": 62.12164306640625,
+        "conv2_x.2.residual_function.2": 28.668495178222656,
+        "conv2_x.2.act": 63.5121955871582,
+        "conv3_x.0.residual_function.2": 38.74192428588867,
+        "conv3_x.0.act": 54.055213928222656,
+        "conv3_x.1.residual_function.2": 12.852558135986328,
+        "conv3_x.1.act": 44.51909255981445,
+        "conv3_x.2.residual_function.2": 19.027053833007812,
+        "conv3_x.2.act": 52.6778678894043,
+        "conv4_x.0.residual_function.2": 30.01994514465332,
+        "conv4_x.0.act": 28.698781967163086,
+        "conv4_x.1.residual_function.2": 12.595247268676758,
+        "conv4_x.1.act": 24.742595672607422,
+        "conv4_x.2.residual_function.2": 17.9310302734375,
+        "conv4_x.2.act": 24.625438690185547
+      },
+      "initial_hash": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+      "wall_seconds": 3.609260527882725,
+      "peak_allocated_bytes": 4792188416
+    },
+    "G1-S": {
+      "attempts": 16,
+      "successful_updates": 16,
+      "AMP_skips": 0,
+      "nonzero_optimizer_update_modules": 19,
+      "nonzero_modules": [
+        "conv1.2",
+        "conv2_x.0.act",
+        "conv2_x.0.residual_function.2",
+        "conv2_x.1.act",
+        "conv2_x.1.residual_function.2",
+        "conv2_x.2.act",
+        "conv2_x.2.residual_function.2",
+        "conv3_x.0.act",
+        "conv3_x.0.residual_function.2",
+        "conv3_x.1.act",
+        "conv3_x.1.residual_function.2",
+        "conv3_x.2.act",
+        "conv3_x.2.residual_function.2",
+        "conv4_x.0.act",
+        "conv4_x.0.residual_function.2",
+        "conv4_x.1.act",
+        "conv4_x.1.residual_function.2",
+        "conv4_x.2.act",
+        "conv4_x.2.residual_function.2"
+      ],
+      "first_optimizer_check": [
+        {
+          "module": "conv1.2",
+          "predicted": 66.763916015625,
+          "observed": 66.763916015625,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.residual_function.2",
+          "predicted": 50.61669921875,
+          "observed": 50.61669921875,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.act",
+          "predicted": 64.29569244384766,
+          "observed": 64.29569244384766,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.residual_function.2",
+          "predicted": 41.01482391357422,
+          "observed": 41.01482391357422,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.act",
+          "predicted": 62.15095901489258,
+          "observed": 62.15095901489258,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.residual_function.2",
+          "predicted": 28.720273971557617,
+          "observed": 28.720273971557617,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.act",
+          "predicted": 63.54189682006836,
+          "observed": 63.54189682006836,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.residual_function.2",
+          "predicted": 38.77119064331055,
+          "observed": 38.77119064331055,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.act",
+          "predicted": 54.088218688964844,
+          "observed": 54.088218688964844,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.residual_function.2",
+          "predicted": 12.899117469787598,
+          "observed": 12.899117469787598,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.act",
+          "predicted": 44.53544616699219,
+          "observed": 44.53544616699219,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.residual_function.2",
+          "predicted": 19.071735382080078,
+          "observed": 19.071735382080078,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.act",
+          "predicted": 52.69493865966797,
+          "observed": 52.69493865966797,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.residual_function.2",
+          "predicted": 30.07191276550293,
+          "observed": 30.07191276550293,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.act",
+          "predicted": 28.7496395111084,
+          "observed": 28.7496395111084,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.residual_function.2",
+          "predicted": 12.627534866333008,
+          "observed": 12.627534866333008,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.act",
+          "predicted": 24.753894805908203,
+          "observed": 24.753894805908203,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.residual_function.2",
+          "predicted": 17.943830490112305,
+          "observed": 17.943830490112305,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.act",
+          "predicted": 24.631977081298828,
+          "observed": 24.631977081298828,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        }
+      ],
+      "final_thresholds": {
+        "conv1.2": 66.73316192626953,
+        "conv2_x.0.residual_function.2": 50.60060501098633,
+        "conv2_x.0.act": 64.25008392333984,
+        "conv2_x.1.residual_function.2": 40.982608795166016,
+        "conv2_x.1.act": 62.10968017578125,
+        "conv2_x.2.residual_function.2": 28.66872215270996,
+        "conv2_x.2.act": 63.50579071044922,
+        "conv3_x.0.residual_function.2": 38.71478271484375,
+        "conv3_x.0.act": 54.052268981933594,
+        "conv3_x.1.residual_function.2": 12.804914474487305,
+        "conv3_x.1.act": 44.50993347167969,
+        "conv3_x.2.residual_function.2": 18.997167587280273,
+        "conv3_x.2.act": 52.66593551635742,
+        "conv4_x.0.residual_function.2": 30.00404930114746,
+        "conv4_x.0.act": 28.67729377746582,
+        "conv4_x.1.residual_function.2": 12.580643653869629,
+        "conv4_x.1.act": 24.735363006591797,
+        "conv4_x.2.residual_function.2": 17.92869758605957,
+        "conv4_x.2.act": 24.620975494384766
+      },
+      "initial_hash": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+      "wall_seconds": 3.6754242521710694,
+      "peak_allocated_bytes": 4792188416
+    },
+    "M4-S": {
+      "attempts": 16,
+      "successful_updates": 16,
+      "AMP_skips": 0,
+      "nonzero_optimizer_update_modules": 19,
+      "nonzero_modules": [
+        "conv1.2",
+        "conv2_x.0.act",
+        "conv2_x.0.residual_function.2",
+        "conv2_x.1.act",
+        "conv2_x.1.residual_function.2",
+        "conv2_x.2.act",
+        "conv2_x.2.residual_function.2",
+        "conv3_x.0.act",
+        "conv3_x.0.residual_function.2",
+        "conv3_x.1.act",
+        "conv3_x.1.residual_function.2",
+        "conv3_x.2.act",
+        "conv3_x.2.residual_function.2",
+        "conv4_x.0.act",
+        "conv4_x.0.residual_function.2",
+        "conv4_x.1.act",
+        "conv4_x.1.residual_function.2",
+        "conv4_x.2.act",
+        "conv4_x.2.residual_function.2"
+      ],
+      "first_optimizer_check": [
+        {
+          "module": "conv1.2",
+          "predicted": 66.76410675048828,
+          "observed": 66.76410675048828,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.residual_function.2",
+          "predicted": 50.61616897583008,
+          "observed": 50.61616897583008,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.0.act",
+          "predicted": 64.29603576660156,
+          "observed": 64.29603576660156,
+          "absolute_error": 0.0,
+          "ulp": 7.62939453125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.residual_function.2",
+          "predicted": 41.014713287353516,
+          "observed": 41.014713287353516,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.1.act",
+          "predicted": 62.15128707885742,
+          "observed": 62.15128707885742,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.residual_function.2",
+          "predicted": 28.72024154663086,
+          "observed": 28.72024154663086,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv2_x.2.act",
+          "predicted": 63.54213333129883,
+          "observed": 63.54213333129883,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.residual_function.2",
+          "predicted": 38.77177810668945,
+          "observed": 38.77177810668945,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.0.act",
+          "predicted": 54.088287353515625,
+          "observed": 54.088287353515625,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.residual_function.2",
+          "predicted": 12.90010929107666,
+          "observed": 12.90010929107666,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.1.act",
+          "predicted": 44.53594207763672,
+          "observed": 44.53594207763672,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.residual_function.2",
+          "predicted": 19.072296142578125,
+          "observed": 19.072296142578125,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv3_x.2.act",
+          "predicted": 52.69538116455078,
+          "observed": 52.69538116455078,
+          "absolute_error": 0.0,
+          "ulp": 3.814697265625e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.residual_function.2",
+          "predicted": 30.072307586669922,
+          "observed": 30.072307586669922,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.0.act",
+          "predicted": 28.75042724609375,
+          "observed": 28.75042724609375,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.residual_function.2",
+          "predicted": 12.627853393554688,
+          "observed": 12.627853393554688,
+          "absolute_error": 0.0,
+          "ulp": 9.5367431640625e-07,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.1.act",
+          "predicted": 24.754070281982422,
+          "observed": 24.754070281982422,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.residual_function.2",
+          "predicted": 17.94388771057129,
+          "observed": 17.94388771057129,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        },
+        {
+          "module": "conv4_x.2.act",
+          "predicted": 24.632221221923828,
+          "observed": 24.632221221923828,
+          "absolute_error": 0.0,
+          "ulp": 1.9073486328125e-06,
+          "passes_one_ulp": true,
+          "weight_decay": 0.0
+        }
+      ],
+      "final_thresholds": {
+        "conv1.2": 66.74716186523438,
+        "conv2_x.0.residual_function.2": 50.58729934692383,
+        "conv2_x.0.act": 64.26483917236328,
+        "conv2_x.1.residual_function.2": 40.983951568603516,
+        "conv2_x.1.act": 62.120628356933594,
+        "conv2_x.2.residual_function.2": 28.669605255126953,
+        "conv2_x.2.act": 63.51123809814453,
+        "conv3_x.0.residual_function.2": 38.74163055419922,
+        "conv3_x.0.act": 54.055015563964844,
+        "conv3_x.1.residual_function.2": 12.852250099182129,
+        "conv3_x.1.act": 44.519859313964844,
+        "conv3_x.2.residual_function.2": 19.024505615234375,
+        "conv3_x.2.act": 52.67927932739258,
+        "conv4_x.0.residual_function.2": 30.020774841308594,
+        "conv4_x.0.act": 28.7014217376709,
+        "conv4_x.1.residual_function.2": 12.597518920898438,
+        "conv4_x.1.act": 24.743328094482422,
+        "conv4_x.2.residual_function.2": 17.93138885498047,
+        "conv4_x.2.act": 24.629621505737305
+      },
+      "initial_hash": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+      "wall_seconds": 5.204292603069916,
+      "peak_allocated_bytes": 6335692288
+    }
+  },
+  "data_fingerprint_equal": true,
+  "skip_positions_may_differ": "see data_batches.csv and step_metrics.csv",
+  "code_sha": "7ca11f85d51c67b874158906819611bd88f0694e",
+  "completed_utc": "2026-11-27T03:23:33.467484+00:00"
+}

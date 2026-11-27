@@ -1,0 +1,78 @@
+/home/hym/keyan1/experiments/ROUND-012/diagnostic.py:14: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  opt=C.optimizer(m);scaler=torch.cuda.amp.GradScaler(enabled=True);tracker=C.ShapeTracker(m);data=C.loader(ids,True);success=attempts=skips=0;group_fp=[];first_check=None;nonzero=set();t=time.monotonic()
+/home/hym/keyan1/experiments/ROUND-012/common.py:93: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=scaler.is_enabled()):logits=m(x).mean(0).float();loss=F.cross_entropy(logits,y)
+{"event": "diagnostic_step", "group": "D0", "attempt": 1, "success": 1, "skipped": false, "loss": 0.5567657351493835}
+{"event": "diagnostic_step", "group": "D0", "attempt": 2, "success": 2, "skipped": false, "loss": 0.5193986892700195}
+{"event": "diagnostic_step", "group": "D0", "attempt": 3, "success": 3, "skipped": false, "loss": 0.5112785696983337}
+{"event": "diagnostic_step", "group": "D0", "attempt": 4, "success": 4, "skipped": false, "loss": 0.49522897601127625}
+{"event": "diagnostic_step", "group": "D0", "attempt": 5, "success": 5, "skipped": false, "loss": 0.6111252307891846}
+{"event": "diagnostic_step", "group": "D0", "attempt": 6, "success": 6, "skipped": false, "loss": 0.5009481906890869}
+{"event": "diagnostic_step", "group": "D0", "attempt": 7, "success": 7, "skipped": false, "loss": 0.4229019284248352}
+{"event": "diagnostic_step", "group": "D0", "attempt": 8, "success": 8, "skipped": false, "loss": 0.42460528016090393}
+{"event": "diagnostic_step", "group": "D0", "attempt": 9, "success": 9, "skipped": false, "loss": 0.4059460461139679}
+{"event": "diagnostic_step", "group": "D0", "attempt": 10, "success": 10, "skipped": false, "loss": 0.45747897028923035}
+{"event": "diagnostic_step", "group": "D0", "attempt": 11, "success": 11, "skipped": false, "loss": 0.47163456678390503}
+{"event": "diagnostic_step", "group": "D0", "attempt": 12, "success": 12, "skipped": false, "loss": 0.38879257440567017}
+{"event": "diagnostic_step", "group": "D0", "attempt": 13, "success": 13, "skipped": false, "loss": 0.48252609372138977}
+{"event": "diagnostic_step", "group": "D0", "attempt": 14, "success": 14, "skipped": false, "loss": 0.439018577337265}
+{"event": "diagnostic_step", "group": "D0", "attempt": 15, "success": 15, "skipped": false, "loss": 0.4191845953464508}
+{"event": "diagnostic_step", "group": "D0", "attempt": 16, "success": 16, "skipped": false, "loss": 0.39296478033065796}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 1, "success": 1, "skipped": false, "loss": 0.5567657351493835}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 2, "success": 2, "skipped": false, "loss": 0.5440765023231506}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 3, "success": 3, "skipped": false, "loss": 0.4438658654689789}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 4, "success": 4, "skipped": false, "loss": 0.3858754336833954}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 5, "success": 5, "skipped": false, "loss": 0.553495466709137}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 6, "success": 6, "skipped": false, "loss": 0.4758121073246002}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 7, "success": 7, "skipped": false, "loss": 0.4487413763999939}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 8, "success": 8, "skipped": false, "loss": 0.46004176139831543}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 9, "success": 9, "skipped": false, "loss": 0.3661397099494934}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 10, "success": 10, "skipped": false, "loss": 0.40614378452301025}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 11, "success": 11, "skipped": false, "loss": 0.40800032019615173}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 12, "success": 12, "skipped": false, "loss": 0.37054651975631714}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 13, "success": 13, "skipped": false, "loss": 0.4415668249130249}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 14, "success": 14, "skipped": false, "loss": 0.4908832907676697}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 15, "success": 15, "skipped": false, "loss": 0.4011129140853882}
+{"event": "diagnostic_step", "group": "G0-S", "attempt": 16, "success": 16, "skipped": false, "loss": 0.4356306195259094}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 1, "success": 1, "skipped": false, "loss": 0.5567657351493835}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 2, "success": 2, "skipped": false, "loss": 0.5263512134552002}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 3, "success": 3, "skipped": false, "loss": 0.4601157009601593}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 4, "success": 4, "skipped": false, "loss": 0.4722205102443695}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 5, "success": 5, "skipped": false, "loss": 0.6020233631134033}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 6, "success": 6, "skipped": false, "loss": 0.49049827456474304}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 7, "success": 7, "skipped": false, "loss": 0.4531383514404297}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 8, "success": 8, "skipped": false, "loss": 0.43821364641189575}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 9, "success": 9, "skipped": false, "loss": 0.3955957293510437}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 10, "success": 10, "skipped": false, "loss": 0.45322176814079285}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 11, "success": 11, "skipped": false, "loss": 0.46937376260757446}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 12, "success": 12, "skipped": false, "loss": 0.38797813653945923}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 13, "success": 13, "skipped": false, "loss": 0.45391568541526794}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 14, "success": 14, "skipped": false, "loss": 0.425269216299057}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 15, "success": 15, "skipped": false, "loss": 0.4611584544181824}
+{"event": "diagnostic_step", "group": "G1-S", "attempt": 16, "success": 16, "skipped": false, "loss": 0.38957342505455017}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 1, "success": 1, "skipped": false, "loss": 0.5567657351493835}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 2, "success": 2, "skipped": false, "loss": 0.5382770895957947}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 3, "success": 3, "skipped": false, "loss": 0.40373119711875916}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 4, "success": 4, "skipped": false, "loss": 0.444404274225235}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 5, "success": 5, "skipped": false, "loss": 0.590165913105011}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 6, "success": 6, "skipped": false, "loss": 0.41907528042793274}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 7, "success": 7, "skipped": false, "loss": 0.46989867091178894}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 8, "success": 8, "skipped": false, "loss": 0.4962252378463745}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 9, "success": 9, "skipped": false, "loss": 0.36336666345596313}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 10, "success": 10, "skipped": false, "loss": 0.429252564907074}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 11, "success": 11, "skipped": false, "loss": 0.4289807677268982}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 12, "success": 12, "skipped": false, "loss": 0.3749760091304779}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 13, "success": 13, "skipped": false, "loss": 0.5090135335922241}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 14, "success": 14, "skipped": false, "loss": 0.44607311487197876}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 15, "success": 15, "skipped": false, "loss": 0.441445529460907}
+{"event": "diagnostic_step", "group": "M4-S", "attempt": 16, "success": 16, "skipped": false, "loss": 0.3852196931838989}
+{
+  "status": "COMPLETED",
+  "code_sha": "7ca11f85d51c67b874158906819611bd88f0694e",
+  "start_utc": "2026-11-27T03:23:13.062201+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "gate": true,
+  "end_utc": "2026-11-27T03:23:33.472775+00:00",
+  "wall_seconds_including_preflight": 24.513762189773843,
+  "cpu_seconds_including_preflight": 31.715551000000005
+}

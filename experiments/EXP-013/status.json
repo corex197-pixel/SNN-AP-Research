@@ -1,1 +1,5 @@
-{"execution_status":"BLOCKED","reason":"EXP-012 preregistered intervention gate not yet evaluated","H-013":"UNTESTED"}
+{
+  "execution_status": "PLANNED",
+  "reason": "EXP-012 intervention gate passed; awaiting fixed formal runner",
+  "H-013": "UNTESTED"
+}

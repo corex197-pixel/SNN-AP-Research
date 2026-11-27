@@ -1,0 +1,204 @@
+{
+  "attempts": 16,
+  "successful_updates": 16,
+  "AMP_skips": 0,
+  "nonzero_optimizer_update_modules": 0,
+  "nonzero_modules": [],
+  "first_optimizer_check": [
+    {
+      "module": "conv1.2",
+      "predicted": 66.7645492553711,
+      "observed": 66.7645492553711,
+      "absolute_error": 0.0,
+      "ulp": 7.62939453125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv2_x.0.residual_function.2",
+      "predicted": 50.616920471191406,
+      "observed": 50.616920471191406,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv2_x.0.act",
+      "predicted": 64.2967758178711,
+      "observed": 64.2967758178711,
+      "absolute_error": 0.0,
+      "ulp": 7.62939453125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv2_x.1.residual_function.2",
+      "predicted": 41.015567779541016,
+      "observed": 41.015567779541016,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv2_x.1.act",
+      "predicted": 62.15208053588867,
+      "observed": 62.15208053588867,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv2_x.2.residual_function.2",
+      "predicted": 28.721656799316406,
+      "observed": 28.721656799316406,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv2_x.2.act",
+      "predicted": 63.54304885864258,
+      "observed": 63.54304885864258,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv3_x.0.residual_function.2",
+      "predicted": 38.77253341674805,
+      "observed": 38.77253341674805,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv3_x.0.act",
+      "predicted": 54.088993072509766,
+      "observed": 54.088993072509766,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv3_x.1.residual_function.2",
+      "predicted": 12.90113353729248,
+      "observed": 12.90113353729248,
+      "absolute_error": 0.0,
+      "ulp": 9.5367431640625e-07,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv3_x.1.act",
+      "predicted": 44.53636169433594,
+      "observed": 44.53636169433594,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv3_x.2.residual_function.2",
+      "predicted": 19.073278427124023,
+      "observed": 19.073278427124023,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv3_x.2.act",
+      "predicted": 52.695926666259766,
+      "observed": 52.695926666259766,
+      "absolute_error": 0.0,
+      "ulp": 3.814697265625e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv4_x.0.residual_function.2",
+      "predicted": 30.073543548583984,
+      "observed": 30.073543548583984,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv4_x.0.act",
+      "predicted": 28.751476287841797,
+      "observed": 28.751476287841797,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv4_x.1.residual_function.2",
+      "predicted": 12.628630638122559,
+      "observed": 12.628630638122559,
+      "absolute_error": 0.0,
+      "ulp": 9.5367431640625e-07,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv4_x.1.act",
+      "predicted": 24.75428009033203,
+      "observed": 24.75428009033203,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv4_x.2.residual_function.2",
+      "predicted": 17.944164276123047,
+      "observed": 17.944164276123047,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    },
+    {
+      "module": "conv4_x.2.act",
+      "predicted": 24.632282257080078,
+      "observed": 24.632282257080078,
+      "absolute_error": 0.0,
+      "ulp": 1.9073486328125e-06,
+      "passes_one_ulp": true,
+      "weight_decay": 0.0
+    }
+  ],
+  "final_thresholds": {
+    "conv1.2": 66.7653579711914,
+    "conv2_x.0.residual_function.2": 50.617408752441406,
+    "conv2_x.0.act": 64.2973861694336,
+    "conv2_x.1.residual_function.2": 41.016056060791016,
+    "conv2_x.1.act": 62.1527099609375,
+    "conv2_x.2.residual_function.2": 28.722023010253906,
+    "conv2_x.2.act": 63.54372024536133,
+    "conv3_x.0.residual_function.2": 38.7729606628418,
+    "conv3_x.0.act": 54.089603424072266,
+    "conv3_x.1.residual_function.2": 12.901247024536133,
+    "conv3_x.1.act": 44.53678894042969,
+    "conv3_x.2.residual_function.2": 19.073461532592773,
+    "conv3_x.2.act": 52.696475982666016,
+    "conv4_x.0.residual_function.2": 30.073787689208984,
+    "conv4_x.0.act": 28.751689910888672,
+    "conv4_x.1.residual_function.2": 12.628706932067871,
+    "conv4_x.1.act": 24.754474639892578,
+    "conv4_x.2.residual_function.2": 17.94425392150879,
+    "conv4_x.2.act": 24.632465362548828
+  },
+  "initial_hash": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+  "wall_seconds": 4.424426463199779,
+  "peak_allocated_bytes": 4792188416
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "N_scaling_max_absolute_error": 0.0,
+  "same_16_augmented_batches_all_groups": true,
+  "nonzero_optimizer_modules": {
+    "D0": 0,
+    "G0-S": 19,
+    "G1-S": 19,
+    "M4-S": 19
+  },
+  "M4_vs_others_over_8_ULP": {
+    "G0-S": {
+      "modules_greater_than_8_ULP": 19
+    },
+    "G1-S": {
+      "modules_greater_than_8_ULP": 19
+    }
+  },
+  "cpu_seconds": 0.08811659800000005,
+  "wall_seconds": 0.08812298998236656,
+  "all_1216_layer_optimizer_updates_independently_checked_max_error_ULP": 0.0
+}
