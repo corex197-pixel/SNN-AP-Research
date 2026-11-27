@@ -1,5 +1,5 @@
 {
-  "status": "RUNNING",
+  "status": "COMPLETED",
   "run_id": "EXP-018-CONTINUE-001",
   "start_utc": "2026-11-27T09:28:20.402862+00:00",
   "code_sha": "3c510be030909b9459c1a2d574974c07e9f88830",
@@ -12,8 +12,8 @@
   "group": "U2",
   "epoch": 300,
   "last_utc": "2026-11-27T15:56:21.780354+00:00",
-  "wall_seconds": 23424.338341236115,
-  "cpu_seconds": 38300.368675000005,
+  "wall_seconds": 23443.447827100754,
+  "cpu_seconds": 38303.13912,
   "last_stage_gate": {
     "accuracy_drop_le_5pp": true,
     "sop_savings_ge_5pct": true,
@@ -21,5 +21,6 @@
     "both_finished_and_checkpoints_verified": true,
     "finite_and_data_valid": true,
     "passed": true
-  }
+  },
+  "end_utc": "2026-11-27T15:56:40.859269+00:00"
 }

@@ -1,0 +1,15 @@
+{
+  "execution_status": "COMPLETED",
+  "run_id": "EXP-019-COST-001",
+  "recorded_epochs": [
+    20,
+    60,
+    100,
+    200,
+    300
+  ],
+  "primary_epoch": 60,
+  "H018_scientific_status": "UNTESTED_pending_theory_review",
+  "code_sha": "3c510be030909b9459c1a2d574974c07e9f88830",
+  "limitations": "paired train-origin validation; counterfactual counts do not establish training causality"
+}

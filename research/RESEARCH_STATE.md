@@ -88,3 +88,5 @@ EXP-017 COMPLETED: U0/U1/U2 each 20 epochs, same seed, original UniSparse update
 
 ## ROUND-017 initiated
 DEC-017 approved U0/U2 continuation from epoch20, mandatory 60/100/200 gates, epoch20/60/100/200/300 counterfactual cost decomposition; U1 remains backup and EXP-017 remains completed. H-016 PARTIALLY_SUPPORTED, H-017/H-018 UNTESTED. Original UniSparse algorithm, fixed data and official-test isolation preserved; complete reproduction not claimed.
+
+ROUND-017 delivery: EXP-018 COMPLETED at {'U0': 300, 'U2': 300}; EXP-019 COMPLETED at epochs [20, 60, 100, 200, 300]. H-016 PARTIALLY_SUPPORTED; H-017/H-018 UNTESTED pending theory review. See EXP-018/019 reports.

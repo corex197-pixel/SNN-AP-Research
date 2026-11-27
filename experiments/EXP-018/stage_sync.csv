@@ -8,3 +8,6 @@ epoch,status,detail
 200,PASSED,"To github.com:corex197-pixel/SNN-AP-Research.git
    088ed9a..ebca6be  research/round-017-unisparse-baseline -> research/round-017-unisparse-baseline
 "
+300,PASSED,"To github.com:corex197-pixel/SNN-AP-Research.git
+   ebca6be..feba945  research/round-017-unisparse-baseline -> research/round-017-unisparse-baseline
+"

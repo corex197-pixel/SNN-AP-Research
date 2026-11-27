@@ -1,0 +1,86 @@
+[
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/latest.pth",
+    "bytes": 293834594,
+    "sha256": "be8d16ba6580ee069fae964686c6989fd737fcbdb369da238c12e68deb6a013f",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/best_validation.pth",
+    "bytes": 293834594,
+    "sha256": "037ee3bdabe981677312ec2a9d48a00fb7acedb7e83c3a1d19134e2c7ad6cf0c",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/epoch-060.pth",
+    "bytes": 293834594,
+    "sha256": "557673647b4b53f279ebf4a275a19f8918b38b55193ddd9e8736f0af5b38c72d",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/epoch-100.pth",
+    "bytes": 293834594,
+    "sha256": "e99bbfed7fbca94b1791e26354f38364f389e07d95d35af3065795b81227ccb0",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/epoch-200.pth",
+    "bytes": 293834594,
+    "sha256": "5946b8d60d78cb3882803a4b056012327f06e90dcbba521cee5dda4b829c1f6e",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/epoch-300.pth",
+    "bytes": 293834594,
+    "sha256": "be8d16ba6580ee069fae964686c6989fd737fcbdb369da238c12e68deb6a013f",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/latest.pth",
+    "bytes": 293834594,
+    "sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/best_validation.pth",
+    "bytes": 293834594,
+    "sha256": "26749ad9c1999593b838e475f0cbe783fef1f835d2c4bf9c02aa0786acc08c0d",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-060.pth",
+    "bytes": 293834594,
+    "sha256": "b9f99168e1b19eea4e620cc43e3ef85a0c170e1a3a638de0dfd41446e5578966",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-100.pth",
+    "bytes": 293834594,
+    "sha256": "881f607f378acb1dc34563d2e58a54fb39461c1ccbb9b6ba75ccb0126ee99c61",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-200.pth",
+    "bytes": 293834594,
+    "sha256": "a06dc33a87f23e44a97d568bf94cfa4b33a2ad300489d6405e72e2708d612617",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-300.pth",
+    "bytes": 293834594,
+    "sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+    "note": "epoch and code in checkpoint; full weights stay on server"
+  }
+]
