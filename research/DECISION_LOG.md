@@ -49,3 +49,6 @@ DEC-015 execution evidence: engineering admission passed under the tested enviro
 User approved EXP-017 U0/U1/U2, each 20 epochs of 300-epoch cosine schedule, with locked R68 reference if official λ is unverified. Preserve author updates including AMP-skip manual penalty; no official test, extra candidates, >20 epoch training or ECAS.
 
 DEC-016 execution: EXP-017 completed; U1/U2 both passed fixed pilot screening, U2 ranked first by prespecified lower-SOP criterion. This is an exploratory recommendation for later approval, not authorization for additional training.
+
+## DEC-017 — CONTINUE + BASELINE
+User selected U2 as controlled combined-sparsity baseline, U0 as dense-control continuation, and U1 as backup only. Approved up to 300 epochs with mandatory 60/100/200 gates and R69–R73 cost attribution, within one RTX4090/8-hour and CPU16-hour cap. No U1 continuation, official test, ECAS, retraining, search or change to author updates.

@@ -37,3 +37,6 @@ ROUND-015 observations: H-016 synthetic fixed-mask/fixed-activity mechanism chec
 
 ### ROUND-016 theory decision
 H-016 PARTIALLY_SUPPORTED: fixed-activity/fixed-mask mathematical and synthetic mechanism supported; actual trained-network magnitude and task effects remain untested. H-017 UNTESTED; R64 is theory only, no ECAS training. Previous hypotheses and their scopes are retained.
+
+### ROUND-017 preregistration
+H-016 PARTIALLY_SUPPORTED, restricted to synthetic mechanisms and descriptive EXP-017 epoch20 trained-model fanout; optimization and task effects unresolved. H-017 UNTESTED. H-018 UNTESTED: in U2 vs U0, ΔC_W<0 and ΔC_S>0 under R69–R73; primary early checkpoint epoch60, exploratory practical magnitude ΔC_S/C00>=0.05, without causal claims.

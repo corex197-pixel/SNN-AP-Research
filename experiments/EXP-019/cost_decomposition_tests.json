@@ -1,0 +1,19 @@
+{
+  "status": "PASSED",
+  "integer_example": {
+    "C00": 8,
+    "C20": 4,
+    "C02": 6,
+    "C22": 3,
+    "delta_W": -3.5,
+    "delta_S": -1.5,
+    "interaction": 1,
+    "delta": -5
+  },
+  "explicit_conv_stride2_padding_reference": 3,
+  "incomplete_batch_weighted": 1.8333333333333333,
+  "equal_cost_nonzero_terms_test": true,
+  "identical_masks_zero_weight_term": true,
+  "identical_activity_zero_activity_term": true,
+  "interaction_test": true
+}

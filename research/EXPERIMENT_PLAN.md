@@ -44,3 +44,6 @@ See ROUND-015-TASK.md. Upstream b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa; RTX409
 
 ## EXP-017 / ROUND-016 preregistration
 Official CifarNet T4, seed12450, batch256, training 45000/validation4500 from train-only data, 175 train batches with drop_last, no official test. U0=0, U1=λ_ref, U2=3λ_ref if author value unknown, λ fixed prior to formal training. Each independently initialized for 20 epochs with 300-epoch cosine; fixed epoch 20 primary comparison, screening criteria and complete budget in ROUND-016-TASK.md. GPU wall <=4500s; CPU cumulative <=10800s. Save metrics, evaluation isolation, full resumable checkpoints, samples and finite-state audit.
+
+## EXP-018/019 — ROUND-017 preregistration
+Exact parent epoch20 U0/U2 SHA256 and fixed data/lambdas are in ROUND-017-TASK.md. Preflight exact state and paired update recovery, then epoch20 cost attribution; paired stage endpoints 60,100,200,300 with gates accuracy drop<=5pp, SOP savings>=5%, all penalized densities>=1%, finite and restorable, equal epochs. Four-mask costs use same actual monitored binary inputs, author scope, 4500 train-origin validation and sample-weighted aggregation. Epoch60 H-018 primary; synthetic accounting is not training causality. User budget GPU 28800 wall seconds and CPU57600 cumulative seconds.

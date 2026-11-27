@@ -422,3 +422,6 @@ R57: nominal local activity penalty P_original=C_out*k_h*k_w*sum_c r[c] for one 
 
 ## v0.2.2 — ROUND-016
 R62–R63: with C(p,r)=pr and the idealized continuous interior dynamics dp/dt=−λr, dr/dt=−λp, δ=p−r obeys δ(t)=δ(0)e^(λt). This is not a stability theorem for discrete UniSparse training. R64: relative fanout d̂[c]=d0*d[c]/mean(d) when mean(d)>0 for direct consumers; it preserves mean coefficient, not necessarily total penalty, gradient norm or performance; not implemented. R65: d[l,k+1]=d[l,k]+η[k] λ_weight K[l]; R66: d[l,K]=d[l,0]+λ_weight K[l] Ση[k]; R67: λ_ref_layer=median(abs(W_initial[l]))/(K[l] S300), for finite positive q,K; R68: λ_ref=median_l λ_ref_layer. S300 is the planned 300-epoch sum over 175 manual-update opportunities per epoch and is not a claim of exact FP32 accumulation.
+
+## v0.2.3 — ROUND-017
+R69 C00=C(M0,s0), C20=C(M2,s0), C02=C(M0,s2), C22=C(M2,s2) on identical train-origin validation samples and author monitor scope; cross combinations are counting counterfactuals, not model predictions. R70 ΔC_W=((C20−C00)+(C22−C02))/2; R71 ΔC_S=((C02−C00)+(C22−C20))/2; R72 ΔC=C22−C00=ΔC_W+ΔC_S; R73 I_WS=C22−C20−C02+C00. These symmetric two-order accounting attributions are not training causality or a new pruning algorithm.
