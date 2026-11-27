@@ -1,0 +1,5 @@
+--- inherited/base.py
++++ isolated/base.py
+@@ -249 +249 @@
+-                elif value.dtype == np.int:
++                elif value.dtype == np.int_:

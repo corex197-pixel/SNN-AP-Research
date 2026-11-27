@@ -1,0 +1,23 @@
+{
+  "status": "COMPLETED",
+  "run_id": "EXP-016",
+  "gpu_wall_seconds_conservative_sum": 26.152378677146583,
+  "cpu_seconds_recorded_subtotal": 16.6765,
+  "cpu_caveat": "script timers exclude portions of imports and uninstrumented installation/preparation; total exact cumulative CPU unavailable; dynamic-library probe CPU also not timed",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "benchmark_train_steps": 10,
+  "additional_profile_train_steps": 1,
+  "complete_model_smoke_steps": 1,
+  "backend_runs": [
+    "EXP-016-BACKEND-001 FAILED np.int",
+    "EXP-016-BACKEND-002 PASSED"
+  ],
+  "hypotheses": {
+    "H-016": "UNTESTED pending theory review; synthetic mechanism gate observed passing",
+    "H-017": "UNTESTED"
+  },
+  "official_test_access": false,
+  "formal_training_approval": "PENDING",
+  "updated_utc": "2026-11-27T07:44:10.625191+00:00",
+  "cuda_library_probe_wall_seconds": 0.532127192
+}

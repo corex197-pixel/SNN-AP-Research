@@ -1,0 +1,32 @@
+OS                           : Linux-6.8.0-138-generic-x86_64-with-glibc2.35
+Python Version               : 3.11.9
+CuPy Version                 : 13.5.1
+CuPy Platform                : NVIDIA CUDA
+NumPy Version                : 1.26.4
+SciPy Version                : 1.14.1
+Cython Build Version         : 3.0.12
+Cython Runtime Version       : None
+CUDA Root                    : /usr/local/cuda
+nvcc PATH                    : /usr/local/cuda/bin/nvcc
+CUDA Build Version           : 11080
+CUDA Driver Version          : 12040
+CUDA Runtime Version         : 11080 (linked to CuPy) / 11080 (locally installed)
+CUDA Extra Include Dirs      : []
+cuBLAS Version               : (available)
+cuFFT Version                : 10900
+cuRAND Version               : 10300
+cuSOLVER Version             : (11, 4, 1)
+cuSPARSE Version             : (available)
+NVRTC Version                : (11, 8)
+Thrust Version               : 200800
+CUB Build Version            : 200800
+Jitify Build Version         : <unknown>
+cuDNN Build Version          : (not loaded; try `import cupy.cuda.cudnn` first)
+cuDNN Version                : (not loaded; try `import cupy.cuda.cudnn` first)
+NCCL Build Version           : 21605
+NCCL Runtime Version         : 22005
+cuTENSOR Version             : None
+cuSPARSELt Build Version     : None
+Device 0 Name                : NVIDIA GeForce RTX 4090
+Device 0 Compute Capability  : 89
+Device 0 PCI Bus ID          : 0000:CE:00.0

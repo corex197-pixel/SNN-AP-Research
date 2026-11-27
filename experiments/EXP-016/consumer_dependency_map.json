@@ -1,0 +1,79 @@
+{
+  "neuron_relations": {
+    "static_conv.activation": {
+      "prev_bns": [
+        "static_conv.norm"
+      ],
+      "next_convs": [
+        "conv1.conv"
+      ],
+      "flatten": null,
+      "activation": "LIF"
+    },
+    "conv1.activation": {
+      "prev_bns": [
+        "conv1.norm"
+      ],
+      "next_convs": [
+        "conv2"
+      ],
+      "flatten": null,
+      "activation": "LIF"
+    },
+    "activation2": {
+      "prev_bns": [
+        "bn2"
+      ],
+      "next_convs": [
+        "conv3.conv"
+      ],
+      "flatten": null,
+      "activation": "LIF"
+    },
+    "conv3.activation": {
+      "prev_bns": [
+        "conv3.norm"
+      ],
+      "next_convs": [
+        "conv4.conv"
+      ],
+      "flatten": null,
+      "activation": "LIF"
+    },
+    "conv4.activation": {
+      "prev_bns": [
+        "conv4.norm"
+      ],
+      "next_convs": [
+        "conv5"
+      ],
+      "flatten": null,
+      "activation": "LIF"
+    },
+    "activation5": {
+      "prev_bns": [
+        "bn5"
+      ],
+      "next_convs": [
+        "fc1"
+      ],
+      "flatten": 16,
+      "activation": "LIF"
+    },
+    "activation_fc1": {
+      "prev_bns": [
+        "bn1"
+      ],
+      "next_convs": [
+        "fc2"
+      ],
+      "flatten": null,
+      "activation": "LIF"
+    }
+  },
+  "skip": [
+    "static_conv"
+  ],
+  "architecture": "activation2/5 followed by pooling; activation5 flattened before fc1; IdentityBN has no affine parameters",
+  "evidence": "official source graph and registered module references"
+}

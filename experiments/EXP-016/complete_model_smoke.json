@@ -1,0 +1,101 @@
+{
+  "status": "PASSED",
+  "kind": "SMOKE_TEST",
+  "output_shape": [
+    4,
+    256,
+    10
+  ],
+  "task_loss_finite": true,
+  "gradient_finite": true,
+  "parameter_count": 36720484,
+  "first_batch_data_load_seconds": 0.3585290447808802,
+  "first_forward_seconds_including_compile_and_sop_monitor": 0.5992417158558965,
+  "monitor_sops_for_batch": 98497531872.0,
+  "train_samples_only": true,
+  "groups": [
+    {
+      "lr": 0.1,
+      "weight_decay": 0.0,
+      "momentum": 0.9,
+      "num_parameters": 36720484
+    }
+  ],
+  "threshold_buffers": {
+    "static_conv.conv": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "conv1.conv": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "conv2": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "conv3.conv": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "conv4.conv": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "conv5": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "fc1": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    },
+    "fc2": {
+      "is_parameter": false,
+      "initial": 0.0,
+      "mask_matches_weight": true,
+      "zero_threshold_matches_raw": true
+    }
+  },
+  "bn_parameters_in_optimizer": {
+    "static_conv.norm": {
+      "gamma_in_optimizer": true,
+      "beta_in_optimizer": true
+    },
+    "conv1.norm": {
+      "gamma_in_optimizer": true,
+      "beta_in_optimizer": true
+    },
+    "bn2": {
+      "gamma_in_optimizer": true,
+      "beta_in_optimizer": true
+    },
+    "conv3.norm": {
+      "gamma_in_optimizer": true,
+      "beta_in_optimizer": true
+    },
+    "conv4.norm": {
+      "gamma_in_optimizer": true,
+      "beta_in_optimizer": true
+    },
+    "bn5": {
+      "gamma_in_optimizer": true,
+      "beta_in_optimizer": true
+    }
+  },
+  "initial_compile_cost_approx": 0.5992417158558965
+}

@@ -1,0 +1,4 @@
+CuPy runtime: 11080
+CUDA driver: 12040
+Loaded library paths:
+/usr/lib/x86_64-linux-gnu/libcuda.so.550.144.03

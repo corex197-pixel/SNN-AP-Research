@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "start_time_utc": "2026-11-27T07:17:26.307004+00:00",
+  "CUDA_VISIBLE_DEVICES": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "official_lif_forward_backward": true,
+  "end_time_utc": "2026-11-27T07:17:30.194465+00:00",
+  "wall_seconds": 5.872716166079044,
+  "cpu_seconds": 3.921232,
+  "peak_allocated_bytes": 17920
+}

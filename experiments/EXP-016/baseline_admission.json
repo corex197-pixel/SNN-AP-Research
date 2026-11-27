@@ -1,0 +1,9 @@
+{
+  "engineering_admission": "ENGINEERING_ADMITTED",
+  "formal_training": "PENDING",
+  "status_explanation": "All predefined engineering gates passed within tested cases; formal nonzero paper lambda and theoretical review still outstanding. Limited 3 measured batches per path.",
+  "H016": "synthetic mechanism gate passed; formal science status pending researcher",
+  "H017": "UNTESTED",
+  "old_environment": "observed entry-file hashes unchanged; original patch-target before hash not captured",
+  "test_set": "not accessed"
+}

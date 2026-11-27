@@ -1,0 +1,20 @@
+{
+  "method": "derived on CPU from recorded t=0 inputs using v0=0, tau=2, decay_input=True; not independently measured pre-spike voltage",
+  "float32_pre_spike_voltage": [
+    0.9999995231628418,
+    1.0000004768371582
+  ],
+  "float32_signed_distance_to_threshold": [
+    -4.76837158203125e-07,
+    4.76837158203125e-07
+  ],
+  "float16_pre_spike_voltage": [
+    1.0,
+    1.0
+  ],
+  "float16_signed_distance_to_threshold": [
+    0.0,
+    0.0
+  ],
+  "threshold": 1.0
+}

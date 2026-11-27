@@ -1,0 +1,63 @@
+{
+  "kind": "UNIT_TEST",
+  "diagnostic_store_v_seq": true,
+  "cases": "silent, repeated, temporal accumulation, hard reset, signed and threshold-adjacent",
+  "results": {
+    "torch.float32": {
+      "spike_mismatches": 0,
+      "voltage_error": 0.0,
+      "final_voltage_error": 0.0,
+      "gradient_error": 2.6515639461877072e-08,
+      "reset_cupy": "0.0",
+      "reset_torch": "0.0",
+      "near_threshold_inputs": [
+        [
+          1.9999990463256836,
+          2.0000009536743164
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    "torch.float16": {
+      "spike_mismatches": 0,
+      "voltage_error": 0.0,
+      "final_voltage_error": 0.0,
+      "gradient_error": 0.00031725887674838305,
+      "reset_cupy": "0.0",
+      "reset_torch": "0.0",
+      "near_threshold_inputs": [
+        [
+          1.9999990463256836,
+          2.0000009536743164
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "tolerance": 0.001,
+      "passed": true
+    }
+  }
+}

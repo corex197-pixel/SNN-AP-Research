@@ -1,0 +1,48 @@
+{
+  "zero": {
+    "total_seconds": 0.16123102993393937,
+    "data_load_seconds": 0.00018373426670829454,
+    "forward_seconds": 0.06545862765051425,
+    "backward_seconds": 0.08907689542199175,
+    "optimizer_seconds": 0.0027434746734797955,
+    "penalty_forward_backward_combined_seconds": 0.0,
+    "manual_clear_seconds": 0.0,
+    "measured_batches": 3,
+    "successful_updates": 5,
+    "amp_skips": 0,
+    "penalty_updates": 0,
+    "peak_allocated_bytes": 12716443648,
+    "peak_reserved_bytes": 14084472832,
+    "epoch_seconds": 28.21543023843939,
+    "epochs_300_hours": 2.3512858532032825
+  },
+  "nonzero": {
+    "total_seconds": 0.23118331360941133,
+    "data_load_seconds": 0.00019601631599167982,
+    "forward_seconds": 0.06546692907189329,
+    "backward_seconds": 0.08909710038763781,
+    "optimizer_seconds": 0.0027566170319914818,
+    "penalty_forward_backward_combined_seconds": 0.06874908809550107,
+    "manual_clear_seconds": 0.0011868346482515335,
+    "measured_batches": 3,
+    "successful_updates": 5,
+    "amp_skips": 0,
+    "penalty_updates": 5,
+    "peak_allocated_bytes": 12716443648,
+    "peak_reserved_bytes": 14755561472,
+    "epoch_seconds": 40.45707988164698,
+    "epochs_300_hours": 3.371423323470582
+  },
+  "assumptions": {
+    "training_samples": 45000,
+    "batch_size": 256,
+    "drop_last": true,
+    "batches_per_epoch": 175,
+    "discarded_samples_per_epoch": 200,
+    "profiling_sync_overhead": true,
+    "nonzero_lambda": "synthetic 0.01, not paper configuration",
+    "validation_checkpoint_overheads": "not measured",
+    "sample_count": "3 measured batches per path; two warmups",
+    "initialization_hashes_identical": true
+  }
+}

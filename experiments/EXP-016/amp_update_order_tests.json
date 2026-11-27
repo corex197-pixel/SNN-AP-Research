@@ -1,0 +1,14 @@
+{
+  "kind": "GPU_UNIT_TEST",
+  "skipped": true,
+  "scale_before": 8.0,
+  "scale_after": 4.0,
+  "manual_changes": {
+    "threshold_changed": true,
+    "gamma_changed": true,
+    "beta_changed": true
+  },
+  "finite": true,
+  "penalties_cleared": true,
+  "coefficients": "synthetic .01, not paper config"
+}

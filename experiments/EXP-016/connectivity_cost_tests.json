@@ -1,0 +1,920 @@
+{
+  "kind": "UNIT_TEST",
+  "cases": [
+    {
+      "case": "9_vs_1",
+      "shape": [
+        1,
+        1,
+        2,
+        1,
+        1
+      ],
+      "mask_shape": [
+        9,
+        2,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.5555555820465088,
+      "FR_per_channel": [
+        1.0,
+        1.0
+      ],
+      "nominal_proxy": 18.0,
+      "effective_fanout": [
+        9.0,
+        1.0
+      ],
+      "effective_proxy": 10.0,
+      "proxy_scaled": 10.0,
+      "proxy_vs_exact_error": 0.0,
+      "exact_sops_per_sample": 10.0,
+      "independent_conv_sops": 10.0,
+      "author_sops": 10.0,
+      "spatial_fanout": [
+        [
+          [
+            9
+          ]
+        ],
+        [
+          [
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "dense",
+      "shape": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 1.0,
+      "FR_per_channel": [
+        0.5555555820465088,
+        0.4444444477558136
+      ],
+      "nominal_proxy": 18.0,
+      "effective_fanout": [
+        18.0,
+        18.0
+      ],
+      "effective_proxy": 18.000000536441803,
+      "proxy_scaled": 162.00000482797623,
+      "proxy_vs_exact_error": 64.00000482797623,
+      "exact_sops_per_sample": 98.0,
+      "independent_conv_sops": 98.0,
+      "author_sops": 98.0,
+      "spatial_fanout": [
+        [
+          [
+            8,
+            12,
+            8
+          ],
+          [
+            12,
+            18,
+            12
+          ],
+          [
+            8,
+            12,
+            8
+          ]
+        ],
+        [
+          [
+            8,
+            12,
+            8
+          ],
+          [
+            12,
+            18,
+            12
+          ],
+          [
+            8,
+            12,
+            8
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "uniform_sparse",
+      "shape": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.5555555555555556,
+      "FR_per_channel": [
+        0.5555555820465088,
+        0.4444444477558136
+      ],
+      "nominal_proxy": 18.0,
+      "effective_fanout": [
+        10,
+        10
+      ],
+      "effective_proxy": 10.000000298023224,
+      "proxy_scaled": 90.00000268220901,
+      "proxy_vs_exact_error": 40.000002682209015,
+      "exact_sops_per_sample": 50.0,
+      "independent_conv_sops": 50.0,
+      "author_sops": 50.0,
+      "spatial_fanout": [
+        [
+          [
+            4,
+            6,
+            4
+          ],
+          [
+            6,
+            10,
+            6
+          ],
+          [
+            4,
+            6,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            6,
+            4
+          ],
+          [
+            6,
+            10,
+            6
+          ],
+          [
+            4,
+            6,
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "unequal",
+      "shape": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.5,
+      "FR_per_channel": [
+        0.5555555820465088,
+        0.4444444477558136
+      ],
+      "nominal_proxy": 18.0,
+      "effective_fanout": [
+        18.0,
+        0.0
+      ],
+      "effective_proxy": 10.000000476837158,
+      "proxy_scaled": 90.00000429153442,
+      "proxy_vs_exact_error": 40.000004291534424,
+      "exact_sops_per_sample": 50.0,
+      "independent_conv_sops": 50.0,
+      "author_sops": 50.0,
+      "spatial_fanout": [
+        [
+          [
+            8,
+            12,
+            8
+          ],
+          [
+            12,
+            18,
+            12
+          ],
+          [
+            8,
+            12,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "one_channel_zero",
+      "shape": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.5,
+      "FR_per_channel": [
+        0.5555555820465088,
+        0.4444444477558136
+      ],
+      "nominal_proxy": 18.0,
+      "effective_fanout": [
+        18.0,
+        0.0
+      ],
+      "effective_proxy": 10.000000476837158,
+      "proxy_scaled": 90.00000429153442,
+      "proxy_vs_exact_error": 40.000004291534424,
+      "exact_sops_per_sample": 50.0,
+      "independent_conv_sops": 50.0,
+      "author_sops": 50.0,
+      "spatial_fanout": [
+        [
+          [
+            8,
+            12,
+            8
+          ],
+          [
+            12,
+            18,
+            12
+          ],
+          [
+            8,
+            12,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "all_zero",
+      "shape": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.0,
+      "FR_per_channel": [
+        0.5555555820465088,
+        0.4444444477558136
+      ],
+      "nominal_proxy": 18.0,
+      "effective_fanout": [
+        0.0,
+        0.0
+      ],
+      "effective_proxy": 0.0,
+      "proxy_scaled": 0.0,
+      "proxy_vs_exact_error": 0.0,
+      "exact_sops_per_sample": 0.0,
+      "independent_conv_sops": 0.0,
+      "author_sops": 0.0,
+      "spatial_fanout": [
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "1x1",
+      "shape": [
+        2,
+        3,
+        2,
+        3,
+        5
+      ],
+      "mask_shape": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        0,
+        0
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.75,
+      "FR_per_channel": [
+        0.5111111402511597,
+        0.5
+      ],
+      "nominal_proxy": 2.0222222805023193,
+      "effective_fanout": [
+        2.0,
+        1.0
+      ],
+      "effective_proxy": 1.5222222805023193,
+      "proxy_scaled": 45.66666841506958,
+      "proxy_vs_exact_error": 1.7484029157799341e-06,
+      "exact_sops_per_sample": 45.666666666666664,
+      "independent_conv_sops": 45.666666666666664,
+      "author_sops": 45.666666666666664,
+      "spatial_fanout": [
+        [
+          [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "stride2",
+      "shape": [
+        2,
+        3,
+        2,
+        4,
+        5
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        2,
+        2
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 1,
+      "density": 0.6388888955116272,
+      "FR_per_channel": [
+        0.42500001192092896,
+        0.550000011920929
+      ],
+      "nominal_proxy": 17.550000429153442,
+      "effective_fanout": [
+        13.0,
+        10.0
+      ],
+      "effective_proxy": 11.024999618530273,
+      "proxy_scaled": 440.99998474121094,
+      "proxy_vs_exact_error": 363.33331807454425,
+      "exact_sops_per_sample": 77.66666666666667,
+      "independent_conv_sops": 77.66666666666667,
+      "author_sops": 77.66666666666667,
+      "spatial_fanout": [
+        [
+          [
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            3,
+            5,
+            3,
+            5,
+            3
+          ],
+          [
+            2,
+            3,
+            2,
+            3,
+            2
+          ],
+          [
+            1,
+            2,
+            1,
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            3,
+            5,
+            3,
+            5,
+            3
+          ],
+          [
+            0,
+            2,
+            0,
+            2,
+            0
+          ],
+          [
+            1,
+            3,
+            1,
+            3,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "dilation2",
+      "shape": [
+        1,
+        3,
+        2,
+        5,
+        7
+      ],
+      "mask_shape": [
+        2,
+        2,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        2,
+        2
+      ],
+      "dilation": [
+        2,
+        2
+      ],
+      "groups": 1,
+      "density": 0.5,
+      "FR_per_channel": [
+        0.523809552192688,
+        0.46666666865348816
+      ],
+      "nominal_proxy": 17.828572511672974,
+      "effective_fanout": [
+        8.0,
+        10.0
+      ],
+      "effective_proxy": 8.85714340209961,
+      "proxy_scaled": 310.0000190734863,
+      "proxy_vs_exact_error": 106.33335240681967,
+      "exact_sops_per_sample": 203.66666666666666,
+      "independent_conv_sops": 203.66666666666666,
+      "author_sops": 203.66666666666666,
+      "spatial_fanout": [
+        [
+          [
+            4,
+            4,
+            5,
+            5,
+            5,
+            3,
+            3
+          ],
+          [
+            4,
+            4,
+            5,
+            5,
+            5,
+            3,
+            3
+          ],
+          [
+            6,
+            6,
+            8,
+            8,
+            8,
+            6,
+            6
+          ],
+          [
+            5,
+            5,
+            6,
+            6,
+            6,
+            4,
+            4
+          ],
+          [
+            5,
+            5,
+            6,
+            6,
+            6,
+            4,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            4,
+            7,
+            7,
+            7,
+            6,
+            6
+          ],
+          [
+            4,
+            4,
+            7,
+            7,
+            7,
+            6,
+            6
+          ],
+          [
+            5,
+            5,
+            10,
+            10,
+            10,
+            9,
+            9
+          ],
+          [
+            4,
+            4,
+            8,
+            8,
+            8,
+            7,
+            7
+          ],
+          [
+            4,
+            4,
+            8,
+            8,
+            8,
+            7,
+            7
+          ]
+        ]
+      ]
+    },
+    {
+      "case": "grouped_formula_only",
+      "shape": [
+        1,
+        2,
+        2,
+        4,
+        5
+      ],
+      "mask_shape": [
+        2,
+        1,
+        3,
+        3
+      ],
+      "stride": [
+        1,
+        1
+      ],
+      "padding": [
+        1,
+        1
+      ],
+      "dilation": [
+        1,
+        1
+      ],
+      "groups": 2,
+      "density": 0.5,
+      "FR_per_channel": [
+        0.42500001192092896,
+        0.675000011920929
+      ],
+      "nominal_proxy": null,
+      "effective_fanout": null,
+      "effective_proxy": null,
+      "proxy_scaled": null,
+      "proxy_vs_exact_error": null,
+      "exact_sops_per_sample": 66.5,
+      "independent_conv_sops": 66.5,
+      "author_sops": null,
+      "spatial_fanout": [
+        [
+          [
+            2,
+            4,
+            4,
+            4,
+            4
+          ],
+          [
+            4,
+            6,
+            6,
+            6,
+            5
+          ],
+          [
+            4,
+            6,
+            6,
+            6,
+            5
+          ],
+          [
+            3,
+            4,
+            4,
+            4,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            2,
+            3,
+            3,
+            3,
+            1
+          ],
+          [
+            1,
+            2,
+            2,
+            2,
+            1
+          ]
+        ]
+      ]
+    }
+  ],
+  "single_spike_costs_9_vs_1": [
+    9.0,
+    1.0
+  ],
+  "R60_enum_equals_conv_and_author_all_applicable": true,
+  "R61_single_spike_verified": true,
+  "dense_proxy_exact_only_under_no_boundary_and_appropriate_scaling": true,
+  "note": "R59 excludes spatial boundaries; grouped case independent formula only"
+}

@@ -1,0 +1,40 @@
+{
+  "torch": {
+    "path": "/opt/conda/lib/python3.11/site-packages/torch/__init__.py",
+    "before_sha256": "34fd26c3046775a70a6a654df60afb362b2f2e98b2f9b8e713c8763b7a80ff83",
+    "after_sha256": "34fd26c3046775a70a6a654df60afb362b2f2e98b2f9b8e713c8763b7a80ff83",
+    "matches": true
+  },
+  "torchvision": {
+    "path": "/opt/conda/lib/python3.11/site-packages/torchvision/__init__.py",
+    "before_sha256": "36ab9d6d55d3962ac1a17ce0b41fd20271c664f02ec592e6aca15ec6adbdf445",
+    "after_sha256": "36ab9d6d55d3962ac1a17ce0b41fd20271c664f02ec592e6aca15ec6adbdf445",
+    "matches": true
+  },
+  "numpy": {
+    "path": "/home/heiyuming/.local/lib/python3.11/site-packages/numpy/__init__.py",
+    "before_sha256": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e",
+    "after_sha256": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e",
+    "matches": true
+  },
+  "spikingjelly": {
+    "path": "/opt/conda/lib/python3.11/site-packages/spikingjelly/__init__.py",
+    "before_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matches": true
+  },
+  "timm": {
+    "path": "/home/heiyuming/.local/lib/python3.11/site-packages/timm/__init__.py",
+    "before_sha256": "9668df8ff48b33f846428cd7607399cf14b4f0feef157930eabf6defe932b1d3",
+    "after_sha256": "9668df8ff48b33f846428cd7607399cf14b4f0feef157930eabf6defe932b1d3",
+    "matches": true
+  },
+  "spikingjelly_patch": {
+    "old_path": "/opt/conda/lib/python3.11/site-packages/spikingjelly/activation_based/auto_cuda/base.py",
+    "old_sha256_now": "635790316709ee1daf63e2757a4be879959e2ab513a940e0217f12cb8bf3c35b",
+    "isolated_path": "/home/hym/keyan1/.local/round014-venv/lib/python3.11/site-packages/spikingjelly/activation_based/auto_cuda/base.py",
+    "patched_sha256": "f9e3d57779575f0053f04014714304d29c617f9f9fc6d764b136f8ab2734ec63",
+    "difference_only_one_numpy_type_substitution": true,
+    "old_target_before_sha256": "NOT_CAPTURED; no direct before/after target proof"
+  }
+}

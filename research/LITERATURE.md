@@ -45,3 +45,6 @@ SCA is prior structured spike-activity channel pruning and regeneration during t
 
 ## ROUND-014
 UniSparse [ICML 2026](https://proceedings.mlr.press/v306/shi26a.html) 的联合连接与脉冲稀疏是既有方法。C-DPSS [代码](https://github.com/JunLi0514/C-DPSS)包含动态稀疏结构；[SBC](https://arxiv.org/abs/2506.03996)为已有二阶后训练压缩研究。原始公式映射见 UNISPARSE_BASELINE.md；不得将这些既有思想单纯更名为创新。
+
+## ROUND-015 相关工作与近似审查
+[UniSparse ICML 2026](https://proceedings.mlr.press/v306/shi26a.html) 第7页明确使用初始结构常数近似动态连接/活动映射，以缓解正反馈；本轮仅验证这种既有近似与有效扇出在合成情形下的差别。[Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications](https://doi.org/10.3389/fnins.2020.00662) 和 [Backpropagation With Sparsity Regularization for Spiking Neural Network Learning](https://doi.org/10.3389/fnins.2022.760298) 体现既有 SNN 能耗及稀疏正则研究；[Unstructured Pruning Framework ICLR 2024](https://github.com/xyshi2000/Unstructured-Pruning) 已研究联合稀疏。不可将有效连接加权或联合稀疏直接宣称为首创。

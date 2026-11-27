@@ -1,0 +1,5 @@
+Looking in links: .local/round015-wheels
+Processing ./.local/round015-wheels/cupy_cuda11x-13.5.1-cp311-cp311-manylinux2014_x86_64.whl
+Processing ./.local/round015-wheels/fastrlock-0.8.3-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_24_x86_64.whl
+Installing collected packages: fastrlock, cupy-cuda11x
+Successfully installed cupy-cuda11x-13.5.1 fastrlock-0.8.3

@@ -1,0 +1,33 @@
+{
+  "executable": "/home/hym/keyan1/.local/round014-venv/bin/python",
+  "prefix": "/home/hym/keyan1/.local/round014-venv",
+  "base_prefix": "/opt/conda",
+  "pip_target": "/home/hym/keyan1/.local/round014-venv/lib/python3.11/site-packages",
+  "modules": {
+    "torch": {
+      "version": "2.4.1+cu118",
+      "path": "/opt/conda/lib/python3.11/site-packages/torch/__init__.py",
+      "file_sha256": "34fd26c3046775a70a6a654df60afb362b2f2e98b2f9b8e713c8763b7a80ff83"
+    },
+    "torchvision": {
+      "version": "0.19.1+cu118",
+      "path": "/opt/conda/lib/python3.11/site-packages/torchvision/__init__.py",
+      "file_sha256": "36ab9d6d55d3962ac1a17ce0b41fd20271c664f02ec592e6aca15ec6adbdf445"
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "path": "/home/heiyuming/.local/lib/python3.11/site-packages/numpy/__init__.py",
+      "file_sha256": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e"
+    },
+    "spikingjelly": {
+      "version": "UNKNOWN",
+      "path": "/opt/conda/lib/python3.11/site-packages/spikingjelly/__init__.py",
+      "file_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "timm": {
+      "version": "1.0.22",
+      "path": "/home/heiyuming/.local/lib/python3.11/site-packages/timm/__init__.py",
+      "file_sha256": "9668df8ff48b33f846428cd7607399cf14b4f0feef157930eabf6defe932b1d3"
+    }
+  }
+}

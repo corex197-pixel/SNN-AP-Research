@@ -1,0 +1,18 @@
+{
+  "status": "PASSED",
+  "kind": "SMOKE_TEST",
+  "conv_penalty_nonzero_modules": 7,
+  "threshold_changed_modules": 7,
+  "bn_affine_changed_modules": 6,
+  "local_calc_penalty_restored_task_gradients": true,
+  "buffers_cleared": true,
+  "all_parameters_finite": true,
+  "nonzero_threshold_probe": {
+    "original_nonzero": 6912,
+    "test_nonzero": 596,
+    "threshold": 0.05,
+    "probe_only": true
+  },
+  "manual_coefficient": 1e-06,
+  "note": "synthetic numerical probe; not paper lambda; local pre-forward cache may precede optimizer update in author sequence"
+}

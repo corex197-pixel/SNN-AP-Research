@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "gpu_name": "NVIDIA GeForce RTX 4090",
+  "torch_cuda": "11.8",
+  "cupy_version": "13.5.1",
+  "cupy_runtime": 11080,
+  "cupy_driver": 12040,
+  "first_kernel_seconds": 0.6609742750879377,
+  "cached_kernel_seconds": 1.3958895578980446e-05,
+  "dlpack_shared_data_verified": true,
+  "cuda_visible_devices": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "cupy_device_properties": "b'NVIDIA GeForce RTX 4090'"
+}

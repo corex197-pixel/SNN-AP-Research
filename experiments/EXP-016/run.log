@@ -1,0 +1,8 @@
+EXP-016 execution log index; timestamps and detailed exceptions are in referenced files.
+CPU connectivity test: connectivity_run.log and connectivity_cost_tests.json.
+Official backend first attempt: backend_run001.log, runs/EXP-016-BACKEND-001/backend_status.json, FAILED np.int.
+Isolated compatibility patch: compatibility_patch.diff, legacy_environment_integrity.json.
+Official backend retry: backend_run002.log, runs/EXP-016-BACKEND-002/backend_status.json, PASSED.
+Full-model gates and benchmark: model_run001.log, runs/EXP-016-MODEL-001/status.json, COMPLETED.
+Penalty component profile: penalty_profile.log, runs/EXP-016-PROFILE-001/status.json, COMPLETED.
+All CPU/GPU synthetic checks remain distinct from formal performance training.

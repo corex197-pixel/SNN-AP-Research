@@ -1,0 +1,16 @@
+{
+  "kind": "UNIT_TEST",
+  "batch_sums": [
+    8,
+    3
+  ],
+  "actual_batch_sizes": [
+    4,
+    2
+  ],
+  "configured_batch_size": 4,
+  "author": 1.375,
+  "sample_weighted": 1.8333333333333333,
+  "difference": -0.45833333333333326,
+  "nonbinary": "author sums raw values, so binary-event interpretation does not apply generally"
+}

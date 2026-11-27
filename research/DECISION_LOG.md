@@ -42,3 +42,5 @@ DEC-014 stage-0 evidence: EXP-015 partial; admission blocked pending isolated co
 
 ## DEC-015 — REPAIR + CONTINUE
 User approved isolated CuPy environment repair, official backend admission tests and synthetic effective-connectivity activity-cost checks, without formal ECAS training, 300-epoch training or test set access. EXP-015 remains PARTIAL as a historical record.
+
+DEC-015 execution evidence: engineering admission passed under the tested environment and limited examples; formal full-training approval remains PENDING and paper nonzero λ remains unresolved. H-016 synthetic mechanism passed pending theory; this is not a new algorithm or autonomous research-direction decision.

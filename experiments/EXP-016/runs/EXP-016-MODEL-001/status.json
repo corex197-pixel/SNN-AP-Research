@@ -1,0 +1,12 @@
+{
+  "status": "COMPLETED",
+  "run_id": "EXP-016-MODEL-001",
+  "started_utc": "2026-11-27T07:40:59.205151+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "code_sha": "376799c0f2aa7654ce68c73a4c12a35e12c72942",
+  "prior_gpu_wall_seconds": 9.2813,
+  "end_utc": "2026-11-27T07:41:06.274680+00:00",
+  "wall_seconds": 10.632516951998696,
+  "cpu_seconds": 9.234368000000002,
+  "peak_allocated_bytes": 12716443648
+}

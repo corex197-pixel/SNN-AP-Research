@@ -1,0 +1,14 @@
+{
+  "local_forward_seconds": 0.04061650694347918,
+  "penalty_backward_seconds": 0.027906283969059587,
+  "local_calls": 7,
+  "calc_penalty_total_seconds": 0.07309238216839731,
+  "manual_clear_seconds": 0.001094115898013115,
+  "other_calc_overhead_seconds": 0.0045695912558585405,
+  "sync_instrumented": true,
+  "synthetic_lambda": 0.01,
+  "not_a_paper_hyperparameter": true,
+  "batch_size": 256,
+  "extra_training_steps": 1,
+  "finite": true
+}

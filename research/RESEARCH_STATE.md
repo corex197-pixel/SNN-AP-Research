@@ -76,3 +76,6 @@ EXP-015-RUN-001 PARTIAL; UniSparse admission BLOCKED: official CuPy backend miss
 
 ## ROUND-015 preregistration
 DEC-015 REPAIR + CONTINUE: retain UniSparse as priority candidate; EXP-015 remains PARTIAL. EXP-016 tests official CuPy backend and effective-connectivity accounting. H-016 and H-017 remain UNTESTED pending researcher review. No ECAS training or official test data.
+
+## ROUND-015 results
+EXP-016 COMPLETED. CuPy 13.5.1 installed in the dedicated inherited-package venv; first official backend run failed on np.int and was preserved, isolated compatibility patch followed by backend success. CifarNet GPU forward/backward and nonzero penalty smoke passed. Synthetic H-016 mechanism gate passed; scientific state awaits theoretical review; H-017 UNTESTED. Engineering admission is ENGINEERING_ADMITTED within tested conditions; formal 300-epoch training PENDING, formal nonzero λ UNKNOWN. EXP-015 remains PARTIAL. The paper explicitly described initial-structure approximation; no novelty or trained-network performance claim. See ../experiments/EXP-016/REPORT.md.
