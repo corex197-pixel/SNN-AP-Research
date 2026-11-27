@@ -34,3 +34,6 @@ H-014: CONTRADICTED only for EXP-014's three specified modules, 25% internal cha
 H-016 UNTESTED: fixed nominal activity fanout may differ from actual local SOP cost when effective connections change; synthetic validation does not establish importance in trained networks. H-017 UNTESTED: effective-connectivity-aware penalties may improve matched-SOP task performance; no training authorized this round.
 
 ROUND-015 observations: H-016 synthetic fixed-mask/fixed-activity mechanism checks passed, limited to the specified conditions; scientific status stays UNTESTED pending theoretical review. The UniSparse paper itself explicitly specifies initial-structure approximation. H-017 remains UNTESTED and no ECAS training was run.
+
+### ROUND-016 theory decision
+H-016 PARTIALLY_SUPPORTED: fixed-activity/fixed-mask mathematical and synthetic mechanism supported; actual trained-network magnitude and task effects remain untested. H-017 UNTESTED; R64 is theory only, no ECAS training. Previous hypotheses and their scopes are retained.

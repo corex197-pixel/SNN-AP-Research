@@ -79,3 +79,6 @@ DEC-015 REPAIR + CONTINUE: retain UniSparse as priority candidate; EXP-015 remai
 
 ## ROUND-015 results
 EXP-016 COMPLETED. CuPy 13.5.1 installed in the dedicated inherited-package venv; first official backend run failed on np.int and was preserved, isolated compatibility patch followed by backend success. CifarNet GPU forward/backward and nonzero penalty smoke passed. Synthetic H-016 mechanism gate passed; scientific state awaits theoretical review; H-017 UNTESTED. Engineering admission is ENGINEERING_ADMITTED within tested conditions; formal 300-epoch training PENDING, formal nonzero λ UNKNOWN. EXP-015 remains PARTIAL. The paper explicitly described initial-structure approximation; no novelty or trained-network performance claim. See ../experiments/EXP-016/REPORT.md.
+
+## ROUND-016 initiated
+DEC-016 approved controlled UniSparse working-point pilot EXP-017; EXP-015 remains PARTIAL, EXP-016 COMPLETED, engineering admitted only. H-016 PARTIALLY_SUPPORTED only for synthetic fixed conditions; H-017 UNTESTED. Full reproduction and full training remain PENDING. Preflight and configuration lock precede three independent 20-epoch runs.

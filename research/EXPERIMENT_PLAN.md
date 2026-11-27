@@ -41,3 +41,6 @@ Official UniSparse SHA b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa, MIT. Independen
 
 ## ROUND-015 / EXP-016 preregistration
 See ROUND-015-TASK.md. Upstream b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa; RTX4090 one GPU <=900 seconds; CPU <=2700 seconds; downloads <=200MB; dedicated dependency disk <=2GiB. CPU R57–R61 mechanism tests, official CuPy/Torch comparisons, full-model checks and only then bounded short benchmark. No 300-epoch training or official test set. All failures and skipped tests remain recorded.
+
+## EXP-017 / ROUND-016 preregistration
+Official CifarNet T4, seed12450, batch256, training 45000/validation4500 from train-only data, 175 train batches with drop_last, no official test. U0=0, U1=λ_ref, U2=3λ_ref if author value unknown, λ fixed prior to formal training. Each independently initialized for 20 epochs with 300-epoch cosine; fixed epoch 20 primary comparison, screening criteria and complete budget in ROUND-016-TASK.md. GPU wall <=4500s; CPU cumulative <=10800s. Save metrics, evaluation isolation, full resumable checkpoints, samples and finite-state audit.

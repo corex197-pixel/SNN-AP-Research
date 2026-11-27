@@ -44,3 +44,6 @@ DEC-014 stage-0 evidence: EXP-015 partial; admission blocked pending isolated co
 User approved isolated CuPy environment repair, official backend admission tests and synthetic effective-connectivity activity-cost checks, without formal ECAS training, 300-epoch training or test set access. EXP-015 remains PARTIAL as a historical record.
 
 DEC-015 execution evidence: engineering admission passed under the tested environment and limited examples; formal full-training approval remains PENDING and paper nonzero λ remains unresolved. H-016 synthetic mechanism passed pending theory; this is not a new algorithm or autonomous research-direction decision.
+
+## DEC-016 — CONTINUE + BASELINE
+User approved EXP-017 U0/U1/U2, each 20 epochs of 300-epoch cosine schedule, with locked R68 reference if official λ is unverified. Preserve author updates including AMP-skip manual penalty; no official test, extra candidates, >20 epoch training or ECAS.
