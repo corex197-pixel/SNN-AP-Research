@@ -1,0 +1,63 @@
+{
+  "kind": "UNIT_TEST",
+  "zero_threshold_forward_equal": true,
+  "mask_equals_nonzero_effective_weight": true,
+  "sparse_conv_output_matches_reference": true,
+  "trainable_parameters": {
+    "bn.weight": [
+      1
+    ],
+    "bn.bias": [
+      1
+    ],
+    "conv.weight": [
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "registered_buffers": {
+    "bn.running_mean": [
+      1
+    ],
+    "bn.running_var": [
+      1
+    ],
+    "bn.num_batches_tracked": [],
+    "bn.penalty_gamma": [
+      1
+    ],
+    "bn.penalty_beta": [
+      1
+    ],
+    "conv.threshold": [],
+    "conv.penalty": []
+  },
+  "synthetic_penalty_coefficients": {
+    "weight": 0.01,
+    "neuron": 0.01,
+    "not_paper_config": true
+  },
+  "conv_penalty_before_clear": 9.0,
+  "bn_penalty_gamma": [
+    0.08582157641649246
+  ],
+  "bn_penalty_beta": [
+    0.12595270574092865
+  ],
+  "actual_updated_states": {
+    "conv.threshold": true,
+    "bn.weight": true,
+    "bn.bias": true
+  },
+  "clear_penalty_passed": true,
+  "neuron_output_values": [
+    0.0,
+    1.0
+  ],
+  "neuron_backend": "torch CPU compatibility probe only; official CuPy equivalence NOT TESTED",
+  "amp_cpu_overflow_step_skipped": true,
+  "manual_penalty_changed_threshold_after_skipped_step": true,
+  "amp_note": "controlled CPU simulation of official order, not official GPU CuPy AMP test"
+}

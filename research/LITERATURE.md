@@ -42,3 +42,6 @@ ROUND-007 初步创新性风险排查，非系统查重：
 
 ## ROUND-013 existing work
 SCA is prior structured spike-activity channel pruning and regeneration during training: https://proceedings.mlr.press/v235/li24bz.html . UniSparse combines weight pruning and spike sparsification: https://github.com/xyshi2000/UniSparse . Direct task-loss sensitivity and structural pruning are established ideas; EXP-014 does not claim invention. See BASELINE_CANDIDATES.md for verification and unknowns.
+
+## ROUND-014
+UniSparse [ICML 2026](https://proceedings.mlr.press/v306/shi26a.html) 的联合连接与脉冲稀疏是既有方法。C-DPSS [代码](https://github.com/JunLi0514/C-DPSS)包含动态稀疏结构；[SBC](https://arxiv.org/abs/2506.03996)为已有二阶后训练压缩研究。原始公式映射见 UNISPARSE_BASELINE.md；不得将这些既有思想单纯更名为创新。

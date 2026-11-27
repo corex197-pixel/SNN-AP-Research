@@ -1,0 +1,45 @@
+{
+  "kind": "UNIT_TEST",
+  "cases": [
+    {
+      "case": "A",
+      "author_sops": 8.0,
+      "independent_effective_sops": 8.0,
+      "independent_dense_sops": 8.0,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "input_binary": true,
+      "threshold": 0.0
+    },
+    {
+      "case": "B",
+      "author_sops": 6.0,
+      "independent_effective_sops": 6.0,
+      "independent_dense_sops": 8.0,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "input_binary": true,
+      "threshold": 0.5
+    },
+    {
+      "case": "C",
+      "author_sops": 6.0,
+      "independent_effective_sops": 6.0,
+      "independent_dense_sops": 8.0,
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "input_binary": true,
+      "threshold": 0.5
+    }
+  ],
+  "scope": "one SparseConv2d; skip empty; includes all positions; groups=1; binary input",
+  "decomposition": {
+    "old_old": 8.0,
+    "new_old": 6.0,
+    "new_new": 6.0,
+    "structure_delta": -2.0,
+    "activity_delta": 0.0,
+    "identity_passed": true
+  },
+  "author_input_semantics": "author sums raw input, not explicit x>0; validity requires binary activity for event counts"
+}

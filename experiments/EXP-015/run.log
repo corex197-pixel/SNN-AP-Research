@@ -1,0 +1,1 @@
+{"unit_status": "PASSED", "official_cupy_semantics": "NOT_TESTED", "gpu_benchmark": "BLOCKED: CuPy unavailable, backend equivalence not verified"}

@@ -1,0 +1,111 @@
+{
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "bf0974d15451e4f49a7cecd9c79fc70318d13c1bc9846ead7d24bdaf6268467c",
+      "matches": true
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "fba6c68289c992ad8d8dd046575a11426075a68c922a1f14bc3a8cbe733a58b3",
+      "matches": true
+    },
+    {
+      "path": "configs/cifar10_cifarnet.yaml",
+      "sha256": "4d3198ec5b6a1e54b2055d77a92d09c9b0d4a812b530cda32391643ad79d9819",
+      "matches": true
+    },
+    {
+      "path": "configs/cifar10_res18.yaml",
+      "sha256": "49084d5b7811356e6db2266270c1d1df3decb4ae66ec79d31bcd16c3ffae36df",
+      "matches": true
+    },
+    {
+      "path": "configs/cifar10_res19.yaml",
+      "sha256": "362e75a84005bb4f489cf6f38f6fde31a70315c9375c7004f1334d3d775e8bf2",
+      "matches": true
+    },
+    {
+      "path": "configs/cifar10dvs_vggsnn.yaml",
+      "sha256": "cb587dd6544d6ec406f96ffc9ae17e5cf871247ef714f5a7dc3be55163009018",
+      "matches": true
+    },
+    {
+      "path": "configs/imagenet_res18.yaml",
+      "sha256": "55830a44c8893e350e3e196e64e5a61205eeb14ff9e8240afd6557c844f0d4a7",
+      "matches": true
+    },
+    {
+      "path": "configs/imagenet_spikformer.yaml",
+      "sha256": "b0204e7af4e49bda6f665b8db45a6cbe25558ab0ed362d5f26c27fb469c3f1a4",
+      "matches": true
+    },
+    {
+      "path": "main.py",
+      "sha256": "205b1e70e8ced5705349c2895b5ba00f8e7c052b3d8e4ffd528870a9d1249b8e",
+      "matches": true
+    },
+    {
+      "path": "models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "models/cifarnet.py",
+      "sha256": "a118aa4cb8d317b9b5eda533531de1f078975bd67d401aae3f998b6bd70b4a6d",
+      "matches": true
+    },
+    {
+      "path": "models/resnet.py",
+      "sha256": "2d050435534dd7560d287853a6eb872581033f9328914a61fef02ddde73f033a",
+      "matches": true
+    },
+    {
+      "path": "models/spikformer.py",
+      "sha256": "6deae21e6f6cc8385e0580c3aa4c39fe928425f8d51f6e998efd7de77101f218",
+      "matches": true
+    },
+    {
+      "path": "models/submodules/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "matches": true
+    },
+    {
+      "path": "models/submodules/blocks.py",
+      "sha256": "5d0f098977359ea4783b3a778c3c2e2519180a4c6c3b452be93c92f93d0c361b",
+      "matches": true
+    },
+    {
+      "path": "models/submodules/layers.py",
+      "sha256": "5e609d9388a794fdabff0778b4e26c6d9140fcbb1c3138333ca52752f90ab414",
+      "matches": true
+    },
+    {
+      "path": "models/vggsnn.py",
+      "sha256": "37cb20c592941884f58e5c8890cd6bd726a3762ec056c7cca59e2ded1c355da3",
+      "matches": true
+    },
+    {
+      "path": "readme.md",
+      "sha256": "2b2e04d94c68a942471c83a5170c969aa68008d2373d3b5c0220bdf2e79576f6",
+      "matches": true
+    },
+    {
+      "path": "utils/augment.py",
+      "sha256": "766aae497a35c8a22eb4c18257941621c3c978ce915aae29d222cd01c1648efa",
+      "matches": true
+    },
+    {
+      "path": "utils/scheduler.py",
+      "sha256": "38c4dc14a7f9605d6bb4d4517b81e7eaade4745a15f457ad96e2d72e0f3fafce",
+      "matches": true
+    },
+    {
+      "path": "utils/utils.py",
+      "sha256": "b53b4c4d41aeac5a5a393e28d6ba25ea3a1e68f84370bc6f6bf8ee2de4d6963f",
+      "matches": true
+    }
+  ],
+  "all_byte_identical": true,
+  "upstream_commit": "b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa"
+}

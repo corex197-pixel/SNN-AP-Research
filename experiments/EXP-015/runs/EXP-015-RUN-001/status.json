@@ -1,0 +1,14 @@
+{
+  "execution_status": "PARTIAL",
+  "admission": "BLOCKED",
+  "run_id": "EXP-015-RUN-001",
+  "upstream_commit": "b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa",
+  "unit_test_code_sha": "40816329518089c06e254a95ed8e6c0a12a66504",
+  "supplement_code_sha": "342ae29a98501fcab0f4ceb4d3a4db69f2d388e5",
+  "gpu_seconds": 0,
+  "gpu_benchmark": "NOT_RUN",
+  "resource_basis": "GPU disabled for CPU tests; CPU measured within test bodies only, excludes imports and other preparatory processes",
+  "official_test_access": false,
+  "reason": "CuPy missing; official backend single-GPU forward/backward and equivalence gates not met",
+  "updated_utc": "2026-11-27T06:50:25.499109+00:00"
+}

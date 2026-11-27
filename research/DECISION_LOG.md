@@ -37,3 +37,5 @@ DEC-013 execution evidence: EXP-014 completed; both prespecified screening gates
 
 ## DEC-014 — STOP + PIVOT
 User and theory review formally stop the current AT-LIF local improvement mainline while preserving all historical experiments; prioritize UniSparse stage-0 engineering admission, with no claim of reproduction or originality. H-014/H-015 are CONTRADICTED only within EXP-014's fixed conditions; H-012 remains SUPPORTED, H-013 INSUFFICIENT_EVIDENCE.
+
+DEC-014 stage-0 evidence: EXP-015 partial; admission blocked pending isolated compatible CuPy environment and required controlled tests. This records the gate outcome, not a new research direction decision.

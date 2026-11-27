@@ -1,0 +1,19 @@
+{
+  "kind": "SMOKE_TEST",
+  "training_ids": [
+    0,
+    1
+  ],
+  "first_sample_index": 0,
+  "first_sample_label": 6,
+  "shape": [
+    3,
+    32,
+    32
+  ],
+  "train_dataset_length": 2,
+  "official_test_file_constructed_or_read": false,
+  "source_files": "data_batch_1..5 only",
+  "augmentation": "official CIFAR10Policy, crop, flip, normalize, cutout",
+  "preprocessed_sample_sha256": "64e643ee278178e19333dd0125850598126a4dfacbdffab07cfee7d80040414a"
+}

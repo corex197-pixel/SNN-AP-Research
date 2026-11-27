@@ -1,0 +1,15 @@
+{
+  "kind": "UNIT_TEST",
+  "cases_author_and_independent": [
+    8.0,
+    6.0,
+    3.0
+  ],
+  "structure_delta": -2.0,
+  "activity_delta": -3.0,
+  "total_delta": -5.0,
+  "identity_passed": true,
+  "gpu_used": false,
+  "wall_seconds": 0.28106696903705597,
+  "cpu_seconds": 0.39660799999999985
+}

@@ -1,0 +1,8 @@
+{
+  "unit_test_code_sha": "40816329518089c06e254a95ed8e6c0a12a66504",
+  "supplement_code_sha": "342ae29a98501fcab0f4ceb4d3a4db69f2d388e5",
+  "upstream_sha": "b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa",
+  "source_integrity": "21 files verified byte-identical",
+  "baseline_import_sha": "52878cff06f6378fa155c032b7acd23883a72e4a",
+  "run_log": "run.log and supplement.log"
+}

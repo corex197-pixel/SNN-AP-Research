@@ -1,0 +1,10 @@
+{
+  "kind": "UNIT_TEST",
+  "eval_state_dict_changed": [],
+  "eval_pre_norm_input_remains_none_after_clear": true,
+  "neuron_memory_tensor_before_reset": true,
+  "neuron_memory_after_reset": "0.0",
+  "backend": "torch CPU probe; CuPy behavior not tested",
+  "official_eval": "does not call calc_penalty; explicit reset_net required",
+  "stale_training_pre_norm_input": "if not cleared, eval forward does not replace cached train input; avoid relying on it"
+}

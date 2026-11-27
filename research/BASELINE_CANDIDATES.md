@@ -9,3 +9,7 @@
 | [UniSparse, ICML 2026](https://github.com/xyshi2000/UniSparse) | 公开，MIT | README 含 CIFAR-10 的 CifarNet/Res19/Res18、DVS-CIFAR10 与 ImageNet Res18 | UNKNOWN；README 未给来源可核验的预训练权重 | spikingjelly 0.0.0.0.14、cupy-cuda12x、timm、torch；README 提到 numpy 兼容补丁；当前 CUDA build 11.8 与所列 CuPy CUDA12x 兼容 UNKNOWN | 原论文训练轮数 UNKNOWN；CIFAR 示例直接运行 python，单 GPU 实测 UNKNOWN；ImageNet 示例明确 4 GPU | 联合权重剪枝和脉冲稀疏化；准确率、权重/活动稀疏度与 SOP/能耗代理口径需按论文及配置核实 |
 
 SCA 已证明活动引导的结构化通道剪枝属于已有研究；本轮无原创性宣称。A/B 校准样本属于训练来源，不能作为外部分布泛化验证。
+
+## ROUND-014 补充
+- [C-DPSS](https://github.com/JunLi0514/C-DPSS)，固定提交 `ea3a3b3dbef8746e030292fe03a276df18bbef22` 已克隆静态读取，包含 models、sparselearning、utils、main、datasets；未运行，不能确认全部路径完整可运行。树中无 LICENSE，许可 UNKNOWN。README 给 VGG16SNN/CIFAR100、300 epochs、channel/filter 动态稀疏、global magnitude death 和 global gradients growth 的示例；requirements 为 torch 2.5.1+cu121 / torchvision 0.20.1+cu121，现环境为 cu118，兼容 UNKNOWN。论文 DOI https://doi.org/10.1016/j.neucom.2026.134101 未成功打开，论文特定完整训练配置和权重 UNKNOWN。
+- [SBC 预印本](https://arxiv.org/abs/2506.03996) 的当前 arXiv v3 标题为 *Spiking Brain Compression: Post-Training Second-order Compression for Spiking Neural Networks*；作者文本提到补充文件 `osbc_prune.py` 等，但本轮未核实公开仓库及其完整可用性，标记 UNKNOWN。二阶剪枝属于已有研究，不重命名为新创新。

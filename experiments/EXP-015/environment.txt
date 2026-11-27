@@ -1,0 +1,1 @@
+Python 3.11.9; torch 2.4.1+cu118; CUDA build 11.8; torchvision 0.19.1+cu118; spikingjelly 0.0.0.0.14; numpy 1.26.4; timm 1.0.22; NVIDIA driver 550.144.03; nvcc 11.8; CuPy NOT INSTALLED. Venv uses system-site-packages; GPU was disabled for CPU tests.

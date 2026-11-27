@@ -1,0 +1,1 @@
+run_id,batch,phase,data_load_seconds,forward_seconds,backward_seconds,optimizer_seconds,penalty_seconds,total_seconds,allocated_bytes,reserved_bytes,optimizer_success,amp_skipped
