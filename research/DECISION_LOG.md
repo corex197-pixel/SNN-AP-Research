@@ -34,3 +34,6 @@ H-011 INSUFFICIENT_EVIDENCE：原筛选失败且最终模型不可分辨，不�
 User approved stopping the current ARTG optimization direction while retaining H-012's shared-threshold gradient-scale finding. Investigate true structured internal-channel pruning; do not infer novelty for direct removal loss. No training or official test set in EXP-014.
 
 DEC-013 execution evidence: EXP-014 completed; both prespecified screening gates were not met. This is an observation for theory review, not an autonomous new research decision.
+
+## DEC-014 — STOP + PIVOT
+User and theory review formally stop the current AT-LIF local improvement mainline while preserving all historical experiments; prioritize UniSparse stage-0 engineering admission, with no claim of reproduction or originality. H-014/H-015 are CONTRADICTED only within EXP-014's fixed conditions; H-012 remains SUPPORTED, H-013 INSUFFICIENT_EVIDENCE.

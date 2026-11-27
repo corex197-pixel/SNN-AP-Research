@@ -26,3 +26,6 @@ H-013 UNTESTED：有效阈值任务更新下，ARTG可能比其他代理因子�
 
 ### ROUND-013 preregistration
 H-012: SUPPORTED (maps the researcher-provided CURRENT_EVIDENCE_SUPPORTS to the AGENTS.md enum; restricted to the tested model, checkpoint, data and SGD protocol). H-013: INSUFFICIENT_EVIDENCE; retain all exploratory 30% observations. H-014: UNTESTED, feasible low-loss genuine internal structural redundancy with the specified parameter/SOP and accuracy gates. H-015: UNTESTED, direct loss-based channel choice versus FR and L1 with prespecified accuracy and SOP gates. Formal status awaits theory review.
+
+### ROUND-014 theory review
+H-014: CONTRADICTED only for EXP-014's three specified modules, 25% internal channel removal without fine-tuning and preregistered pilot gate; no universal claim about SNN structural redundancy. H-015: CONTRADICTED only for the fixed samples, single-channel loss ranking and simultaneous removal protocol. H-012 remains SUPPORTED within its original scoped evidence; H-013 remains INSUFFICIENT_EVIDENCE. All older hypothesis history and boundaries remain unchanged. Q-010 awaits deeper paper analysis; no new validated performance hypothesis.

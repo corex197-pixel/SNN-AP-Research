@@ -1,0 +1,15 @@
+dataset: ImageNet
+input_size: [3, 224, 224]
+batch_size: 32
+accumulation_steps: 4
+label_smoothing: 0.1
+lr: 1e-3
+lr_scheduler: cosine
+min_lr: 1e-6
+warmup_lr: 1e-6
+warmup_epochs: 0
+optimizer: adamw
+re_prob: 0.25
+model: spikformer_8_384
+weight_decay: 0.05
+advanced_aug: True

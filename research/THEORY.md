@@ -413,3 +413,6 @@ R47: delete k output filters of Conv1, matching BN1 entries, and k input channel
 R48: channel firing rate is positive ATLIF outputs divided by the actual T×B×H×W element count, accumulated across unequal batches.
 R49: L1 importance is the per-output-filter sum of absolute Conv1 weights.
 R50: D_c is the mean per-example cross-entropy difference between a full-network forward with channel c masked immediately after ATLIF and the original model, using temporal-mean logits. Negative differences remain negative.
+
+## v0.2.0 — DEC-014 / Q-010
+R51: independent uniform k-subsets of n have expected overlap fraction k/n, not proof of random ranking. R52: D(S)=L(f_without_S)-L(f), J_ij=D({i,j})-D({i})-D({j}); joint effects need not sum. Existing A/B single-channel sums and validation joint losses use different data and do not identify interactions. R53: C(M,s)=sum_{l,b,t,i,j} M[l,i,j]s[l,t,b,i]/B for the specified event-driven connection count. R54: ΔC_structure=C(M_new,s_old)-C(M_old,s_old). R55: ΔC_activity=C(M_new,s_new)-C(M_new,s_old); their sum is ΔC in a common connection index space. R56: count conv events by convolution of binary activity and effective binary connection mask, handling stride/padding/dilation/groups; nonbinary or signed activity requires an explicit hardware model. These are accounting/analysis identities, not validated new methods.

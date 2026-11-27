@@ -1,0 +1,10 @@
+dataset: CIFAR10DVS
+input_size: [2, 48, 48]
+batch_size: 64
+epochs: 300
+T: 10
+model: vggsnn
+lr: 0.025
+lr_scheduler: cosine
+TET: True
+print_freq: 1

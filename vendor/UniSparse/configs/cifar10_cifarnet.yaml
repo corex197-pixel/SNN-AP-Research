@@ -1,0 +1,2 @@
+lr_scheduler: cosine
+model: cifarnet

@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/xyshi2000/UniSparse",
+  "commit": "b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa",
+  "license": "MIT",
+  "import_method": "git archive of detached exact commit into vendor/UniSparse",
+  "source_diff": "empty at import; controlled scripts external",
+  "paper_sha256": "9bc49e0f8cf6fd3a302343ec1e33e232960039b78ed68403eeccce6e532a4ecb"
+}

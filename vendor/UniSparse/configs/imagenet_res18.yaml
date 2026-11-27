@@ -1,0 +1,6 @@
+dataset: ImageNet
+input_size: [3, 224, 224]
+batch_size: 64
+lr_scheduler: cosine
+model: sew_resnet18
+weight_decay: 1e-4

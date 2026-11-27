@@ -35,3 +35,6 @@ EXP-012 D0/G0-S/G1-S/M4-S每组最多20次batch、16次成功更新；同时满�
 
 ## EXP-014 preregistration
 Full fixed protocol: research/ROUND-013-TASK.md. Three preselected internal ATLIF modules, 25% per layer (8/16/32); baseline and independent Random, L1, firing-rate and actual loss-ranked compact models. A determines choices; disjoint B tests ranking stability only. All selections locked before 4500 validation samples. Equivalence tolerance 1e-5. Paired sample bootstrap 2000, seed 2027. No gradient training, BN recalibration, official test or extra pruning-rate search.
+
+## ROUND-014 EXP-015 preregistration
+Official UniSparse SHA b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa, MIT. Independent environment and external controlled adapters. CPU synthetic correctness and author SOP audit first; GPU short benchmark only after official CuPy forward/backward and sparse-state prerequisites, single RTX4090, at most 10 warmup plus 30 measured batches, batch256, T4, seed12450, <=600 GPU seconds, <=2700 cumulative CPU seconds. No test set, full epoch, AT-LIF tuning, or new algorithm. Full protocol: ROUND-014-TASK.md.

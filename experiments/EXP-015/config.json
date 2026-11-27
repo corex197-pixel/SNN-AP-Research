@@ -1,0 +1,16 @@
+{
+  "upstream_commit": "b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa",
+  "model": "cifarnet",
+  "dataset": "CIFAR10 train batches only",
+  "T": 4,
+  "batch_size": 256,
+  "seed": 12450,
+  "gpu_seconds_limit": 600,
+  "cpu_seconds_limit": 2700,
+  "gpu_benchmark_warmup_max": 10,
+  "gpu_benchmark_measure_max": 30,
+  "official_test_access": false,
+  "formal_training_epochs": 0,
+  "controlled_split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+  "test_backend": "torch CPU synthetic only; never used as equivalent official GPU implementation"
+}

@@ -68,3 +68,6 @@ DEC-013 approved STOP + PIVOT away from ARTG. EXP-012 and EXP-013 remain COMPLET
 
 ### ROUND-013 result
 EXP-014-RUN-001 COMPLETED: all 224 A and B single-channel measurements and five 4500-sample validation groups. Synthetic and four real 32-sample equivalence checks passed. All compact groups removed 96,880 parameters (8.93%). H-014 and H-015 preregistered screening gates not met; both remain UNTESTED pending theory review. P-Loss worse than FR/L1, and its SOP savings is >2 percentage points below FR. No new training or official test. See experiments/EXP-014/REPORT.md.
+
+## ROUND-014 — DEC-014
+Stop active AT-LIF local-improvement route and preserve its 13 rounds. New UniSparse Q-010 is at stage-0 engineering admission, not reproduced. EXP-014 remains COMPLETED; H-014/H-015 CONTRADICTED only under the prespecified EXP-014 conditions. EXP-015 is preregistered; no additional performance hypothesis is asserted.
