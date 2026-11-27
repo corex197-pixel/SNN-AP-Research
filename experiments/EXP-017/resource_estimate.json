@@ -1,0 +1,33 @@
+{
+  "U0": {
+    "epochs": 20,
+    "average_training_seconds": 28.854654421738815,
+    "average_validation_seconds": 4.235174589394592,
+    "average_checkpoint_seconds": 1.333404195168987,
+    "estimate_300_epochs_training_only_hours": 2.4045545351449014,
+    "estimate_300_epochs_train_validation_checkpoint_hours": 2.868602767191866,
+    "peak_allocated_bytes": 12420991488,
+    "peak_reserved_bytes": 16563306496
+  },
+  "U1": {
+    "epochs": 20,
+    "average_training_seconds": 40.867716016352645,
+    "average_validation_seconds": 4.100263117440045,
+    "average_checkpoint_seconds": 1.4677154030883686,
+    "estimate_300_epochs_training_only_hours": 3.40564300136272,
+    "estimate_300_epochs_train_validation_checkpoint_hours": 3.8696412114067544,
+    "peak_allocated_bytes": 12421384704,
+    "peak_reserved_bytes": 16093544448
+  },
+  "U2": {
+    "epochs": 20,
+    "average_training_seconds": 40.83208513844293,
+    "average_validation_seconds": 4.087854291929398,
+    "average_checkpoint_seconds": 1.41695985380793,
+    "estimate_300_epochs_training_only_hours": 3.4026737615369105,
+    "estimate_300_epochs_train_validation_checkpoint_hours": 3.861408273681688,
+    "peak_allocated_bytes": 12419942912,
+    "peak_reserved_bytes": 15959326720
+  },
+  "limitations": "Linear extrapolation from 20 epochs of a single seed, no startup, extra diagnostics, hash auditing, contention changes or future changes in sparse training; \u03bb values are not confirmed author hyperparameters."
+}

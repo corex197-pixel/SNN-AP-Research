@@ -1,0 +1,9 @@
+{
+  "status": "PASSED",
+  "epoch_count": 60,
+  "max_absolute_accuracy_error": 0,
+  "max_absolute_loss_error": 3.8886649678104845e-08,
+  "max_absolute_sop_error": 0,
+  "validation_batches_per_epoch": 18,
+  "validation_samples_per_epoch": 4500
+}

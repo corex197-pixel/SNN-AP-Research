@@ -34,3 +34,6 @@ Shi, Bu & Yu, *UniSparse: Combining Weight Pruning and Spike Sparsification in S
 `calc_penalty` 实际使用 `C_out*k_h*k_w`，而 `SOPMonitor` 使用 `sparse_mask`，合成实验验证两者在固定活动而有效连接变化时可给出不同局部代价。实验未证明训练后模型中差异具有实际性能影响。CifarNet 直接路径、池化与 flatten/IdentityBN 的注册关系见 `experiments/EXP-016/consumer_dependency_map.json`。正式非零 λ 的单一代表值尚未在正文、附录或固定代码配置中验证；本轮 0.01 仅为工程测试。
 
 权重部分更精确的公式索引（第6–7页，令 w=w(θ,d)，L 为任务损失）：(21) `min_θ L+λ||g_w(w)⊙1{w≠0}||₁`；(22) `min_θ L+λ||g_w(w)⊙w||₁`；(23) `w←w−η∇_w L−ληg_w(w)⊙sign(w)`；(24) `θ←θ−η∇_w L⊙∇_θw`；(25) `d←d+ληg_w(w)`；(26) `θ←θ−η∇_w L`；(27) 与 (25) 同式；(29)–(32) 依次为 `θ_l←θ_l−η∇_{w_l}L`、`d_l←d_l+ληg_w^l`、`γ_l←γ_l−η∇_{γ_l}L−ληg_s^l h(Θ′_l ẑ_l)`、`β_l←β_l−η∇_{β_l}L−ληg_s^l h(Θ′_l D_l)`。`g_s^l,g_w^l` 是作者规定的初始结构常数近似，不是实时计算的有效 mask。
+
+## ROUND-016 controlled pilot
+EXP-017 executed U0/U1/U2 each 20 epochs with 300-epoch cosine and fixed train-origin validation. Paper-specific nonzero λ remains UNKNOWN; R68 λ_ref 2.9447029124172762e-08, U2 3×λ_ref. Both U1/U2 passed the preregistered exploratory gates; U2 ranked first by lowest sample-weighted SOP. This is a single-seed working-point pilot, not a complete reproduction. See ../experiments/EXP-017/REPORT.md.

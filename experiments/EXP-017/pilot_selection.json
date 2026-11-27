@@ -1,0 +1,23 @@
+{
+  "conditions": {
+    "U1": {
+      "penalized_sparsity_ge_1pct": true,
+      "sop_savings_ge_5pct": true,
+      "accuracy_drop_le_5pp": true,
+      "each_penalized_layer_density_ge_1pct": true,
+      "finite_and_checkpoint": true,
+      "passed": true
+    },
+    "U2": {
+      "penalized_sparsity_ge_1pct": true,
+      "sop_savings_ge_5pct": true,
+      "accuracy_drop_le_5pp": true,
+      "each_penalized_layer_density_ge_1pct": true,
+      "finite_and_checkpoint": true,
+      "passed": true
+    }
+  },
+  "recommended": "U2",
+  "reason": "pre-registered SOP then accuracy then U1 tie-break; single seed exploratory",
+  "comparison_epoch": 20
+}

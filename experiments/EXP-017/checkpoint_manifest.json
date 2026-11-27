@@ -1,0 +1,107 @@
+[
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U0/latest.pth",
+    "bytes": 293834658,
+    "sha256": "1594cbb3f65c1acf91efcbe9c0a842c9ad08fbb57dbfac2ee9333afa951439c2",
+    "final_checkpoint_reload_verified": true
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U0/best_validation.pth",
+    "bytes": 293834658,
+    "sha256": "1594cbb3f65c1acf91efcbe9c0a842c9ad08fbb57dbfac2ee9333afa951439c2",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U0/epoch-005.pth",
+    "bytes": 293834658,
+    "sha256": "40429552ba2a284574896955095c4690ce4baea1b70783828bd4bd519eea7b83",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U0/epoch-010.pth",
+    "bytes": 293834658,
+    "sha256": "beb65345124f32b884abbdf774806866369509beb4db5a6df8e739557027fb46",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U0",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U0/epoch-020.pth",
+    "bytes": 293834658,
+    "sha256": "1594cbb3f65c1acf91efcbe9c0a842c9ad08fbb57dbfac2ee9333afa951439c2",
+    "final_checkpoint_reload_verified": true
+  },
+  {
+    "group": "U1",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U1/latest.pth",
+    "bytes": 293834658,
+    "sha256": "bbf3a5dc7c0035bbaf8c08a18f2143bbcccc920fba6e2516b86b69624f327f81",
+    "final_checkpoint_reload_verified": true
+  },
+  {
+    "group": "U1",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U1/best_validation.pth",
+    "bytes": 293834658,
+    "sha256": "a57ec1ad3c854c7178dcf8030d3f591660e84ce4b0fd76720a342d4ce893b583",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U1",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U1/epoch-005.pth",
+    "bytes": 293834658,
+    "sha256": "58db989c7a307b6267d6ab07b77fa1aeaf17a869308b9b22f4d8693466f8d7c3",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U1",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U1/epoch-010.pth",
+    "bytes": 293834658,
+    "sha256": "6637578f92c7e167bc6542fa077ecdb46552305d3d39ac46a1f52c7b278e2d73",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U1",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U1/epoch-020.pth",
+    "bytes": 293834658,
+    "sha256": "bbf3a5dc7c0035bbaf8c08a18f2143bbcccc920fba6e2516b86b69624f327f81",
+    "final_checkpoint_reload_verified": true
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U2/latest.pth",
+    "bytes": 293834658,
+    "sha256": "c4d5d9e882282c1e18ebae3134ab6a1bcbc661acb24035087d1c44f62cbc464c",
+    "final_checkpoint_reload_verified": true
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U2/best_validation.pth",
+    "bytes": 293834658,
+    "sha256": "c4d5d9e882282c1e18ebae3134ab6a1bcbc661acb24035087d1c44f62cbc464c",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U2/epoch-005.pth",
+    "bytes": 293834658,
+    "sha256": "ea010af285d7657647aec448ad4ed25708b50e735d62b27fc1f83836f4a764f0",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U2/epoch-010.pth",
+    "bytes": 293834658,
+    "sha256": "427c60152816bbf5a9a7a870795afa4d3627180c32fbc9cc6f129dc578dcc619",
+    "final_checkpoint_reload_verified": false
+  },
+  {
+    "group": "U2",
+    "path": "/home/hym/keyan1/experiments/EXP-017/runs/EXP-017-PILOT-001/U2/epoch-020.pth",
+    "bytes": 293834658,
+    "sha256": "c4d5d9e882282c1e18ebae3134ab6a1bcbc661acb24035087d1c44f62cbc464c",
+    "final_checkpoint_reload_verified": true
+  }
+]

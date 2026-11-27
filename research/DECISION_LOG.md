@@ -47,3 +47,5 @@ DEC-015 execution evidence: engineering admission passed under the tested enviro
 
 ## DEC-016 — CONTINUE + BASELINE
 User approved EXP-017 U0/U1/U2, each 20 epochs of 300-epoch cosine schedule, with locked R68 reference if official λ is unverified. Preserve author updates including AMP-skip manual penalty; no official test, extra candidates, >20 epoch training or ECAS.
+
+DEC-016 execution: EXP-017 completed; U1/U2 both passed fixed pilot screening, U2 ranked first by prespecified lower-SOP criterion. This is an exploratory recommendation for later approval, not authorization for additional training.

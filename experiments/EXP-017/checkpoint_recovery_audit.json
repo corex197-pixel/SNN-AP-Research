@@ -1,0 +1,36 @@
+{
+  "status": "PASSED",
+  "groups": {
+    "U0": {
+      "epoch": 20,
+      "model_equal": true,
+      "optimizer_equal_including_momentum": true,
+      "scheduler_equal": true,
+      "scaler_equal": true,
+      "rng_components_present": true,
+      "sampling_next_epoch": 21,
+      "gpu_used": false
+    },
+    "U1": {
+      "epoch": 20,
+      "model_equal": true,
+      "optimizer_equal_including_momentum": true,
+      "scheduler_equal": true,
+      "scaler_equal": true,
+      "rng_components_present": true,
+      "sampling_next_epoch": 21,
+      "gpu_used": false
+    },
+    "U2": {
+      "epoch": 20,
+      "model_equal": true,
+      "optimizer_equal_including_momentum": true,
+      "scheduler_equal": true,
+      "scaler_equal": true,
+      "rng_components_present": true,
+      "sampling_next_epoch": 21,
+      "gpu_used": false
+    }
+  },
+  "scope": "CPU load and state equality; no extra training, no claim of cross-environment bitwise continuation"
+}

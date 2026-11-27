@@ -82,3 +82,6 @@ EXP-016 COMPLETED. CuPy 13.5.1 installed in the dedicated inherited-package venv
 
 ## ROUND-016 initiated
 DEC-016 approved controlled UniSparse working-point pilot EXP-017; EXP-015 remains PARTIAL, EXP-016 COMPLETED, engineering admitted only. H-016 PARTIALLY_SUPPORTED only for synthetic fixed conditions; H-017 UNTESTED. Full reproduction and full training remain PENDING. Preflight and configuration lock precede three independent 20-epoch runs.
+
+### ROUND-016 result
+EXP-017 COMPLETED: U0/U1/U2 each 20 epochs, same seed, original UniSparse updates, 300-epoch scheduler; no official test. Both U1 and U2 pass preregistered screening, U2 recommended by lowest sample-weighted SOP; formal 300-epoch training remains PENDING separate approval. H-016 PARTIALLY_SUPPORTED only for prior synthetic mechanism; H-017 UNTESTED. Data and recovery audits in ../experiments/EXP-017/.
