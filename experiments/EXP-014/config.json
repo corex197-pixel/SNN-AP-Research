@@ -3,7 +3,7 @@
   "run_id": "EXP-014-RUN-001",
   "checkpoint_sha256": "c068f54379cb5d29bcfa5fe2d9de676cd3cc153433ada1ed5aa1c66355d0b32a",
   "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
-  "calibration_sha256": "b849b74ef19cb5a09df756c54871122f3b02aa047c704d0436feab15a38bde52",
+  "calibration_sha256": "b849b74ef19cb4a09df756c54871122f3b02aa047c704d0436feab15a38bde52",
   "calibration_split_sha256": "e875e45eafb7439852770aa7490facdc5269e1024201c7c6fa31749e6bf5a9e7",
   "T": 8,
   "tau": 0.9,
