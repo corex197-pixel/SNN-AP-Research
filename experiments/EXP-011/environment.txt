@@ -1,0 +1,5 @@
+platform: Linux-6.8.0-138-generic-x86_64-with-glibc2.35
+python: 3.11.9 | packaged by conda-forge | (main, Apr 19 2024, 18:36:13) [GCC 12.3.0]
+torch: 2.4.1+cu118
+CUDA build: 11.8
+GPU: GPU-c0ba2c71-aee0-5675-4047-210764508ba5

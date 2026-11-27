@@ -1,0 +1,41 @@
+[
+  {
+    "group": "G0",
+    "path": "/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-002/epoch-005.pth",
+    "bytes": 8781166,
+    "sha256": "46e15edbbdf2675853f2ee22d8a4bada1ba53505c4637aa61d2487ee537d3010",
+    "completed_epochs": 5,
+    "successful_steps": 1758,
+    "amp_skips": 2,
+    "wall_seconds": 65.59313655411825,
+    "peak_allocated_bytes": 4792232448,
+    "peak_reserved_bytes": 4940890112,
+    "initial_sha256": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c"
+  },
+  {
+    "group": "G1",
+    "path": "/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G1-RUN-001/epoch-005.pth",
+    "bytes": 8781166,
+    "sha256": "32e653ca553c9ead0958414bec1c78d9cb9bf2507a0769bd1d36c1482c6e4fab",
+    "completed_epochs": 5,
+    "successful_steps": 1758,
+    "amp_skips": 2,
+    "wall_seconds": 323.45408993703313,
+    "peak_allocated_bytes": 4792242688,
+    "peak_reserved_bytes": 4963958784,
+    "initial_sha256": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c"
+  },
+  {
+    "group": "M4",
+    "path": "/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-M4-RUN-001/epoch-005.pth",
+    "bytes": 8781166,
+    "sha256": "39d266406f46adfc825135c2ac79e75a76e7f9bfd8483b2e6dc39fb5e50db77b",
+    "completed_epochs": 5,
+    "successful_steps": 1758,
+    "amp_skips": 2,
+    "wall_seconds": 370.71008651307784,
+    "peak_allocated_bytes": 6335746560,
+    "peak_reserved_bytes": 6496976896,
+    "initial_sha256": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "locked_utc": "2026-11-27T02:44:53.174106+00:00",
+  "code_sha": "10a52e75c5cde3ebb972e6b58130f42bf7e5b04b",
+  "selection_inputs": "only 500 calibration samples and SOPs",
+  "validation_touched_before_lock": false
+}

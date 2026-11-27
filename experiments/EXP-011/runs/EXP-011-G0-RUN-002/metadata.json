@@ -1,0 +1,21 @@
+{
+  "group": "G0",
+  "initial_sha256": "2ef1c238da55afe82fd0f83a0a52197feaed946c090a61644e8ddad2248dcb5c",
+  "code_sha": "10a52e75c5cde3ebb972e6b58130f42bf7e5b04b",
+  "started_utc": "2026-11-27T02:31:52.050217+00:00",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "optimizer_groups": [
+    {
+      "weight_decay": 0.0,
+      "count": 62
+    },
+    {
+      "weight_decay": 0.0005,
+      "count": 22
+    }
+  ],
+  "diagnostic_batch_index": 8,
+  "parent_checkpoint": "/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-001/epoch-004.pth",
+  "parent_code_sha": "afe8596baccf5db172b9ae03cfaf3d59f198feca",
+  "amp_manual_update_policy": "original controlled baseline, including skipped AMP optimizer step"
+}

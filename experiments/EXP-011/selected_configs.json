@@ -1,0 +1,50 @@
+{
+  "C0": {
+    "0.2": {
+      "alpha": 1.25,
+      "calibration_savings": 0.20630526325338372,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 1.4,
+      "calibration_savings": 0.31417415877099064,
+      "matched_window": true
+    }
+  },
+  "G0": {
+    "0.2": {
+      "alpha": 0.8500000000000001,
+      "calibration_savings": 0.2195092548296168,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 0.95,
+      "calibration_savings": 0.31214361097049537,
+      "matched_window": true
+    }
+  },
+  "G1": {
+    "0.2": {
+      "alpha": 0.8500000000000001,
+      "calibration_savings": 0.2195092548296168,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 0.95,
+      "calibration_savings": 0.31214361097049537,
+      "matched_window": true
+    }
+  },
+  "M4": {
+    "0.2": {
+      "alpha": 0.8500000000000001,
+      "calibration_savings": 0.2195092548296168,
+      "matched_window": true
+    },
+    "0.3": {
+      "alpha": 0.95,
+      "calibration_savings": 0.31214361097049537,
+      "matched_window": true
+    }
+  }
+}

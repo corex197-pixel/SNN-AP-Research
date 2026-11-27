@@ -1,0 +1,16 @@
+group,epoch,path,bytes,sha256
+G0,1,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-001/epoch-001.pth,8781166,07ff2ea6ce8efca1bbf19ca960718cb07a05ad8ba28fbf9a4b4956bde2fc4bad
+G0,2,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-001/epoch-002.pth,8781166,a8b2f98cb773e69bc32256f6e4baa8bb7e31c3960aa3241400aa736946f7b012
+G0,3,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-001/epoch-003.pth,8781166,9badef3833c34e4095afe643012d06ab07a80e043d6e30ef38afa7b696591177
+G0,4,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-001/epoch-004.pth,8781166,bf298f71f0bf9529643dc7ab7c23f5de3b4ae1a2a70c82fa7f8f90296c74311c
+G0,5,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G0-RUN-002/epoch-005.pth,8781166,46e15edbbdf2675853f2ee22d8a4bada1ba53505c4637aa61d2487ee537d3010
+G1,1,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G1-RUN-001/epoch-001.pth,8781166,3bf644b70647c3cae1a22dd47a1fe63badd40b731e6e57c2b6e05c96c9c119d5
+G1,2,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G1-RUN-001/epoch-002.pth,8781166,be978120d1674004c4211d27afc5d4f68bd7898a016e126dcb5132ec2c42de64
+G1,3,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G1-RUN-001/epoch-003.pth,8781166,d9979d3c27cdc72cf8d9b89966a7a7231f378ce66a5ca61a830d68eb03cde920
+G1,4,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G1-RUN-001/epoch-004.pth,8781166,38eb6beaf5e5109c83c33d7beaaa517c90905d8099d8695507b7960b6f584a1a
+G1,5,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-G1-RUN-001/epoch-005.pth,8781166,32e653ca553c9ead0958414bec1c78d9cb9bf2507a0769bd1d36c1482c6e4fab
+M4,1,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-M4-RUN-001/epoch-001.pth,8781166,ac24a80836b512b5c1e05510f03a4a67ddc49d465ddc500d1ff1920e9d380e8e
+M4,2,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-M4-RUN-001/epoch-002.pth,8781166,e7b0fd13cb536d57385cf3334ba0c49efd47358e1b5b96b9f7c957b033bf420e
+M4,3,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-M4-RUN-001/epoch-003.pth,8781166,2d797cae3566e63aec9c64f08b0e73f30404e3020e2de31880824b0044aa557f
+M4,4,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-M4-RUN-001/epoch-004.pth,8781166,22581a2b6569ba80dc21d63fe08ec98887eff76cc6c43bbea17173f713eb0438
+M4,5,/home/hym/keyan1/experiments/EXP-011/runs/EXP-011-M4-RUN-001/epoch-005.pth,8781166,39d266406f46adfc825135c2ac79e75a76e7f9bfd8483b2e6dc39fb5e50db77b

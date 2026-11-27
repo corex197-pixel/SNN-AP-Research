@@ -1,0 +1,2 @@
+group,epoch,samples,batches,train_accuracy,train_loss,learning_rate,successful_steps_cumulative,amp_skips_cumulative,epoch_seconds
+G0,5,45000,352,0.8799333333333333,0.34514197634591,0.000567908363781379,1758,2,65.31882130098529

@@ -1,0 +1,26 @@
+{
+  "status": "PASSED",
+  "all_sample_ids_paired_and_unique": true,
+  "validation_samples": 4500,
+  "all_calibration_selections_recomputed": true,
+  "bootstrap_recomputed": true,
+  "all_epochs_checkpoints_hashed": 15,
+  "all_thresholds_positive_finite": true,
+  "epoch_counts_match": true,
+  "diagnostic_records_per_group": 95,
+  "first_three_batches_and_augmentation_hashes_match": true,
+  "cpu_seconds": 1.299775658,
+  "wall_seconds": 1.2043608939275146,
+  "final_model_state_comparisons_vs_G0": {
+    "G1": {
+      "model_state_bitwise_equal": true,
+      "max_absolute_tensor_difference": 0.0,
+      "different_tensor_count": 0
+    },
+    "M4": {
+      "model_state_bitwise_equal": true,
+      "max_absolute_tensor_difference": 0.0,
+      "different_tensor_count": 0
+    }
+  }
+}

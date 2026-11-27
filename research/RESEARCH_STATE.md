@@ -55,3 +55,5 @@ EXP-009、EXP-010 COMPLETED。20%目标下C1/C2不优于C0；P0 batch BN相对ev
 
 ## ROUND-011 预注册
 DEC-011 PIVOT + IMPLEMENT；H-009 CURRENT_EVIDENCE_SUPPORTS（指定模式条件）、H-010 CURRENT_EVIDENCE_AGAINST（指定20%预算相对C0），H-011 UNTESTED。EXP-011 PLANNED；严格先完成前向及梯度前置检查，三组最多各5轮。
+
+EXP-011 COMPLETED；H-011预设筛选=False。G0前四轮后因发现M4混合精度问题中断并恢复，失败记录和两个代码版本均已保存；全部真实结果详见../experiments/EXP-011/REPORT.md。H-011正式状态仍UNTESTED，待理论研究员审查。

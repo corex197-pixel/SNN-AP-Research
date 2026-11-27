@@ -1,0 +1,8 @@
+{
+  "group": "G0",
+  "epoch": 5,
+  "diagnostic_batch": 8,
+  "matched_layer_records": 19,
+  "all_record_fields_identical": true,
+  "scope": "one fixed diagnostic batch; not a proof of full-epoch equivalence"
+}
