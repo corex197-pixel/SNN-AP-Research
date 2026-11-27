@@ -1,0 +1,25 @@
+{
+  "status": "RUNNING",
+  "run_id": "EXP-018-CONTINUE-001",
+  "start_utc": "2026-11-27T09:28:20.402862+00:00",
+  "code_sha": "3c510be030909b9459c1a2d574974c07e9f88830",
+  "gpu_uuid": "GPU-c0ba2c71-aee0-5675-4047-210764508ba5",
+  "completed": {
+    "U0": 60,
+    "U2": 60
+  },
+  "stage": 60,
+  "group": "U2",
+  "epoch": 60,
+  "last_utc": "2026-11-27T10:23:44.556623+00:00",
+  "wall_seconds": 3467.1152408123016,
+  "cpu_seconds": 5513.304741999999,
+  "last_stage_gate": {
+    "accuracy_drop_le_5pp": true,
+    "sop_savings_ge_5pct": true,
+    "all_penalized_layers_density_ge_1pct": true,
+    "both_finished_and_checkpoints_verified": true,
+    "finite_and_data_valid": true,
+    "passed": true
+  }
+}
