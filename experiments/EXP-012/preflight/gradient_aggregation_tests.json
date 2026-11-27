@@ -1,0 +1,579 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G0",
+      "path": "combined",
+      "N": 48,
+      "mean_time_accumulated": 0.2520147053438591,
+      "scaled": 12.096705856505238,
+      "independent_sum": 12.096705856505235,
+      "absolute_error": 3.552713678800501e-15,
+      "normalized_error": 2.712677308115491e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G1",
+      "path": "combined",
+      "N": 48,
+      "mean_time_accumulated": 0.292616115012608,
+      "scaled": 14.045573520605183,
+      "independent_sum": 14.045573520605185,
+      "absolute_error": 1.7763568394002505e-15,
+      "normalized_error": 1.180650798700028e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "amplitude",
+      "N": 48,
+      "mean_time_accumulated": -0.3223911447401246,
+      "scaled": -15.47477494752598,
+      "independent_sum": -15.47477494752598,
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "reset",
+      "N": 48,
+      "mean_time_accumulated": -0.04613327278247584,
+      "scaled": -2.21439709355884,
+      "independent_sum": -2.2143970935588424,
+      "absolute_error": 2.220446049250313e-15,
+      "normalized_error": 6.907815010471934e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "combined",
+      "N": 48,
+      "mean_time_accumulated": -0.3685244175226004,
+      "scaled": -17.68917204108482,
+      "independent_sum": -17.689172041084817,
+      "absolute_error": 3.552713678800501e-15,
+      "normalized_error": 1.9009476027030477e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G0",
+      "path": "combined",
+      "N": 36,
+      "mean_time_accumulated": -0.4833992231714655,
+      "scaled": -17.402372034172757,
+      "independent_sum": -17.402372034172757,
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G1",
+      "path": "combined",
+      "N": 36,
+      "mean_time_accumulated": -0.5795450981261954,
+      "scaled": -20.863623532543034,
+      "independent_sum": -20.863623532543038,
+      "absolute_error": 3.552713678800501e-15,
+      "normalized_error": 1.6249427609803304e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "amplitude",
+      "N": 36,
+      "mean_time_accumulated": -0.3289188907234985,
+      "scaled": -11.841080066045945,
+      "independent_sum": -11.841080066045947,
+      "absolute_error": 1.7763568394002505e-15,
+      "normalized_error": 1.3833391196564902e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "reset",
+      "N": 36,
+      "mean_time_accumulated": 0.169479639068236,
+      "scaled": 6.101267006456496,
+      "independent_sum": 6.101267006456494,
+      "absolute_error": 1.7763568394002505e-15,
+      "normalized_error": 2.5014646510054913e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "combined",
+      "N": 36,
+      "mean_time_accumulated": -0.15943925165526268,
+      "scaled": -5.739813059589457,
+      "independent_sum": -5.739813059589454,
+      "absolute_error": 2.6645352591003757e-15,
+      "normalized_error": 3.953426060251413e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "G0",
+      "path": "combined",
+      "N": 30,
+      "mean_time_accumulated": 0.14673789117119468,
+      "scaled": 4.402136735135841,
+      "independent_sum": 4.40213673513584,
+      "absolute_error": 8.881784197001252e-16,
+      "normalized_error": 1.6441242849766398e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "G1",
+      "path": "combined",
+      "N": 30,
+      "mean_time_accumulated": 0.21646853941041927,
+      "scaled": 6.494056182312578,
+      "independent_sum": 6.494056182312578,
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "amplitude",
+      "N": 30,
+      "mean_time_accumulated": -0.47064856215397427,
+      "scaled": -14.119456864619227,
+      "independent_sum": -14.119456864619227,
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "reset",
+      "N": 30,
+      "mean_time_accumulated": 0.3930704309808483,
+      "scaled": 11.79211292942545,
+      "independent_sum": 11.79211292942545,
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float64",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "combined",
+      "N": 30,
+      "mean_time_accumulated": -0.07757813117312595,
+      "scaled": -2.3273439351937784,
+      "independent_sum": -2.3273439351937797,
+      "absolute_error": 1.3322676295501878e-15,
+      "normalized_error": 4.0039973489323054e-16,
+      "tolerance": 1e-10
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G0",
+      "path": "combined",
+      "N": 48,
+      "mean_time_accumulated": 0.022389963269233704,
+      "scaled": 1.0747182369232178,
+      "independent_sum": 1.0747181177139282,
+      "absolute_error": 1.1920928955078125e-07,
+      "normalized_error": 5.745806552368401e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G1",
+      "path": "combined",
+      "N": 48,
+      "mean_time_accumulated": 0.010483033955097198,
+      "scaled": 0.5031856298446655,
+      "independent_sum": 0.5031854510307312,
+      "absolute_error": 1.7881393432617188e-07,
+      "normalized_error": 1.1895666912127144e-07,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "amplitude",
+      "N": 48,
+      "mean_time_accumulated": -0.07501603662967682,
+      "scaled": -3.6007697582244873,
+      "independent_sum": -3.600771576166153,
+      "absolute_error": 1.817941665649414e-06,
+      "normalized_error": 3.951384317941545e-07,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "reset",
+      "N": 48,
+      "mean_time_accumulated": 0.13404472172260284,
+      "scaled": 6.4341466426849365,
+      "independent_sum": 6.434146821498871,
+      "absolute_error": 1.7881393432617188e-07,
+      "normalized_error": 2.4053053917237467e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        4,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "combined",
+      "N": 48,
+      "mean_time_accumulated": 0.05902867019176483,
+      "scaled": 2.833376169204712,
+      "independent_sum": 2.833376407623291,
+      "absolute_error": 2.384185791015625e-07,
+      "normalized_error": 6.219545219390104e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G0",
+      "path": "combined",
+      "N": 36,
+      "mean_time_accumulated": -0.01932743936777115,
+      "scaled": -0.6957878172397614,
+      "independent_sum": -0.695787787437439,
+      "absolute_error": 2.9802322387695312e-08,
+      "normalized_error": 1.7574323042348705e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "G1",
+      "path": "combined",
+      "N": 36,
+      "mean_time_accumulated": -0.019533881917595863,
+      "scaled": -0.7032197490334511,
+      "independent_sum": -0.7032195925712585,
+      "absolute_error": 1.564621925354004e-07,
+      "normalized_error": 9.186260727496557e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "amplitude",
+      "N": 36,
+      "mean_time_accumulated": 0.13146090507507324,
+      "scaled": 4.732592582702637,
+      "independent_sum": 4.7325927428901196,
+      "absolute_error": 1.601874828338623e-07,
+      "normalized_error": 2.794328674970601e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "reset",
+      "N": 36,
+      "mean_time_accumulated": -0.06946280598640442,
+      "scaled": -2.500661015510559,
+      "independent_sum": -2.500661090016365,
+      "absolute_error": 7.450580596923828e-08,
+      "normalized_error": 2.1283353073430477e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "combined",
+      "N": 36,
+      "mean_time_accumulated": 0.06199810653924942,
+      "scaled": 2.231931835412979,
+      "independent_sum": 2.2319306135177612,
+      "absolute_error": 1.2218952178955078e-06,
+      "normalized_error": 3.7806975582484694e-07,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "G0",
+      "path": "combined",
+      "N": 30,
+      "mean_time_accumulated": -0.10861122608184814,
+      "scaled": -3.2583367824554443,
+      "independent_sum": -3.258336454629898,
+      "absolute_error": 3.2782554626464844e-07,
+      "normalized_error": 7.698441627556659e-08,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "G1",
+      "path": "combined",
+      "N": 30,
+      "mean_time_accumulated": -0.20896491408348083,
+      "scaled": -6.268947422504425,
+      "independent_sum": -6.26894736289978,
+      "absolute_error": 5.960464477539063e-08,
+      "normalized_error": 8.199900453208497e-09,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "amplitude",
+      "N": 30,
+      "mean_time_accumulated": -0.22815001010894775,
+      "scaled": -6.844500303268433,
+      "independent_sum": -6.844499155879021,
+      "absolute_error": 1.1473894119262695e-06,
+      "normalized_error": 1.4626675191447556e-07,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "reset",
+      "N": 30,
+      "mean_time_accumulated": 0.6417367458343506,
+      "scaled": 19.252102375030518,
+      "independent_sum": 19.252102255821228,
+      "absolute_error": 1.1920928955078125e-07,
+      "normalized_error": 5.886267412881344e-09,
+      "tolerance": 1e-05
+    },
+    {
+      "dtype": "torch.float32",
+      "shape": [
+        1,
+        5,
+        3,
+        2
+      ],
+      "T": 8,
+      "group": "M4",
+      "path": "combined",
+      "N": 30,
+      "mean_time_accumulated": 0.41358673572540283,
+      "scaled": 12.407602071762085,
+      "independent_sum": 12.40760326385498,
+      "absolute_error": 1.1920928955078125e-06,
+      "normalized_error": 8.891170718942198e-08,
+      "tolerance": 1e-05
+    }
+  ],
+  "includes_last_incomplete_batch_shape": true,
+  "temporal_gradient_accumulated_without_extra_T": true,
+  "shared_theta_scalar": true,
+  "positive_negative_gradients": true
+}

@@ -404,3 +404,6 @@ R28：C_proxy/C0≤0.8时平方hinge及其参数梯度为零，当前先导实�
 
 ## v0.1.7 — R32–R39：幅值与重置感知代理梯度
 原论文公式13局部因子g=max(1-|m/theta-1|,0)；实际代码R32为-mean(q*g*g)，论文局部对齐R33为-mean(q*g)，沿用代码均值聚合。R34硬前向软反向s；R35 ds/dm=g/theta, ds/dtheta=-r*g/theta。R36 o=theta*s，do/dm=g, do/dtheta=s-r*g。R37 独立幅值和重置上游梯度a,b时grad_m=a*g+b*g/theta。R38严格共享阈值导数是sum(a*(s-r*g)-b*r*g/theta)。R39本轮有意按当前时间步共享元素mean，时间步贡献自动累加；该缩放非严格sum链式法则。数学推导和性能假设均待验证；不宣称平方因子修正为创新。
+
+## v0.1.8 — R40–R46：共享阈值聚合与浮点分辨率
+R40：N个共享元素下G_sum=N*G_mean；mean是有意优化尺度，不自动为代码错误。R41：正常正FP32的典型ULP=2^(floor(log2(theta))-23)，实际分别用nextafter测上下相邻值。R42：仅当优化器任务更新不可分辨时，theta_next约为theta_current+manual_delta。R43 G0-S=-sum(q*g²)，R44 G1-S=-sum(q*g)，R45 M4-S=sum(a*(s-r*g)-b*r*g/theta)。R46仅在每次共享参数调用涉及相同N时，对已反缩放的时间累积grad乘每个时间步N；不得再次乘T，不影响手动更新。可分辨更新是工程门槛，不是性能保证。

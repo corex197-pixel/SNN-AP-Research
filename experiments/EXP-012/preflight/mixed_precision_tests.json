@@ -1,0 +1,25 @@
+{
+  "status": "PASSED",
+  "raw_nonfinite_correctly_skips_optimizer": true,
+  "post_scaling_nonfinite_stops_before_optimizer": true,
+  "mixed_precision_large_upstream": [
+    {
+      "case": "amplitude",
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "gradient": 28983.6875
+    },
+    {
+      "case": "reset",
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "gradient": 54627.93359375
+    },
+    {
+      "case": "both",
+      "absolute_error": 0.0,
+      "normalized_error": 0.0,
+      "gradient": 83611.625
+    }
+  ]
+}

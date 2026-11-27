@@ -19,4 +19,7 @@ H-008 INSUFFICIENT_EVIDENCE：原假设：在相近实际SOPs预算下，自蒸�
 H-009 CURRENT_EVIDENCE_SUPPORTS：仅限当前模型、固定500校准样本、batch128及模式干预。固定权重阈值与输入时，BN batch模式相对eval模式可能导致具有实际幅度的全网络SOP变化。
 H-010 CURRENT_EVIDENCE_AGAINST：仅限主要20%预算相对C0改善预测，相对C3仍证据不足。在相近计算预算下，逐层推理状态BN总体统计校准可能改善任务性能。
 
-H-011 UNTESTED：在相同初始化、训练和稀疏化规则及近似SOP预算下，M4优于G0、G1及简单阈值缩放。
+H-011 INSUFFICIENT_EVIDENCE：原筛选失败且梯度规则未产生可分辨的最终模型差异。原假设：在相同初始化、训练和稀疏化规则及近似SOP预算下，M4优于G0、G1及简单阈值缩放。
+
+H-012 UNTESTED：由mean恢复sum等价聚合可能产生可分辨的共享阈值优化器更新。
+H-013 UNTESTED：有效阈值任务更新下，ARTG可能比其他代理因子获得更好的精度—SOPs权衡。

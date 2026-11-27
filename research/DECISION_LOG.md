@@ -26,3 +26,6 @@ H-007对本轮预期回升为CURRENT_EVIDENCE_AGAINST但约束作用不可识别
 
 ## DEC-011 — PIVOT + IMPLEMENT
 H-009 CURRENT_EVIDENCE_SUPPORTS限定原诊断条件；H-010 CURRENT_EVIDENCE_AGAINST限定主要20%预算与C0比较，C3比较证据不足。停止后训练阈值/BN校准作为主线，转向阈值幅值及重置路径代理梯度；统一缩放保留为强对照。
+
+## DEC-012 — REPAIR + REPLICATE
+H-011 INSUFFICIENT_EVIDENCE：原筛选失败且最终模型不可分辨，不推广为代理梯度普遍无效。先修复共享阈值梯度干预尺度；仅当EXP-012的全部工程门槛通过后开展性能实验。
