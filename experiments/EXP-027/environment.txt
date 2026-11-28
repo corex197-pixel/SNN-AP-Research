@@ -1,0 +1,1 @@
+Planned existing UniSparse venv, strict FP32, official CuPy LIF, one RTX4090 UUID; no AMP, no TF32, no SGD.
