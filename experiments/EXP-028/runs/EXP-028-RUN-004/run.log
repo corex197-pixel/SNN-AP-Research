@@ -1,0 +1,57 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[research/round-026-compact-finetuning c6438fb] EXP-028 lock actual training admission
+ 8 files changed, 874 insertions(+)
+ create mode 100644 experiments/EXP-028/admission_coverage_matrix.csv
+ create mode 100644 experiments/EXP-028/admission_negative_tests.json
+ create mode 100644 experiments/EXP-028/architecture_audit.json
+ create mode 100644 experiments/EXP-028/formula_tests.json
+ create mode 100644 experiments/EXP-028/initial_model_audit.json
+ create mode 100644 experiments/EXP-028/optimizer_parameter_audit.json
+ create mode 100644 experiments/EXP-028/preflight_tests.json
+ create mode 100644 experiments/EXP-028/training_admission_lock.json
+To github.com:corex197-pixel/SNN-AP-Research.git
+   7a72c4d..c6438fb  HEAD -> research/round-026-compact-finetuning
+EPOCH F0 1 loss 0.5003197583130428 skips 0
+EPOCH F0 2 loss 0.4787869209902627 skips 0
+EPOCH F0 3 loss 0.4689362067835672 skips 0
+EPOCH F0 4 loss 0.46904292941093445 skips 0
+EPOCH F0 5 loss 0.4668967275960105 skips 0
+EPOCH F1 1 loss 0.4491218175206866 skips 0
+EPOCH F1 2 loss 0.401933217389243 skips 0
+EPOCH F1 3 loss 0.38117251464298796 skips 0
+EPOCH F1 4 loss 0.37580996326037813 skips 0
+EPOCH F1 5 loss 0.3719379486356463 skips 0
+[research/round-026-compact-finetuning a5ddafa] EXP-028 lock endpoint evaluation admission
+ 8 files changed, 470 insertions(+)
+ create mode 100644 experiments/EXP-028/checkpoint_manifest.json
+ create mode 100644 experiments/EXP-028/epoch_metrics.csv
+ create mode 100644 experiments/EXP-028/evaluation_admission_lock.json
+ create mode 100644 experiments/EXP-028/frozen_parameter_audit.json
+ create mode 100644 experiments/EXP-028/layer_sparsity.csv
+ create mode 100644 experiments/EXP-028/threshold_audit.csv
+ create mode 100644 experiments/EXP-028/topology_transition.csv
+ create mode 100644 experiments/EXP-028/training_sample_audit.csv
+To github.com:corex197-pixel/SNN-AP-Research.git
+   c6438fb..a5ddafa  HEAD -> research/round-026-compact-finetuning
+EVALUATED B0 0.9422222222222222 0.1727328626844618
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-026/run.py", line 134, in <module>
+    try:status['status']=main();status['validity']='VALID'
+                         ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-026/run.py", line 127, in main
+    guard();m=models[g];m.eval();r,lr,frs,ss=evaluate(m,val,g,'validation',True);r.update(model_metrics(m));r['inference_file_bytes']=BZERO.stat().st_size if g=='B0' else PARENT.stat().st_size if g=='P0' else finals[g]['bytes'];r['compression_fraction']=1-r['parameter_count']/36720484;vals.append(r);lay+=lr;fr+=frs;samples+=ss;write('validation_summary.csv',vals);write('layer_sops.csv',lay);write('layer_FR.csv',fr);write('validation_per_sample.csv',samples);print('EVALUATED',g,r['accuracy'],r['CE'],flush=True)
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-022/run.py", line 102, in evaluate
+    guard();x=x.cuda(non_blocking=True);y=y.cuda(non_blocking=True);mon.clear_recorded_data();functional.reset_net(m);z=m(x).mean(0);loss=F.cross_entropy(z,y,reduction='none');assert torch.isfinite(loss).all();pred=z.argmax(1);cnt=len(y);total+=cnt;batch_sizes.append(cnt);sumce+=float(loss.sum());correct+=int((pred==y).sum());batch=0.
+    ^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-026/run.py", line 11, in guard
+    def guard(reserve=120):
+    
+  File "/home/hym/keyan1/experiments/ROUND-026/run.py", line 15, in <lambda>
+    signal.signal(signal.SIGTERM,lambda a,b:(_ for _ in ()).throw(TimeoutError('watchdog termination')))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-026/run.py", line 15, in <genexpr>
+    signal.signal(signal.SIGTERM,lambda a,b:(_ for _ in ()).throw(TimeoutError('watchdog termination')))
+TimeoutError: watchdog termination
+{"status": "PARTIAL", "validity": "NOT_ESTABLISHED", "run_id": "EXP-028-RUN-004", "phase": "formal_evaluation", "code_sha": "7a72c4d574f9d6b69de5de76a110f3ddc9ded919", "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6", "start_unix": 1795870363.7468123, "completed_epochs": {"F0": 5, "F1": 5}, "wall_seconds": 359.09123396873474, "cpu_budget_accounted_seconds": 726.587902, "error": "TimeoutError('watchdog termination')", "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 134, in <module>\n    try:status['status']=main();status['validity']='VALID'\n                         ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 127, in main\n    guard();m=models[g];m.eval();r,lr,frs,ss=evaluate(m,val,g,'validation',True);r.update(model_metrics(m));r['inference_file_bytes']=BZERO.stat().st_size if g=='B0' else PARENT.stat().st_size if g=='P0' else finals[g]['bytes'];r['compression_fraction']=1-r['parameter_count']/36720484;vals.append(r);lay+=lr;fr+=frs;samples+=ss;write('validation_summary.csv',vals);write('layer_sops.csv',lay);write('layer_FR.csv',fr);write('validation_per_sample.csv',samples);print('EVALUATED',g,r['accuracy'],r['CE'],flush=True)\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-022/run.py\", line 102, in evaluate\n    guard();x=x.cuda(non_blocking=True);y=y.cuda(non_blocking=True);mon.clear_recorded_data();functional.reset_net(m);z=m(x).mean(0);loss=F.cross_entropy(z,y,reduction='none');assert torch.isfinite(loss).all();pred=z.argmax(1);cnt=len(y);total+=cnt;batch_sizes.append(cnt);sumce+=float(loss.sum());correct+=int((pred==y).sum());batch=0.\n    ^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 11, in guard\n    def guard(reserve=120):\n    \n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 15, in <lambda>\n    signal.signal(signal.SIGTERM,lambda a,b:(_ for _ in ()).throw(TimeoutError('watchdog termination')))\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 15, in <genexpr>\n    signal.signal(signal.SIGTERM,lambda a,b:(_ for _ in ()).throw(TimeoutError('watchdog termination')))\nTimeoutError: watchdog termination\n", "end_unix": 1795870659.8380444, "process_tree_cpu_seconds": 537.5585259999999, "cpu_prior_accounted_seconds": 189.0, "cpu_initial_unmeasured_reserve_seconds": 120.0, "peak_allocated_bytes": 12166562304, "peak_reserved_bytes": 13459521536, "manual_penalty_calls": 0}

@@ -1,0 +1,15 @@
+{
+  "event": "pre-evaluation endpoint admission coverage failure",
+  "original_process_phase": "formal_evaluation",
+  "original_endpoint_lock_commit": "a5ddafa",
+  "training_epochs_completed": {
+    "F0": 5,
+    "F1": 5
+  },
+  "observed_validation": "B0 full 4500; P0 partially processed when stopped; no F0/F1 validation started",
+  "reason": "Original endpoint check repeated forwards only after loading; did not compare recovery model forward before loading pure-inference checkpoint.",
+  "interceptor": "background process exited without a log before triggering; underlying cause not established",
+  "action": "Sent SIGTERM to owned process when issue detected; preserve all raw records; repair endpoint lock before fresh separate evaluation.",
+  "original_evaluation_validity": "INVALID",
+  "training_status": "completed; endpoint checks pending"
+}

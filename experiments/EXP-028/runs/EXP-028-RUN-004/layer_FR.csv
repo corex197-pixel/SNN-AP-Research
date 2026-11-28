@@ -1,0 +1,8 @@
+group,split,neuron,FR
+B0,validation,static_conv.activation,0.0596354611714681
+B0,validation,conv1.activation,0.053586457146538626
+B0,validation,activation2,0.024752620485093857
+B0,validation,conv3.activation,0.06906629859076606
+B0,validation,conv4.activation,0.0617591315375434
+B0,validation,activation5,0.05705578952365451
+B0,validation,activation_fc1,0.17434632703993055

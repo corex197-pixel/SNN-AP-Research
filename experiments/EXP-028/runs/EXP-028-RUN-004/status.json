@@ -1,0 +1,24 @@
+{
+  "status": "PARTIAL",
+  "validity": "NOT_ESTABLISHED",
+  "run_id": "EXP-028-RUN-004",
+  "phase": "formal_evaluation",
+  "code_sha": "7a72c4d574f9d6b69de5de76a110f3ddc9ded919",
+  "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6",
+  "start_unix": 1795870363.7468123,
+  "completed_epochs": {
+    "F0": 5,
+    "F1": 5
+  },
+  "wall_seconds": 359.09123396873474,
+  "cpu_budget_accounted_seconds": 726.587902,
+  "error": "TimeoutError('watchdog termination')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 134, in <module>\n    try:status['status']=main();status['validity']='VALID'\n                         ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 127, in main\n    guard();m=models[g];m.eval();r,lr,frs,ss=evaluate(m,val,g,'validation',True);r.update(model_metrics(m));r['inference_file_bytes']=BZERO.stat().st_size if g=='B0' else PARENT.stat().st_size if g=='P0' else finals[g]['bytes'];r['compression_fraction']=1-r['parameter_count']/36720484;vals.append(r);lay+=lr;fr+=frs;samples+=ss;write('validation_summary.csv',vals);write('layer_sops.csv',lay);write('layer_FR.csv',fr);write('validation_per_sample.csv',samples);print('EVALUATED',g,r['accuracy'],r['CE'],flush=True)\n                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-022/run.py\", line 102, in evaluate\n    guard();x=x.cuda(non_blocking=True);y=y.cuda(non_blocking=True);mon.clear_recorded_data();functional.reset_net(m);z=m(x).mean(0);loss=F.cross_entropy(z,y,reduction='none');assert torch.isfinite(loss).all();pred=z.argmax(1);cnt=len(y);total+=cnt;batch_sizes.append(cnt);sumce+=float(loss.sum());correct+=int((pred==y).sum());batch=0.\n    ^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 11, in guard\n    def guard(reserve=120):\n    \n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 15, in <lambda>\n    signal.signal(signal.SIGTERM,lambda a,b:(_ for _ in ()).throw(TimeoutError('watchdog termination')))\n                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 15, in <genexpr>\n    signal.signal(signal.SIGTERM,lambda a,b:(_ for _ in ()).throw(TimeoutError('watchdog termination')))\nTimeoutError: watchdog termination\n",
+  "end_unix": 1795870659.8380444,
+  "process_tree_cpu_seconds": 537.5585259999999,
+  "cpu_prior_accounted_seconds": 189.0,
+  "cpu_initial_unmeasured_reserve_seconds": 120.0,
+  "peak_allocated_bytes": 12166562304,
+  "peak_reserved_bytes": 13459521536,
+  "manual_penalty_calls": 0
+}

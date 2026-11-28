@@ -1,0 +1,2 @@
+group,split,samples,accuracy,CE,FR_global,SOP_sample_weighted,SOP_author,fc1_SOP,fc2_SOP,validation_seconds,last_batch_size,parameter_count,effective_nonzero_weights,effective_weight_sparsity,FP32_dense_parameter_bytes,fc1_out,fc2_in,inference_file_bytes,compression_fraction
+B0,validation,4500,0.9422222222222222,0.1727328626844618,0.04957855784345042,86009551.08977778,85176712.12676056,15244090.154666666,142680.71644444444,11.220406869193539,20,36720484,31402490,0.1447020508963247,146881936,2048,2048,146922146,0.0
