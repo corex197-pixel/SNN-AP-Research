@@ -1,0 +1,11 @@
+"""Diagnose fixed preflight AMP CE arithmetic; no parameter update or training."""
+import os,time,json
+from pathlib import Path
+root=Path(__file__).resolve().parents[2];os.chdir(root)
+s=(root/'experiments/ROUND-026/run.py').read_text();s=s.rsplit('\nrecords=[];specs={}\ntry:',1)[0];exec(compile(s,str(root/'experiments/ROUND-026/run.py'),'exec'),globals())
+start=time.time();torch.set_num_threads(2);random.seed(12450);np.random.seed(12450);torch.manual_seed(12450);torch.cuda.manual_seed(12450);torch.backends.cudnn.allow_tf32=False;torch.backends.cuda.matmul.allow_tf32=False
+m=readparent();opt,sch,sc=setup(m,'F0');split=json.loads((ROOT/'experiments/EXP-004/splits/indices.json').read_text());dataset=TrainFileOnly(split['train'],True);dl,seq,drop=train_loader(dataset,split['train'],1);x,y,sid=next(iter(dl));assert sid.tolist()==seq[:256];x=x.cuda();y=y.cuda();functional.reset_net(m)
+with torch.no_grad(),torch.autocast('cuda',enabled=True):
+ out=m(x);mean=out.mean(0);ce=F.cross_entropy(mean,y)
+z=mean.detach().double();logsum=torch.logsumexp(z,dim=1);reference=(logsum-z.gather(1,y[:,None]).squeeze(1)).mean();logsoft=F.nll_loss(F.log_softmax(mean.float(),dim=1),y);float_sum=(torch.logsumexp(mean.float(),dim=1)-mean.float().gather(1,y[:,None]).squeeze(1)).mean();direct=F.cross_entropy(mean.float(),y)
+result={'sample_ids_sha256':hids(sid.tolist()),'samples':len(y),'output_dtype':str(out.dtype),'mean_dtype':str(mean.dtype),'loss_dtype':str(ce.dtype),'min_logit':float(z.min()),'max_logit':float(z.max()),'AMP_CE':float(ce),'FP64_logsumexp_CE':float(reference),'FP32_logsumexp_CE':float(float_sum),'FP32_logsoftmax_nll_CE':float(logsoft),'FP32_cross_entropy':float(direct),'error_AMP_vs_FP64':float(abs(ce.double()-reference)),'error_AMP_vs_FP32_nll':float(abs(ce-logsoft)),'error_AMP_vs_FP32_CE':float(abs(ce-direct)),'error_FP32_logsumexp_vs_FP64':float(abs(float_sum.double()-reference)),'wall_seconds':time.time()-start,'process_tree_cpu_seconds':K.cpu()-K.CPU,'no_backward_or_update':True,'device':torch.cuda.get_device_name()};functional.reset_net(m);(ROOT/'experiments/EXP-028/runs/EXP-028-DIAG-001').mkdir(exist_ok=True);(ROOT/'experiments/EXP-028/runs/EXP-028-DIAG-001/ce_diagnostic.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result),flush=True)
