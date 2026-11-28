@@ -1,0 +1,1 @@
+Dedicated UniSparse venv: Python 3.11.9, PyTorch 2.4.1+cu118, CuPy 13.5.1; FP32 exposure; FP16 AMP training; batch256; workers4.

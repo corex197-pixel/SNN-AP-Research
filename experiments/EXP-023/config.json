@@ -1,0 +1,47 @@
+{
+  "experiment": "EXP-023",
+  "model": "cifarnet",
+  "base_channels": 256,
+  "T": 4,
+  "batch_size": 256,
+  "workers": 4,
+  "seed": 12450,
+  "train_samples": 45000,
+  "validation_samples": 4500,
+  "train_batches_per_epoch": 175,
+  "drop_last_train": true,
+  "scheduler": "cosine",
+  "scheduler_epochs": 300,
+  "lr": 0.1,
+  "momentum": 0.9,
+  "weight_decay": 0,
+  "AMP": true,
+  "accumulation_steps": 1,
+  "parent_epoch": 100,
+  "stages": [
+    60,
+    100,
+    200,
+    300
+  ],
+  "groups": [
+    "W0",
+    "W1",
+    "W2"
+  ],
+  "official_test_access": false,
+  "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+  "gpu_wall_budget_seconds": 2700,
+  "cpu_seconds_budget": 5400,
+  "run_id": "EXP-023-RUN-001",
+  "parent_path": "experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-100.pth",
+  "parent_sha256": "881f607f378acb1dc34563d2e58a54fb39461c1ccbb9b6ba75ccb0126ee99c61",
+  "alpha": 0.25,
+  "lambda_weight": 8.834108737251828e-08,
+  "lambda_neuron": 8.834108737251828e-08,
+  "epochs": [
+    101,
+    110
+  ],
+  "training_gate_Ap": 0.2
+}

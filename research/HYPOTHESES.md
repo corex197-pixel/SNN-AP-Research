@@ -52,3 +52,7 @@ H-019 SUPPORTED only for fixed U2 epoch300, two target modules, rho=.25, q=.02, 
 
 ### ROUND-020 theory decision
 H-017 INSUFFICIENT_EVIDENCE: EXP-021 matched G1 vs G0 but failed preregistered accuracy gain; missing fair comparator is no longer the explanation. H-016 SUPPORTED, H-018 PARTIALLY_SUPPORTED, H-019 SUPPORTED retain scopes. H-020 UNTESTED: an actual target-layer G1 activity gradient conflicts with task gradient, cos < −1e−6. H-021 UNTESTED: protected effective-fanout direction may improve matched-SOP task performance vs G0/G1/P0.
+
+
+### ROUND-021 theory decision
+H-020 SUPPORTED only current model/data/surrogate protocol; H-021 CONTRADICTED only preregistered fixed-model local intervention accuracy prediction. H-017 INSUFFICIENT_EVIDENCE. H-022 UNTESTED: layer exposure heterogeneity for fixed K in prespecified 3 layers; H-023 UNTESTED: fixed SEAWP training may improve preregistered efficiency or performance vs W0 and W2.

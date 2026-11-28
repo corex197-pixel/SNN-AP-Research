@@ -59,3 +59,7 @@ Fixed parent, samples, rho and permutations from EXP-020. G1 q=.04; G0/G2 initia
 
 ## ROUND-020 EXP-022
 Fixed parent, D_grad/D_cal, BN target paths, rho=.25 and G0/G1 q from EXP-021. H-020 requires at least one G1 layer cosine <−1e−6; if absent stop protected performance. Otherwise same-q mechanism q=.02, fixed finite P0/P1 SOP matching and preregistered 2×2 tests; GPU≤900s, CPU≤1800s. Full protocol ROUND-020-TASK.md.
+
+
+## ROUND-021 EXP-023
+Fixed U2 epoch100 parent, split and 512+512 exposure samples, alpha=.25, unmodified activity regularizer. H-022 requires both D_grad and D_cal A_p≥.20 with same min/max layer in conv1.conv/conv2/conv3.conv. If passed and tests passed: independent W0/W1/W2 epochs101–110, fixed endpoint110; GPU≤2700s CPU≤5400s. Full protocol ROUND-021-TASK.md.

@@ -64,3 +64,7 @@ Related SynOps/activity/weight-sparsity ideas exist. No first-discovery claim fo
 
 ## ROUND-020 PCGrad prior art
 Yu et al., Gradient Surgery for Multi-Task Learning, NeurIPS 2020, https://arxiv.org/abs/2001.06782. Projection of conflicting gradients onto a constraint boundary is closely related to PCGrad; no novelty claim for the projection or orthogonality constraint.
+
+
+## ROUND-021 exposure-aware weight pruning
+UniSparse https://proceedings.mlr.press/v306/shi26a.html ; Spiking Activity Based Pruning https://proceedings.mlr.press/v235/li24bz.html ; Dynamic Joint Pruning https://ieeexplore.ieee.org/document/11132570/ (automated record inspection blocked by site); Unsupervised Adaptive Weight Pruning https://doi.org/10.3389/fnins.2020.598876 . Related activity-aware and dynamic joint pruning may overlap; no SEAWP novelty claim. Fixed-activity SOP identities do not establish training causality.

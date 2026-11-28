@@ -64,3 +64,7 @@ Keep MP-EFR unchanged; perform finite calibration-only G0/G2 budget matching aro
 
 ## DEC-020 — REFINE
 Stop standalone unprotected MP-EFR as main candidate; run a single preregistered task-gradient conflict and protected-gradient mechanism experiment. No further modules if valid gate fails.
+
+
+## DEC-021 — STOP + PIVOT
+Stop MP-EFR/TP-EFR training mainline; retain controlled UniSparse and all negative evidence. Test SEAWP fixed K-normalized exposure allocation; no novelty claim or automatic gate relaxation.

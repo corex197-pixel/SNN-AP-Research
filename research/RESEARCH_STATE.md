@@ -109,3 +109,6 @@ ROUND-019 EXP-021 COMPLETED. Budget matching succeeded; G1−G0 accuracy −0.04
 ROUND-020 DEC-020 REFINE; EXP-020/021 COMPLETED with original progression gates failed. EXP-022 PLANNED; first test real full-network task gradient conflict; P1 mechanism and matched validation only if preregistered gate passes. H-020/H-021 UNTESTED.
 
 ROUND-020 EXP-022 COMPLETED: true task/activity conflict G1 conv1.norm cosine −0.155419; P0/P1 matched budget, but P1 failed all three accuracy advantage gates versus G0/G1/P0. No continuation of current MP-EFR/TP-EFR training mainline is recommended under preregistered rule. H-020/H-021 remain UNTESTED pending theory review. EXP-020/021 failure records preserved. See ../experiments/EXP-022/REPORT.md.
+
+
+ROUND-021 DEC-021 STOP + PIVOT: MP-EFR/TP-EFR training mainline stopped, controlled UniSparse retained; EXP-020/021/022 COMPLETED with original negative gates preserved. EXP-023 PLANNED; H-022 gate determines whether W0/W1/W2 101–110 training is permitted. H-020 SUPPORTED scoped; H-021 CONTRADICTED scoped; H-022/H-023 UNTESTED.

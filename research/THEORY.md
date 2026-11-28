@@ -437,3 +437,7 @@ R81 E_m(q)=(C_target,B0−C_target,m(q))/||Δφ_m(q)|| for nonzero update only; 
 
 ## v0.2.6 — ROUND-020
 R83 t_l=∇_{phi_l} CE(mean_t(logits),y), full network surrogate gradient; BN eval, original LIF training backward path, per-batch sample weighted. R84 dot(t,g), R85 cosine conflict, first-order prediction −eta dot(t,g), not strict hard-spike loss derivative. R86 min_v ||v−g||²/2 s.t. t·v≥0; R87 v=g−min(0,(t/||t||)·g)(t/||t||), zero-t fallback. R88 norm-match each layer to ||g0|| with zero/degenerate handling; R89 phi=phi0−q||phi0||/||g0|| direction. PCGrad-style projection is prior art.
+
+
+## v0.2.7 — ROUND-021
+R90 W_eff=sign(W) relu(|W|−d); R91 M=I(|W|>d), official mask is authoritative; R92 d_next=d+lr λ_weight K. R93 e[c,a,b] sums valid mapped binary consumer spikes / (B T); R94 C_l=T Σ M e; R95 removed weight cost=T e. R96 p=Σe/Σe_dense. R97 p_bar=Σ Kp/ΣK; R98 Khat=K(1−α+α p/p_bar), α=.25; R99 d_next=d+lr λ_weight Khat; R100 ΣKhat=ΣK. Fixed input accounting is not a training-causality theorem.
