@@ -121,3 +121,5 @@ ROUND-021 protocol deviation: pre-training unequal-tail unit test was mislabeled
 ROUND-022 DEC-022 STOP + PIVOT: stop fixed-layer SEAWP allocation; retain controlled UniSparse and all EXP-023 negative results and admission deviation. EXP-024 PLANNED; fixed 25% fc1 hidden-neuron structural pruning, exact reconstruction and machine-verifiable admission precede selection/evaluation. H-024/H-025 UNTESTED.
 
 ROUND-022 EXP-024 delivery: PARTIAL; admission RUNNING; progression NA. H-024/H-025 UNTESTED pending researcher review. EXP-023 admission deviation remains preserved. See ../experiments/EXP-024/REPORT.md.
+
+EXP-024-RUN-001 PARTIAL: R103 error 1.74997e-5 exceeded 1e-5; no selection or validation. Preserved run; RUN-002 checks strict FP32 by disabling TF32, retains tolerance and counts previous budget.

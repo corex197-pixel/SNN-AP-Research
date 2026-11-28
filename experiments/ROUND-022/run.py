@@ -3,7 +3,7 @@ import os,sys,time,json,csv,hashlib,traceback,signal,subprocess,random,gc
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];sys.path[:0]=[str(ROOT/'experiments/ROUND-019'),str(ROOT/'experiments/ROUND-022')]
 import core as K
-K.E=ROOT/'experiments/EXP-024';K.START=time.time();K.CPU=K.cpu();K.PRIOR_WALL=K.PRIOR_CPU=0;K.status.update(run_id='EXP-024-RUN-001',phase='admission')
+K.E=ROOT/'experiments/EXP-024';K.START=time.time();K.CPU=K.cpu();K.PRIOR_WALL=float(os.environ.get('EXP024_PRIOR_WALL','0'));K.PRIOR_CPU=float(os.environ.get('EXP024_PRIOR_CPU','0'));K.status.update(run_id=os.environ.get('EXP024_RUN_ID','EXP-024-RUN-001'),phase='admission')
 from core import *
 # core resolved from ROUND-019; load local algebra explicitly to avoid ambiguous module names.
 import importlib.util
@@ -15,7 +15,7 @@ from utils.utils import SOPMonitor
 E=K.E;status=K.status;CODE=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip();status.update(code_sha=CODE,start_unix=K.START)
 # Override inherited 15 minute guard with this round's 20 minute budget.
 def guard(reserve=45):
- wall=time.time()-K.START;cpu=K.cpu()-K.CPU
+ wall=K.PRIOR_WALL+time.time()-K.START;cpu=K.PRIOR_CPU+K.cpu()-K.CPU
  if wall>=1200-reserve or cpu>=2700-reserve:raise TimeoutError('ROUND-022 cumulative budget reserve')
  status.update(wall_seconds=wall,cpu_seconds=cpu);K.dump('status.json',status);return wall,cpu
 K.guard=guard
@@ -111,7 +111,7 @@ def evaluate(m,ids,group,split,save_samples):
  assert total==len(ids);elapsed=time.monotonic()-start;result={'group':group,'split':split,'samples':total,'accuracy':correct/total,'CE':sumce/total,'FR_global':sum(spikes.values())/sum(states.values()),'SOP_sample_weighted':sum(batch_sops)/total,'SOP_author':sum(batch_sops)/len(batch_sops)/64,'fc1_SOP':layers['fc1']/total,'fc2_SOP':layers['fc2']/total,'validation_seconds':elapsed,'last_batch_size':batch_sizes[-1]};lr=[{'group':group,'split':split,'layer':n,'sops':layers[n]/total,'input_FR':ones[n]/elements[n]} for n in mon.monitored_layers];fr=[{'group':group,'split':split,'neuron':n,'FR':spikes[n]/states[n]} for n in spikes];return result,lr,fr,samples
 
 def main():
- guard();assert torch.cuda.device_count()==1 and '4090' in torch.cuda.get_device_name();torch.set_num_threads(2);torch.manual_seed(20261128);np.random.seed(20261128);random.seed(20261128);spl=data_audit();m=K.model();dump('parent_checkpoint_audit.json',{'before':sha(C['parent_path']),'expected':C['parent_sha256']});architecture(m);a,b=preflight(m)
+ guard();assert torch.cuda.device_count()==1 and '4090' in torch.cuda.get_device_name();torch.set_num_threads(2);torch.backends.cudnn.allow_tf32=False;torch.backends.cuda.matmul.allow_tf32=False;dump('precision_audit.json',{'cudnn_allow_tf32':torch.backends.cudnn.allow_tf32,'matmul_allow_tf32':torch.backends.cuda.matmul.allow_tf32,'forward_dtype':'float32','algebra_dtype':'float64'});torch.manual_seed(20261128);np.random.seed(20261128);random.seed(20261128);spl=data_audit();m=K.model();dump('parent_checkpoint_audit.json',{'before':sha(C['parent_path']),'expected':C['parent_sha256']});architecture(m);a,b=preflight(m)
  admitted=json.loads((E/'admission_gate_audit.json').read_text());assert admitted['status']=='PASSED' and set(REQUIRED)=={x['name'] for x in admitted['tests']} and all(x['status']=='PASSED' and x['inputs'] and x['assertion'] and x['actual'] for x in admitted['tests']);status['phase']='selection';dump('status.json',status)
  rate,y,ref,ids,capture_seconds=capture_dataset(m,S['D_grad']);z=esc.reconstruct(rate,a,b);err=normerr(z,ref);assert err<=1e-5
  picked=select(m,rate,a,b,y,ids);hashes={'rates_sha256':digest_tensor(rate),'A_sha256':digest_tensor(a),'bias_sha256':digest_tensor(b),'labels_sha256':digest_tensor(y),'sample_ids_sha256':hashlib.sha256(json.dumps(ids,separators=(',',':')).encode()).hexdigest()};selected={g:{'deleted':v,'retained':[i for i in range(2048) if i not in set(v)]} for g,v in picked.items()};dump('selected_neurons.json',selected);lock={'code_sha':CODE,'parent_sha256':C['parent_sha256'],'fixed_seed':20261128,'rng':'numpy.default_rng PCG64','block_size':16,'deleted_count':512,'selected_neurons_sha256':sha(E/'selected_neurons.json'),'admission_sha256':sha(E/'admission_gate_audit.json'),'data_hashes':hashes,'capture_seconds':capture_seconds,'D_cal_or_validation_used_for_selection':False,'full_Dgrad_R103_error':err};dump('selection_lock.json',lock)
@@ -140,5 +140,5 @@ finally:
  try:
   after=sha(C['parent_path']);dump('parent_checkpoint_audit.json',{'before':C['parent_sha256'],'after':after,'expected':C['parent_sha256'],'match':after==C['parent_sha256']})
  except BaseException:pass
- status.update(end_unix=time.time(),wall_seconds=time.time()-K.START,cpu_seconds=K.cpu()-K.CPU,peak_allocated_bytes=torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None,peak_reserved_bytes=torch.cuda.max_memory_reserved() if torch.cuda.is_available() else None);dump('status.json',status);print(json.dumps(status),flush=True)
+ status.update(end_unix=time.time(),wall_seconds=K.PRIOR_WALL+time.time()-K.START,cpu_seconds=K.PRIOR_CPU+K.cpu()-K.CPU,peak_allocated_bytes=torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None,peak_reserved_bytes=torch.cuda.max_memory_reserved() if torch.cuda.is_available() else None);dump('status.json',status);print(json.dumps(status),flush=True)
 if status['status']!='COMPLETED':sys.exit(1)

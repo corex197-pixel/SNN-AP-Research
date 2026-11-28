@@ -1,1 +1,18 @@
 delivery finalized PARTIAL
+[research/round-022-exact-spike-contribution 7e7be23] results(EXP-024): deliver exact structured pruning pilot
+ 15 files changed, 345 insertions(+), 5 deletions(-)
+ create mode 100644 experiments/EXP-024/REPORT.md
+ create mode 100644 experiments/EXP-024/admission_gate_audit.json
+ create mode 100644 experiments/EXP-024/architecture_audit.json
+ create mode 100644 experiments/EXP-024/data_split_audit.json
+ create mode 100644 experiments/EXP-024/delivery_resources.json
+ create mode 100644 experiments/EXP-024/delivery_supervisor.log
+ create mode 100644 experiments/EXP-024/delivery_supervisor.pid
+ create mode 100644 experiments/EXP-024/launcher.pid
+ create mode 100644 experiments/EXP-024/limitations.md
+ create mode 100644 experiments/EXP-024/parent_checkpoint_audit.json
+ create mode 100644 experiments/EXP-024/resource_usage.csv
+ create mode 100644 experiments/EXP-024/run.log
+ rewrite experiments/EXP-024/status.json (92%)
+To github.com:corex197-pixel/SNN-AP-Research.git
+   70d8ba8..7e7be23  research/round-022-exact-spike-contribution -> research/round-022-exact-spike-contribution

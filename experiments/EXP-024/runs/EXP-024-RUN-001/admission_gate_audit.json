@@ -1,0 +1,215 @@
+{
+  "status": "RUNNING",
+  "required": [
+    "architecture",
+    "data_split",
+    "capture_switch",
+    "readout_zero_set",
+    "tail_2_plus_1",
+    "single_gate",
+    "single_compact",
+    "block16_gate",
+    "block16_compact",
+    "set512_gate",
+    "set512_compact",
+    "preserved_spikes",
+    "prediction_CE",
+    "physical_deletion"
+  ],
+  "tests": [
+    {
+      "name": "data_split",
+      "status": "PASSED",
+      "inputs": {
+        "hashes": {
+          "D_grad": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+          "D_cal": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa"
+        },
+        "counts": {
+          "D_grad": 512,
+          "D_cal": 512
+        },
+        "validation_count": 4500,
+        "disjoint": true,
+        "train_only_loader": true
+      },
+      "assertion": "fixed hashes, counts and disjointness",
+      "actual": {
+        "hashes": {
+          "D_grad": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+          "D_cal": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa"
+        },
+        "counts": {
+          "D_grad": 512,
+          "D_cal": 512
+        },
+        "validation_count": 4500,
+        "disjoint": true,
+        "train_only_loader": true
+      }
+    },
+    {
+      "name": "architecture",
+      "status": "PASSED",
+      "inputs": {
+        "fc1_in": 16384,
+        "fc1_out": 2048,
+        "fc2_in": 2048,
+        "fc2_out": 100,
+        "fc1_bias": true,
+        "fc2_bias": true,
+        "kernel_fc1": [
+          1,
+          1
+        ],
+        "kernel_fc2": [
+          1,
+          1
+        ],
+        "boost_kernel": [
+          10
+        ],
+        "boost_stride": [
+          10
+        ],
+        "BN_type": "IdentityBN",
+        "last_neuron_type": "LIF",
+        "groups": 1,
+        "registered_fc1_consumer": true,
+        "registered_fc2_consumer": true,
+        "T": 4
+      },
+      "assertion": "fixed direct last hidden structure and grouped mean",
+      "actual": {
+        "fc1_in": 16384,
+        "fc1_out": 2048,
+        "fc2_in": 2048,
+        "fc2_out": 100,
+        "fc1_bias": true,
+        "fc2_bias": true,
+        "kernel_fc1": [
+          1,
+          1
+        ],
+        "kernel_fc2": [
+          1,
+          1
+        ],
+        "boost_kernel": [
+          10
+        ],
+        "boost_stride": [
+          10
+        ],
+        "BN_type": "IdentityBN",
+        "last_neuron_type": "LIF",
+        "groups": 1,
+        "registered_fc1_consumer": true,
+        "registered_fc2_consumer": true,
+        "T": 4
+      }
+    },
+    {
+      "name": "capture_switch",
+      "status": "PASSED",
+      "inputs": {
+        "sample_ids": [
+          33540,
+          8359,
+          6955,
+          1052,
+          46576,
+          28652,
+          28391,
+          26154,
+          39955,
+          4156,
+          16954,
+          26064,
+          6984,
+          46888,
+          35999,
+          13837,
+          35114,
+          19534,
+          26179,
+          43715,
+          3366,
+          38441,
+          9009,
+          16512,
+          47739,
+          29907,
+          30496,
+          30545,
+          44664,
+          24673,
+          12052,
+          6298
+        ],
+        "batch_sizes": [
+          32
+        ]
+      },
+      "assertion": "capture on/off exact logits",
+      "actual": {
+        "max_abs_logit_diff": 0.0
+      }
+    },
+    {
+      "name": "readout_zero_set",
+      "status": "FAILED",
+      "inputs": {
+        "sample_ids": [
+          33540,
+          8359,
+          6955,
+          1052,
+          46576,
+          28652,
+          28391,
+          26154,
+          39955,
+          4156,
+          16954,
+          26064,
+          6984,
+          46888,
+          35999,
+          13837,
+          35114,
+          19534,
+          26179,
+          43715,
+          3366,
+          38441,
+          9009,
+          16512,
+          47739,
+          29907,
+          30496,
+          30545,
+          44664,
+          24673,
+          12052,
+          6298
+        ],
+        "batch_sizes": [
+          32
+        ],
+        "hidden_shape": [
+          4,
+          32,
+          2048,
+          1,
+          1
+        ]
+      },
+      "assertion": "R103 relative infinity error <= 1e-5",
+      "actual": {
+        "normalized_error": 1.7499710632039074e-05,
+        "bias_present": true
+      }
+    }
+  ]
+}
