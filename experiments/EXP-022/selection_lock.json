@@ -1,0 +1,21 @@
+{
+  "parent_sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+  "data_grad_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+  "data_cal_sha256": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa",
+  "task_gradient_sha256": "9ff8839ef335811a10d9d35c475c83bda10a0dfc677a0723f4171810f18dc1f4",
+  "activity_gradient_sha256": "b9e6d4857104cc6c8de41dbfe819510f0b81c82f3086e5f71355b435e00d089e",
+  "projected_gradient_sha256": "a7a66c9626115478c0e3d77063f0c46b0a4df77dcb0fc53368a12cfb6da16b3d",
+  "trace_sha256": "39c07ecac29aaea23c727f84ca1b41d1f18c7674b3e7808aed86b29a8099ac50",
+  "G1_anchor_reduction": 0.04411149527310865,
+  "selections": {
+    "G0": 0.04546005512832126,
+    "G1": 0.04,
+    "P0": 0.04455656984726916,
+    "P1": 0.03920744688562276
+  },
+  "matched_reductions": {
+    "P0": 0.044279374123885495,
+    "P1": 0.04405143490855079
+  },
+  "locked_before_validation": true
+}
