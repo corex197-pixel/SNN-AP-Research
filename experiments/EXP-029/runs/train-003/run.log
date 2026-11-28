@@ -1,0 +1,52 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+EPOCH K0 1 CE 0.5003197583130428 KD 0.0 skips 0
+EPOCH K0 2 CE 0.4787869209902627 KD 0.0 skips 0
+EPOCH K0 3 CE 0.4689362067835672 KD 0.0 skips 0
+EPOCH K0 4 CE 0.46904292941093445 KD 0.0 skips 0
+EPOCH K0 5 CE 0.4668967275960105 KD 0.0 skips 0
+EPOCH K1 1 CE 0.4696280610561371 KD 4.47706583568028 skips 0
+EPOCH K1 2 CE 0.41710843529020036 KD 3.3406189346313475 skips 0
+EPOCH K1 3 CE 0.3942907174995967 KD 2.7280145713261197 skips 0
+EPOCH K1 4 CE 0.3901325687340328 KD 2.408736884253366 skips 0
+EPOCH K1 5 CE 0.38738173365592954 KD 2.3096226283482144 skips 0
+EPOCH K2 1 CE 0.4683765539101192 KD 4.268125108991351 skips 0
+EPOCH K2 2 CE 0.4165747347899846 KD 3.212841843196324 skips 0
+EPOCH K2 3 CE 0.3937096413544246 KD 2.6711320441109794 skips 0
+EPOCH K2 4 CE 0.38944875274385726 KD 2.3892648465292794 skips 0
+EPOCH K2 5 CE 0.3867008183683668 KD 2.300166439328875 skips 0
+EPOCH K3 1 CE 0.4701677022661482 KD 3.999626647404262 skips 0
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-027/train.py", line 42, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/train.py", line 41, in main
+    assert sha(SPL)==CFG['split_sha256'] and idhash(DGRAD)==CFG['D_grad_sha256'];lock=json.loads((E/'training_admission_lock.json').read_text());commit=json.loads((E/'training_admission_lock_commit.json').read_text());assert sha(E/'training_admission_lock.json')==commit['lock_sha256'];identity={'teacher':sha(B0),'P0':sha(P0)};conf=sha(E/'config.json');rsha=remote();expected=lock['expected_samples'];return gate.stage_entry(lock,'training',identity,conf,rsha,commit['sha'],expected,lambda:K.TrainFileOnly(json.loads(SPL.read_text())['train'],True),run_training)
+                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/gate.py", line 32, in stage_entry
+    return action(loader_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/train.py", line 25, in run_training
+    assert bool(torch.isfinite(loss)) and bool(torch.isfinite(zz).all());sc.scale(loss).backward();sc.unscale_(opt);assert all(bool(torch.isfinite(p.grad).all()) for p in m.parameters() if p.grad is not None);old=sc.get_scale();sc.step(opt);sc.update();is_skip=sc.get_scale()<old;functional.reset_net(m)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-019/core.py", line 42, in abort
+    def abort(s,f):raise TimeoutError('watchdog signal '+str(s))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: watchdog signal 15
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-027/train.py", line 42, in <module>
+    try:main()
+        ^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/train.py", line 41, in main
+    assert sha(SPL)==CFG['split_sha256'] and idhash(DGRAD)==CFG['D_grad_sha256'];lock=json.loads((E/'training_admission_lock.json').read_text());commit=json.loads((E/'training_admission_lock_commit.json').read_text());assert sha(E/'training_admission_lock.json')==commit['lock_sha256'];identity={'teacher':sha(B0),'P0':sha(P0)};conf=sha(E/'config.json');rsha=remote();expected=lock['expected_samples'];return gate.stage_entry(lock,'training',identity,conf,rsha,commit['sha'],expected,lambda:K.TrainFileOnly(json.loads(SPL.read_text())['train'],True),run_training)
+                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/gate.py", line 32, in stage_entry
+    return action(loader_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/train.py", line 25, in run_training
+    assert bool(torch.isfinite(loss)) and bool(torch.isfinite(zz).all());sc.scale(loss).backward();sc.unscale_(opt);assert all(bool(torch.isfinite(p.grad).all()) for p in m.parameters() if p.grad is not None);old=sc.get_scale();sc.step(opt);sc.update();is_skip=sc.get_scale()<old;functional.reset_net(m)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-019/core.py", line 42, in abort
+    def abort(s,f):raise TimeoutError('watchdog signal '+str(s))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: watchdog signal 15

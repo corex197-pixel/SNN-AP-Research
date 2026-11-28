@@ -1,6 +1,6 @@
 {
-  "gpu_process_wall_seconds": 48.50012003700249,
-  "cpu_accounted_seconds": 172.295412,
+  "gpu_process_wall_seconds": 464.95771188591607,
+  "cpu_accounted_seconds": 1017.4078959999999,
   "cpu_initial_reserve_seconds": 120.0,
   "stages": [
     {
@@ -17,6 +17,14 @@
       "exit_code": 0,
       "wall_seconds": 26.155393255874515,
       "cpu_process_tree_wait4_seconds": 27.567608,
+      "termination": null
+    },
+    {
+      "stage": "train",
+      "run_id": "train-003",
+      "exit_code": 1,
+      "wall_seconds": 416.4575918489136,
+      "cpu_process_tree_wait4_seconds": 845.112484,
       "termination": null
     }
   ]

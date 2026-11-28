@@ -1,0 +1,10 @@
+scope,run_id,gpu_process_wall_seconds,cpu_seconds,source,limitation
+preflight,preflight-001,22.344726781127974,24.727804,supervisor wait4,wall includes CPU/network; not kernel time
+preflight,preflight-002,26.155393255874515,27.567608,supervisor wait4,wall includes CPU/network; not kernel time
+train,train-003,416.4575918489136,845.112484,supervisor wait4,wall includes CPU/network; not kernel time
+prelaunch_reserve,NA,NA,120.0,estimate,not actual CPU measurement
+posthoc_checkpoint_audit,CPU only,NA,1.210504,getrusage self,imports and other tools excluded
+posthoc_synthetic_test,CPU only,NA,0.012439000000000533,getrusage self,imports excluded
+posthoc_recovery_test,CPU only,NA,0.0029689999999993333,getrusage self,imports excluded
+delivery,CPU only,NA,0.5907439999999999,getrusage self,imports and other tools excluded
+total_budget_accounted,NA,464.95771188591607,1019.2245519999999,cumulative + reserve,early external tool CPU not fully measured

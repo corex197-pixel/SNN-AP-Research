@@ -1,0 +1,7 @@
+{
+  "scope": "POSTHOC_CPU_ONLY, no historical admission change",
+  "identical_state_accepted": true,
+  "altered_momentum_rejected": true,
+  "status": "PASSED",
+  "cpu_self_seconds_after_import": 0.0029689999999993333
+}

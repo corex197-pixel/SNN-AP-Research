@@ -1,1 +1,19 @@
-{"status":"PLANNED","validity":"NOT_YET_DETERMINED","phase":"implementation"}
+{
+  "status": "PARTIAL",
+  "validity": "INVALID_EVIDENCE",
+  "phase": "STOPPED_BEFORE_ENDPOINT_AND_EVALUATION",
+  "training_code_sha": "852a8b43f148bccfcdd718d1be3cb2933f157c64",
+  "original_training_lock_sha": "852a8b43f148bccfcdd718d1be3cb2933f157c64",
+  "completed_epochs": {
+    "K0": 5,
+    "K1": 5,
+    "K2": 5,
+    "K3": 1,
+    "M6": 0
+  },
+  "partial_epoch": "K3 epoch 2 started; interrupted; exact attempted optimizer steps unknown",
+  "stop_reason": "Required synthetic R127-R129 and exact optimizer recovery coverage absent before training",
+  "teacher_P0_files_unchanged": true,
+  "formal_validation_performed": false,
+  "next_step": "Independent new protocol and explicit authorization required for any new training; do not retry automatically."
+}

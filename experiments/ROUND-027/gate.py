@@ -1,7 +1,7 @@
 """Fail-closed actual entry, using mandatory object-level tests and remote lock identity."""
 import copy
 NAMES=('K0','K1','K2','K3','M6')
-TRAIN={'temporal_real','weight_nondegenerate','formula_independent','data_split','teacher_P0_protected','resource_benchmark','entry_negative_tests'}|{'candidate_'+x for x in NAMES}
+TRAIN={'synthetic_readout_127_129','optimizer_recovery_exact','temporal_real','weight_nondegenerate','formula_independent','data_split','teacher_P0_protected','resource_benchmark','entry_negative_tests'}|{'candidate_'+x for x in NAMES}
 EVAL={'training_complete','entry_negative_tests'}|{'endpoint_'+x for x in NAMES}|{'forward_reload_'+x for x in NAMES}
 def verify(lock,kind,identity,config_sha,remote_sha,lock_commit,expected_samples):
  need=TRAIN if kind=='training' else EVAL;errors=[]

@@ -1,0 +1,32 @@
+{
+  "K0": {
+    "path": "/home/hym/keyan1/experiments/EXP-029/models/K0/epoch-005-inference.pth",
+    "sha256": "76862ee79758dcfd10aa6cbcbaa8f45e7f165beb9bd58f6140ed3f3325ac8691",
+    "bytes": 45644042,
+    "recovery_path": "/home/hym/keyan1/experiments/EXP-029/models/K0/epoch-005-recovery.pth",
+    "recovery_sha256": "fa345efae574728d90c196e8023b08cdc13b094b153f65639b094572e405ac1f",
+    "epochs": 5,
+    "successful_updates": 875,
+    "amp_skips": 0
+  },
+  "K1": {
+    "path": "/home/hym/keyan1/experiments/EXP-029/models/K1/epoch-005-inference.pth",
+    "sha256": "561a52cad7fdf765604faed230c4e2b504990c2153490d9689a9cb9a77b9a695",
+    "bytes": 45644042,
+    "recovery_path": "/home/hym/keyan1/experiments/EXP-029/models/K1/epoch-005-recovery.pth",
+    "recovery_sha256": "370e4c97b01c524589aad2450d3fd1dda0ad3ac0c744a1b10e372c92f0d600c3",
+    "epochs": 5,
+    "successful_updates": 875,
+    "amp_skips": 0
+  },
+  "K2": {
+    "path": "/home/hym/keyan1/experiments/EXP-029/models/K2/epoch-005-inference.pth",
+    "sha256": "1fe170a8bc879ab742af23d9f2bade5da1bc5e586a9dcb517899de611de2d6f4",
+    "bytes": 45644042,
+    "recovery_path": "/home/hym/keyan1/experiments/EXP-029/models/K2/epoch-005-recovery.pth",
+    "recovery_sha256": "c1321926618c898ad48c6020dc60b029dd21eb2237facfb913a8647614d3e30b",
+    "epochs": 5,
+    "successful_updates": 875,
+    "amp_skips": 0
+  }
+}

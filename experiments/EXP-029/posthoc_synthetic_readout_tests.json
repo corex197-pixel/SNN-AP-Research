@@ -1,0 +1,162 @@
+{
+  "inputs": {
+    "A": [
+      [
+        2.0,
+        -1.0,
+        0.5
+      ],
+      [
+        1.0,
+        3.0,
+        -0.5
+      ]
+    ],
+    "b": [
+      0.25,
+      -0.75
+    ],
+    "spikes": [
+      [
+        [
+          1.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          0.0,
+          1.0,
+          1.0
+        ]
+      ]
+    ],
+    "retained": [
+      0,
+      2
+    ],
+    "deleted": [
+      1
+    ],
+    "true_class": 0,
+    "teacher_competitor": 1
+  },
+  "expected": {
+    "teacher": [
+      [
+        [
+          2.75,
+          -0.25
+        ]
+      ],
+      [
+        [
+          -0.25,
+          1.75
+        ]
+      ]
+    ],
+    "pruned": [
+      [
+        [
+          2.75,
+          -0.25
+        ]
+      ],
+      [
+        [
+          0.75,
+          -1.25
+        ]
+      ]
+    ],
+    "deleted_contribution": [
+      [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    ],
+    "margin_difference": [
+      [
+        0.0
+      ],
+      [
+        -4.0
+      ]
+    ]
+  },
+  "actual": {
+    "teacher": [
+      [
+        [
+          2.75,
+          -0.25
+        ]
+      ],
+      [
+        [
+          -0.25,
+          1.75
+        ]
+      ]
+    ],
+    "pruned": [
+      [
+        [
+          2.75,
+          -0.25
+        ]
+      ],
+      [
+        [
+          0.75,
+          -1.25
+        ]
+      ]
+    ],
+    "deleted_contribution": [
+      [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      [
+        [
+          -1.0,
+          3.0
+        ]
+      ]
+    ],
+    "margin_difference": [
+      [
+        0.0
+      ],
+      [
+        -4.0
+      ]
+    ]
+  },
+  "absolute_errors": {
+    "R127_teacher": 0.0,
+    "R128_pruned": 0.0,
+    "R128_deleted": 0.0,
+    "R128_difference": 0.0,
+    "R129_expected": 0.0,
+    "R129_deleted": 0.0
+  },
+  "tolerance": 1e-10,
+  "status": "PASSED",
+  "execution_scope": "POSTHOC_CPU_ONLY; does not repair prior training admission",
+  "cpu_self_seconds": 0.012439000000000533,
+  "wall_seconds": 0.00019429391250014305
+}

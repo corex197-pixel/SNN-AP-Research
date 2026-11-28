@@ -1,0 +1,15 @@
+{
+  "teacher": {
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/B0.pth",
+    "expected_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+    "after_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+    "unchanged": true
+  },
+  "P0": {
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R1.pth",
+    "expected_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "after_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "unchanged": true
+  },
+  "scope": "post-stop on-disk hashes; in-memory states at interruption unavailable; completed-epoch state checks in frozen_parameter_audit.json"
+}

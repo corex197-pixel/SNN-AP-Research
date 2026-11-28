@@ -146,3 +146,6 @@ ROUND-026 DEC-026: EXP-026 INVALID and EXP-027 VALID preserved; H-026 CURRENT_EV
 ROUND-026 EXP-028: F0/F1 each completed 5 epochs; training admission passed; original RUN-004 endpoint evaluation INVALID due missing pre/post-load check and premature B0/partial P0 evaluation. Existing checkpoints were not retrained; EVAL-001 completed with repaired candidate-specific evaluation lock and VALID evaluation. H-028/H-029 preregistered gates both false; scientific statuses remain UNTESTED pending theory review. All deviations retained in ../experiments/EXP-028/REPORT.md.
 
 ROUND-027 DEC-027: H-028 PARTIALLY_SUPPORTED and H-029 INSUFFICIENT_EVIDENCE scoped; gates failed. Keep UniSparse and EXP-028 F0/F1 strong controls. EXP-029 PLANNED, four independent stages with actual-entry negative tests; H-030/031/032 UNTESTED. No search or official test.
+
+
+ROUND-027 EXP-029 PARTIAL / INVALID_EVIDENCE: initial preflight training lock erroneously lacked explicit synthetic R127–R129 and full optimizer momentum restore checks; training was stopped after K0/K1/K2=5 epochs, K3=1 complete with epoch2 interrupted, M6=0. No endpoint admission or formal validation performed. Posthoc CPU tests cannot restore original admission. Original locks and all failures preserved; H-030/H-031/H-032 UNTESTED. See ../experiments/EXP-029/REPORT.md.

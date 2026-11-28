@@ -1,0 +1,67 @@
+{
+  "stage": "POSTHOC_CPU_ONLY_checkpoint_audit",
+  "does_not_restore_admission": true,
+  "groups": {
+    "K0": {
+      "completed_epochs": 5,
+      "last_completed_epoch": 5,
+      "checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K0/epoch-005-recovery.pth",
+      "sha256": "fa345efae574728d90c196e8023b08cdc13b094b153f65639b094572e405ac1f",
+      "checkpoint_load_verified": true,
+      "model_finite": true,
+      "optimizer_state_entries": 2,
+      "completed_epoch_successful_updates": 875,
+      "completed_epoch_AMP_skips": 0,
+      "fixed_endpoint_validity": "INVALID_EVIDENCE_preflight_coverage_gap",
+      "inference_checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K0/epoch-005-inference.pth",
+      "inference_sha256": "76862ee79758dcfd10aa6cbcbaa8f45e7f165beb9bd58f6140ed3f3325ac8691"
+    },
+    "K1": {
+      "completed_epochs": 5,
+      "last_completed_epoch": 5,
+      "checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K1/epoch-005-recovery.pth",
+      "sha256": "370e4c97b01c524589aad2450d3fd1dda0ad3ac0c744a1b10e372c92f0d600c3",
+      "checkpoint_load_verified": true,
+      "model_finite": true,
+      "optimizer_state_entries": 2,
+      "completed_epoch_successful_updates": 875,
+      "completed_epoch_AMP_skips": 0,
+      "fixed_endpoint_validity": "INVALID_EVIDENCE_preflight_coverage_gap",
+      "inference_checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K1/epoch-005-inference.pth",
+      "inference_sha256": "561a52cad7fdf765604faed230c4e2b504990c2153490d9689a9cb9a77b9a695"
+    },
+    "K2": {
+      "completed_epochs": 5,
+      "last_completed_epoch": 5,
+      "checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K2/epoch-005-recovery.pth",
+      "sha256": "c1321926618c898ad48c6020dc60b029dd21eb2237facfb913a8647614d3e30b",
+      "checkpoint_load_verified": true,
+      "model_finite": true,
+      "optimizer_state_entries": 2,
+      "completed_epoch_successful_updates": 875,
+      "completed_epoch_AMP_skips": 0,
+      "fixed_endpoint_validity": "INVALID_EVIDENCE_preflight_coverage_gap",
+      "inference_checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K2/epoch-005-inference.pth",
+      "inference_sha256": "1fe170a8bc879ab742af23d9f2bade5da1bc5e586a9dcb517899de611de2d6f4"
+    },
+    "K3": {
+      "completed_epochs": 1,
+      "last_completed_epoch": 1,
+      "checkpoint": "/home/hym/keyan1/experiments/EXP-029/models/K3/epoch-001-recovery.pth",
+      "sha256": "96ab29be6dac3ff929c5f588b6e614c9d6f8096706c73e37381d8b55e0abaaf7",
+      "checkpoint_load_verified": true,
+      "model_finite": true,
+      "optimizer_state_entries": 2,
+      "completed_epoch_successful_updates": 175,
+      "completed_epoch_AMP_skips": 0,
+      "fixed_endpoint_validity": "INVALID_EVIDENCE_preflight_coverage_gap"
+    },
+    "M6": {
+      "completed_epochs": 0,
+      "checkpoint": null
+    }
+  },
+  "partial_epoch_note": "K3 epoch 2 started and was interrupted; number of optimizer attempts in incomplete epoch not recorded",
+  "CPU_self_seconds_after_import": 1.210504,
+  "wall_seconds_after_import": 0.85691878804937
+}

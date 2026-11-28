@@ -1,0 +1,32 @@
+{
+  "original_training_lock_commit": "852a8b43f148bccfcdd718d1be3cb2933f157c64",
+  "original_training_lock_preserved": true,
+  "original_preflight_code_sha": "9bec4165be0af584a75a198d1ab675df6deb78f1",
+  "original_train_code_sha": "852a8b43f148bccfcdd718d1be3cb2933f157c64",
+  "original_required_tests": [
+    "candidate_K0",
+    "candidate_K1",
+    "candidate_K2",
+    "candidate_K3",
+    "candidate_M6",
+    "data_split",
+    "entry_negative_tests",
+    "formula_independent",
+    "resource_benchmark",
+    "teacher_P0_protected",
+    "temporal_real",
+    "weight_nondegenerate"
+  ],
+  "original_lock_status": "INCORRECTLY_ACCEPTED",
+  "validity": "INVALID_EVIDENCE",
+  "missing_before_training": [
+    "Explicit independent hand-computed R127/R128/R129 checks were not executed or recorded.",
+    "Recovery preflight compared model state, optimizer state entry count, scheduler and scaler, but did not verify every restored optimizer momentum tensor."
+  ],
+  "detected_after_training_started": true,
+  "manual_SIGTERM_sent_to_owned_process": true,
+  "signal_log_label": "The generic process handler reports watchdog signal 15; actual reason was manual stop for admission gap, not a resource timeout.",
+  "posthoc_cpu_test": "posthoc_synthetic_readout_tests.json",
+  "posthoc_is_not_retroactive": true,
+  "future_gate_repair": "gate.TRAIN now requires synthetic_readout_127_129 and optimizer_recovery_exact; future independent preflight not run"
+}

@@ -1,0 +1,98 @@
+{
+  "K01": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K02": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K03": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K04": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K05": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K11": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K12": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K13": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K14": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K15": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K21": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K22": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K23": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K24": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K25": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  },
+  "K31": {
+    "checked_tensors": 66,
+    "differences": [],
+    "teacher_and_P0_state_exact": true,
+    "threshold_changes": []
+  }
+}

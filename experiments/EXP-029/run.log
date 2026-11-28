@@ -1,0 +1,3 @@
+preflight-001: runs/preflight-001/run.log (exit=1)
+preflight-002: runs/preflight-002/run.log (exit=0)
+train-003: runs/train-003/run.log (exit=1)
