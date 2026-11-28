@@ -1,0 +1,33 @@
+{
+  "actual": {
+    "fc1_in": 16384,
+    "fc1_out": 2048,
+    "fc2_in": 2048,
+    "fc2_out": 100,
+    "fc1_bias": true,
+    "fc2_bias": true,
+    "kernel_fc1": [
+      1,
+      1
+    ],
+    "kernel_fc2": [
+      1,
+      1
+    ],
+    "boost_kernel": [
+      10
+    ],
+    "boost_stride": [
+      10
+    ],
+    "BN_type": "IdentityBN",
+    "last_neuron_type": "LIF",
+    "groups": 1,
+    "registered_fc1_consumer": true,
+    "registered_fc2_consumer": true,
+    "T": 4
+  },
+  "source_path": "vendor/UniSparse/models/cifarnet.py",
+  "execution_path": "activation5/maxpool5/flatten/fc1/IdentityBN/elementwise LIF/fc2/flatten/boost/time mean",
+  "parameter_coupling": "original LIF is elementwise, source manually audited"
+}

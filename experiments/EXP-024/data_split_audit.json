@@ -1,0 +1,13 @@
+{
+  "hashes": {
+    "D_grad": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+    "D_cal": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa"
+  },
+  "counts": {
+    "D_grad": 512,
+    "D_cal": 512
+  },
+  "validation_count": 4500,
+  "disjoint": true,
+  "train_only_loader": true
+}
