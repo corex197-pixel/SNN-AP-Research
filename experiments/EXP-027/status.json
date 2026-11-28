@@ -1,1 +1,15 @@
-{"status":"PLANNED","validity":"NOT_YET_DETERMINED","phase":"implementation"}
+{
+  "status": "COMPLETED",
+  "validity": "VALID",
+  "phase": "formal_evaluation",
+  "run_id": "EXP-027-RUN-001",
+  "code_sha": "303995cf1b181687f3f1c63084aa89c0a1b3c31a",
+  "start_unix": 1795868297.4637148,
+  "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6",
+  "wall_seconds": 101.92759299278259,
+  "cpu_budget_accounted_seconds": 190.145544,
+  "end_unix": 1795868399.3913074,
+  "process_tree_cpu_seconds": 100.114854,
+  "cpu_prior_unmeasured_reserve_seconds": 90.0,
+  "peak_allocated_bytes": 5785750016
+}

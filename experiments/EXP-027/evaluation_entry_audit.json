@@ -1,0 +1,12 @@
+{
+  "remote_lock_commit": "e620bb41bcf267e1047419cae6bc63cfab5e39c1",
+  "model_hashes_rechecked": {
+    "B0": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+    "50-R1": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+    "50-R3": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+    "75-R1": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "75-R3": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57"
+  },
+  "lock_file_sha256": "da08f5a9e75ea9a4d5069eb450827598e3dabfdafd169b3b247bdc9391d503ef",
+  "validator_errors": []
+}

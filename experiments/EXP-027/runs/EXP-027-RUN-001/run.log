@@ -1,0 +1,23 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[research/round-025-admission-replication e620bb4] EXP-027 lock actual candidate admission evidence
+ 11 files changed, 806 insertions(+)
+ create mode 100644 experiments/EXP-027/actual_candidate_readout_audit.json
+ create mode 100644 experiments/EXP-027/admission_coverage_matrix.csv
+ create mode 100644 experiments/EXP-027/admission_negative_tests.json
+ create mode 100644 experiments/EXP-027/candidate_admission_lock.json
+ create mode 100644 experiments/EXP-027/candidate_parameter_audit.json
+ create mode 100644 experiments/EXP-027/candidate_spike_equivalence.csv
+ create mode 100644 experiments/EXP-027/fixed_model_manifest.json
+ create mode 100644 experiments/EXP-027/formula_tests.json
+ create mode 100644 experiments/EXP-027/generic_preflight_audit.json
+ create mode 100644 experiments/EXP-027/historical_selection_lock_audit.json
+ create mode 100644 experiments/EXP-027/structural_equivalence_tests.json
+To github.com:corex197-pixel/SNN-AP-Research.git
+   303995c..e620bb4  HEAD -> research/round-025-admission-replication
+EVALUATED B0 0.9422222222222222 0.1727328626844618
+EVALUATED 50-R1 0.9393333333333334 0.1793660873969396
+EVALUATED 50-R3 0.9391111111111111 0.1873258376121521
+EVALUATED 75-R1 0.9251111111111111 0.27720849974950157
+EVALUATED 75-R3 0.9073333333333333 0.32743940374586317
+{"status": "COMPLETED", "validity": "VALID", "phase": "formal_evaluation", "run_id": "EXP-027-RUN-001", "code_sha": "303995cf1b181687f3f1c63084aa89c0a1b3c31a", "start_unix": 1795868297.4637148, "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6", "wall_seconds": 101.92759299278259, "cpu_budget_accounted_seconds": 190.145544, "end_unix": 1795868399.3913074, "process_tree_cpu_seconds": 100.114854, "cpu_prior_unmeasured_reserve_seconds": 90.0, "peak_allocated_bytes": 5785750016}

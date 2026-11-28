@@ -1,0 +1,6 @@
+scope,metric,value,unit,basis,limitation
+RUN-001,gpu_process_wall,101.92759299278259,seconds,controlled process monotonic-equivalent wall,includes CPU and network; excludes Python imports before clock; not kernel time
+RUN-001,process_tree_cpu,100.114854,seconds,getrusage and live descendants,starts after Python imports; children sampling can race
+delivery,self_cpu,0.0015049999999999994,seconds,getrusage delta,other shell/process CPU not included
+prelaunch,cpu_reserve,90.0,seconds,conservative reservation,estimated not measured
+whole,cpu_budget_accounted,190.147049,seconds,measured run plus reserve plus delivery,early tooling CPU not fully measured
