@@ -1,0 +1,24 @@
+{
+  "H019_q": 0.02,
+  "target_sop_reductions": {
+    "G0": 1680901.625,
+    "G1": 1914396.875,
+    "G2": 1640347.25
+  },
+  "direction_passed": true,
+  "H019_scientific_status": "UNTESTED_pending_theory_review",
+  "H017_scientific_status": "UNTESTED",
+  "progression_gate_checks": {
+    "math_and_state": true,
+    "H019_primary_direction": true,
+    "G1_validation_reduction_4_to_6_percent": true,
+    "G0_G2_matched_within_1pp": false,
+    "G1_accuracy_drop_le_half_pp": true,
+    "G1_accuracy_gain_vs_G0_ge_0_3pp": null,
+    "G1_accuracy_gain_vs_G2_ge_0_3pp": null
+  },
+  "progression_gate_passed": false,
+  "not_evaluable": [
+    "G0 and G2 did not match calibration budget; validation and paired bootstrap versus these groups not run"
+  ]
+}

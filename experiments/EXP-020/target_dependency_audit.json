@@ -1,0 +1,30 @@
+{
+  "status": "PASSED",
+  "targets": [
+    {
+      "bn": "static_conv.norm",
+      "neuron": "static_conv.activation",
+      "consumer": "conv1.conv",
+      "registered_direct": true,
+      "groups": 1,
+      "channels": 256,
+      "nominal": 2304,
+      "mean": 119.1875,
+      "std": 149.4169266473849,
+      "zero_mean_fallback": false
+    },
+    {
+      "bn": "conv1.norm",
+      "neuron": "conv1.activation",
+      "consumer": "conv2",
+      "registered_direct": true,
+      "groups": 1,
+      "channels": 256,
+      "nominal": 2304,
+      "mean": 217.07421875,
+      "std": 145.69860787024408,
+      "zero_mean_fallback": false
+    }
+  ],
+  "scope": "registered paths and static CifarNet.forward; actual hook output compared with consumer input"
+}

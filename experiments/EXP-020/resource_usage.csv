@@ -1,0 +1,5 @@
+run_id,gpu_uuid,wall_seconds_increment,cpu_seconds_increment,cumulative_wall_seconds,cumulative_cpu_seconds,note
+EXP-020-RUN-001,GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae,8.273579120635986,9.164857,8.273579120635986,9.164857,failure preserved
+EXP-020-RUN-002,GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae,54.966638803482056,66.618545,63.24021792411804,75.783402,calibration and locked validation
+EXP-020-SUPPLEMENT-001,GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae,20.46017289161682,24.741962,83.70039081573486,100.525364,same locked B0/G1 input FR and consistency
+EXP-020-Q0-CHECK-001,GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae,4.9708781242370605,5.232351999999992,88.67126893997192,105.75771599999999,same-input q=0 output check

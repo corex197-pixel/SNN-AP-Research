@@ -1,0 +1,92 @@
+{
+  "status": "PASSED",
+  "replay": [
+    {
+      "batch": 0,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 0,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 1,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 1,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 2,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 2,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 3,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 3,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 4,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 4,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 5,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 5,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 6,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 6,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 7,
+      "bn": "static_conv.norm",
+      "exact_spike_match": true
+    },
+    {
+      "batch": 7,
+      "bn": "conv1.norm",
+      "exact_spike_match": true
+    }
+  ],
+  "capture": [
+    {
+      "capture_does_not_change_output": true
+    }
+  ],
+  "state_reset_per_forward": true,
+  "local_node_training_for_surrogate_only": true
+}

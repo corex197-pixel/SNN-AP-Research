@@ -1,0 +1,13 @@
+{
+  "locked_before_validation": true,
+  "metric": "D_cal actual SOP only",
+  "selections": {
+    "G0": null,
+    "G1": 0.04,
+    "G2": null
+  },
+  "unmatched": [
+    "G0",
+    "G2"
+  ]
+}

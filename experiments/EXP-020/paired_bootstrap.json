@@ -1,0 +1,12 @@
+{
+  "seed": 20261128,
+  "resamples": 2000,
+  "comparisons": {
+    "G0": {
+      "status": "NA_unmatched_budget"
+    },
+    "G2": {
+      "status": "NA_unmatched_budget"
+    }
+  }
+}
