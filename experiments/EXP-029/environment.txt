@@ -1,0 +1,1 @@
+Existing UniSparse environment; official CuPy LIF; one RTX4090; independent preflight, train, endpoint and evaluation entry processes. Runtime measurements recorded separately.

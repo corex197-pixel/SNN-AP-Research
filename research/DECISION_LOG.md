@@ -86,3 +86,6 @@ EXP-026 remains INVALID permanently; retain all raw exploration and errors. Free
 
 ## DEC-026 — STOP + IMPLEMENT STRONG BASELINE
 Stop fixed-support least-squares reconstruction. Preserve all evidence, retain UniSparse Controlled Baseline, independently finetune the fixed 75-R1 F0/F1 for at most 5 epochs each as conventional task baselines, with two independently verified locks. No new method or extra search.
+
+## DEC-027 — IMPLEMENT + BOUNDED VALIDATION
+Retain UniSparse controlled baseline and EXP-028 conventional finetuning controls. Explore a fixed pruning-damage temporal KD hypothesis with K0/K1/K2/K3/M6 only; no automatic continuation, new variants, search, full-model training or official test.

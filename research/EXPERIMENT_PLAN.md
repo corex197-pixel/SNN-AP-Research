@@ -80,3 +80,6 @@ Use five unchanged saved candidates and fixed D_grad/D_cal/validation. First gen
 
 ## ROUND-026 EXP-028
 Fixed 75-R1, F0 fc2-only eval features and F1 all parameters train mode, five epochs each, shared epoch-specific training orders/augment seeds, SGD momentum .9 lr .01 cosine 5 epochs, AMP, no manual sparse updates. Separate actual-object training and endpoint evaluation admission locks must be remote-verified. GPU≤1800s CPU≤5400s; 50k original CIFAR train files only, no official test.
+
+## ROUND-027 EXP-029
+Fixed B0/P0, actual temporal damage on 512 D_grad; proceed only if >=10% nonuniform and shifted difference nonzero, plus real-candidate and mathematical preflight. K0/K1/K2/K3/M6 each five epochs fc2 only, beta=.5 rho=.5 tau=4; distinct preflight/train/endpoint/evaluate processes, remote admission locks and entry-level fail-closed tests. GPU≤1800 s CPU≤5400 s.

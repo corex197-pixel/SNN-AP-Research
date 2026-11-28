@@ -144,3 +144,5 @@ ROUND-026 DEC-026: EXP-026 INVALID and EXP-027 VALID preserved; H-026 CURRENT_EV
 
 
 ROUND-026 EXP-028: F0/F1 each completed 5 epochs; training admission passed; original RUN-004 endpoint evaluation INVALID due missing pre/post-load check and premature B0/partial P0 evaluation. Existing checkpoints were not retrained; EVAL-001 completed with repaired candidate-specific evaluation lock and VALID evaluation. H-028/H-029 preregistered gates both false; scientific statuses remain UNTESTED pending theory review. All deviations retained in ../experiments/EXP-028/REPORT.md.
+
+ROUND-027 DEC-027: H-028 PARTIALLY_SUPPORTED and H-029 INSUFFICIENT_EVIDENCE scoped; gates failed. Keep UniSparse and EXP-028 F0/F1 strong controls. EXP-029 PLANNED, four independent stages with actual-entry negative tests; H-030/031/032 UNTESTED. No search or official test.

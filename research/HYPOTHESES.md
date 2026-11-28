@@ -74,3 +74,6 @@ EXP-026 remains INVALID; evidence for H-026/H-027 INVALID_EVIDENCE, preserving p
 
 ## ROUND-026 theory decision and preregistration
 H-026 CURRENT_EVIDENCE_AGAINST scoped to the 50% condition and >=1pp loss prediction; H-027 CONTRADICTED scoped to fixed-support ridge performance, while D_cal logits MSE decrease subclaim supported. Preserve EXP-026 INVALID and EXP-027 VALID. H-028/H-029 UNTESTED: original fixed 5-epoch F1-versus-P0 and F1-versus-F0 preregistered gates; see ROUND-026-TASK.md.
+
+## ROUND-027 theory decision and preregistration
+H-028 PARTIALLY_SUPPORTED scoped: positive F1 recovery but >=1pp joint gate failed. H-029 INSUFFICIENT_EVIDENCE: F1 CE lower but no required accuracy advantage over F0. Both original progression gates failed; no established severe accuracy-sparsity conflict. H-030/H-031/H-032 UNTESTED, see ROUND-027-TASK.md; EXP-026 INVALID, EXP-027 VALID and EXP-028 repaired evaluation VALID remain preserved.

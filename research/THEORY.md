@@ -459,3 +459,6 @@ R121: for K=10 and e=z_teacher−z_candidate, mean(e²)=mean((e−mean_class(e))
 
 ## v0.3.2 — ROUND-026 R123–R126
 R123: for unique teacher class c and margin gamma=z[c]−max_{j≠c}z[j], 2||epsilon||∞<gamma is sufficient (not necessary) to preserve the class; not SNN-specific. R124 L_FT=mean_n CE(mean_t z[t,n],y[n]); R125 all original soft thresholds d remain fixed and no manual activity/weight penalty is applied. R126 R_rec=(Acc_FT−Acc_P0)/(Acc_B0−Acc_P0) without clipping; NA if denominator≤0.
+
+## v0.3.3 — ROUND-027 R127–R134
+R127 teacher timestep z=b+A s; R128 E=z_B0−z_P0=A_removed s_removed; R129 margin difference E_y−E_j for the same teacher-selected competitor. R130 d=1[m_teacher>0] relu(m_teacher−m_P0); R131 w=(1−ρ)+ρT d/sum_t d with all-ones zero fallback, ρ=.5 and per-sample mean 1. R132 L_PD=τ² mean_t,n w KL(p_teacher||p_student), τ=4; R133 CE(mean_t logits)+βKD, β=.5; R134 w_shift[t]=w[(t+1)%T]. These are prespecified heuristics and prior KD literature exists.
