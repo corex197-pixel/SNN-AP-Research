@@ -1,0 +1,15 @@
+dataset,epoch,layer,relative_error,binary_verified
+D_grad,100,conv1.conv,1.042457969189661e-08,True
+D_grad,100,conv2,2.2219343069373082e-08,True
+D_grad,100,conv3.conv,2.1919333276307997e-09,True
+D_grad,100,conv4.conv,6.8663896160853254e-09,True
+D_grad,100,conv5,2.933256787689963e-10,True
+D_grad,100,fc1,1.751006383645589e-08,True
+D_grad,100,fc2,0.0,True
+D_cal,100,conv1.conv,1.155638886836097e-08,True
+D_cal,100,conv2,2.834141328430517e-08,True
+D_cal,100,conv3.conv,8.796877228221511e-09,True
+D_cal,100,conv4.conv,3.8161575373489846e-09,True
+D_cal,100,conv5,1.167426366665557e-08,True
+D_cal,100,fc1,4.805938678762192e-09,True
+D_cal,100,fc2,0.0,True

@@ -1,0 +1,40 @@
+{
+  "parent_sha256": "881f607f378acb1dc34563d2e58a54fb39461c1ccbb9b6ba75ccb0126ee99c61",
+  "alpha": 0.25,
+  "D_grad_index_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+  "D_cal_index_sha256": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa",
+  "coefficients_sha256": "10b3c66adf21003ace557c74559c9eb138519ee39c3f4f16d58f9689b42dbadd",
+  "permutation_sha256": "01ccd30d1b7bb8a84597f12cb68c76b947c2874dc14664ee5e23d0f5c41f6f2b",
+  "exposure_sha256": "eba993adf393f918a06fc7233c668ea76f361058fc8e1ee54ddfd24c4cc5f922",
+  "H022_gate": {
+    "D_grad": {
+      "p": {
+        "conv1.conv": 0.05644073417252575,
+        "conv2": 0.0426700235006765,
+        "conv3.conv": 0.06262788610332179
+      },
+      "A_p": 0.3701872750377691,
+      "min_layer": "conv2",
+      "max_layer": "conv3.conv"
+    },
+    "D_cal": {
+      "p": {
+        "conv1.conv": 0.05755842514521615,
+        "conv2": 0.04234977262815559,
+        "conv3.conv": 0.062405634917924446
+      },
+      "A_p": 0.3706867484531585,
+      "min_layer": "conv2",
+      "max_layer": "conv3.conv"
+    }
+  },
+  "groups": [
+    "W0",
+    "W1",
+    "W2"
+  ],
+  "epochs": [
+    101,
+    110
+  ]
+}

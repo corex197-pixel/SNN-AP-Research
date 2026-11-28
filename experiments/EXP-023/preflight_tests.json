@@ -1,0 +1,88 @@
+{
+  "status": "PASSED",
+  "groups": [
+    {
+      "group": "AUTHOR",
+      "loss": 0.4649510085582733,
+      "lr": 0.07500000000000001,
+      "AMP_skipped": false,
+      "pre_update_forward_equal": true,
+      "BN_penalty_equal": true,
+      "nonzero_raw_weight_gradient": true,
+      "actual_threshold_delta": {
+        "static_conv.conv": 0.0,
+        "conv1.conv": 6.780028343200684e-06,
+        "conv2": 6.780028343200684e-06,
+        "conv3.conv": 6.780028343200684e-06,
+        "conv4.conv": 1.695007085800171e-06,
+        "conv5": 1.695007085800171e-06,
+        "fc1": 1.0593794286251068e-07,
+        "fc2": 6.6211214289069176e-09
+      }
+    },
+    {
+      "group": "W0",
+      "loss": 0.4649510085582733,
+      "lr": 0.07500000000000001,
+      "AMP_skipped": false,
+      "pre_update_forward_equal": true,
+      "BN_penalty_equal": true,
+      "nonzero_raw_weight_gradient": true,
+      "actual_threshold_delta": {
+        "static_conv.conv": 0.0,
+        "conv1.conv": 6.780028343200684e-06,
+        "conv2": 6.780028343200684e-06,
+        "conv3.conv": 6.780028343200684e-06,
+        "conv4.conv": 1.695007085800171e-06,
+        "conv5": 1.695007085800171e-06,
+        "fc1": 1.0593794286251068e-07,
+        "fc2": 6.6211214289069176e-09
+      }
+    },
+    {
+      "group": "W1",
+      "loss": 0.4649510085582733,
+      "lr": 0.07500000000000001,
+      "AMP_skipped": false,
+      "pre_update_forward_equal": true,
+      "BN_penalty_equal": true,
+      "nonzero_raw_weight_gradient": true,
+      "actual_threshold_delta": {
+        "static_conv.conv": 0.0,
+        "conv1.conv": 6.8694353103637695e-06,
+        "conv2": 6.4373016357421875e-06,
+        "conv3.conv": 7.078051567077637e-06,
+        "conv4.conv": 1.6838312149047852e-06,
+        "conv5": 1.642853021621704e-06,
+        "fc1": 1.3597309589385986e-07,
+        "fc2": 9.342329576611519e-09
+      }
+    },
+    {
+      "group": "W2",
+      "loss": 0.4649510085582733,
+      "lr": 0.07500000000000001,
+      "AMP_skipped": false,
+      "pre_update_forward_equal": true,
+      "BN_penalty_equal": true,
+      "nonzero_raw_weight_gradient": true,
+      "actual_threshold_delta": {
+        "static_conv.conv": 0.0,
+        "conv1.conv": 6.690621376037598e-06,
+        "conv2": 6.8247318267822266e-06,
+        "conv3.conv": 6.407499313354492e-06,
+        "conv4.conv": 2.1532177925109863e-06,
+        "conv5": 1.6316771507263184e-06,
+        "fc1": 1.4761462807655334e-07,
+        "fc2": 6.853952072560787e-09
+      }
+    }
+  ],
+  "W0_matches_author": true,
+  "same_batch_forward": true,
+  "BN_penalty_and_update_unchanged": true,
+  "raw_weight_grad": true,
+  "independent_parent_restore": true,
+  "scheduler_cycle": 300,
+  "initial_lr": 0.07500000000000001
+}
