@@ -17,5 +17,6 @@
   "epoch": 110,
   "end_utc": "2026-11-28T09:00:03.921943+00:00",
   "peak_allocated_bytes": 12570530816,
-  "peak_reserved_bytes": 16080961536
+  "peak_reserved_bytes": 16080961536,
+  "protocol_deviation": "Unequal-tail correctness test was mislabeled before training; true 2+1 check passed only after training."
 }

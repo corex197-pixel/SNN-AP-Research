@@ -41,5 +41,8 @@
       "path_A": false,
       "path_B": false
     }
-  }
+  },
+  "training_admission_protocol_deviation": "Unequal-tail unit check was labeled passed before training but had only 1+1 examples; genuine 2+1 test passed after training. Therefore the complete correctness gate was not fully verified at training start.",
+  "all_correctness_checks_verified_at_training_start": false,
+  "post_run_unequal_tail_check_passed": true
 }

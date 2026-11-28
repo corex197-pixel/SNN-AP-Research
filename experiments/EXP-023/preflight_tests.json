@@ -84,5 +84,8 @@
   "raw_weight_grad": true,
   "independent_parent_restore": true,
   "scheduler_cycle": 300,
-  "initial_lr": 0.07500000000000001
+  "initial_lr": 0.07500000000000001,
+  "scope": "Training-update checks only; initial separate exposure unit test incorrectly labeled a 1+1 split as unequal.",
+  "full_admission_all_checks_verified_at_start": false,
+  "post_run_independent_2plus1_tail_test": "PASSED"
 }

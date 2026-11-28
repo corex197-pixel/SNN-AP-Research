@@ -114,3 +114,5 @@ ROUND-020 EXP-022 COMPLETED: true task/activity conflict G1 conv1.norm cosine âˆ
 ROUND-021 DEC-021 STOP + PIVOT: MP-EFR/TP-EFR training mainline stopped, controlled UniSparse retained; EXP-020/021/022 COMPLETED with original negative gates preserved. EXP-023 PLANNED; H-022 gate determines whether W0/W1/W2 101â€“110 training is permitted. H-020 SUPPORTED scoped; H-021 CONTRADICTED scoped; H-022/H-023 UNTESTED.
 
 ROUND-021 EXP-023 delivery: status COMPLETED, completed {'W0': 110, 'W1': 110, 'W2': 110}; H-022 admission True, H-023 advancement False. H-022/H-023 remain UNTESTED pending theory review; prior negative evidence retained. See ../experiments/EXP-023/REPORT.md.
+
+ROUND-021 protocol deviation: pre-training unequal-tail unit test was mislabeled (1+1); genuine 2+1 test passed only post-run. EXP-023 executed to completion; original full correctness admission was not entirely verified at start. H-023 paths both failed; theory review must account for this execution deviation.
