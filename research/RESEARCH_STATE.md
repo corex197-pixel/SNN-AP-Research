@@ -95,3 +95,5 @@ ROUND-017 final delivery verification: original delivery supervisor exited for u
 
 
 ROUND-018 DEC-018 IMPLEMENT + CONTINUE: EXP-020 PLANNED, fixed U2 epoch300 and R74–R80, no training or official test. H-016 SUPPORTED scoped mismatch; H-018 PARTIALLY_SUPPORTED; H-017/H-019 UNTESTED. Stage gates and resource authorization in ROUND-018-TASK.md.
+
+EXP-020-RUN-001 PARTIAL: real local replay, R78 and SOP reference checks passed; B0 channel reporting failed due to tensor-to-scalar indexing error. Preserved raw files; RUN-002 corrects reporting and deducts RUN-001 resource use.

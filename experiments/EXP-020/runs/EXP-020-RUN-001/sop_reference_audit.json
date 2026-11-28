@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "relative_errors_first_batch": {
+    "conv1.conv": 1.6441556660970448e-08,
+    "conv2": 1.9708816952020165e-08,
+    "conv3.conv": 9.794347569872146e-09,
+    "conv4.conv": 4.302224260927302e-08,
+    "conv5": 2.3428110870799185e-08,
+    "fc1": 4.8809003633141016e-08,
+    "fc2": 0.0
+  },
+  "method": "independent float64 reduction of convolution counts"
+}

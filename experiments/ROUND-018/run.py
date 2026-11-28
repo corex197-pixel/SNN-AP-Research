@@ -34,9 +34,9 @@ def cpu():
    except psutil.Error:pass
  except ImportError:pass
  return v
-START=time.time();CPU=cpu();status={'status':'RUNNING','run_id':C['run_id'],'code_sha':CODE,'gpu_uuid':os.environ.get('CUDA_VISIBLE_DEVICES'),'start_unix':START,'phase':'preflight'}
+START=time.time();CPU=cpu();PRIOR_WALL=float(os.environ.get('EXP020_PRIOR_WALL','0'));PRIOR_CPU=float(os.environ.get('EXP020_PRIOR_CPU','0'));status={'status':'RUNNING','run_id':os.environ.get('EXP020_RUN_ID',C['run_id']),'code_sha':CODE,'gpu_uuid':os.environ.get('CUDA_VISIBLE_DEVICES'),'start_unix':START,'phase':'preflight'}
 def guard():
- wall=time.time()-START;c=cpu()-CPU
+ wall=PRIOR_WALL+time.time()-START;c=PRIOR_CPU+cpu()-CPU
  if wall>1740 or c>3540:raise TimeoutError('resource budget reserve reached')
  status.update(wall_seconds=wall,cpu_seconds=c);dump('status.json',status)
 def abort(s,f):raise TimeoutError('watchdog signal '+str(s))
@@ -145,7 +145,7 @@ def main():
   assert total==len(data.dataset)
   if reference:dump('sop_reference_audit.json',{'status':'PASSED','relative_errors_first_batch':reference,'method':'independent float64 reduction of convolution counts'})
   result={'group':group,'q':q,'samples':total,'accuracy':correct/total,'ce':loss/total,'FR_global':sum(spikes.values())/sum(elements.values()),'SOP_sample_weighted':sum(batch_sop)/total,'SOP_author':sum(batch_sop)/len(batch_sop)/64,'target_sops':(layers[T[0][2]]+layers[T[1][2]])/total,'update_norm':up,'weight_nonzero':nonzero,'weight_sparsity':1-nonzero/nweights}
-  lr=[{'group':group,'q':q,'layer':n,'sops':v/total} for n,v in layers.items()];rates=[{'group':group,'q':q,'neuron':n,'channel':i,'rate':float(v)/(total*4*32*32)} for n,v in channels.items() for i in range(len(v))]
+  lr=[{'group':group,'q':q,'layer':n,'sops':v/total} for n,v in layers.items()];rates=[{'group':group,'q':q,'neuron':n,'channel':i,'rate':float(v[i])/(total*4*32*32)} for n,v in channels.items() for i in range(len(v))]
   return result,lr,rates,samples
  status['phase']='calibration';dump('status.json',status);cal=loader(S['D_cal']);responses=[];layerrows=[];chrows=[]
  b0,lr,cr,_=evaluate(cal,'G0',0);b0['group']='B0';responses.append(b0);layerrows+=lr;chrows+=cr
@@ -183,5 +183,5 @@ def main():
 try:status['status']=main()
 except BaseException as e:status.update(status='PARTIAL',error=repr(e),traceback=traceback.format_exc());traceback.print_exc()
 finally:
- status.update(end_unix=time.time(),wall_seconds=time.time()-START,cpu_seconds=cpu()-CPU);dump('status.json',status);print(json.dumps(status),flush=True)
+ status.update(end_unix=time.time(),wall_seconds=PRIOR_WALL+time.time()-START,cpu_seconds=PRIOR_CPU+cpu()-CPU);dump('status.json',status);print(json.dumps(status),flush=True)
 if status['status']!='COMPLETED':sys.exit(1)

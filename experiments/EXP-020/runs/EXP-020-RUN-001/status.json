@@ -1,0 +1,13 @@
+{
+  "status": "PARTIAL",
+  "run_id": "EXP-020-RUN-001",
+  "code_sha": "bf4154cd1798ba1e605c12899e2de0c592b5b9b8",
+  "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae",
+  "start_unix": 1795844219.4756465,
+  "phase": "calibration",
+  "wall_seconds": 8.273579120635986,
+  "cpu_seconds": 9.164857000000001,
+  "error": "ValueError('only one element tensors can be converted to Python scalars')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-018/run.py\", line 183, in <module>\n    try:status['status']=main()\n                         ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-018/run.py\", line 151, in main\n    b0,lr,cr,_=evaluate(cal,'G0',0);b0['group']='B0';responses.append(b0);layerrows+=lr;chrows+=cr\n               ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-018/run.py\", line 148, in evaluate\n    lr=[{'group':group,'q':q,'layer':n,'sops':v/total} for n,v in layers.items()];rates=[{'group':group,'q':q,'neuron':n,'channel':i,'rate':float(v)/(total*4*32*32)} for n,v in channels.items() for i in range(len(v))]\n                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-018/run.py\", line 148, in <listcomp>\n    lr=[{'group':group,'q':q,'layer':n,'sops':v/total} for n,v in layers.items()];rates=[{'group':group,'q':q,'neuron':n,'channel':i,'rate':float(v)/(total*4*32*32)} for n,v in channels.items() for i in range(len(v))]\n                                                                                                                                            ^^^^^^^^\nValueError: only one element tensors can be converted to Python scalars\n",
+  "end_unix": 1795844227.7492247
+}
