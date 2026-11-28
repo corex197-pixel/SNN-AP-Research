@@ -77,3 +77,6 @@ H-026 CURRENT_EVIDENCE_AGAINST scoped to the 50% condition and >=1pp loss predic
 
 ## ROUND-027 theory decision and preregistration
 H-028 PARTIALLY_SUPPORTED scoped: positive F1 recovery but >=1pp joint gate failed. H-029 INSUFFICIENT_EVIDENCE: F1 CE lower but no required accuracy advantage over F0. Both original progression gates failed; no established severe accuracy-sparsity conflict. H-030/H-031/H-032 UNTESTED, see ROUND-027-TASK.md; EXP-026 INVALID, EXP-027 VALID and EXP-028 repaired evaluation VALID remain preserved.
+
+## ROUND-028
+H-030/H-031/H-032 remain UNTESTED; EXP-029 remains PARTIAL / INVALID_EVIDENCE. Stage A assesses engineering admission only and cannot resolve scientific performance hypotheses.

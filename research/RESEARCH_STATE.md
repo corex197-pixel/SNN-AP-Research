@@ -149,3 +149,5 @@ ROUND-027 DEC-027: H-028 PARTIALLY_SUPPORTED and H-029 INSUFFICIENT_EVIDENCE sco
 
 
 ROUND-027 EXP-029 PARTIAL / INVALID_EVIDENCE: initial preflight training lock erroneously lacked explicit synthetic R127–R129 and full optimizer momentum restore checks; training was stopped after K0/K1/K2=5 epochs, K3=1 complete with epoch2 interrupted, M6=0. No endpoint admission or formal validation performed. Posthoc CPU tests cannot restore original admission. Original locks and all failures preserved; H-030/H-031/H-032 UNTESTED. See ../experiments/EXP-029/REPORT.md.
+
+ROUND-028 DEC-028: EXP-029 remains PARTIAL / INVALID_EVIDENCE; EXP-030 stage A only is authorized. Before testing, independent acceptance contract must be committed; all results await independent researcher review and separate user authorization. H-030/H-031/H-032 remain UNTESTED; no formal training or validation permitted.

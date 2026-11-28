@@ -89,3 +89,6 @@ Stop fixed-support least-squares reconstruction. Preserve all evidence, retain U
 
 ## DEC-027 — IMPLEMENT + BOUNDED VALIDATION
 Retain UniSparse controlled baseline and EXP-028 conventional finetuning controls. Explore a fixed pruning-damage temporal KD hypothesis with K0/K1/K2/K3/M6 only; no automatic continuation, new variants, search, full-model training or official test.
+
+## DEC-028 — REPAIR + INDEPENDENT ADMISSION
+One final bounded repair; preserve EXP-029 PARTIAL / INVALID_EVIDENCE. Stage A only: precommitted independent contract and real temporary-candidate checks. Stop for theoretical review and separate authorization; no training or official validation.
