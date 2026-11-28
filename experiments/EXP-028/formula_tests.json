@@ -1,0 +1,13 @@
+{
+  "R124": "actual CE(mean_time logits) in batch_step",
+  "schedule_epoch_start": [
+    0.01,
+    0.009045084971874737,
+    0.0065450849718747366,
+    0.0034549150281252628,
+    0.0009549150281252632
+  ],
+  "strict_eval_tail_error": 0.0,
+  "preflight_amp_loss_F0": 0.46462953090667725,
+  "preflight_amp_loss_F1": 0.4797097444534302
+}

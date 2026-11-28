@@ -1,0 +1,55 @@
+{
+  "tests": [
+    {
+      "test_id": "missing_candidate",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "observed_rejection_reasons": [
+        "missing candidate_F1_initial",
+        "passed set mismatch"
+      ]
+    },
+    {
+      "test_id": "identity_changed",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "observed_rejection_reasons": [
+        "identity mismatch"
+      ]
+    },
+    {
+      "test_id": "wrong_optimizer_scope",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "observed_rejection_reasons": [
+        "F0_optimizer_scope target_group mismatch"
+      ]
+    },
+    {
+      "test_id": "insufficient_samples",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "observed_rejection_reasons": [
+        "F1_real_amp_update actual_sample_count mismatch"
+      ]
+    },
+    {
+      "test_id": "failed_assertion",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "observed_rejection_reasons": [
+        "F0_real_amp_update failed",
+        "passed set mismatch"
+      ]
+    },
+    {
+      "test_id": "config_changed",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "observed_rejection_reasons": [
+        "configuration changed"
+      ]
+    }
+  ],
+  "all_passed": true
+}

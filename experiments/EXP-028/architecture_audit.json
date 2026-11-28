@@ -1,0 +1,14 @@
+{
+  "actual": {
+    "fc1_in": 16384,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "fc2_out": 100,
+    "parameters": 11399524,
+    "T": 4,
+    "fc1_registered": true,
+    "fc2_registered": true
+  },
+  "all_neuron_cupy_LIF_parameters_verified": true,
+  "nodes": 7
+}

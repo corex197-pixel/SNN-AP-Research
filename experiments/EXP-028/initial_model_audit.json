@@ -1,0 +1,6 @@
+{
+  "parent_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+  "initial_state_hash": "f60ee583e92e92277b0faf6a610ff72cfb147f7ef65caff6e48dafb022d01607",
+  "two_independent_states_equal": true,
+  "preflight_models_not_used_for_training": true
+}

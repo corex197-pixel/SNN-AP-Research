@@ -1,0 +1,30 @@
+{
+  "F0": [
+    "fc2.bias",
+    "fc2.weight"
+  ],
+  "F1": [
+    "bn2.bias",
+    "bn2.weight",
+    "bn5.bias",
+    "bn5.weight",
+    "conv1.conv.weight",
+    "conv1.norm.bias",
+    "conv1.norm.weight",
+    "conv2.weight",
+    "conv3.conv.weight",
+    "conv3.norm.bias",
+    "conv3.norm.weight",
+    "conv4.conv.weight",
+    "conv4.norm.bias",
+    "conv4.norm.weight",
+    "conv5.weight",
+    "fc1.bias",
+    "fc1.weight",
+    "fc2.bias",
+    "fc2.weight",
+    "static_conv.conv.weight",
+    "static_conv.norm.bias",
+    "static_conv.norm.weight"
+  ]
+}
