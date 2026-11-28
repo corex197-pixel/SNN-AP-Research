@@ -1,0 +1,20 @@
+{
+  "code_sha": "c494b5876de2dc1e0beb62c32137a0be63f4d19a",
+  "parent_sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+  "fixed_seed": 20261128,
+  "rng": "numpy.default_rng PCG64",
+  "block_size": 16,
+  "deleted_count": 512,
+  "selected_neurons_sha256": "0540f03fa5f91436113c1a2dcd798fdd583230c809eb43f44ce0b3d0a7596aab",
+  "admission_sha256": "b2ac82f2b0b02fb0e0ad3007195e825cf1d46b0a8781f072b13e724c21772f71",
+  "data_hashes": {
+    "rates_sha256": "c54b5521f71066a1cbfa542d1f07d265bcdbb319c0598c13722eb71ff736e760",
+    "A_sha256": "ae6194f4cd659717b60cc09619997d6d4d936b188228ad8e404e2aa3578113bf",
+    "bias_sha256": "330a66f8a147208c52382ecd1518157be05391d8401accbfd76cf78a533c237e",
+    "labels_sha256": "c3a6f04581e9d03b8941c8823ab341f3311b9b76eb493a30f2a1f0b54d977cb2",
+    "sample_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8"
+  },
+  "capture_seconds": 1.294589539989829,
+  "D_cal_or_validation_used_for_selection": false,
+  "full_Dgrad_R103_error": 1.610115360808359e-07
+}
