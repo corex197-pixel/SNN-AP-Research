@@ -1,0 +1,34 @@
+{
+  "seed": 20261128,
+  "rng": "numpy.default_rng PCG64",
+  "resamples": 2000,
+  "method": "percentile",
+  "comparisons": {
+    "W1-W0": {
+      "accuracy_delta_pp": -0.6444444444444445,
+      "accuracy_ci95_pp": [
+        -1.2666666666666666,
+        -0.022222222222222223
+      ],
+      "CE_delta": 0.002943515619000422,
+      "CE_ci95": [
+        -0.007901315385703907,
+        0.013801435594075895
+      ],
+      "per_sample_sop": "NA_not_collected"
+    },
+    "W1-W2": {
+      "accuracy_delta_pp": -0.6888888888888889,
+      "accuracy_ci95_pp": [
+        -1.3111111111111111,
+        -0.06666666666666667
+      ],
+      "CE_delta": 0.009880195162146747,
+      "CE_ci95": [
+        -0.001875094619153883,
+        0.021128327835792476
+      ],
+      "per_sample_sop": "NA_not_collected"
+    }
+  }
+}

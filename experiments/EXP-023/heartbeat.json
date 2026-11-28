@@ -1,0 +1,8 @@
+{
+  "group": "W2",
+  "epoch": 110,
+  "batch": 160,
+  "wall_seconds": 1490.4798846244812,
+  "cpu_seconds": 2383.173454,
+  "peak_allocated_bytes": 12570530816
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "explicit_integer_enumeration": true,
+  "stride_padding_dilation": true,
+  "all_ones_p1": true,
+  "all_zero_p0": true,
+  "R94": true,
+  "R95_single_connection": true,
+  "unequal_batch_weighting": true
+}

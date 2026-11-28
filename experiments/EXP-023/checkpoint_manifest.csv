@@ -1,0 +1,7 @@
+group,epoch,path,sha256,bytes,load_verified,code_sha
+W0,105,/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W0/epoch-105.pth,fbb2921e556d572be85cc940c7c4cb6c177f5713ebf984b9a65bdd2402e3af13,293835170,True,a966792881e15b985dfe1bc148daed5d2223915b
+W0,110,/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W0/epoch-110.pth,8d45ebb789922c8b0a500b1c05f4d6538b3206ff74e4bc71d1146a1b7d8ac8ae,293835170,True,a966792881e15b985dfe1bc148daed5d2223915b
+W1,105,/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W1/epoch-105.pth,51314bd657cca2079508c2c2209cfc8857b130c55c82a4caeb67fe557cfe84cf,293835170,True,a966792881e15b985dfe1bc148daed5d2223915b
+W1,110,/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W1/epoch-110.pth,8da24c28121b899f51678fccd19bd97d371da10de60f485d177a5c8d46e0483a,293835170,True,a966792881e15b985dfe1bc148daed5d2223915b
+W2,105,/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W2/epoch-105.pth,aff66eedd559d188abc288541dc66c43435144bd72676fc062b2b8ec8cf03482,293835170,True,a966792881e15b985dfe1bc148daed5d2223915b
+W2,110,/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W2/epoch-110.pth,1bd01295c0124c1a75d5fe37aa82d177eedb8bc618b2a03185e87ed94a8b4857,293835170,True,a966792881e15b985dfe1bc148daed5d2223915b

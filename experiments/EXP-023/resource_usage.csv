@@ -1,0 +1,2 @@
+run_id,gpu_uuid,wall_seconds,cpu_seconds,gpu_limit_seconds,cpu_limit_seconds,peak_allocated_bytes,peak_reserved_bytes,note
+EXP-023-RUN-001,GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae,1503.7309348583221,2398.173106,2700,5400,12570530816,16080961536,conservative run wall; reporting/imports/short-lived children may be omitted

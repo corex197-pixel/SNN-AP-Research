@@ -23,5 +23,23 @@
     }
   },
   "H022_scientific_status": "UNTESTED_pending_theory_review",
-  "H023_scientific_status": "UNTESTED"
+  "H023_scientific_status": "UNTESTED",
+  "H023_path_A": false,
+  "H023_path_B": false,
+  "min_density_gate": true,
+  "progression_passed": false,
+  "comparisons": {
+    "W0": {
+      "SOP_relative": 1.0118471136843192,
+      "accuracy_delta_pp": -0.6444444444444475,
+      "path_A": false,
+      "path_B": false
+    },
+    "W2": {
+      "SOP_relative": 1.0149305759519522,
+      "accuracy_delta_pp": -0.6888888888888833,
+      "path_A": false,
+      "path_B": false
+    }
+  }
 }

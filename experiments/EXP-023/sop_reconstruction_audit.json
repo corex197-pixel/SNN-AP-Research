@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "input_binary_verified": true,
+  "model_state_unchanged": true,
+  "capture_output_equal": true,
+  "details_file": "sop_reconstruction_audit.csv"
+}

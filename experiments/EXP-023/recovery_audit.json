@@ -1,0 +1,42 @@
+{
+  "status": "PASSED",
+  "epoch": 100,
+  "group": "U2",
+  "optimizer_state": true,
+  "momentum_buffers": 22,
+  "scheduler_state": {
+    "param_group_field": "lr",
+    "_initial_param_group_field": "initial_lr",
+    "base_values": [
+      0.1
+    ],
+    "metric": null,
+    "t_in_epochs": true,
+    "noise_range_t": null,
+    "noise_pct": 0.67,
+    "noise_type": "normal",
+    "noise_std": 1.0,
+    "noise_seed": 42,
+    "t_initial": 300,
+    "lr_min": 0.0,
+    "cycle_mul": 1.0,
+    "cycle_decay": 0.1,
+    "cycle_limit": 1,
+    "warmup_t": 0,
+    "warmup_lr_init": 0.0,
+    "warmup_prefix": false,
+    "k_decay": 1.0,
+    "warmup_steps": [
+      1
+    ]
+  },
+  "scaler_state": {
+    "scale": 1048576.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 1354
+  },
+  "next_epoch_lr": 0.07500000000000001,
+  "rng_restored": true
+}

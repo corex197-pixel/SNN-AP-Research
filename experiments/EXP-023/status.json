@@ -1,4 +1,21 @@
 {
-  "status": "PLANNED",
-  "run_id": "EXP-023-RUN-001"
+  "status": "COMPLETED",
+  "run_id": "EXP-023-RUN-001",
+  "code_sha": "a966792881e15b985dfe1bc148daed5d2223915b",
+  "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae",
+  "start_utc": "2026-11-28T08:35:00.223140+00:00",
+  "phase": "training",
+  "completed": {
+    "W0": 110,
+    "W1": 110,
+    "W2": 110
+  },
+  "wall_seconds": 1503.7309348583221,
+  "cpu_seconds": 2398.173106,
+  "last_utc": "2026-11-28T09:00:03.322989+00:00",
+  "group": "W2",
+  "epoch": 110,
+  "end_utc": "2026-11-28T09:00:03.921943+00:00",
+  "peak_allocated_bytes": 12570530816,
+  "peak_reserved_bytes": 16080961536
 }
