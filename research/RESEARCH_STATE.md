@@ -99,3 +99,6 @@ ROUND-018 DEC-018 IMPLEMENT + CONTINUE: EXP-020 PLANNED, fixed U2 epoch300 and R
 EXP-020-RUN-001 PARTIAL: real local replay, R78 and SOP reference checks passed; B0 channel reporting failed due to tensor-to-scalar indexing error. Preserved raw files; RUN-002 corrects reporting and deducts RUN-001 resource use.
 
 ROUND-018 EXP-020 COMPLETED: q=.02 H-019 direction passed; G1 matched q=.04, G0/G2 unmatched at fixed scales, so overall training progression gate failed and paired matched-control CI unavailable. H-017/H-019 remain UNTESTED pending theory review. RUN-001 failure and locked-condition FR supplement preserved; cumulative GPU wall and CPU in EXP-020/resource_usage.csv.
+
+
+ROUND-019 DEC-019 REFINE + CONTINUE; EXP-020 COMPLETED with original progression gate failed; EXP-021 PLANNED with fixed G1 q=.04, finite G0/G2 cost-only matching and locked validation. H-019 SUPPORTED scoped; H-017 INSUFFICIENT_EVIDENCE, training impact untested.

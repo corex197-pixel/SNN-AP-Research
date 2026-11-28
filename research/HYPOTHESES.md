@@ -44,3 +44,7 @@ H-016 PARTIALLY_SUPPORTED, restricted to synthetic mechanisms and descriptive EX
 
 ### ROUND-018 theory review
 H-016 SUPPORTED only for nominal/effective fanout mismatch at current model and operating point; task and training impact untested. H-018 PARTIALLY_SUPPORTED: epoch60 direction passed but 5% magnitude missed; epoch300 activity term negative. H-017 UNTESTED. H-019 UNTESTED: fixed weights and BN running statistics, norm-matched MP-EFR may reduce target consumer SOP more than G0 and permuted G2 at fixed q=.02.
+
+
+### ROUND-019 theory review
+H-019 SUPPORTED only for fixed U2 epoch300, two target modules, rho=.25, q=.02, designated data and single eval local intervention. H-017 INSUFFICIENT_EVIDENCE; formal training impact UNTESTED. H-016 SUPPORTED and H-018 PARTIALLY_SUPPORTED retain prior scopes and negative evidence.

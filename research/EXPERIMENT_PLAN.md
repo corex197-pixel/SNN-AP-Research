@@ -51,3 +51,7 @@ Exact parent epoch20 U0/U2 SHA256 and fixed data/lambdas are in ROUND-017-TASK.m
 
 ## ROUND-018 EXP-020
 Preregistered protocol ROUND-018-TASK.md. Fixed 512 D_grad and 512 D_cal, seed 20261128, disjoint from validation and old diagnostic pool. G0/G1/G2, rho=.25, q=[0,.0025,.005,.01,.02,.04,.08,.16], primary q=.02, SOP target 5% and admissible 4–6%; validation only after lock. GPU≤1800s CPU≤3600s. No training or official test.
+
+
+## ROUND-019 EXP-021
+Fixed parent, samples, rho and permutations from EXP-020. G1 q=.04; G0/G2 initial [0.04,0.08], R82 then ≤4 bisections, abs calibration reduction mismatch≤0.001 and range 4–6%; commit lock before validation. Fixed performance gates unchanged; GPU≤900s, CPU≤1800s. Full protocol ROUND-019-TASK.md.

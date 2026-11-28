@@ -1,0 +1,1 @@
+ROUND-017/018 dedicated venv: Python 3.11.9, torch 2.4.1+cu118, CuPy 13.5.1; single RTX4090; FP32; batch 64; workers 4.

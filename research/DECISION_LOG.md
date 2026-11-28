@@ -56,3 +56,7 @@ User selected U2 as controlled combined-sparsity baseline, U0 as dense-control c
 
 ## DEC-018 — IMPLEMENT + CONTINUE
 End UniSparse controlled-baseline preparation; test MP-EFR as a specific unproven incremental mechanism, without claims of novelty. EXP-020 only; see ROUND-018-TASK.md. Preserve all ROUND-017 evidence and fixed H-018 gate.
+
+
+## DEC-019 — REFINE + CONTINUE
+Keep MP-EFR unchanged; perform finite calibration-only G0/G2 budget matching around fixed G1 q=.04. Preserve EXP-020 failure and do not infer training effects.

@@ -429,3 +429,7 @@ R69 C00=C(M0,s0), C20=C(M2,s0), C02=C(M0,s2), C22=C(M2,s2) on identical train-or
 
 ## v0.2.4 — ROUND-018 MP-EFR
 R74 g0=d(d0 Σ rate[c])/dφ (local eval surrogate); R75 a=(1−ρ)+ρ d/mean(d), ρ=.25; R76 P_MP=d0 Σ a rate; R77 mean(a)=1 (zero mean fallback a=1); R78 gρ=(1−ρ)g0+ρ(d0/mean(d))h, h=d Σd rate/dφ. R79 layerwise normalize each group to ||g0,l||; R80 φnew=φparent−q||φparent||/||g0|| g̃, fixed q set and independent parent. No claim of exact network SOP gradient. Full protocol ROUND-018-TASK.md.
+
+
+## v0.2.5 — ROUND-019
+R81 E_m(q)=(C_target,B0−C_target,m(q))/||Δφ_m(q)|| for nonzero update only; local accounting diagnostic, not training loss. R82 q_new=q_a+(R_star−R_a)(q_b−q_a)/(R_b−R_a); actual forward measurement required, with at most four bisections in fixed [0.04,0.08].
