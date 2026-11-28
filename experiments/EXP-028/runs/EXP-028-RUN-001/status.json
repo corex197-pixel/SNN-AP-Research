@@ -1,0 +1,23 @@
+{
+  "status": "PARTIAL",
+  "validity": "NOT_ESTABLISHED",
+  "run_id": "EXP-028-RUN-001",
+  "phase": "preflight",
+  "code_sha": "d6999292b6f48503f6e7acb611ae0798408fff7a",
+  "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6",
+  "start_unix": 1795869891.709166,
+  "completed_epochs": {
+    "F0": 0,
+    "F1": 0
+  },
+  "wall_seconds": 14.104192018508911,
+  "cpu_budget_accounted_seconds": 134.57753100000002,
+  "error": "AssertionError('preflight F0_real_amp_update')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 129, in <module>\n    try:status['status']=main();status['validity']='VALID'\n                         ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 90, in main\n    loss0,z0,skip0,fin0,g0=batch_step(m0,op0,sc0,x,y);loss1,z1,skip1,fin1,g1=batch_step(m1,op1,sc1,x,y);aft0=m0.state_dict();frozen_diff=[n for n,v in before0.items() if n not in ('fc2.weight','fc2.bias') and not torch.equal(v,aft0[n].cpu())];changed1=[n for n,v in before1.items() if n in dict(m1.named_parameters()) and not torch.equal(v,m1.state_dict()[n].cpu())];changed0=[n for n in ('fc2.weight','fc2.bias') if not torch.equal(before0[n],aft0[n].cpu())];thok=th0==threshold(m0) and th1==threshold(m1);testrec('F0_real_amp_update','F0',sid.tolist(),'real batch 256 AMP forward/backward SGD step with finite CE',{'loss':float(loss0),'skipped':skip0,'gradient_finite':fin0,'gradient_nonzero':g0,'changed_target':changed0,'scaler':sc0.get_scale(),'CE_recompute_abs_error':float(abs(loss0-F.cross_entropy(z0,y)))},not skip0 and fin0 and g0 and bool(changed0) and float(abs(loss0-F.cross_entropy(z0,y)))<=1e-6);testrec('F1_real_amp_update','F1',sid.tolist(),'real batch 256 AMP full-model backward and SGD update',{'loss':float(loss1),'skipped':skip1,'gradient_finite':fin1,'gradient_nonzero':g1,'changed_parameter_count':len(changed1),'scaler':sc1.get_scale(),'CE_recompute_abs_error':float(abs(loss1-F.cross_entropy(z1,y)))},not skip1 and fin1 and g1 and bool(changed1) and float(abs(loss1-F.cross_entropy(z1,y)))<=1e-6);testrec('F0_frozen_protection','F0',sid.tolist(),'all non-fc2 parameters and persistent buffers bitwise unchanged',{'differences':frozen_diff,'checked_tensors':len(before0)-2},not frozen_diff);testrec('F1_gradient_update','F1',sid.tolist(),'a non-readout model parameter receives real SGD update',{'changed_parameter_names':changed1},any(not n.startswith('fc2.') for n in changed1));testrec('both_thresholds_fixed','BOTH',sid.tolist(),'all thresholds identical; no forbidden manual penalty calls',{'F0_before':th0,'F0_after':threshold(m0),'F1_before':th1,'F1_after':threshold(m1),'manual_calls':manual['calls']},thok and manual['calls']==0)\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-026/run.py\", line 61, in testrec\n    if not ok:raise AssertionError('preflight '+name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: preflight F0_real_amp_update\n",
+  "end_unix": 1795869905.8133576,
+  "process_tree_cpu_seconds": 14.54871,
+  "cpu_prior_unmeasured_reserve_seconds": 120.0,
+  "peak_allocated_bytes": 11847198208,
+  "peak_reserved_bytes": 12687769600,
+  "manual_penalty_calls": 0
+}
