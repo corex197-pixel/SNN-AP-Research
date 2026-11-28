@@ -56,3 +56,7 @@ H-017 INSUFFICIENT_EVIDENCE: EXP-021 matched G1 vs G0 but failed preregistered a
 
 ### ROUND-021 theory decision
 H-020 SUPPORTED only current model/data/surrogate protocol; H-021 CONTRADICTED only preregistered fixed-model local intervention accuracy prediction. H-017 INSUFFICIENT_EVIDENCE. H-022 UNTESTED: layer exposure heterogeneity for fixed K in prespecified 3 layers; H-023 UNTESTED: fixed SEAWP training may improve preregistered efficiency or performance vs W0 and W2.
+
+
+### ROUND-022 theory decision
+H-022 SUPPORTED scoped U2 epoch100 exposure heterogeneity; H-023 CONTRADICTED only fixed alpha/model/101–110 and preregistered gates, retaining the EXP-023 pretraining unequal-tail admission deviation. H-024 UNTESTED: exact fixed-deletion output reconstruction under specified structure. H-025 UNTESTED: conditional marginal selection may improve matched 25% structured pruning performance.

@@ -68,3 +68,7 @@ Stop standalone unprotected MP-EFR as main candidate; run a single preregistered
 
 ## DEC-021 — STOP + PIVOT
 Stop MP-EFR/TP-EFR training mainline; retain controlled UniSparse and all negative evidence. Test SEAWP fixed K-normalized exposure allocation; no novelty claim or automatic gate relaxation.
+
+
+## DEC-022 — STOP + PIVOT
+Stop SEAWP fixed-layer allocation; preserve EXP-023 negative evidence and pretraining test deviation. Investigate exact readout contribution and physically compact 25% pruning under fixed fair controls.

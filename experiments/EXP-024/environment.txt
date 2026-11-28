@@ -1,0 +1,1 @@
+UniSparse dedicated venv, Python 3.11.9, torch 2.4.1+cu118, CuPy 13.5.1, one RTX4090; FP32 full forward, FP64 offline algebra, batch64 workers4.

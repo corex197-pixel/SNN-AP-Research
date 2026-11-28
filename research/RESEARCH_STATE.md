@@ -116,3 +116,6 @@ ROUND-021 DEC-021 STOP + PIVOT: MP-EFR/TP-EFR training mainline stopped, control
 ROUND-021 EXP-023 delivery: status COMPLETED, completed {'W0': 110, 'W1': 110, 'W2': 110}; H-022 admission True, H-023 advancement False. H-022/H-023 remain UNTESTED pending theory review; prior negative evidence retained. See ../experiments/EXP-023/REPORT.md.
 
 ROUND-021 protocol deviation: pre-training unequal-tail unit test was mislabeled (1+1); genuine 2+1 test passed only post-run. EXP-023 executed to completion; original full correctness admission was not entirely verified at start. H-023 paths both failed; theory review must account for this execution deviation.
+
+
+ROUND-022 DEC-022 STOP + PIVOT: stop fixed-layer SEAWP allocation; retain controlled UniSparse and all EXP-023 negative results and admission deviation. EXP-024 PLANNED; fixed 25% fc1 hidden-neuron structural pruning, exact reconstruction and machine-verifiable admission precede selection/evaluation. H-024/H-025 UNTESTED.

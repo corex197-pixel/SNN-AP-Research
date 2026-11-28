@@ -63,3 +63,7 @@ Fixed parent, D_grad/D_cal, BN target paths, rho=.25 and G0/G1 q from EXP-021. H
 
 ## ROUND-021 EXP-023
 Fixed U2 epoch100 parent, split and 512+512 exposure samples, alpha=.25, unmodified activity regularizer. H-022 requires both D_grad and D_cal A_p≥.20 with same min/max layer in conv1.conv/conv2/conv3.conv. If passed and tests passed: independent W0/W1/W2 epochs101–110, fixed endpoint110; GPU≤2700s CPU≤5400s. Full protocol ROUND-021-TASK.md.
+
+
+## ROUND-022 EXP-024
+Fixed U2 epoch300 parent, D_grad/D_cal/4500 validation, original FP32 model and FP64 algebra; B0/S0/S1/S2/S3/M5, 512 of 2048 deleted, M5 block=16, seed20261128. Actual admission tests with inputs/batch sizes/assertions/results precede selection; selection commit before D_cal/validation. GPU≤1200s, CPU≤2700s. Full ROUND-022-TASK.md.

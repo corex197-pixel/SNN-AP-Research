@@ -441,3 +441,7 @@ R83 t_l=∇_{phi_l} CE(mean_t(logits),y), full network surrogate gradient; BN ev
 
 ## v0.2.7 — ROUND-021
 R90 W_eff=sign(W) relu(|W|−d); R91 M=I(|W|>d), official mask is authoritative; R92 d_next=d+lr λ_weight K. R93 e[c,a,b] sums valid mapped binary consumer spikes / (B T); R94 C_l=T Σ M e; R95 removed weight cost=T e. R96 p=Σe/Σe_dense. R97 p_bar=Σ Kp/ΣK; R98 Khat=K(1−α+α p/p_bar), α=.25; R99 d_next=d+lr λ_weight Khat; R100 ΣKhat=ΣK. Fixed input accounting is not a training-causality theorem.
+
+
+## v0.2.8 — ROUND-022
+R101 r[n,i]=mean_t s[t,n,i]; R102 A[k,i]=mean_{j=10k..10k+9} W_eff_fc2[j,i] and b analogously; R103 z=r Aᵀ+b under fixed channel-independent hidden dynamics and linear boost. R104 z_without_S=z−Σ_{i∈S} r_i A_i; R105 ΔL(S)=mean CE(z_without_S,y)−mean CE(z,y); R106 joint loss generally nonadditive; R107 fixed cardinality minimum objective; R108 conditional score L(S∪{i})−L(S). Fixed 16-per-round block greedy is not global optimality. FP64 algebra checked against real FP32 forward.
