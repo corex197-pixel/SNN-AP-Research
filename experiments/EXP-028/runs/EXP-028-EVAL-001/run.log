@@ -1,0 +1,11 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[research/round-026-compact-finetuning 1141fae] EXP-028 lock repaired endpoint evaluation admission
+ 1 file changed, 211 insertions(+), 40 deletions(-)
+To github.com:corex197-pixel/SNN-AP-Research.git
+   6e07d86..1141fae  HEAD -> research/round-026-compact-finetuning
+EVALUATED B0 0.9422222222222222 0.1727328626844618
+EVALUATED P0 0.9251111111111111 0.27720849974950157
+EVALUATED F0 0.9328888888888889 0.23999141862657336
+EVALUATED F1 0.9324444444444444 0.20323681349224515
+{"status": "COMPLETED", "validity": "VALID", "phase": "formal_evaluation", "run_id": "EXP-028-EVAL-001", "code_sha": "6e07d86e62485037f4265f49f0d975f4b28d3b14", "training_code_sha": "7a72c4d574f9d6b69de5de76a110f3ddc9ded919", "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6", "start_unix": 1795870744.3419924, "completed_epochs": {"F0": 5, "F1": 5}, "wall_seconds": 433.48342776298523, "cpu_budget_accounted_seconds": 793.7144579999999, "end_unix": 1795870818.7341845, "process_tree_cpu_seconds": 67.09722699999999, "cpu_prior_accounted_seconds": 726.587902, "cpu_initial_unmeasured_reserve_seconds": 120.0, "peak_allocated_bytes": 5658435072, "manual_penalty_calls": 0}

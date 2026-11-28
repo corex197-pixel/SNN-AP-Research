@@ -1,0 +1,7 @@
+scope,metric,value,unit,basis,limitation
+all cumulative,gpu_process_wall,433.48342776298523,seconds,prior runs and two diagnostics plus RUN-004 and EVAL-001,includes CPU/network; excludes initial Python imports in process clocks; not GPU kernel time
+RUN-004,process_tree_cpu,537.5585259999999,seconds,getrusage and live descendants,sampling can race and starts after imports
+EVAL-001,process_tree_cpu,67.09722699999999,seconds,getrusage and live descendants,starts after imports
+earlier preflights and diagnostics,cpu_including_prelaunch_reserve,189.0,seconds,measured prior processes plus 120s estimate,prelaunch reserve not measurement
+delivery,self_cpu,0.896366,seconds,getrusage delta,other shell and service CPU excluded
+total,cpu_budget_accounted,794.6108239999999,seconds,cumulative run counts plus reserve and delivery,early tools CPU not fully measured

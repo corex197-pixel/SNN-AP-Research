@@ -1,0 +1,16 @@
+{
+  "F0": {
+    "activated": 46,
+    "deactivated": 62,
+    "train_seconds": 69.73487708810717,
+    "successful_steps": 875,
+    "amp_skips": 0
+  },
+  "F1": {
+    "activated": 50213,
+    "deactivated": 47097,
+    "train_seconds": 145.29682042403147,
+    "successful_steps": 875,
+    "amp_skips": 0
+  }
+}

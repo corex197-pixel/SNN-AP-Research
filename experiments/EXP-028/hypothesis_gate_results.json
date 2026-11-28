@@ -1,0 +1,27 @@
+{
+  "H028": {
+    "checks": {
+      "F1_accuracy_gain_ge_1pp": false,
+      "F1_CE_lower_than_P0": true,
+      "F1_parameter_count": true,
+      "F1_SOP_le_B0": true,
+      "all_checks_valid": true
+    },
+    "all": false
+  },
+  "H029": {
+    "checks": {
+      "F1_gain_over_F0_ge_0_3pp": false,
+      "F1_CE_lower_than_F0": true,
+      "all_checks_valid": true
+    },
+    "all": false
+  },
+  "F1_SOP_le_101pct_P0": true,
+  "recovery_ratio": {
+    "F0": 0.45454545454545514,
+    "F1": 0.42857142857142766
+  },
+  "recovery_denominator": 0.017111111111111077,
+  "scientific_status": "UNTESTED_pending_theory_review"
+}

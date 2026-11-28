@@ -1,0 +1,14 @@
+{
+  "B0": {
+    "accuracy": 0.0,
+    "CE": 0.0,
+    "FR_global": 0.0,
+    "SOP_sample_weighted": 0.0
+  },
+  "P0": {
+    "accuracy": 0.0,
+    "CE": 0.0,
+    "FR_global": 0.0,
+    "SOP_sample_weighted": 0.0
+  }
+}
