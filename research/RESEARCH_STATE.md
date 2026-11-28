@@ -128,3 +128,9 @@ ROUND-022 EXP-024 delivery: COMPLETED; admission PASSED; progression False. H-02
 
 
 ROUND-023 DEC-023 STOP + REASSESS: ESC-JP/M5 current formal route STOPPED; UniSparse remains current Controlled Baseline; all candidates UNDER_REVIEW, none ENGINEERING_ADMITTED. EXP-024 COMPLETED and progression FAILED: H-024 SUPPORTED scoped and H-025 PARTIALLY_SUPPORTED (S3 only; gates vs S1/S2 failed). RUN-001 error and 45 strict/default FP32 prediction differences remain preserved; EXP-023 pre-run admission deviation remains. EXP-025 static review COMPLETED; C-DPSS priority conditional on license, repairing CIFAR test-as-validation leakage and remaining checks. No GPU used. See ../experiments/EXP-025/REPORT.md.
+
+
+ROUND-024 DEC-024: retain UniSparse; C-DPSS/SCA/Dynamic and Spik4lite UNDER_REVIEW; M5 remains STOPPED, EXP-024 progression FAILED and EXP-025 CPU accounting gap retained. EXP-026 ongoing: 50% primary, 75% exploratory, fixed-support ridge, no SGD/test; H-026/H-027 UNTESTED. See ../experiments/EXP-026/status.json.
+
+
+ROUND-024 EXP-026 process COMPLETED, formal execution INVALID: baseline reconstructed; preselection check coverage failed and automatically marked PASSED; exploratory evidence retained; H-026/H-027 remain UNTESTED pending theoretical review. No official test or SGD. See ../experiments/EXP-026/REPORT.md.

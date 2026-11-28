@@ -1,0 +1,164 @@
+{
+  "seed": 20261128,
+  "rng": "numpy.default_rng PCG64",
+  "replicates": 2000,
+  "method": "paired percentile",
+  "comparisons": {
+    "50-R1 minus B0": {
+      "accuracy_delta_pp": -0.28888888888888886,
+      "accuracy_ci95_pp": [
+        -0.7555555555555555,
+        0.17777777777777778
+      ],
+      "CE_delta": 0.0066332238504275,
+      "CE_ci95": [
+        -0.0018792405732414653,
+        0.014516988833567963
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "75-R1 minus B0": {
+      "accuracy_delta_pp": -1.7111111111111112,
+      "accuracy_ci95_pp": [
+        -2.3555555555555556,
+        -1.0888888888888888
+      ],
+      "CE_delta": 0.10447563812353378,
+      "CE_ci95": [
+        0.0898317889677521,
+        0.11777027937558462
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "50-R3 minus 50-R1": {
+      "accuracy_delta_pp": -0.022222222222222223,
+      "accuracy_ci95_pp": [
+        -0.5111111111111112,
+        0.46666666666666673
+      ],
+      "CE_delta": 0.007959752300571657,
+      "CE_ci95": [
+        -0.0005900640040594447,
+        0.01704123404044119
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "50-R3 minus 50-R2": {
+      "accuracy_delta_pp": 1.6888888888888887,
+      "accuracy_ci95_pp": [
+        1.0444444444444443,
+        2.311111111111111
+      ],
+      "CE_delta": -0.031096048016218864,
+      "CE_ci95": [
+        -0.04331132791291953,
+        -0.01795712639564591
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "50-R3 minus 50-R0-20261128": {
+      "accuracy_delta_pp": 0.9555555555555555,
+      "accuracy_ci95_pp": [
+        0.3111111111111111,
+        1.6
+      ],
+      "CE_delta": -0.029090843791772854,
+      "CE_ci95": [
+        -0.042773373257869854,
+        -0.014378046146379716
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "50-R3 minus 50-R0-20261129": {
+      "accuracy_delta_pp": 0.26666666666666666,
+      "accuracy_ci95_pp": [
+        -0.26666666666666666,
+        0.7777777777777778
+      ],
+      "CE_delta": -0.01997142747981349,
+      "CE_ci95": [
+        -0.032480533036688464,
+        -0.006219844904719026
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "50-R3 minus 50-R0-20261130": {
+      "accuracy_delta_pp": 0.8666666666666666,
+      "accuracy_ci95_pp": [
+        0.2883333333333334,
+        1.4444444444444444
+      ],
+      "CE_delta": -0.0433237307468786,
+      "CE_ci95": [
+        -0.05496445578369379,
+        -0.031316245404279006
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "75-R3 minus 75-R1": {
+      "accuracy_delta_pp": -1.7777777777777777,
+      "accuracy_ci95_pp": [
+        -2.511111111111111,
+        -1.0222222222222224
+      ],
+      "CE_delta": 0.05023090524836543,
+      "CE_ci95": [
+        0.023967789481257343,
+        0.0763553428811709
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "75-R3 minus 75-R2": {
+      "accuracy_delta_pp": 10.28888888888889,
+      "accuracy_ci95_pp": [
+        9.088888888888889,
+        11.488888888888889
+      ],
+      "CE_delta": -0.19124139237675922,
+      "CE_ci95": [
+        -0.21926943134602456,
+        -0.16102650460495613
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "75-R3 minus 75-R0-20261128": {
+      "accuracy_delta_pp": -0.35555555555555557,
+      "accuracy_ci95_pp": [
+        -1.2672222222222222,
+        0.5777777777777777
+      ],
+      "CE_delta": -0.13503453675628502,
+      "CE_ci95": [
+        -0.16308259290618196,
+        -0.10360638049219108
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "75-R3 minus 75-R0-20261129": {
+      "accuracy_delta_pp": -1.0222222222222224,
+      "accuracy_ci95_pp": [
+        -1.8888888888888888,
+        -0.17722222222222528
+      ],
+      "CE_delta": -0.10583188813109329,
+      "CE_ci95": [
+        -0.1336117831474931,
+        -0.07716472175071326
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    },
+    "75-R3 minus 75-R0-20261130": {
+      "accuracy_delta_pp": -0.6222222222222222,
+      "accuracy_ci95_pp": [
+        -1.4222222222222223,
+        0.24444444444444444
+      ],
+      "CE_delta": -0.13311628445979146,
+      "CE_ci95": [
+        -0.1609021778725204,
+        -0.10418916928696549
+      ],
+      "SOP_ci": "NA per-sample SOP not collected"
+    }
+  }
+}

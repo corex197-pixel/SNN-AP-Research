@@ -1,1 +1,18 @@
-{"status":"PLANNED","phase":"implementation_and_preflight","H026":"UNTESTED","H027":"UNTESTED"}
+{
+  "status": "INVALID",
+  "run_id": "EXP-026-RUN-002",
+  "phase": "evaluation",
+  "code_sha": "9a08c3d634d780b7557b65ace838d7b809dbe481",
+  "start_unix": 1795866880.6008918,
+  "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6",
+  "wall_seconds": 194.53258967399597,
+  "cpu_budget_accounted_seconds": 277.195629,
+  "end_unix": 1795867066.6123796,
+  "cpu_accounted_seconds": 279.515117,
+  "process_tree_cpu_seconds": 210.65921100000003,
+  "cpu_prior_conservative_reserve_seconds": 68.885,
+  "peak_allocated_bytes": 5619291648,
+  "raw_process_status": "COMPLETED",
+  "scientific_evidence_status": "INVALID_EVIDENCE",
+  "protocol_deviation": "Pre-evaluation admission recorded PASSED although final selected 50% and 75% R1/R3 hidden-spike equality was not independently measured; results retained as exploratory."
+}

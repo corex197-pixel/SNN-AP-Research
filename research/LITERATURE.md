@@ -76,3 +76,9 @@ Li et al. activity-based SNN pruning https://proceedings.mlr.press/v235/li24bz.h
 
 ## ROUND-023 structured pruning evidence
 SCA: Li et al., ICML 2024, https://proceedings.mlr.press/v235/li24bz.html. C-DPSS: Li et al., Neurocomputing 2026, https://doi.org/10.1016/j.neucom.2026.134101 (ABSTRACT_ONLY). Gou et al., Frontiers 2025, https://doi.org/10.3389/fnins.2025.1545583. Yao et al., ICCV 2023, https://openaccess.thecvf.com/content/ICCV2023/html/Yao_Inherent_Redundancy_in_Spiking_Neural_Networks_ICCV_2023_paper.html. Full search record and risks: ../experiments/EXP-025/literature_search_log.md.
+
+
+## ROUND-024 prior work and candidate
+Spik4lite: Refactoring Neuromorphic Sparsity for Efficient Spiking Neural Networks on Commodity Edge Devices, ICML 2026, https://icml.cc/virtual/2026/poster/63522 ; repository https://github.com/yongzhishe/Spik4lite fixed commit 4d33fca2576680eb114744340df51e926aad2f2f, Apache-2.0 reported; environment, weights and reproduction UNKNOWN; UNDER_REVIEW. Conference page access failed during this audit.
+Shi, Li and Ward-Cherrier, Spiking Brain Compression: Post-Training Second-order Compression for Spiking Neural Networks, arXiv:2506.03996 v3 (2026), https://arxiv.org/abs/2506.03996 ; task used name Optimal Spiking Brain Compression, but arXiv current title is as recorded here.
+He, Zhang and Sun, Channel Pruning for Accelerating Very Deep Neural Networks, ICCV 2017, https://openaccess.thecvf.com/content_iccv_2017/html/He_Channel_Pruning_for_ICCV_2017_paper.html ; page access 403 in this session. Least-squares reconstruction and compensation are established prior art.

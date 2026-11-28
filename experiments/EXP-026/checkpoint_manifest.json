@@ -1,0 +1,80 @@
+[
+  {
+    "group": "B0",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/B0.pth",
+    "sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+    "bytes": 146922146
+  },
+  {
+    "group": "50-R0-20261128",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/50-R0-20261128.pth",
+    "sha256": "03444d57c729663bb29f86c3365c496ce6580275ae8df4f517af3ae84fdf35b2",
+    "bytes": 79407362
+  },
+  {
+    "group": "50-R0-20261129",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/50-R0-20261129.pth",
+    "sha256": "84286444f7d7614e1d5952e1c688cf77370a1bfa57473650b612d42e5fc5e9bf",
+    "bytes": 79407362
+  },
+  {
+    "group": "50-R0-20261130",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/50-R0-20261130.pth",
+    "sha256": "824b7e899f0d5fdbb64356a9cc5b2d7bfc0bdf8ce3b86d4f6fd2d2e80190912c",
+    "bytes": 79407298
+  },
+  {
+    "group": "50-R1",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/50-R1.pth",
+    "sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+    "bytes": 79403770
+  },
+  {
+    "group": "50-R2",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/50-R2.pth",
+    "sha256": "19371344cc1abac669c9720ff9e69e240b6ea21d41018aa3962615ea7dfcd10c",
+    "bytes": 79403770
+  },
+  {
+    "group": "50-R3",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/50-R3.pth",
+    "sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+    "bytes": 79403770
+  },
+  {
+    "group": "75-R0-20261128",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R0-20261128.pth",
+    "sha256": "e71e9f6f2f84f66ae5685e6ca926f33526eb7ef80e501c803435952a40ec6664",
+    "bytes": 45644546
+  },
+  {
+    "group": "75-R0-20261129",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R0-20261129.pth",
+    "sha256": "a94ff0f8f2a9670168fe7114c63424c4b83d056765316ad73b27c37a88e699fc",
+    "bytes": 45644610
+  },
+  {
+    "group": "75-R0-20261130",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R0-20261130.pth",
+    "sha256": "05787cf367dcf60088f25cd619cb20d87775ec9d6c7eeb95194ebbd539cca7c9",
+    "bytes": 45644546
+  },
+  {
+    "group": "75-R1",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R1.pth",
+    "sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "bytes": 45641018
+  },
+  {
+    "group": "75-R2",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R2.pth",
+    "sha256": "bd33fbf930e24f14e04860262f23d640053a56e60e5055c5600d9afdc5b2182f",
+    "bytes": 45641018
+  },
+  {
+    "group": "75-R3",
+    "path": "/home/hym/keyan1/experiments/EXP-026/models/75-R3.pth",
+    "sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+    "bytes": 45641018
+  }
+]

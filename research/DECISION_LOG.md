@@ -76,3 +76,7 @@ Stop SEAWP fixed-layer allocation; preserve EXP-023 negative evidence and pretra
 
 ## DEC-023 — STOP + REASSESS
 Stop current ESC-JP/M5 formal advancement; retain UniSparse Controlled Baseline and all prior evidence. C-DPSS is the first conditional engineering-review candidate, not a replacement; its license and CIFAR test-set selection leak block admission. SCA official code and weights UNKNOWN. The theoretical researcher decides the next step.
+
+
+## DEC-024 — HOLD BASELINE SWITCH + DIAGNOSE
+UniSparse remains Controlled Baseline; prior candidates UNDER_REVIEW; M5 remains STOPPED. Prespecified 50%/75% fixed-support readout reconstruction is an exploratory diagnostic, not a claim of novelty. No training or official test set.

@@ -1,0 +1,33 @@
+{
+  "status": "PASSED",
+  "accuracy_error": 0.0,
+  "CE_abs_error": 0.0,
+  "SOP_relative_error": 0.0,
+  "tolerances": {
+    "accuracy": 1e-07,
+    "CE": 1e-05,
+    "SOP_relative": 1e-05
+  },
+  "actual": {
+    "group": "B0",
+    "split": "validation",
+    "samples": 4500,
+    "accuracy": 0.9422222222222222,
+    "CE": 0.1727328626844618,
+    "FR_global": 0.04957855784345042,
+    "SOP_sample_weighted": 86009551.08977778,
+    "SOP_author": 85176712.12676056,
+    "fc1_SOP": 15244090.154666666,
+    "fc2_SOP": 142680.71644444444,
+    "validation_seconds": 11.32875657081604,
+    "last_batch_size": 20,
+    "parameter_count": 36720484,
+    "effective_nonzero_weights": 31402490,
+    "effective_weight_sparsity": 0.1447020508963247,
+    "FP32_dense_parameter_bytes": 146881936,
+    "fc1_out": 2048,
+    "fc2_in": 2048,
+    "compression_fraction": 0.0,
+    "inference_file_bytes": 146922146
+  }
+}

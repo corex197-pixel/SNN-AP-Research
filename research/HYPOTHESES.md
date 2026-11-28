@@ -64,3 +64,7 @@ H-022 SUPPORTED scoped U2 epoch100 exposure heterogeneity; H-023 CONTRADICTED on
 
 ## ROUND-023 theory review archive
 H-024 SUPPORTED only for the investigated fixed model and linear readout. H-025 PARTIALLY_SUPPORTED: M5 improves over S3 but does not pass prespecified performance gates against S1/S2. EXP-024 overall progression remains FAILED. Q-013A/B are untested questions, not proven defects; H-017 remains UNTESTED.
+
+
+## ROUND-024 preregistration
+H-026 UNTESTED: 50% R1 accuracy drops ≥1 percentage point versus B0. H-027 UNTESTED: 50% R3 achieves all fixed D_cal reconstruction, validation accuracy/CE, equal-parameter, support and SOP gates. 75% is auxiliary. Scientific decisions require theory review.

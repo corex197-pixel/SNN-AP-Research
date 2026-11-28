@@ -1,1 +1,7 @@
-{"parent_result_sha":"64f274a7520e24662e86f0a811560c5af1011d71","exp024_code_sha":"c494b5876de2dc1e0beb62c32137a0be63f4d19a","official_unisparse_sha":"b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa","execution_sha":"recorded at launch"}
+{
+  "parent_result_sha": "64f274a7520e24662e86f0a811560c5af1011d71",
+  "exp024_code_sha": "c494b5876de2dc1e0beb62c32137a0be63f4d19a",
+  "official_unisparse_sha": "b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa",
+  "execution_sha": "9a08c3d634d780b7557b65ace838d7b809dbe481",
+  "selection_lock_sha": "850e91413006d5cac4c8394dcd557057a7273f86"
+}

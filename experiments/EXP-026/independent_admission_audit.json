@@ -1,0 +1,11 @@
+{
+  "status": "FAILED",
+  "review_time_utc": "2026-11-28T11:59:56.014248+00:00",
+  "original_gate_artifact": "admission_gate_audit.json (immutable selection lock)",
+  "actual_preselection_evidence": "formula_tests.json R120_real_mapping, artificial first-1024 deletion and artificial compensation",
+  "missing": "Selected 50% and 75% R1/R3 pairs were not independently elementwise spike-compared before evaluation",
+  "impact": "Admission erroneously passed; results are exploratory and cannot satisfy formal preregistered gate; cannot repair a pre-evaluation requirement retroactively.",
+  "raw_automatic_gate": "hypothesis_gate_results_original.json",
+  "corrected_gate": "hypothesis_gate_results.json",
+  "no_retroactive_GPU_test": true
+}

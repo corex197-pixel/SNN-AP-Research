@@ -9,3 +9,6 @@ Static review only; scores use 20/20/10/15/15/10/10% weights, are judgment under
 | Dynamic Spatio-Temporal | 4.15 | UNDER_REVIEW | license unknown; channel removal not established |
 
 Recommendation is conditional C-DPSS audit only; UniSparse remains current baseline. See ../experiments/EXP-025/REPORT.md.
+
+
+ROUND-024: Spik4lite added as literature/backup candidate UNDER_REVIEW; author repository reports Apache-2.0, fixed SHA 4d33fca2576680eb114744340df51e926aad2f2f, runtime compatibility and weights UNKNOWN. No code imported, no baseline switch. Existing three candidate scores remain static-review judgments; EXP-025 CPU accounting limitation retained.

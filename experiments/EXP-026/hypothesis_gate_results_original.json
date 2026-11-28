@@ -1,0 +1,33 @@
+{
+  "ratios": {
+    "50": {
+      "H026_drop_at_least_1pp": false,
+      "H027_checks": {
+        "Dcal_mse_decreases": true,
+        "accuracy_gain_at_least_0_5pp": false,
+        "CE_decreases": false,
+        "parameter_equal": true,
+        "support_not_expanded": true,
+        "SOP_at_most_101pct": true,
+        "admission_and_isolation": true
+      },
+      "H027_all": false
+    },
+    "75": {
+      "H026_drop_at_least_1pp": true,
+      "H027_checks": {
+        "Dcal_mse_decreases": true,
+        "accuracy_gain_at_least_0_5pp": false,
+        "CE_decreases": false,
+        "parameter_equal": true,
+        "support_not_expanded": true,
+        "SOP_at_most_101pct": true,
+        "admission_and_isolation": true
+      },
+      "H027_all": false
+    }
+  },
+  "primary_ratio": "50",
+  "H026_scientific_status": "UNTESTED_pending_theory_review",
+  "H027_scientific_status": "UNTESTED_pending_theory_review"
+}

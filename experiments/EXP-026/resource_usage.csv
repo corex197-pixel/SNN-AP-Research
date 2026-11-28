@@ -1,0 +1,8 @@
+scope,metric,value,unit,basis,limitation
+RUN-001,gpu_process_wall,8.521098852157593,seconds,conservative process clock,not GPU kernel active time
+RUN-002,gpu_process_wall,186.01149082183838,seconds,conservative process clock,includes lock push and CPU work
+both,gpu_budget_wall,194.53258967399597,seconds,sum of process clocks,initial imports before clock not included; CUDA not intentionally initialized there
+RUN-001+002,process_tree_cpu,219.57253200000002,seconds,getrusage plus live descendants,timing begins after imports; sampling process trees can miss races
+delivery,cpu,0.9722299999999999,seconds,getrusage self delta,does not include other command processes
+prelaunch,cpu_reserve,60.0,seconds,conservative allowance,estimate not measurement
+total,cpu_budget_accounted,280.487347,seconds,run tree CPU plus 60s reserve plus delivery CPU,"early commands, imports and remote tool CPU not fully measured"

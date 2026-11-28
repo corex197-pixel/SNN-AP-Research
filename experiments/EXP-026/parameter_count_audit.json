@@ -1,0 +1,132 @@
+{
+  "B0": {
+    "parameter_count": 36720484,
+    "effective_nonzero_weights": 31402490,
+    "effective_weight_sparsity": 0.1447020508963247,
+    "FP32_dense_parameter_bytes": 146881936,
+    "fc1_out": 2048,
+    "fc2_in": 2048,
+    "compression_fraction": 0.0,
+    "inference_file_bytes": 146922146
+  },
+  "50-R0-20261128": {
+    "parameter_count": 19839844,
+    "effective_nonzero_weights": 16034625,
+    "effective_weight_sparsity": 0.19162585462294957,
+    "FP32_dense_parameter_bytes": 79359376,
+    "fc1_out": 1024,
+    "fc2_in": 1024,
+    "compression_fraction": 0.45970635899025736,
+    "inference_file_bytes": 79407362
+  },
+  "50-R0-20261129": {
+    "parameter_count": 19839844,
+    "effective_nonzero_weights": 16036167,
+    "effective_weight_sparsity": 0.1915481157963682,
+    "FP32_dense_parameter_bytes": 79359376,
+    "fc1_out": 1024,
+    "fc2_in": 1024,
+    "compression_fraction": 0.45970635899025736,
+    "inference_file_bytes": 79407362
+  },
+  "50-R0-20261130": {
+    "parameter_count": 19839844,
+    "effective_nonzero_weights": 16037939,
+    "effective_weight_sparsity": 0.19145878168436947,
+    "FP32_dense_parameter_bytes": 79359376,
+    "fc1_out": 1024,
+    "fc2_in": 1024,
+    "compression_fraction": 0.45970635899025736,
+    "inference_file_bytes": 79407298
+  },
+  "50-R1": {
+    "parameter_count": 19839844,
+    "effective_nonzero_weights": 16062942,
+    "effective_weight_sparsity": 0.1901982733309242,
+    "FP32_dense_parameter_bytes": 79359376,
+    "fc1_out": 1024,
+    "fc2_in": 1024,
+    "compression_fraction": 0.45970635899025736,
+    "inference_file_bytes": 79403770
+  },
+  "50-R2": {
+    "parameter_count": 19839844,
+    "effective_nonzero_weights": 16041883,
+    "effective_weight_sparsity": 0.1912599477466025,
+    "FP32_dense_parameter_bytes": 79359376,
+    "fc1_out": 1024,
+    "fc2_in": 1024,
+    "compression_fraction": 0.45970635899025736,
+    "inference_file_bytes": 79403770
+  },
+  "50-R3": {
+    "parameter_count": 19839844,
+    "effective_nonzero_weights": 16062942,
+    "effective_weight_sparsity": 0.1901982733309242,
+    "FP32_dense_parameter_bytes": 79359376,
+    "fc1_out": 1024,
+    "fc2_in": 1024,
+    "compression_fraction": 0.45970635899025736,
+    "inference_file_bytes": 79403770
+  },
+  "75-R0-20261128": {
+    "parameter_count": 11399524,
+    "effective_nonzero_weights": 8351341,
+    "effective_weight_sparsity": 0.26715880531843195,
+    "FP32_dense_parameter_bytes": 45598096,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "compression_fraction": 0.689559538485386,
+    "inference_file_bytes": 45644546
+  },
+  "75-R0-20261129": {
+    "parameter_count": 11399524,
+    "effective_nonzero_weights": 8353115,
+    "effective_weight_sparsity": 0.2670031344771425,
+    "FP32_dense_parameter_bytes": 45598096,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "compression_fraction": 0.689559538485386,
+    "inference_file_bytes": 45644610
+  },
+  "75-R0-20261130": {
+    "parameter_count": 11399524,
+    "effective_nonzero_weights": 8354033,
+    "effective_weight_sparsity": 0.2669225787655847,
+    "FP32_dense_parameter_bytes": 45598096,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "compression_fraction": 0.689559538485386,
+    "inference_file_bytes": 45644546
+  },
+  "75-R1": {
+    "parameter_count": 11399524,
+    "effective_nonzero_weights": 8373575,
+    "effective_weight_sparsity": 0.2652077424744468,
+    "FP32_dense_parameter_bytes": 45598096,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "compression_fraction": 0.689559538485386,
+    "inference_file_bytes": 45641018
+  },
+  "75-R2": {
+    "parameter_count": 11399524,
+    "effective_nonzero_weights": 8356961,
+    "effective_weight_sparsity": 0.26666564290126926,
+    "FP32_dense_parameter_bytes": 45598096,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "compression_fraction": 0.689559538485386,
+    "inference_file_bytes": 45641018
+  },
+  "75-R3": {
+    "parameter_count": 11399524,
+    "effective_nonzero_weights": 8373575,
+    "effective_weight_sparsity": 0.2652077424744468,
+    "FP32_dense_parameter_bytes": 45598096,
+    "fc1_out": 512,
+    "fc2_in": 512,
+    "compression_fraction": 0.689559538485386,
+    "inference_file_bytes": 45641018
+  }
+}

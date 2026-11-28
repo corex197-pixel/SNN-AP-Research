@@ -1,0 +1,27 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+[research/round-024-structural-reconstruction 850e914] EXP-026 lock selections and fixed-support reconstruction
+ 7 files changed, 66382 insertions(+)
+ create mode 100644 experiments/EXP-026/admission_gate_audit.json
+ create mode 100644 experiments/EXP-026/formula_tests.json
+ create mode 100644 experiments/EXP-026/neuron_statistics.csv
+ create mode 100644 experiments/EXP-026/readout_support_audit.json
+ create mode 100644 experiments/EXP-026/reconstruction_coefficients.csv
+ create mode 100644 experiments/EXP-026/selected_neurons.json
+ create mode 100644 experiments/EXP-026/selection_lock.json
+To github.com:corex197-pixel/SNN-AP-Research.git
+   9a08c3d..850e914  HEAD -> research/round-024-structural-reconstruction
+EVALUATED B0 0.9422222222222222 0.1727328626844618
+EVALUATED 50-R0-20261128 0.9295555555555556 0.2164166817135281
+EVALUATED 50-R0-20261129 0.9364444444444444 0.20729726611243354
+EVALUATED 50-R0-20261130 0.9304444444444444 0.23064957078297932
+EVALUATED 50-R1 0.9393333333333334 0.1793660873969396
+EVALUATED 50-R2 0.9222222222222223 0.21842188776863947
+EVALUATED 50-R3 0.9391111111111111 0.1873258376121521
+EVALUATED 75-R0-20261128 0.9108888888888889 0.46247394455803764
+EVALUATED 75-R0-20261129 0.9175555555555556 0.4332712959713406
+EVALUATED 75-R0-20261130 0.9135555555555556 0.460555688434177
+EVALUATED 75-R1 0.9251111111111111 0.27720849974950157
+EVALUATED 75-R2 0.8044444444444444 0.5186807950337727
+EVALUATED 75-R3 0.9073333333333333 0.32743940374586317
+{"status": "COMPLETED", "run_id": "EXP-026-RUN-002", "phase": "evaluation", "code_sha": "9a08c3d634d780b7557b65ace838d7b809dbe481", "start_unix": 1795866880.6008918, "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6", "wall_seconds": 194.53258967399597, "cpu_budget_accounted_seconds": 277.195629, "end_unix": 1795867066.6123796, "cpu_accounted_seconds": 279.515117, "process_tree_cpu_seconds": 210.65921100000003, "cpu_prior_conservative_reserve_seconds": 68.885, "peak_allocated_bytes": 5619291648}

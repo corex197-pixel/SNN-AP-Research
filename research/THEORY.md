@@ -449,3 +449,7 @@ R101 r[n,i]=mean_t s[t,n,i]; R102 A[k,i]=mean_{j=10k..10k+9} W_eff_fc2[j,i] and 
 
 ## ROUND-023 / v0.2.9: R109–R112
 R109: CE logits Hessian H=diag(p)−ppᵀ with p=softmax(z). R110–R111: second-order joint deletion includes cross terms between contribution vectors; this is not SNN-specific. EXP-024 observed nonadditivity; no extrapolation outside the fixed structure. R112: with s=Θ(H−Vth), |δH|≤ε and |H−Vth|>ε guarantee unchanged spike for that time step and specified pre-spike H; this does not establish neuron importance. See ../experiments/EXP-025/REPORT.md.
+
+
+## v0.3.0 — ROUND-024 R113–R120
+R113: high-compression fixed hidden-neuron subsets; R114 P(r)=36720484−2048r·16485 and R115 R_P=(36720484−P(r))/36720484. R116 E=R[:,S]A[:,S]^T; R117 I_k={i:sum_j M[10k:10k+10,i]>0}; R118 ridge minimization ||Xδ−e||²/N+λ||δ||² with fixed λ=.001 mean_j(sum_n X_nj²/N). R119 primal/dual stable solve, zero support/zero λ yield zero correction. R120 distribute 10δ/m among active effective connections only; preserve inactive raw weights and all other model state. This is an engineering diagnostic, not a novel closed-form technique.
