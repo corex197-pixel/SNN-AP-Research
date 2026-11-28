@@ -1,1 +1,32 @@
 delivery finalized COMPLETED
+[research/round-022-exact-spike-contribution 8a26218] results(EXP-024): deliver exact structured pruning pilot
+ 32 files changed, 27763 insertions(+), 25 deletions(-)
+ create mode 100644 experiments/EXP-024/calibration_summary.csv
+ create mode 100644 experiments/EXP-024/checkpoint_manifest.json
+ create mode 100644 experiments/EXP-024/delivery_supervisor002.log
+ create mode 100644 experiments/EXP-024/delivery_supervisor002.pid
+ create mode 100644 experiments/EXP-024/exact_readout_tests.json
+ create mode 100644 experiments/EXP-024/figures/accuracy_CE.png
+ create mode 100644 experiments/EXP-024/figures/greedy_trace.png
+ create mode 100644 experiments/EXP-024/figures/interaction.png
+ create mode 100644 experiments/EXP-024/figures/paired_accuracy_ci.png
+ create mode 100644 experiments/EXP-024/figures/parameters_sops.png
+ create mode 100644 experiments/EXP-024/figures/rate_vs_single_loss.png
+ create mode 100644 experiments/EXP-024/hypothesis_gate_results.json
+ create mode 100644 experiments/EXP-024/interaction_diagnostics.csv
+ create mode 100644 experiments/EXP-024/launcher002.pid
+ create mode 100644 experiments/EXP-024/layer_FR.csv
+ create mode 100644 experiments/EXP-024/layer_sops.csv
+ create mode 100644 experiments/EXP-024/lock_commit.json
+ create mode 100644 experiments/EXP-024/paired_bootstrap.json
+ create mode 100644 experiments/EXP-024/parameter_count_audit.json
+ create mode 100644 experiments/EXP-024/precision_audit.json
+ create mode 100644 experiments/EXP-024/run002.log
+ create mode 100644 experiments/EXP-024/selected_structure_audit.json
+ create mode 100644 experiments/EXP-024/selection_timing.json
+ rewrite experiments/EXP-024/status.json (98%)
+ create mode 100644 experiments/EXP-024/structural_equivalence_tests.json
+ create mode 100644 experiments/EXP-024/validation_per_sample.csv
+ create mode 100644 experiments/EXP-024/validation_summary.csv
+To github.com:corex197-pixel/SNN-AP-Research.git
+   c494b58..8a26218  research/round-022-exact-spike-contribution -> research/round-022-exact-spike-contribution

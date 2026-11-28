@@ -1,0 +1,9 @@
+{
+  "historical_run": "EXP-020 B0, original default backend",
+  "current_run": "EXP-024 RUN-002 B0, cudnn/matmul TF32 disabled",
+  "same_sample_ids_and_labels": true,
+  "prediction_changed_count": 45,
+  "correctness_changed_count": 43,
+  "current_minus_historical_mean_CE": -0.0024611433962590436,
+  "interpretation": "backend precision differs; association observed, exact contribution of each backend setting not isolated"
+}

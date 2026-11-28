@@ -41,3 +41,11 @@
 `{"all_admission_checks": true, "physical_parameters_drop_ge_20pct": true, "M5_accuracy_drop_B0_le_0_5pp": true, "M5_accuracy_gain_S1_ge_0_3pp": false, "M5_accuracy_gain_S2_ge_0_3pp": false, "M5_accuracy_gain_S3_ge_0_3pp": true, "M5_SOP_at_most_B0_101pct": true, "equal_pruned_parameter_budget": true, "samples_and_data_isolation": true}`；整体推进 `False`。H-024/H-025科学状态等待理论研究员审查；不可从公式正确推断性能有效。D_grad/D_cal曾参与父模型训练，验证集多轮用于开发，单种子结果非独立确认。贪心、线性读出及直接损失计分不作学术首创声明；该分解同样适用于满足条件的ANN。
 
 单卡 `GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae`；保守预算墙钟 `113.07134699821472` 秒，CPU计数 `127.86313900000002` 秒；导入、CPU汇总及短生命周期子进程可能漏计。未执行阶段按NA处理，严禁用合成值填补正式结果。
+
+## 独立复核、失败与精度口径
+
+RUN-001在原默认后端精度下，32样本R103归一化误差为1.749971e-5，超过1e-5门槛，未执行选择或评价；结果及日志保留在runs/EXP-024-RUN-001。RUN-002固定关闭cuDNN与matmul TF32后，32样本误差1.356819e-7，完整512样本误差1.610115e-7，未放宽门槛。与EXP-020默认后端B0相比，同4500个样本有45个预测类别不同、43个正确性状态不同，本轮平均CE低0.00246114；后端精度设置存在差异，但未逐项隔离唯一原因。所有本轮组使用相同严格FP32口径。
+
+五个实际锁定集合均以相同32样本验证紧凑模型对同集合门控输出逐元素一致，保留脉冲完全一致；六个纯推理模型分别在CPU加载，物理层形状、无优化器和SHA256均通过。完整27,000条记录按ID和标签配对；32轮各16项共512个贪心记录与锁定集合一致，联合logit重算最大相对误差7.45e-16。详见 final_independent_audit.json。
+
+M5选择的真实额外显存峰值未单独测量：旧字段0仅代表相对于此前进程全程峰值没有刷新高水位，不代表未使用额外显存，已保留原始文件并修正说明。整体进程峰值见resource_usage.csv。

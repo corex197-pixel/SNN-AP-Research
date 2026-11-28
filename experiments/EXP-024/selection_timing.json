@@ -1,8 +1,10 @@
 {
   "S3_seconds": 0.01279735192656517,
   "M5_seconds": 1.3807901258114725,
-  "M5_peak_additional_allocated_bytes": 0,
   "greedy_rounds": 32,
   "candidates_initial": 2048,
-  "chunk": 64
+  "chunk": 64,
+  "M5_lifetime_high_water_mark_increase_bytes": 0,
+  "M5_peak_incremental_memory_bytes": "NA_not_directly_measured",
+  "memory_note": "The original value was the increase in the process lifetime high-water mark since admission, not true M5 incremental peak. A zero increase does not mean zero additional memory."
 }
