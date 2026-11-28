@@ -1,0 +1,1 @@
+GPU: single authorized RTX 4090; T=4; FP32; fixed train-only split; no optimizer training.

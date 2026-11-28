@@ -8,7 +8,7 @@
 
 本项目研究脉冲神经网络（SNN）剪枝、活动稀疏化、神经元动力学及相关优化理论。
 
-Baseline 为 Tong Bu、Xinyu Shi、Zhaofei Yu 在 NeurIPS 2025 发表的 Activity Pruning for Efficient Spiking Neural Networks。
+当前 Controlled Baseline 为 UniSparse（官方固定版本 b5b3da4fcd2e7abcd2c20c93d41cf63ef3201daa）；AT-LIF 原研究路线及其 Baseline 已归档并完整保留。
 
 项目目标是形成具有明确科学问题、理论依据、可证伪科研假设、可靠实验支撑及独立学术贡献的研究成果，而不仅仅是提高模型准确率。
 

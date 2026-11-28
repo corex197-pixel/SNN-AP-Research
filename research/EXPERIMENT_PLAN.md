@@ -47,3 +47,7 @@ Official CifarNet T4, seed12450, batch256, training 45000/validation4500 from tr
 
 ## EXP-018/019 — ROUND-017 preregistration
 Exact parent epoch20 U0/U2 SHA256 and fixed data/lambdas are in ROUND-017-TASK.md. Preflight exact state and paired update recovery, then epoch20 cost attribution; paired stage endpoints 60,100,200,300 with gates accuracy drop<=5pp, SOP savings>=5%, all penalized densities>=1%, finite and restorable, equal epochs. Four-mask costs use same actual monitored binary inputs, author scope, 4500 train-origin validation and sample-weighted aggregation. Epoch60 H-018 primary; synthetic accounting is not training causality. User budget GPU 28800 wall seconds and CPU57600 cumulative seconds.
+
+
+## ROUND-018 EXP-020
+Preregistered protocol ROUND-018-TASK.md. Fixed 512 D_grad and 512 D_cal, seed 20261128, disjoint from validation and old diagnostic pool. G0/G1/G2, rho=.25, q=[0,.0025,.005,.01,.02,.04,.08,.16], primary q=.02, SOP target 5% and admissible 4–6%; validation only after lock. GPU≤1800s CPU≤3600s. No training or official test.

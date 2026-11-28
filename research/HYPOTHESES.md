@@ -40,3 +40,7 @@ H-016 PARTIALLY_SUPPORTED: fixed-activity/fixed-mask mathematical and synthetic 
 
 ### ROUND-017 preregistration
 H-016 PARTIALLY_SUPPORTED, restricted to synthetic mechanisms and descriptive EXP-017 epoch20 trained-model fanout; optimization and task effects unresolved. H-017 UNTESTED. H-018 UNTESTED: in U2 vs U0, ΔC_W<0 and ΔC_S>0 under R69–R73; primary early checkpoint epoch60, exploratory practical magnitude ΔC_S/C00>=0.05, without causal claims.
+
+
+### ROUND-018 theory review
+H-016 SUPPORTED only for nominal/effective fanout mismatch at current model and operating point; task and training impact untested. H-018 PARTIALLY_SUPPORTED: epoch60 direction passed but 5% magnitude missed; epoch300 activity term negative. H-017 UNTESTED. H-019 UNTESTED: fixed weights and BN running statistics, norm-matched MP-EFR may reduce target consumer SOP more than G0 and permuted G2 at fixed q=.02.

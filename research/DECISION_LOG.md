@@ -52,3 +52,7 @@ DEC-016 execution: EXP-017 completed; U1/U2 both passed fixed pilot screening, U
 
 ## DEC-017 — CONTINUE + BASELINE
 User selected U2 as controlled combined-sparsity baseline, U0 as dense-control continuation, and U1 as backup only. Approved up to 300 epochs with mandatory 60/100/200 gates and R69–R73 cost attribution, within one RTX4090/8-hour and CPU16-hour cap. No U1 continuation, official test, ECAS, retraining, search or change to author updates.
+
+
+## DEC-018 — IMPLEMENT + CONTINUE
+End UniSparse controlled-baseline preparation; test MP-EFR as a specific unproven incremental mechanism, without claims of novelty. EXP-020 only; see ROUND-018-TASK.md. Preserve all ROUND-017 evidence and fixed H-018 gate.

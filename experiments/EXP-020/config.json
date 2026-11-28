@@ -1,0 +1,42 @@
+{
+  "run_id": "EXP-020-RUN-001",
+  "parent_path": "experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-300.pth",
+  "parent_sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+  "split_sha256": "69dccfe992236766aea575a0a66495802ca889ca329d61f51e8de3c1ab7f3165",
+  "rho": 0.25,
+  "seed": 20261128,
+  "batch_size": 64,
+  "workers": 4,
+  "q": [
+    0,
+    0.0025,
+    0.005,
+    0.01,
+    0.02,
+    0.04,
+    0.08,
+    0.16
+  ],
+  "primary_q": 0.02,
+  "target_reduction": 0.05,
+  "range": [
+    0.04,
+    0.06
+  ],
+  "targets": [
+    [
+      "static_conv.norm",
+      "static_conv.activation",
+      "conv1.conv"
+    ],
+    [
+      "conv1.norm",
+      "conv1.activation",
+      "conv2"
+    ]
+  ],
+  "gpu_budget_seconds": 1800,
+  "cpu_budget_seconds": 3600,
+  "official_test_access": false,
+  "precision": "FP32"
+}

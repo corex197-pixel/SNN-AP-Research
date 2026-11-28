@@ -425,3 +425,7 @@ R62–R63: with C(p,r)=pr and the idealized continuous interior dynamics dp/dt=�
 
 ## v0.2.3 — ROUND-017
 R69 C00=C(M0,s0), C20=C(M2,s0), C02=C(M0,s2), C22=C(M2,s2) on identical train-origin validation samples and author monitor scope; cross combinations are counting counterfactuals, not model predictions. R70 ΔC_W=((C20−C00)+(C22−C02))/2; R71 ΔC_S=((C02−C00)+(C22−C20))/2; R72 ΔC=C22−C00=ΔC_W+ΔC_S; R73 I_WS=C22−C20−C02+C00. These symmetric two-order accounting attributions are not training causality or a new pruning algorithm.
+
+
+## v0.2.4 — ROUND-018 MP-EFR
+R74 g0=d(d0 Σ rate[c])/dφ (local eval surrogate); R75 a=(1−ρ)+ρ d/mean(d), ρ=.25; R76 P_MP=d0 Σ a rate; R77 mean(a)=1 (zero mean fallback a=1); R78 gρ=(1−ρ)g0+ρ(d0/mean(d))h, h=d Σd rate/dφ. R79 layerwise normalize each group to ||g0,l||; R80 φnew=φparent−q||φparent||/||g0|| g̃, fixed q set and independent parent. No claim of exact network SOP gradient. Full protocol ROUND-018-TASK.md.

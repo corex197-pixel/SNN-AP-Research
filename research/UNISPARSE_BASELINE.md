@@ -39,3 +39,6 @@ Shi, Bu & Yu, *UniSparse: Combining Weight Pruning and Spike Sparsification in S
 EXP-017 executed U0/U1/U2 each 20 epochs with 300-epoch cosine and fixed train-origin validation. Paper-specific nonzero λ remains UNKNOWN; R68 λ_ref 2.9447029124172762e-08, U2 3×λ_ref. Both U1/U2 passed the preregistered exploratory gates; U2 ranked first by lowest sample-weighted SOP. This is a single-seed working-point pilot, not a complete reproduction. See ../experiments/EXP-017/REPORT.md.
 
 ROUND-017 controlled continuation: status COMPLETED, completed {'U0': 300, 'U2': 300}; cost checkpoints [20, 60, 100, 200, 300]. User-specified stage gates and exact parent states preserved; see EXP-018/019. Not a paper-table reproduction.
+
+
+ROUND-018 uses fixed U2 epoch300 as controlled baseline, parent SHA 19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f; do not use best checkpoint. Single seed; official nonzero lambda remains unknown.

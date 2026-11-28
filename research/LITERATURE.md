@@ -52,3 +52,11 @@ UniSparse [ICML 2026](https://proceedings.mlr.press/v306/shi26a.html) 的联合�
 ROUND-016 retains the author’s explicit initial-structure approximation; the pilot tests original UniSparse and does not establish novelty for effective fanout. Official CifarNet nonzero λ remains UNKNOWN after limited source audit.
 
 ROUND-017 R69–R73 is symmetric two-order cost attribution (Shapley-style accounting), not a new pruning algorithm and not a causal estimate of training interventions; UniSparse's initial-structure approximation remains the author's explicit design.
+
+
+## ROUND-018 references and novelty boundary
+- https://doi.org/10.3389/fnins.2020.00662 — Optimizing the Energy Consumption of Spiking Neural Networks for Neuromorphic Applications.
+- https://doi.org/10.3389/fnins.2022.760298 — Backpropagation With Sparsity Regularization for Spiking Neural Network Learning.
+- https://ieeexplore.ieee.org/document/11132570/ — IEEE record; automated bibliographic inspection blocked by site verification.
+- https://proceedings.mlr.press/v306/shi26a.html — UniSparse (Shi, Bu, Yu; ICML 2026).
+Related SynOps/activity/weight-sparsity ideas exist. No first-discovery claim for normalized fanout weighting or convex combination.
