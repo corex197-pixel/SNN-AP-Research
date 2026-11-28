@@ -180,8 +180,9 @@ def main():
   ids=sorted(by['G1']);assert ids==sorted(by[other]);da=np.array([by['G1'][i]['correct']-by[other][i]['correct'] for i in ids]);dc=np.array([by['G1'][i]['ce']-by[other][i]['ce'] for i in ids]);ix=randomgen.integers(0,len(ids),size=(2000,len(ids)));boot[other]={'accuracy_delta':float(da.mean()),'accuracy_ci95':np.quantile(da[ix].mean(1),[.025,.975]).tolist(),'ce_delta':float(dc.mean()),'ce_ci95':np.quantile(dc[ix].mean(1),[.025,.975]).tolist()}
  dump('paired_bootstrap.json',{'seed':20261128,'resamples':2000,'comparisons':boot});dump('parameter_integrity_audit.json',{'status':'PASSED','checks':integrity});write('update_norm_audit.csv',normrows)
  dump('parent_checkpoint_audit.json',{'before':C['parent_sha256'],'after':sha(C['parent_path']),'expected':C['parent_sha256'],'match':sha(C['parent_path'])==C['parent_sha256']});assert sha(C['parent_path'])==C['parent_sha256'];return 'COMPLETED'
-try:status['status']=main()
-except BaseException as e:status.update(status='PARTIAL',error=repr(e),traceback=traceback.format_exc());traceback.print_exc()
-finally:
- status.update(end_unix=time.time(),wall_seconds=PRIOR_WALL+time.time()-START,cpu_seconds=PRIOR_CPU+cpu()-CPU);dump('status.json',status);print(json.dumps(status),flush=True)
-if status['status']!='COMPLETED':sys.exit(1)
+if __name__ == '__main__':
+ try:status['status']=main()
+ except BaseException as e:status.update(status='PARTIAL',error=repr(e),traceback=traceback.format_exc());traceback.print_exc()
+ finally:
+  status.update(end_unix=time.time(),wall_seconds=PRIOR_WALL+time.time()-START,cpu_seconds=PRIOR_CPU+cpu()-CPU);dump('status.json',status);print(json.dumps(status),flush=True)
+ if status['status']!='COMPLETED':sys.exit(1)

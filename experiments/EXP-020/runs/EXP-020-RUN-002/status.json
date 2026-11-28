@@ -1,0 +1,11 @@
+{
+  "status": "COMPLETED",
+  "run_id": "EXP-020-RUN-002",
+  "code_sha": "32848cf953f666372a45fc7771a0df59de73708b",
+  "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae",
+  "start_unix": 1795844286.213676,
+  "phase": "validation",
+  "wall_seconds": 63.24021792411804,
+  "cpu_seconds": 75.783402,
+  "end_unix": 1795844341.1803138
+}

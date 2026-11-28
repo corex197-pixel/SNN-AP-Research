@@ -1,0 +1,11 @@
+{
+  "H019_q": 0.02,
+  "target_sop_reductions": {
+    "G0": 1680901.625,
+    "G1": 1914396.875,
+    "G2": 1640347.25
+  },
+  "direction_passed": true,
+  "H019_scientific_status": "UNTESTED_pending_theory_review",
+  "H017_scientific_status": "UNTESTED"
+}
