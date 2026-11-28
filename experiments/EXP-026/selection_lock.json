@@ -1,0 +1,12 @@
+{
+  "code_sha": "9a08c3d634d780b7557b65ace838d7b809dbe481",
+  "parent_sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+  "D_grad_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+  "D_cal_sha256": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa",
+  "selected_sha256": "56e4d123717a6937ee9b0f9772821c99e266239bcd356a115675643cd21a0736",
+  "coefficients_sha256": "299aeeab0d9d81baca47d14f93e42c6c2f5bb86e21c750b8b073a087d327e13f",
+  "support_audit_sha256": "ef65463d0f45985e0bb3dad7506bfbb1e564e71467df8b9a5fd10e0efe37f2d3",
+  "admission_sha256": "d3abc6179147f47948a3a34cfdf2678b73c13fff04b0c91987990b477e798f65",
+  "fixed_lambda_scale": 0.001,
+  "D_cal_or_validation_used": false
+}
