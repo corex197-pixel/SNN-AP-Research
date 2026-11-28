@@ -1,0 +1,1 @@
+Static read-only analysis, CPU only; no CUDA, training, dependency installation or official test data.

@@ -1,0 +1,19 @@
+{
+  "experiment": "EXP-025",
+  "run_id": "EXP-025-AUDIT-001",
+  "GPU_budget_seconds": 0,
+  "CPU_budget_seconds": 2700,
+  "candidate_fixed_commits": {
+    "C-DPSS": "ea3a3b3dbef8746e030292fe03a276df18bbef22",
+    "dynamic_spatiotemporal": "a137f1bca476d49b2c3d403c6d37688548d81a49"
+  },
+  "score_weights": {
+    "scientific_question": 0.2,
+    "novelty_potential": 0.2,
+    "snn_specificity": 0.1,
+    "code_weights": 0.15,
+    "reproducibility": 0.15,
+    "resource_fit": 0.1,
+    "fair_structural": 0.1
+  }
+}
