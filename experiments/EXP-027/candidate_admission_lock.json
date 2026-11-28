@@ -1,0 +1,442 @@
+{
+  "code_sha": "303995cf1b181687f3f1c63084aa89c0a1b3c31a",
+  "historical_lock_commit": "850e91413006d5cac4c8394dcd557057a7273f86",
+  "historical_artifact_hashes": {
+    "selected_neurons.json": "56e4d123717a6937ee9b0f9772821c99e266239bcd356a115675643cd21a0736",
+    "reconstruction_coefficients.csv": "299aeeab0d9d81baca47d14f93e42c6c2f5bb86e21c750b8b073a087d327e13f",
+    "readout_support_audit.json": "ef65463d0f45985e0bb3dad7506bfbb1e564e71467df8b9a5fd10e0efe37f2d3"
+  },
+  "original_manifest_sha256": "93d26e5f5e6ca8c8995c954cf391968ed3498f8a13efa26be90d7089d29218c2",
+  "model_hashes": {
+    "B0": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+    "50-R1": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+    "50-R3": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+    "75-R1": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "75-R3": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57"
+  },
+  "data_hashes": {
+    "D_grad": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+    "D_cal": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa"
+  },
+  "required_tests": [
+    "generic_data_isolation",
+    "generic_fixed_models",
+    "generic_precision",
+    "generic_readout_reset_tail_capture",
+    "pair_parameters_50",
+    "pair_parameters_75",
+    "pair_readout_50",
+    "pair_readout_75",
+    "pair_spikes_50",
+    "pair_spikes_75",
+    "parent_compact_50",
+    "parent_compact_75"
+  ],
+  "passed_tests": [
+    "generic_data_isolation",
+    "generic_fixed_models",
+    "generic_precision",
+    "generic_readout_reset_tail_capture",
+    "pair_parameters_50",
+    "pair_parameters_75",
+    "pair_readout_50",
+    "pair_readout_75",
+    "pair_spikes_50",
+    "pair_spikes_75",
+    "parent_compact_50",
+    "parent_compact_75"
+  ],
+  "tests": [
+    {
+      "test_id": "generic_data_isolation",
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "fixed hashes, uniqueness and all split disjointness",
+      "observed_result": {
+        "D_grad_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+        "D_cal_sha256": "b671cbd803b13cc76b02f5db4bad311ef9492276622051df01af56a931301baa",
+        "validation_count": 4500,
+        "disjoint": true,
+        "source": "train-only loader"
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "generic_fixed_models",
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "all five SHA match, B0 state equals parent and saved retained sets equal historical lock",
+      "observed_result": {
+        "sha256": {
+          "B0": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+          "50-R1": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+          "50-R3": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+          "75-R1": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+          "75-R3": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57"
+        },
+        "B0_parent_state_equal": true,
+        "retained_match": {
+          "50-R1": true,
+          "50-R3": true,
+          "75-R1": true,
+          "75-R3": true
+        }
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "generic_precision",
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "all parameters FP32; cuDNN/matmul TF32 disabled and eval",
+      "observed_result": {
+        "precision_ok": true,
+        "amp_enabled": false,
+        "device": "NVIDIA GeForce RTX 4090"
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "generic_readout_reset_tail_capture",
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "actual R103 <=1e-5; exact capture on/off; true 2+1 logits <=1e-5",
+      "observed_result": {
+        "R103_error": 1.356818908739029e-07,
+        "capture_exact": true,
+        "tail_error": 0.0,
+        "tail_batch_sizes": [
+          2,
+          1
+        ],
+        "reference_batch_size": 3,
+        "state_reset_before_after_each_forward": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "pair_parameters_50",
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "actual model pair only fc2 raw weights may differ; fixed support, locked R120, bias/threshold and counts",
+      "observed_result": {
+        "retained_indices_equal": true,
+        "non_fc2_weight_state_differences": [],
+        "physical_parameters_R1": 19839844,
+        "physical_parameters_R3": 19839844,
+        "expected_parameters": 19839844,
+        "support_added": 0,
+        "support_removed": 0,
+        "locked_R120_normalized_weight_error": 3.758606782615766e-08,
+        "inactive_raw_exact": true,
+        "threshold_exact": true,
+        "bias_exact": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "parent_compact_50",
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "actual compact versus parent gated logits<=1e-5, spikes and prediction equal, CE<=1e-5",
+      "observed_result": {
+        "normalized_logit_error": 0.0,
+        "retained_spikes_exact": true,
+        "prediction_exact": true,
+        "CE_abs_error": 0.0,
+        "deleted_count": 1024
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "pair_parameters_75",
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "actual model pair only fc2 raw weights may differ; fixed support, locked R120, bias/threshold and counts",
+      "observed_result": {
+        "retained_indices_equal": true,
+        "non_fc2_weight_state_differences": [],
+        "physical_parameters_R1": 11399524,
+        "physical_parameters_R3": 11399524,
+        "expected_parameters": 11399524,
+        "support_added": 0,
+        "support_removed": 0,
+        "locked_R120_normalized_weight_error": 4.428984105010036e-08,
+        "inactive_raw_exact": true,
+        "threshold_exact": true,
+        "bias_exact": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "parent_compact_75",
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "actual compact versus parent gated logits<=1e-5, spikes and prediction equal, CE<=1e-5",
+      "observed_result": {
+        "normalized_logit_error": 0.0,
+        "retained_spikes_exact": true,
+        "prediction_exact": true,
+        "CE_abs_error": 0.0,
+        "deleted_count": 1536
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "pair_spikes_50",
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "all D_grad samples: binary tensor torch.equal per batch and expected shape",
+      "observed_result": {
+        "sample_count": 512,
+        "compared_elements": 2097152,
+        "mismatch_count": 0,
+        "max_abs_difference": 0.0,
+        "max_readout_normalized_error": 5.994952545125692e-07,
+        "batch_sizes": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ]
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "pair_readout_50",
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "real z_R3-z_R1 vs retained spikes @ actual delta_A <=1e-5",
+      "observed_result": {
+        "sample_count": 512,
+        "compared_elements": 2097152,
+        "mismatch_count": 0,
+        "max_abs_difference": 0.0,
+        "max_readout_normalized_error": 5.994952545125692e-07,
+        "batch_sizes": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ]
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "pair_spikes_75",
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "all D_grad samples: binary tensor torch.equal per batch and expected shape",
+      "observed_result": {
+        "sample_count": 512,
+        "compared_elements": 1048576,
+        "mismatch_count": 0,
+        "max_abs_difference": 0.0,
+        "max_readout_normalized_error": 2.5930297197800015e-07,
+        "batch_sizes": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ]
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "pair_readout_75",
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "real z_R3-z_R1 vs retained spikes @ actual delta_A <=1e-5",
+      "observed_result": {
+        "sample_count": 512,
+        "compared_elements": 1048576,
+        "mismatch_count": 0,
+        "max_abs_difference": 0.0,
+        "max_readout_normalized_error": 2.5930297197800015e-07,
+        "batch_sizes": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64,
+          64
+        ]
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    }
+  ],
+  "requirements": {
+    "generic_data_isolation": {
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512
+    },
+    "generic_fixed_models": {
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0
+    },
+    "generic_precision": {
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0
+    },
+    "generic_readout_reset_tail_capture": {
+      "target_group": "B0",
+      "target_model_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "target_pair_sha256": null,
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32
+    },
+    "pair_parameters_50": {
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0
+    },
+    "parent_compact_50": {
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32
+    },
+    "pair_parameters_75": {
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0
+    },
+    "parent_compact_75": {
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32
+    },
+    "pair_spikes_50": {
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512
+    },
+    "pair_readout_50": {
+      "target_group": "50-R1",
+      "target_model_sha256": "21ad97345e5e738417dd4d0d43439e4cf437c8d171fc4a7acdeec5f827200c3c",
+      "target_pair_sha256": "c653b388bf65511fe4f38198b75fe2ce451a9b89ef511d5aa26fbe79f3aea94b",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512
+    },
+    "pair_spikes_75": {
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512
+    },
+    "pair_readout_75": {
+      "target_group": "75-R1",
+      "target_model_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+      "target_pair_sha256": "7c885e34b59f506dd723b862a7012cfd70974952c65c1e1b719693ff5969cf57",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512
+    }
+  },
+  "fixed_rule": "H026 50% drop >=1pp; H027 original seven conjuncts, 75% auxiliary",
+  "generic_and_candidate_separate": true
+}

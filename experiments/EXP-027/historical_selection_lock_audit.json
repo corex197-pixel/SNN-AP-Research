@@ -1,0 +1,11 @@
+{
+  "historical_commit": "850e91413006d5cac4c8394dcd557057a7273f86",
+  "remote_round024_tip": "7f86ebc8d9ee8a9b9cc0595fe570dbe2df1e23ad",
+  "fixed_artifact_hashes": {
+    "selected_neurons.json": "56e4d123717a6937ee9b0f9772821c99e266239bcd356a115675643cd21a0736",
+    "reconstruction_coefficients.csv": "299aeeab0d9d81baca47d14f93e42c6c2f5bb86e21c750b8b073a087d327e13f",
+    "readout_support_audit.json": "ef65463d0f45985e0bb3dad7506bfbb1e564e71467df8b9a5fd10e0efe37f2d3"
+  },
+  "verified_commit_blobs": true,
+  "lambda_scale": 0.001
+}

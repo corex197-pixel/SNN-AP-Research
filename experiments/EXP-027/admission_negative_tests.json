@@ -1,0 +1,79 @@
+{
+  "tests": [
+    {
+      "test_id": "missing_50_candidate",
+      "expected": "reject",
+      "observed_errors": [
+        "missing pair_spikes_50",
+        "passed set differs from records"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "missing_75_candidate",
+      "expected": "reject",
+      "observed_errors": [
+        "missing pair_spikes_75",
+        "passed set differs from records"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "generic_only",
+      "expected": "reject",
+      "observed_errors": [
+        "missing pair_parameters_50",
+        "missing parent_compact_50",
+        "missing pair_parameters_75",
+        "missing parent_compact_75",
+        "missing pair_spikes_50",
+        "missing pair_readout_50",
+        "missing pair_spikes_75",
+        "missing pair_readout_75",
+        "passed set differs from records"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "candidate_model_hash_mismatch",
+      "expected": "reject",
+      "observed_errors": [
+        "pair_spikes_50 mismatch target_model_sha256"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "sample_coverage_insufficient",
+      "expected": "reject",
+      "observed_errors": [
+        "pair_spikes_50 mismatch actual_sample_count"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "failed_assertion_or_exit",
+      "expected": "reject",
+      "observed_errors": [
+        "pair_spikes_75 failed or abnormal exit",
+        "passed set differs from records"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "candidate_changed_after_lock",
+      "expected": "reject",
+      "observed_errors": [
+        "current model identity mismatch"
+      ],
+      "status": "PASSED",
+      "actual_exit_code": 0
+    }
+  ],
+  "all_passed": true
+}

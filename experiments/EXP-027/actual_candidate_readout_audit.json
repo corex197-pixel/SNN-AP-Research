@@ -1,0 +1,36 @@
+{
+  "50": {
+    "sample_count": 512,
+    "compared_elements": 2097152,
+    "mismatch_count": 0,
+    "max_abs_difference": 0.0,
+    "max_readout_normalized_error": 5.994952545125692e-07,
+    "batch_sizes": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ]
+  },
+  "75": {
+    "sample_count": 512,
+    "compared_elements": 1048576,
+    "mismatch_count": 0,
+    "max_abs_difference": 0.0,
+    "max_readout_normalized_error": 2.5930297197800015e-07,
+    "batch_sizes": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ]
+  }
+}

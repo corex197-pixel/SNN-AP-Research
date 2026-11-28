@@ -1,0 +1,28 @@
+{
+  "50": {
+    "retained_indices_equal": true,
+    "non_fc2_weight_state_differences": [],
+    "physical_parameters_R1": 19839844,
+    "physical_parameters_R3": 19839844,
+    "expected_parameters": 19839844,
+    "support_added": 0,
+    "support_removed": 0,
+    "locked_R120_normalized_weight_error": 3.758606782615766e-08,
+    "inactive_raw_exact": true,
+    "threshold_exact": true,
+    "bias_exact": true
+  },
+  "75": {
+    "retained_indices_equal": true,
+    "non_fc2_weight_state_differences": [],
+    "physical_parameters_R1": 11399524,
+    "physical_parameters_R3": 11399524,
+    "expected_parameters": 11399524,
+    "support_added": 0,
+    "support_removed": 0,
+    "locked_R120_normalized_weight_error": 4.428984105010036e-08,
+    "inactive_raw_exact": true,
+    "threshold_exact": true,
+    "bias_exact": true
+  }
+}
