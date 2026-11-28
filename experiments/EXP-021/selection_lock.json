@@ -1,0 +1,20 @@
+{
+  "locked_before_validation": true,
+  "B0_sop": 86348901.18554688,
+  "G1_anchor_sop": 82539922.0390625,
+  "target_reduction": 0.04411149527310865,
+  "selections": {
+    "G1": 0.04,
+    "G0": 0.04546005512832126,
+    "G2": 0.04662144833450371
+  },
+  "matched_reductions": {
+    "G0": 0.04417287260578584,
+    "G2": 0.04371663209031196
+  },
+  "selection_uses_only": "D_cal SOP error; tie smaller q",
+  "gradient_vectors_sha256": "19426f0b80dd5bcce4c09a4cc911a6cb3b5279b52decf21b44cb6834cc1a591c",
+  "coefficients_sha256": "953e4ece2904480fdcc627b6ab7925799cc61bef0ce463b6ce1410761e66495e",
+  "permutation_sha256": "00ea9b2afcf5b502af19cf06815c27f42f4dd7bf7a94e0b6d8b30b187859d81a",
+  "trace_sha256": "4e43e6a5fde4bd3978252fac4dd39ce916dd6c22e053c1a8e8e2e12d733e1be5"
+}
