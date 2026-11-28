@@ -1,0 +1,17 @@
+{
+  "true_2plus1_normalized_error": 0.0,
+  "zero_damage": true,
+  "single_damage": true,
+  "equal_damage": true,
+  "teacher_wrong_zero": true,
+  "rho0_uniform": true,
+  "shift_multiset": true,
+  "equal_logits_KD": 0.0,
+  "independent_numpy_FP64_KD_abs_errors": {
+    "K1": 9.346905013030149e-07,
+    "K2": 8.413228375081516e-07,
+    "K3": 8.413228375081516e-07,
+    "M6": 8.413228375081516e-07
+  },
+  "configured_fp32_abs_tolerance": 1e-05
+}

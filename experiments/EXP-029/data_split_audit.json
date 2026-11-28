@@ -1,0 +1,6 @@
+{
+  "D_grad": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+  "train": 45000,
+  "validation": 4500,
+  "no_official_test": true
+}

@@ -1,0 +1,23 @@
+{
+  "gpu_process_wall_seconds": 48.50012003700249,
+  "cpu_accounted_seconds": 172.295412,
+  "cpu_initial_reserve_seconds": 120.0,
+  "stages": [
+    {
+      "stage": "preflight",
+      "run_id": "preflight-001",
+      "exit_code": 1,
+      "wall_seconds": 22.344726781127974,
+      "cpu_process_tree_wait4_seconds": 24.727804,
+      "termination": null
+    },
+    {
+      "stage": "preflight",
+      "run_id": "preflight-002",
+      "exit_code": 0,
+      "wall_seconds": 26.155393255874515,
+      "cpu_process_tree_wait4_seconds": 27.567608,
+      "termination": null
+    }
+  ]
+}

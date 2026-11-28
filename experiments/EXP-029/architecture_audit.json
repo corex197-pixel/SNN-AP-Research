@@ -1,0 +1,8 @@
+{
+  "teacher_fc1_out": 2048,
+  "P0_fc1_out": 512,
+  "teacher_fc2_in": 2048,
+  "P0_fc2_in": 512,
+  "P0_parameters": 11399524,
+  "registered_P0_connections": true
+}

@@ -1,0 +1,85 @@
+{
+  "tests": [
+    {
+      "name": "missing_group_preflight",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: missing:candidate_K3,passed_set",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "teacher_or_P0_hash_changed",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: identity",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "optimizer_scope_wrong",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: scope:candidate_K0",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "kd_configuration_changed",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: config",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "training_remote_not_synced",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: remote_lock",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "missing_endpoint_identity",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: missing:endpoint_M6,passed_set",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "missing_forward_equivalence",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: missing:forward_reload_M6,passed_set",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "endpoint_hash_changed",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: identity",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "training_incomplete",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: failed:training_complete,passed_set",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    },
+    {
+      "name": "evaluation_remote_not_synced",
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "rejection": "admission rejected: remote_lock",
+      "loader_constructions": 0,
+      "evaluation_or_training_calls": 0
+    }
+  ],
+  "all_passed": true
+}

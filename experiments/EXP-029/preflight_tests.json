@@ -1,0 +1,487 @@
+{
+  "status": "PASSED",
+  "tests": [
+    {
+      "id": "data_split",
+      "target_group": "BOTH",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "fixed hashes and disjoint train/validation/old diagnostic",
+      "observed_result": {
+        "train_count": 45000,
+        "validation_count": 4500,
+        "D_grad_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+        "train_file_only": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "temporal_real",
+      "target_group": "B0/P0",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "real timestep R127/R128/R129 normalized <=1e-5 and kept spikes elementwise equal",
+      "observed_result": {
+        "R127": 2.7637570965315355e-07,
+        "R128": 4.4131068800184445e-07,
+        "R129": 6.803739994966495e-07,
+        "spike_mismatch": 0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "weight_nondegenerate",
+      "target_group": "B0/P0",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "finite nonnegative d; w in [.5,2.5], per-sample mean=1; >=10% nonuniform, shifted differs",
+      "observed_result": {
+        "samples": 512,
+        "nonuniform_fraction": 1.0,
+        "shift_different_elements": 2037,
+        "zero_damage_fraction": 0.0,
+        "positive_damage_timesteps": 1875,
+        "weight_min": 0.5,
+        "weight_max": 2.5,
+        "max_mean_deviation": 1.1920928955078125e-07,
+        "teacher_time_accuracies": [
+          0.810546875,
+          0.99609375,
+          0.9921875,
+          0.986328125
+        ],
+        "teacher_mean_accuracy": 1.0,
+        "P0_timestep_prediction_differences": 94,
+        "tolerance": 1e-05
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "formula_independent",
+      "target_group": "ALL",
+      "input_ids_sha256": "14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7",
+      "actual_sample_count": 3,
+      "expected_sample_count": 3,
+      "assertion": "hand cases, 2+1, zero identical KD and independent FP64 KL within fixed tolerances",
+      "observed_result": {
+        "true_2plus1_normalized_error": 0.0,
+        "zero_damage": true,
+        "single_damage": true,
+        "equal_damage": true,
+        "teacher_wrong_zero": true,
+        "rho0_uniform": true,
+        "shift_multiset": true,
+        "equal_logits_KD": 0.0,
+        "independent_numpy_FP64_KD_abs_errors": {
+          "K1": 9.346905013030149e-07,
+          "K2": 8.413228375081516e-07,
+          "K3": 8.413228375081516e-07,
+          "M6": 8.413228375081516e-07
+        },
+        "configured_fp32_abs_tolerance": 1e-05
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "candidate_K0",
+      "target_group": "K0",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 0.0,
+        "total": 0.46462953090667725,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.07820912497118115
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_K1",
+      "target_group": "K1",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 5.344894886016846,
+        "total": 3.1370768547058105,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.1437305249273777
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_K2",
+      "target_group": "K2",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 5.078904151916504,
+        "total": 3.0040817260742188,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.14429666986688972
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_K3",
+      "target_group": "K3",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 4.7087249755859375,
+        "total": 2.8189921379089355,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.2133858921006322
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_M6",
+      "target_group": "M6",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 5.849294185638428,
+        "total": 3.3892765045166016,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.21345984190702438
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "teacher_P0_protected",
+      "target_group": "B0/P0",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "actual B0/P0 state and grad unchanged during five temporary candidate updates",
+      "observed_result": {
+        "state_equal": true,
+        "frozen_students": true,
+        "thresholds_fixed": true,
+        "manual_penalty_calls": 0,
+        "candidate_recovery": {
+          "K0": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "ab9c4675ee02d37a952000a7cc0457e2bce672c126cdc562a54c2cbafcec2e11",
+            "optimizer_entries": 2
+          },
+          "K1": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "139735f318d70cb75889578aea02735df07beceaa69263892cb1f8b808914515",
+            "optimizer_entries": 2
+          },
+          "K2": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "a9f3b782eb3ecd9d45179d1f020985acd00c8e6c170b31412897d27a6cebc439",
+            "optimizer_entries": 2
+          },
+          "K3": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "bc753ea089d39fb77873bacf2ed0ceb1ee95411ec6e4a8da4f3d6172306dffbe",
+            "optimizer_entries": 2
+          },
+          "M6": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "a52a94f82292135b4cd8c436fd327e28f6b362170d939293a278f4351dbe9271",
+            "optimizer_entries": 2
+          }
+        }
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "resource_benchmark",
+      "target_group": "ALL",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "conservative one-batch extrapolation fits remaining GPU process-wall budget",
+      "observed_result": {
+        "batch_seconds": {
+          "K0": 0.07820912497118115,
+          "K1": 0.1437305249273777,
+          "K2": 0.14429666986688972,
+          "K3": 0.2133858921006322,
+          "M6": 0.21345984190702438
+        },
+        "cold_first_batch_seconds": {
+          "K0": 3.6979584260843694,
+          "K1": 0.14491462614387274,
+          "K2": 0.14515899308025837,
+          "K3": 0.21371379285119474,
+          "M6": 0.21372281713411212
+        },
+        "steady_three_batch_seconds": {
+          "K0": [
+            0.07820912497118115,
+            0.07302172598429024,
+            0.07265975698828697
+          ],
+          "K1": [
+            0.14282814599573612,
+            0.14345766697078943,
+            0.1437305249273777
+          ],
+          "K2": [
+            0.1440898049622774,
+            0.14429666986688972,
+            0.14386329893022776
+          ],
+          "K3": [
+            0.2130002600606531,
+            0.21332365088164806,
+            0.2133858921006322
+          ],
+          "M6": [
+            0.21335797500796616,
+            0.2134319068863988,
+            0.21345984190702438
+          ]
+        },
+        "estimated_total_training_and_evaluation_seconds": 893.946797051467,
+        "remaining_process_wall_at_check": 1756.9948522278573,
+        "method": "maximum of three additional real temporary-model steady batches per group times 875 plus 200 seconds; initial compilation separately recorded; estimate only",
+        "fits": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "entry_negative_tests",
+      "target_group": "ALL",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "actual guarded entry rejects all ten negative inputs before loader or action",
+      "observed_result": {
+        "tests": [
+          {
+            "name": "missing_group_preflight",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: missing:candidate_K3,passed_set",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "teacher_or_P0_hash_changed",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: identity",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "optimizer_scope_wrong",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: scope:candidate_K0",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "kd_configuration_changed",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: config",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "training_remote_not_synced",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: remote_lock",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "missing_endpoint_identity",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: missing:endpoint_M6,passed_set",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "missing_forward_equivalence",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: missing:forward_reload_M6,passed_set",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "endpoint_hash_changed",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: identity",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "training_incomplete",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: failed:training_complete,passed_set",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          },
+          {
+            "name": "evaluation_remote_not_synced",
+            "status": "PASSED",
+            "actual_exit_code": 0,
+            "rejection": "admission rejected: remote_lock",
+            "loader_constructions": 0,
+            "evaluation_or_training_calls": 0
+          }
+        ]
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+PREFLIGHT_COMPLETED {"samples": 512, "nonuniform_fraction": 1.0, "shift_different_elements": 2037, "zero_damage_fraction": 0.0, "positive_damage_timesteps": 1875, "weight_min": 0.5, "weight_max": 2.5, "max_mean_deviation": 1.1920928955078125e-07, "teacher_time_accuracies": [0.810546875, 0.99609375, 0.9921875, 0.986328125], "teacher_mean_accuracy": 1.0, "P0_timestep_prediction_differences": 94, "tolerance": 1e-05}

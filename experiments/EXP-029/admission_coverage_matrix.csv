@@ -1,0 +1,13 @@
+id,target_group,input_ids_sha256,actual_sample_count,expected_sample_count,assertion,status,actual_exit_code
+data_split,BOTH,93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8,512,512,fixed hashes and disjoint train/validation/old diagnostic,PASSED,0
+temporal_real,B0/P0,93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8,512,512,real timestep R127/R128/R129 normalized <=1e-5 and kept spikes elementwise equal,PASSED,0
+weight_nondegenerate,B0/P0,93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8,512,512,"finite nonnegative d; w in [.5,2.5], per-sample mean=1; >=10% nonuniform, shifted differs",PASSED,0
+formula_independent,ALL,14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7,3,3,"hand cases, 2+1, zero identical KD and independent FP64 KL within fixed tolerances",PASSED,0
+candidate_K0,K0,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,"temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",PASSED,0
+candidate_K1,K1,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,"temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",PASSED,0
+candidate_K2,K2,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,"temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",PASSED,0
+candidate_K3,K3,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,"temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",PASSED,0
+candidate_M6,M6,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,"temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",PASSED,0
+teacher_P0_protected,B0/P0,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,actual B0/P0 state and grad unchanged during five temporary candidate updates,PASSED,0
+resource_benchmark,ALL,d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213,256,256,conservative one-batch extrapolation fits remaining GPU process-wall budget,PASSED,0
+entry_negative_tests,ALL,4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945,0,0,actual guarded entry rejects all ten negative inputs before loader or action,PASSED,0
