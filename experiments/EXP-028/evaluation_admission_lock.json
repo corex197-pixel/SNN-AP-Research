@@ -1,0 +1,154 @@
+{
+  "kind": "evaluation",
+  "identities": {
+    "parent_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "B0_sha256": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+    "F0_sha256": "4171330df3f3a2ab0e98d5a9930128593f1bcfffd7c86f827996b37edede11ea",
+    "F1_sha256": "c452e93467ac5952cc2e03196b8c2a6c1e4976167c3295fcb29fc2020c675f51"
+  },
+  "config_sha256": "d7668efc56d973dfc15b74d36d5a2f40c5f3df13f6670aadd66cf42f2c259b2f",
+  "code_sha": "7a72c4d574f9d6b69de5de76a110f3ddc9ded919",
+  "training_lock_sha256": "f13732f1b8b44588bfdb408edad348ff178ac1483a6f40e6455d52f7c9b6c057",
+  "epoch_metrics_sha256": "fd4bbdac9a622280689d3b31e1d747eecf633c9ab73e100fca8b43807a1e8738",
+  "sample_audit_sha256": "344d2b2737ab01d6bdc2da38d3de752bd0d6f3cf0e0e92af36ecfad8cb9e42ee",
+  "required_tests": [
+    "F0_endpoint_identity",
+    "F0_endpoint_integrity",
+    "F1_endpoint_identity",
+    "F1_endpoint_integrity",
+    "fixed_reference_identity",
+    "paired_epoch_and_sample_protocol"
+  ],
+  "passed_tests": [
+    "F0_endpoint_identity",
+    "F0_endpoint_integrity",
+    "F1_endpoint_identity",
+    "F1_endpoint_integrity",
+    "fixed_reference_identity",
+    "paired_epoch_and_sample_protocol"
+  ],
+  "tests": [
+    {
+      "test_id": "F0_endpoint_identity",
+      "target_group": "F0",
+      "input_ids_sha256": "14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7",
+      "actual_sample_count": 3,
+      "expected_sample_count": 3,
+      "assertion": "actual epoch5 checkpoint hash, state and repeated reset forwards",
+      "observed_result": {
+        "sha256": "4171330df3f3a2ab0e98d5a9930128593f1bcfffd7c86f827996b37edede11ea",
+        "epoch": 5,
+        "repeat_logits_equal": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "F0_endpoint_integrity",
+      "target_group": "F0",
+      "input_ids_sha256": "14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7",
+      "actual_sample_count": 3,
+      "expected_sample_count": 3,
+      "assertion": "all parameters finite, original thresholds and physical structure fixed",
+      "observed_result": {
+        "parameters": 11399524,
+        "thresholds_equal": true,
+        "finite": true,
+        "manual_calls": 0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "F1_endpoint_identity",
+      "target_group": "F1",
+      "input_ids_sha256": "14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7",
+      "actual_sample_count": 3,
+      "expected_sample_count": 3,
+      "assertion": "actual epoch5 checkpoint hash, state and repeated reset forwards",
+      "observed_result": {
+        "sha256": "c452e93467ac5952cc2e03196b8c2a6c1e4976167c3295fcb29fc2020c675f51",
+        "epoch": 5,
+        "repeat_logits_equal": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "F1_endpoint_integrity",
+      "target_group": "F1",
+      "input_ids_sha256": "14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7",
+      "actual_sample_count": 3,
+      "expected_sample_count": 3,
+      "assertion": "all parameters finite, original thresholds and physical structure fixed",
+      "observed_result": {
+        "parameters": 11399524,
+        "thresholds_equal": true,
+        "finite": true,
+        "manual_calls": 0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "paired_epoch_and_sample_protocol",
+      "target_group": "BOTH",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "two complete five epoch groups, matched sample orders, F0 full freeze and 875 attempts each",
+      "observed_result": {
+        "epochs": {
+          "F0": 5,
+          "F1": 5
+        },
+        "matched_samples": true,
+        "F0_frozen_epochs": {
+          "1": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "2": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "3": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "4": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "5": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          }
+        },
+        "manual_calls": 0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "fixed_reference_identity",
+      "target_group": "BOTH",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "P0 and B0 immutable and unchanged config",
+      "observed_result": {
+        "P0": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+        "B0": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+        "config_sha": "d7668efc56d973dfc15b74d36d5a2f40c5f3df13f6670aadd66cf42f2c259b2f"
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    }
+  ]
+}

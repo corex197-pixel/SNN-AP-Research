@@ -1,0 +1,24 @@
+{
+  "F0": {
+    "path": "/home/hym/keyan1/experiments/EXP-028/models/F0/epoch-005-inference.pth",
+    "sha256": "4171330df3f3a2ab0e98d5a9930128593f1bcfffd7c86f827996b37edede11ea",
+    "bytes": 45643978,
+    "recovery_path": "/home/hym/keyan1/experiments/EXP-028/models/F0/epoch-005-recovery.pth",
+    "recovery_sha256": "38948a7ae3726e5e61b2e032c7c08606039e69a46a7f28dac72554e7206c013e",
+    "parent_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "epochs": 5,
+    "success": 875,
+    "amp_skips": 0
+  },
+  "F1": {
+    "path": "/home/hym/keyan1/experiments/EXP-028/models/F1/epoch-005-inference.pth",
+    "sha256": "c452e93467ac5952cc2e03196b8c2a6c1e4976167c3295fcb29fc2020c675f51",
+    "bytes": 45643978,
+    "recovery_path": "/home/hym/keyan1/experiments/EXP-028/models/F1/epoch-005-recovery.pth",
+    "recovery_sha256": "9f8ebcac1279d609bfc3a2741509c6d534c210f55a1ed9318d38a8f849d694bc",
+    "parent_sha256": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+    "epochs": 5,
+    "success": 875,
+    "amp_skips": 0
+  }
+}
