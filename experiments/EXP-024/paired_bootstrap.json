@@ -1,0 +1,88 @@
+{
+  "rng": "numpy.default_rng PCG64",
+  "seed": 20261128,
+  "resamples": 2000,
+  "method": "percentile",
+  "comparisons": {
+    "M5-S1": {
+      "accuracy_delta_pp": -0.35555555555555557,
+      "accuracy_ci95_pp": [
+        -0.7561111111111112,
+        0.044444444444444446
+      ],
+      "CE_delta": 0.005530843677836138,
+      "CE_ci95": [
+        0.00025160227897862673,
+        0.01118395580599459
+      ],
+      "reference_wrong_M5_right": 37,
+      "reference_right_M5_wrong": 53,
+      "prediction_disagree": 97,
+      "per_sample_SOP": "NA_not_collected"
+    },
+    "M5-S2": {
+      "accuracy_delta_pp": 0.24444444444444444,
+      "accuracy_ci95_pp": [
+        -0.24499999999999994,
+        0.7111111111111111
+      ],
+      "CE_delta": -0.0002654478082227298,
+      "CE_ci95": [
+        -0.007593530681308894,
+        0.007335502198536541
+      ],
+      "reference_wrong_M5_right": 71,
+      "reference_right_M5_wrong": 60,
+      "prediction_disagree": 145,
+      "per_sample_SOP": "NA_not_collected"
+    },
+    "M5-S3": {
+      "accuracy_delta_pp": 6.311111111111112,
+      "accuracy_ci95_pp": [
+        5.466666666666667,
+        7.111111111111111
+      ],
+      "CE_delta": -0.21196784800440294,
+      "CE_ci95": [
+        -0.2337766431302411,
+        -0.1914529155528647
+      ],
+      "reference_wrong_M5_right": 335,
+      "reference_right_M5_wrong": 51,
+      "prediction_disagree": 442,
+      "per_sample_SOP": "NA_not_collected"
+    },
+    "M5-B0": {
+      "accuracy_delta_pp": -0.24444444444444444,
+      "accuracy_ci95_pp": [
+        -0.6444444444444445,
+        0.15555555555555556
+      ],
+      "CE_delta": 0.0029911649168176476,
+      "CE_ci95": [
+        -0.0033486058562469685,
+        0.00896626234610447
+      ],
+      "reference_wrong_M5_right": 38,
+      "reference_right_M5_wrong": 49,
+      "prediction_disagree": 92,
+      "per_sample_SOP": "NA_not_collected"
+    },
+    "M5-S0": {
+      "accuracy_delta_pp": -0.13333333333333333,
+      "accuracy_ci95_pp": [
+        -0.5777777777777777,
+        0.35555555555555557
+      ],
+      "CE_delta": 0.0037994391458230185,
+      "CE_ci95": [
+        -0.0030246075146262864,
+        0.010900659118327338
+      ],
+      "reference_wrong_M5_right": 54,
+      "reference_right_M5_wrong": 60,
+      "prediction_disagree": 129,
+      "per_sample_SOP": "NA_not_collected"
+    }
+  }
+}

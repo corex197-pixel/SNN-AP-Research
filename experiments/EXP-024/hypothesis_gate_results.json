@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "all_admission_checks": true,
+    "physical_parameters_drop_ge_20pct": true,
+    "M5_accuracy_drop_B0_le_0_5pp": true,
+    "M5_accuracy_gain_S1_ge_0_3pp": false,
+    "M5_accuracy_gain_S2_ge_0_3pp": false,
+    "M5_accuracy_gain_S3_ge_0_3pp": true,
+    "M5_SOP_at_most_B0_101pct": true,
+    "equal_pruned_parameter_budget": true,
+    "samples_and_data_isolation": true
+  },
+  "progression_passed": false,
+  "H024_scientific_status": "UNTESTED_pending_theory_review",
+  "H025_scientific_status": "UNTESTED_pending_theory_review"
+}

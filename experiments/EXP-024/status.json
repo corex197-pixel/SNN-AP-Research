@@ -1,15 +1,13 @@
 {
-  "status": "PARTIAL",
-  "run_id": "EXP-024-RUN-001",
-  "code_sha": "70d8ba891ae82635bc459f5289884e51e337a772",
+  "status": "COMPLETED",
+  "run_id": "EXP-024-RUN-002",
+  "code_sha": "c494b5876de2dc1e0beb62c32137a0be63f4d19a",
   "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae",
-  "start_unix": 1795859635.4330544,
-  "phase": "admission",
-  "wall_seconds": 6.664348840713501,
-  "cpu_seconds": 7.071237,
-  "error": "AssertionError('admission failed readout_zero_set')",
-  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-022/run.py\", line 137, in <module>\n    try:status['status']=main()\n                         ^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-022/run.py\", line 114, in main\n    guard();assert torch.cuda.device_count()==1 and '4090' in torch.cuda.get_device_name();torch.set_num_threads(2);torch.manual_seed(20261128);np.random.seed(20261128);random.seed(20261128);spl=data_audit();m=K.model();dump('parent_checkpoint_audit.json',{'before':sha(C['parent_path']),'expected':C['parent_sha256']});architecture(m);a,b=preflight(m)\n                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-022/run.py\", line 57, in preflight\n    torch.set_num_threads(2);ids=S['D_grad'][:32];dl=loader(ids);x,y,sid=next(iter(dl));assert sid.tolist()==ids;x=x.cuda();y=y.cuda();z,sp=fetch(m,x,True);z0,_=fetch(m,x,False);check('capture_switch',torch.equal(z,z0),{'sample_ids':ids,'batch_sizes':[32]},'capture on/off exact logits',{'max_abs_logit_diff':float((z-z0).abs().max())});assert sp.shape==(4,32,2048,1,1) and bool(((sp==0)|(sp==1)).all());rate=sp[:,:, :,0,0].double().mean(0);a,b=esc.readout(m);rr=esc.reconstruct(rate,a,b);err=normerr(rr,z);check('readout_zero_set',err<=1e-5,{'sample_ids':ids,'batch_sizes':[32],'hidden_shape':list(sp.shape)},'R103 relative infinity error <= 1e-5',{'normalized_error':err,'bias_present':m.fc2.bias is not None});predok=torch.equal(rr.argmax(1),z.argmax(1));cediff=abs(F.cross_entropy(rr,y).item()-F.cross_entropy(z.double(),y).item());check('prediction_CE',predok and cediff<=1e-5,{'sample_ids':ids,'batch_sizes':[32]},'reconstructed prediction equality and CE error <=1e-5',{'predictions_equal':predok,'absolute_CE_error':cediff})\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-022/run.py\", line 27, in check\n    if not passed:raise AssertionError('admission failed '+name)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: admission failed readout_zero_set\n",
-  "end_unix": 1795859642.0974028,
-  "peak_allocated_bytes": 718787072,
-  "peak_reserved_bytes": 905969664
+  "start_unix": 1795859756.944006,
+  "phase": "evaluation",
+  "wall_seconds": 113.07134699821472,
+  "cpu_seconds": 127.86313900000002,
+  "end_unix": 1795859863.3510008,
+  "peak_allocated_bytes": 5643644928,
+  "peak_reserved_bytes": 9862905856
 }

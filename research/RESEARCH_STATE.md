@@ -123,3 +123,5 @@ ROUND-022 DEC-022 STOP + PIVOT: stop fixed-layer SEAWP allocation; retain contro
 ROUND-022 EXP-024 delivery: PARTIAL; admission RUNNING; progression NA. H-024/H-025 UNTESTED pending researcher review. EXP-023 admission deviation remains preserved. See ../experiments/EXP-024/REPORT.md.
 
 EXP-024-RUN-001 PARTIAL: R103 error 1.74997e-5 exceeded 1e-5; no selection or validation. Preserved run; RUN-002 checks strict FP32 by disabling TF32, retains tolerance and counts previous budget.
+
+ROUND-022 EXP-024 delivery: COMPLETED; admission PASSED; progression False. H-024/H-025 UNTESTED pending researcher review. EXP-023 admission deviation remains preserved. See ../experiments/EXP-024/REPORT.md.

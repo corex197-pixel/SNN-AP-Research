@@ -1,0 +1,10 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+selection locked ec26e79291b67f44d0fabdd2e3127963d79b9a1d
+completed group B0 0.9422222222222222 86009551.08977778
+completed group S0 0.9411111111111111 82163586.0128889
+completed group S1 0.9433333333333334 82181961.79888889
+completed group S2 0.9373333333333334 82187301.31133333
+completed group S3 0.8766666666666667 82157550.97866666
+completed group M5 0.9397777777777778 82170465.47622222
+{"status": "COMPLETED", "run_id": "EXP-024-RUN-002", "code_sha": "c494b5876de2dc1e0beb62c32137a0be63f4d19a", "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae", "start_unix": 1795859756.944006, "phase": "evaluation", "wall_seconds": 113.07134699821472, "cpu_seconds": 127.86313900000002, "end_unix": 1795859863.3510008, "peak_allocated_bytes": 5643644928, "peak_reserved_bytes": 9862905856}
