@@ -1,0 +1,1 @@
+Planned: existing ROUND-014 independent venv; Python/PyTorch/CuPy as in EXP-024 RUN-002; strict FP32 no TF32; one RTX4090 by UUID. Exact runtime to be recorded when launched.
