@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "parent_data_formula_and_reconstruction": true,
+    "G1_q_fixed_0_04": true,
+    "calibration_match_within_0_1pp": true,
+    "all_calibration_reductions_4_to_6pct": true,
+    "G1_validation_reduction_4_to_6pct": true,
+    "validation_match_within_1pp": true,
+    "G1_accuracy_drop_vs_B0_at_most_0_5pp": true,
+    "G1_accuracy_advantage_G0_at_least_0_3pp": false,
+    "G1_accuracy_advantage_G2_at_least_0_3pp": true,
+    "weights_masks_bn_non_targets_unchanged": true
+  },
+  "progression_gate_passed": false,
+  "H019": "SUPPORTED_scoped_prior_theory_decision",
+  "H017": "INSUFFICIENT_EVIDENCE_pending_theory_review",
+  "prior_EXP020_gate_remains_failed": true
+}

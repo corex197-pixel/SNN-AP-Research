@@ -1,0 +1,14 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+measured G0 0.0 86348901.18554688
+measured G1 0.04 82539922.0390625
+measured G0 0.04 83025861.84960938
+measured G0 0.08 79465899.18164062
+measured G0 0.04546005512832126 82534622.17382812
+locked candidate G0 0.04546005512832126
+measured G2 0.04 83109661.38671875
+measured G2 0.08 79667880.5625
+measured G2 0.04662144833450371 82574018.04101562
+locked candidate G2 0.04662144833450371
+selection lock committed 3881b0ca0db48aa3f3526ef531f760d6842a625e
+{"status": "COMPLETED", "run_id": "EXP-021-RUN-001", "code_sha": "912655152ed612e8542e79d2044336f1e16c2c3b", "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae", "start_unix": 1795845698.2299275, "phase": "validation", "wall_seconds": 54.55055212974548, "cpu_seconds": 67.29580000000001, "end_unix": 1795845752.7804792}

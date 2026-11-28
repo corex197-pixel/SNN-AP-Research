@@ -1,0 +1,98 @@
+{
+  "seed": 20261128,
+  "resamples": 2000,
+  "rng": "numpy.default_rng PCG64",
+  "interval": "percentile",
+  "comparisons": {
+    "G1-G0": {
+      "status": "COMPLETED",
+      "accuracy_delta_pp": -0.044444444444444446,
+      "accuracy_delta_ci95_pp": [
+        -0.4888888888888889,
+        0.4227777777777747
+      ],
+      "CE_delta": -0.004945099167752763,
+      "CE_delta_ci95": [
+        -0.013591332584099542,
+        0.004032630454181975
+      ],
+      "reference_wrong_experiment_right": 56,
+      "reference_right_experiment_wrong": 58,
+      "prediction_disagree": 130,
+      "SOP_delta": -1914.0984444469213,
+      "per_sample_sop": "NA_not_collected"
+    },
+    "G1-G2": {
+      "status": "COMPLETED",
+      "accuracy_delta_pp": 0.5333333333333333,
+      "accuracy_delta_ci95_pp": [
+        0.06666666666666667,
+        1.0222222222222224
+      ],
+      "CE_delta": -0.013653556390607105,
+      "CE_delta_ci95": [
+        -0.02376092426231571,
+        -0.004216950009955661
+      ],
+      "reference_wrong_experiment_right": 68,
+      "reference_right_experiment_wrong": 44,
+      "prediction_disagree": 130,
+      "SOP_delta": -36254.567333340645,
+      "per_sample_sop": "NA_not_collected"
+    },
+    "G1-B0": {
+      "status": "COMPLETED",
+      "accuracy_delta_pp": 0.044444444444444446,
+      "accuracy_delta_ci95_pp": [
+        -0.4444444444444444,
+        0.5333333333333333
+      ],
+      "CE_delta": 0.0027616934595855536,
+      "CE_delta_ci95": [
+        -0.008143265507695467,
+        0.013869281820331845
+      ],
+      "reference_wrong_experiment_right": 67,
+      "reference_right_experiment_wrong": 65,
+      "prediction_disagree": 147,
+      "SOP_delta": -3847684.545555562,
+      "per_sample_sop": "NA_not_collected"
+    },
+    "G0-B0": {
+      "status": "COMPLETED",
+      "accuracy_delta_pp": 0.08888888888888889,
+      "accuracy_delta_ci95_pp": [
+        -0.42222222222222217,
+        0.6
+      ],
+      "CE_delta": 0.007706792627338316,
+      "CE_delta_ci95": [
+        -0.002573848845218106,
+        0.01787312385441709
+      ],
+      "reference_wrong_experiment_right": 66,
+      "reference_right_experiment_wrong": 62,
+      "prediction_disagree": 149,
+      "SOP_delta": -3845770.447111115,
+      "per_sample_sop": "NA_not_collected"
+    },
+    "G2-B0": {
+      "status": "COMPLETED",
+      "accuracy_delta_pp": -0.4888888888888889,
+      "accuracy_delta_ci95_pp": [
+        -0.9783333333333333,
+        0.022222222222222223
+      ],
+      "CE_delta": 0.01641524985019266,
+      "CE_delta_ci95": [
+        0.00635618945203305,
+        0.026376643274370778
+      ],
+      "reference_wrong_experiment_right": 58,
+      "reference_right_experiment_wrong": 80,
+      "prediction_disagree": 162,
+      "SOP_delta": -3811429.978222221,
+      "per_sample_sop": "NA_not_collected"
+    }
+  }
+}

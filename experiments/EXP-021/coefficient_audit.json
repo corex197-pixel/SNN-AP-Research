@@ -1,0 +1,116 @@
+{
+  "status": "PASSED",
+  "fanout_and_coefficients_identical": true,
+  "saved_permutation_identical": true,
+  "gradient_statistics_errors": [
+    {
+      "bn": "static_conv.norm",
+      "group": "G0",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G0",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G0",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G1",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G1",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G1",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G2",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G2",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G2",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G0",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G0",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G0",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G1",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G1",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G1",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G2",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G2",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G2",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    }
+  ],
+  "elementwise_gradient_comparison_possible": false
+}

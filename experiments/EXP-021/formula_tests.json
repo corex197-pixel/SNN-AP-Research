@@ -1,0 +1,25 @@
+{
+  "synthetic": {
+    "status": "PASSED",
+    "rho0": true,
+    "uniform": true,
+    "zero_mean_fallback": true,
+    "finite_nonnegative_mean_one": true,
+    "permutation_multiset": true,
+    "R78": true,
+    "R79": true
+  },
+  "real_R78": [
+    {
+      "bn": "static_conv.norm",
+      "R78_relative_error": 3.8100639042552406e-08,
+      "passed": true
+    },
+    {
+      "bn": "conv1.norm",
+      "R78_relative_error": 1.0179778302949832e-07,
+      "passed": true
+    }
+  ],
+  "status": "PASSED"
+}

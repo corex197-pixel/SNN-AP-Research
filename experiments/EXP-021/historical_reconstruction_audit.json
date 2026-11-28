@@ -1,0 +1,184 @@
+{
+  "status": "PASSED",
+  "calibration_comparison": [
+    {
+      "group": "B0",
+      "metric": "accuracy",
+      "old": 0.99609375,
+      "now": 0.99609375,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "B0",
+      "metric": "ce",
+      "old": 0.01414713598205708,
+      "now": 0.01414713598205708,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "B0",
+      "metric": "SOP_sample_weighted",
+      "old": 86348901.18554688,
+      "now": 86348901.18554688,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "B0",
+      "metric": "target_sops",
+      "old": 34006691.125,
+      "now": 34006691.125,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "G1",
+      "metric": "accuracy",
+      "old": 0.994140625,
+      "now": 0.994140625,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "G1",
+      "metric": "ce",
+      "old": 0.022616284899413586,
+      "now": 0.022616284899413586,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "G1",
+      "metric": "SOP_sample_weighted",
+      "old": 82539922.0390625,
+      "now": 82539922.0390625,
+      "normalized_error": 0.0
+    },
+    {
+      "group": "G1",
+      "metric": "target_sops",
+      "old": 30175088.375,
+      "now": 30175088.375,
+      "normalized_error": 0.0
+    }
+  ],
+  "gradient_statistics": [
+    {
+      "bn": "static_conv.norm",
+      "group": "G0",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G0",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G0",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G1",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G1",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G1",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G2",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G2",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "G2",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G0",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G0",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G0",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G1",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G1",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G1",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G2",
+      "metric": "raw_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G2",
+      "metric": "matched_norm",
+      "normalized_error": 0.0
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "G2",
+      "metric": "cosine_g0",
+      "normalized_error": 0.0
+    }
+  ],
+  "limitation": "EXP-020 did not save full gradient tensors; elementwise identity to history cannot be asserted",
+  "validation_comparison": {
+    "B0": {
+      "prediction_mismatches": 0,
+      "max_absolute_ce_difference": 0.0,
+      "relative_SOP_difference": 0.0
+    },
+    "G1": {
+      "prediction_mismatches": 0,
+      "max_absolute_ce_difference": 0.0,
+      "relative_SOP_difference": 0.0
+    }
+  }
+}

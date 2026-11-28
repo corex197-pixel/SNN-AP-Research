@@ -102,3 +102,5 @@ ROUND-018 EXP-020 COMPLETED: q=.02 H-019 direction passed; G1 matched q=.04, G0/
 
 
 ROUND-019 DEC-019 REFINE + CONTINUE; EXP-020 COMPLETED with original progression gate failed; EXP-021 PLANNED with fixed G1 q=.04, finite G0/G2 cost-only matching and locked validation. H-019 SUPPORTED scoped; H-017 INSUFFICIENT_EVIDENCE, training impact untested.
+
+ROUND-019 EXP-021 COMPLETED. Budget matching succeeded; G1−G0 accuracy −0.04444 pp (gate fails), G1−G2 +0.53333 pp (gate passes). Overall progression failed; H-017 INSUFFICIENT_EVIDENCE pending theory review, H-019 scoped SUPPORTED per theory decision. EXP-020 original gate remains failed. See ../experiments/EXP-021/REPORT.md.

@@ -1,4 +1,11 @@
 {
-  "status": "PLANNED",
-  "run_id": "EXP-021-RUN-001"
+  "status": "COMPLETED",
+  "run_id": "EXP-021-RUN-001",
+  "code_sha": "912655152ed612e8542e79d2044336f1e16c2c3b",
+  "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae",
+  "start_unix": 1795845698.2299275,
+  "phase": "validation",
+  "wall_seconds": 54.55055212974548,
+  "cpu_seconds": 67.29580000000001,
+  "end_unix": 1795845752.7804792
 }

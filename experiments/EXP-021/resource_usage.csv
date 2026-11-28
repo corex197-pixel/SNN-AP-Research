@@ -1,0 +1,3 @@
+run_id,gpu_uuid,wall_seconds,cpu_seconds,gpu_limit_seconds,cpu_limit_seconds,notes
+EXP-021-RUN-001,GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae,54.55055212974548,67.29580000000001,900,1800,"conservative run wall; includes selection commit, excludes reporting, may omit short-lived subprocesses"
+EXP-021-CPU-DELIVERY,NA,NA,2.162045032,900,1800,measured Python process CPU for reporting/plots; excludes imports and other shell overhead
