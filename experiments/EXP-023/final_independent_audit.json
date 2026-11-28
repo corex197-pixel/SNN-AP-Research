@@ -1,0 +1,55 @@
+{
+  "W0_history_metric_fields": [
+    "learning_rate",
+    "train_loss",
+    "train_accuracy",
+    "validation_accuracy",
+    "validation_loss",
+    "FR_sample_weighted",
+    "SOP_sample_weighted",
+    "all_sparse_weight_sparsity",
+    "cumulative_successful_steps",
+    "cumulative_amp_skips",
+    "cumulative_manual_updates"
+  ],
+  "W0_all_10_epochs_match_EXP018": true,
+  "W0_history_differences": [],
+  "three_group_sampler_order_and_dropped_equal_all_epochs": true,
+  "epoch_rows": 30,
+  "unique_group_epoch": 30,
+  "learning_rates_match_all": true,
+  "topology_identity_all": true,
+  "topology_rows": 48,
+  "sop_reconstruction_max_relative_error": 3.796894880268762e-08,
+  "sop_reconstruction_count": 56,
+  "Khat_group_sums": {
+    "W0": 3601.0,
+    "W1": 3601.0,
+    "W2": 3600.9999999999995
+  },
+  "checkpoint_110": [
+    {
+      "group": "W0",
+      "path": "/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W0/epoch-110.pth",
+      "expected_sha256": "8d45ebb789922c8b0a500b1c05f4d6538b3206ff74e4bc71d1146a1b7d8ac8ae",
+      "actual_sha256": "8d45ebb789922c8b0a500b1c05f4d6538b3206ff74e4bc71d1146a1b7d8ac8ae",
+      "match": true
+    },
+    {
+      "group": "W1",
+      "path": "/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W1/epoch-110.pth",
+      "expected_sha256": "8da24c28121b899f51678fccd19bd97d371da10de60f485d177a5c8d46e0483a",
+      "actual_sha256": "8da24c28121b899f51678fccd19bd97d371da10de60f485d177a5c8d46e0483a",
+      "match": true
+    },
+    {
+      "group": "W2",
+      "path": "/home/hym/keyan1/experiments/EXP-023/runs/EXP-023-RUN-001/W2/epoch-110.pth",
+      "expected_sha256": "1bd01295c0124c1a75d5fe37aa82d177eedb8bc618b2a03185e87ed94a8b4857",
+      "actual_sha256": "1bd01295c0124c1a75d5fe37aa82d177eedb8bc618b2a03185e87ed94a8b4857",
+      "match": true
+    }
+  ],
+  "validation_sample_rows": 13500,
+  "original_unit_test_note": "The initial purported unequal-batch unit test split 1+1; independent actual 2+1 tail weighting test was added after run and passed."
+}

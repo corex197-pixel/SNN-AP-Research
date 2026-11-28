@@ -6,5 +6,11 @@
   "all_zero_p0": true,
   "R94": true,
   "R95_single_connection": true,
-  "unequal_batch_weighting": true
+  "unequal_batch_weighting": true,
+  "unequal_batch_sizes": [
+    2,
+    1
+  ],
+  "unequal_batch_note": "independent CPU 2+1 tail check with distinct samples and global denominator",
+  "original_test_limitation": "Original unit test used 1+1 batches; a separate post-run 2+1 unequal-tail test has now passed."
 }
