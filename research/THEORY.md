@@ -456,3 +456,6 @@ R113: high-compression fixed hidden-neuron subsets; R114 P(r)=36720484−2048r·
 
 ## v0.3.1 — ROUND-025 R121/R122
 R121: for K=10 and e=z_teacher−z_candidate, mean(e²)=mean((e−mean_class(e))²)+mean(mean_class(e)²); common logit shifts do not affect softmax or CE. This is an exploratory identity, not a new fitting objective. R122: evaluation requires a machine-verifiable candidate-specific lock, including fixed model identities, exact data coverage, assertions and true exit statuses; revalidate it at the actual evaluation entry and reject changes.
+
+## v0.3.2 — ROUND-026 R123–R126
+R123: for unique teacher class c and margin gamma=z[c]−max_{j≠c}z[j], 2||epsilon||∞<gamma is sufficient (not necessary) to preserve the class; not SNN-specific. R124 L_FT=mean_n CE(mean_t z[t,n],y[n]); R125 all original soft thresholds d remain fixed and no manual activity/weight penalty is applied. R126 R_rec=(Acc_FT−Acc_P0)/(Acc_B0−Acc_P0) without clipping; NA if denominator≤0.

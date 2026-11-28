@@ -139,3 +139,5 @@ ROUND-025 DEC-025: EXP-026 remains INVALID and its H-026/H-027 evidence INVALID_
 
 
 ROUND-025 EXP-027 independent execution COMPLETED with candidate-specific admission VALID; fixed 50% H-026 drop gate false, H-027 all-gates false, 75% auxiliary only. H-026/H-027 remain pending theoretical decision. EXP-026 remains INVALID; no retraining/test set/new method. See ../experiments/EXP-027/REPORT.md.
+
+ROUND-026 DEC-026: EXP-026 INVALID and EXP-027 VALID preserved; H-026 CURRENT_EVIDENCE_AGAINST scoped and H-027 CONTRADICTED scoped with D_cal MSE reduction subclaim supported. Fixed-support reconstruction STOPPED; EXP-028 PLANNED conventional F0/F1 finetuning, H-028/H-029 UNTESTED; UniSparse remains Controlled Baseline.

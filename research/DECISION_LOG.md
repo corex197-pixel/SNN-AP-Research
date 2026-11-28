@@ -83,3 +83,6 @@ UniSparse remains Controlled Baseline; prior candidates UNDER_REVIEW; M5 remains
 
 ## DEC-025 — REPAIR + REPLICATE
 EXP-026 remains INVALID permanently; retain all raw exploration and errors. Freeze UniSparse as Controlled Baseline, pause fixed-support reconstruction advancement and independently retest five locked models under EXP-027. No refitting, new method, training or official test set.
+
+## DEC-026 — STOP + IMPLEMENT STRONG BASELINE
+Stop fixed-support least-squares reconstruction. Preserve all evidence, retain UniSparse Controlled Baseline, independently finetune the fixed 75-R1 F0/F1 for at most 5 epochs each as conventional task baselines, with two independently verified locks. No new method or extra search.

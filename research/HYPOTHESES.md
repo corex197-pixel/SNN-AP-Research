@@ -71,3 +71,6 @@ H-026 UNTESTED: 50% R1 accuracy drops ≥1 percentage point versus B0. H-027 UNT
 
 ## ROUND-025 theory decision
 EXP-026 remains INVALID; evidence for H-026/H-027 INVALID_EVIDENCE, preserving prior UNTESTED history. EXP-027 is a new independent engineering replication, with the original 50% primary and 75% secondary gates unchanged; scientific decision remains with the theoretical researcher.
+
+## ROUND-026 theory decision and preregistration
+H-026 CURRENT_EVIDENCE_AGAINST scoped to the 50% condition and >=1pp loss prediction; H-027 CONTRADICTED scoped to fixed-support ridge performance, while D_cal logits MSE decrease subclaim supported. Preserve EXP-026 INVALID and EXP-027 VALID. H-028/H-029 UNTESTED: original fixed 5-epoch F1-versus-P0 and F1-versus-F0 preregistered gates; see ROUND-026-TASK.md.

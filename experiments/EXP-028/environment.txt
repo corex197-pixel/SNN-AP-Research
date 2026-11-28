@@ -1,0 +1,1 @@
+Existing UniSparse environment; one authorized RTX4090; batch 256 AMP training and strict FP32 evaluation. Runtime device and resource details are recorded separately.

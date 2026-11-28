@@ -77,3 +77,6 @@ Fixed U2 epoch300; strict FP32; D_grad selection and fitting, D_cal independent 
 
 ## ROUND-025 EXP-027
 Use five unchanged saved candidates and fixed D_grad/D_cal/validation. First generic preflight; then actual two-pair D_grad elementwise checks, parameter/support/readout and 32-sample parent-gate equivalence; required-set negative tests and pushed admission lock are mandatory before any D_cal/validation loader. R121 is analysis only. No refitting or training. GPU≤600s, CPU≤1800s.
+
+## ROUND-026 EXP-028
+Fixed 75-R1, F0 fc2-only eval features and F1 all parameters train mode, five epochs each, shared epoch-specific training orders/augment seeds, SGD momentum .9 lr .01 cosine 5 epochs, AMP, no manual sparse updates. Separate actual-object training and endpoint evaluation admission locks must be remote-verified. GPU≤1800s CPU≤5400s; 50k original CIFAR train files only, no official test.
