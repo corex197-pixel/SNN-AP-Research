@@ -1,0 +1,399 @@
+{
+  "status": "RUNNING",
+  "tests": [
+    {
+      "name": "ridge_primal_dual",
+      "status": "PASSED",
+      "inputs": {
+        "X": [
+          [
+            1.0,
+            2.0
+          ],
+          [
+            2.0,
+            -1.0
+          ],
+          [
+            0.5,
+            1.0
+          ]
+        ],
+        "e": [
+          1.0,
+          -0.5,
+          0.25
+        ],
+        "lambda": 0.1
+      },
+      "assertion": "max absolute difference < 1e-10",
+      "actual": {
+        "primal": [
+          -0.016923520092179175,
+          0.4378510730231888
+        ],
+        "dual": [
+          -0.01692352009217918,
+          0.4378510730231888
+        ],
+        "error": 3.469446951953614e-18
+      }
+    },
+    {
+      "name": "empty_support",
+      "status": "PASSED",
+      "inputs": {
+        "rate_shape": [
+          3,
+          4
+        ],
+        "mask_shape": [
+          100,
+          2
+        ],
+        "mask": "all zero"
+      },
+      "assertion": "all zero correction and degenerate status",
+      "actual": {
+        "details": [
+          {
+            "class": 0,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.0003024488687515259,
+            "finite": true
+          },
+          {
+            "class": 1,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 9.852205403149128e-05,
+            "finite": true
+          },
+          {
+            "class": 2,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00010914704762399197,
+            "finite": true
+          },
+          {
+            "class": 3,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011875806376338005,
+            "finite": true
+          },
+          {
+            "class": 4,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.0001309760846197605,
+            "finite": true
+          },
+          {
+            "class": 5,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.0001170190516859293,
+            "finite": true
+          },
+          {
+            "class": 6,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011828099377453327,
+            "finite": true
+          },
+          {
+            "class": 7,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011164695024490356,
+            "finite": true
+          },
+          {
+            "class": 8,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.0001077230554074049,
+            "finite": true
+          },
+          {
+            "class": 9,
+            "support_indices": [],
+            "support_size": 0,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 9.568687528371811e-05,
+            "finite": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "zero_input",
+      "status": "PASSED",
+      "inputs": {
+        "rate": "all zero",
+        "mask": "all valid",
+        "shape": [
+          3,
+          4
+        ]
+      },
+      "assertion": "lambda zero and zero correction",
+      "actual": {
+        "details": [
+          {
+            "class": 0,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00012802612036466599,
+            "finite": true
+          },
+          {
+            "class": 1,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011456804350018501,
+            "finite": true
+          },
+          {
+            "class": 2,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011155684478580952,
+            "finite": true
+          },
+          {
+            "class": 3,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00010918406769633293,
+            "finite": true
+          },
+          {
+            "class": 4,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00010996893979609013,
+            "finite": true
+          },
+          {
+            "class": 5,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.0001119531225413084,
+            "finite": true
+          },
+          {
+            "class": 6,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011007208377122879,
+            "finite": true
+          },
+          {
+            "class": 7,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011357897892594337,
+            "finite": true
+          },
+          {
+            "class": 8,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.0001109391450881958,
+            "finite": true
+          },
+          {
+            "class": 9,
+            "support_indices": [
+              0,
+              1
+            ],
+            "support_size": 2,
+            "lambda": 0.0,
+            "form": "degenerate_zero",
+            "normal_equation_relative_residual": 0.0,
+            "solve_seconds": 0.00011069211177527905,
+            "finite": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "nonfinite_detection",
+      "status": "PASSED",
+      "inputs": {
+        "values": [
+          "NaN",
+          "Inf"
+        ]
+      },
+      "assertion": "nonfinite detection triggers",
+      "actual": {
+        "finite": false
+      }
+    },
+    {
+      "name": "soft_threshold_boundaries",
+      "status": "PASSED",
+      "inputs": {
+        "raw": [
+          -2.0,
+          -0.5,
+          0.0,
+          0.5,
+          2.0
+        ],
+        "threshold": 0.5
+      },
+      "assertion": "sign and boundary match",
+      "actual": {
+        "effective": [
+          -1.5,
+          -0.0,
+          0.0,
+          0.0,
+          1.5
+        ]
+      }
+    },
+    {
+      "name": "R116_real_compact",
+      "status": "PASSED",
+      "inputs": {
+        "sample_ids": [
+          33540,
+          8359,
+          6955
+        ],
+        "batch_sizes": [
+          3
+        ],
+        "deleted_count": 1024
+      },
+      "assertion": "deleted contribution vs real full-compact logits <=1e-5",
+      "actual": {
+        "normalized_error": 2.950202095191329e-07
+      }
+    },
+    {
+      "name": "R120_real_mapping",
+      "status": "PASSED",
+      "inputs": {
+        "sample_ids": [
+          33540,
+          8359,
+          6955
+        ],
+        "deleted_count": 1024,
+        "delta_first_supported_per_class": true
+      },
+      "assertion": "boost compensation and logits <=1e-5; no support growth; other state and spikes exact; expected parameter count",
+      "actual": {
+        "boost_max_abs_error": 4.670582717455907e-09,
+        "logit_normalized_error": 2.6465264424042584e-08,
+        "support": {
+          "old_support": 102298,
+          "new_support": 102298,
+          "added": 0,
+          "removed": 0,
+          "old_sha256": "5d2d3c028645162daffe4f5235d340f8a72d3b44eaa86934afba2a8944c468c7",
+          "new_sha256": "dfa3942368a92cad69697fe30d0359046506a632344256f4cc265ff8cad6445d",
+          "effective_l2_change": 0.06204836074916871,
+          "mapping_normalized_error": 1.1641532182693481e-10
+        },
+        "other_state_exact": true,
+        "spikes_equal": true,
+        "parameters": 19839844,
+        "expected": 19839844
+      }
+    }
+  ]
+}

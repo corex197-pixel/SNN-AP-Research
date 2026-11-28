@@ -6,11 +6,11 @@ sys.path[:0]=[str(ROOT/'experiments/ROUND-019'),str(ROOT/'experiments/ROUND-022'
 # Reuse precisely the previously accepted full-network implementation without executing its main.
 src=(ROOT/'experiments/ROUND-022/run.py').read_text().split('def main():')[0]
 exec(compile(src,str(ROOT/'experiments/ROUND-022/run.py'),'exec'),globals())
-E=ROOT/'experiments/EXP-026';K.E=E;K.START=time.time();K.CPU=K.cpu();K.PRIOR_WALL=0.;K.PRIOR_CPU=float(os.environ.get('ROUND024_PRIOR_CPU_RESERVE','60'))
-CODE=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip();status.clear();status.update(status='RUNNING',run_id='EXP-026-RUN-001',phase='admission',code_sha=CODE,start_unix=K.START,gpu_uuid=os.environ.get('CUDA_VISIBLE_DEVICES'))
+E=ROOT/'experiments/EXP-026';K.E=E;K.START=time.time();K.CPU=K.cpu();K.PRIOR_WALL=float(os.environ.get('ROUND024_PRIOR_WALL','0'));K.PRIOR_CPU=float(os.environ.get('ROUND024_PRIOR_CPU_RESERVE','60'))
+CODE=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip();status.clear();status.update(status='RUNNING',run_id=os.environ.get('ROUND024_RUN_ID','EXP-026-RUN-001'),phase='admission',code_sha=CODE,start_unix=K.START,gpu_uuid=os.environ.get('CUDA_VISIBLE_DEVICES'))
 # Conservative bound: whole process wall from launch counts toward GPU budget, including lock push.
 def guard(reserve=60):
- wall=time.time()-K.START;cpu=K.PRIOR_CPU+K.cpu()-K.CPU
+ wall=K.PRIOR_WALL+time.time()-K.START;cpu=K.PRIOR_CPU+K.cpu()-K.CPU
  status.update(wall_seconds=wall,cpu_budget_accounted_seconds=cpu)
  K.dump('status.json',status)
  if wall>=1200-reserve or cpu>=2700-reserve:raise TimeoutError('budget reserve reached')
@@ -63,7 +63,7 @@ def main24():
  guard();assert torch.cuda.device_count()==1 and '4090' in torch.cuda.get_device_name();torch.set_num_threads(2);torch.backends.cudnn.allow_tf32=False;torch.backends.cuda.matmul.allow_tf32=False
  dump('precision_audit.json',{'cudnn_allow_tf32':False,'matmul_allow_tf32':False,'amp':False,'forward':'FP32','algebra':'FP64','device':torch.cuda.get_device_name(),'gpu_uuid':os.environ['CUDA_VISIBLE_DEVICES']})
  spl=data_audit();m=K.model();dump('parent_checkpoint_audit.json',{'before':sha(C['parent_path']),'expected':C['parent_sha256']});architecture(m);a,b=preflight(m);added_checks(m,a,b)
- existing=json.loads((E/'admission_gate_audit.json').read_text());assert existing['status']=='PASSED' and all(x['status']=='PASSED' for x in extra) and len(extra)==6
+ existing=json.loads((E/'admission_gate_audit.json').read_text());assert existing['status']=='PASSED' and all(x['status']=='PASSED' for x in extra) and len(extra)==7
  dump('formula_tests.json',{'status':'PASSED','tests':extra});dump('admission_gate_audit.json',{'status':'PASSED','exp024_tests':existing['tests'],'round024_formula_tests':extra,'actual_tests_recorded_before_selection':True})
  status['phase']='selection';dump('status.json',status);rate,y,z,ids,ct=capture_dataset(m,S['D_grad']);assert normerr(esc.reconstruct(rate,a,b),z)<=1e-5
  freq=rate.mean(0).cpu().numpy();l1=m.fc1.sparse_weight().detach().abs().sum((1,2,3)).double().cpu().numpy();idx=np.arange(2048);ord1=np.lexsort((idx,l1));ord2=np.lexsort((idx,freq));perms={str(seed):np.random.default_rng(seed).permutation(2048).tolist() for seed in [20261128,20261129,20261130]}
@@ -112,5 +112,5 @@ finally:
  try:
   before=C['parent_sha256'];after=sha(C['parent_path']);dump('parent_checkpoint_audit.json',{'before':before,'after':after,'expected':before,'match':before==after})
  except BaseException as e:status['parent_final_audit_error']=repr(e)
- status.update(end_unix=time.time(),wall_seconds=time.time()-K.START,cpu_accounted_seconds=K.PRIOR_CPU+K.cpu()-K.CPU,process_tree_cpu_seconds=K.cpu()-K.CPU,cpu_prior_conservative_reserve_seconds=K.PRIOR_CPU,peak_allocated_bytes=torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None);dump('status.json',status);print(json.dumps(status),flush=True)
+ status.update(end_unix=time.time(),wall_seconds=K.PRIOR_WALL+time.time()-K.START,cpu_accounted_seconds=K.PRIOR_CPU+K.cpu()-K.CPU,process_tree_cpu_seconds=K.cpu()-K.CPU,cpu_prior_conservative_reserve_seconds=K.PRIOR_CPU,peak_allocated_bytes=torch.cuda.max_memory_allocated() if torch.cuda.is_available() else None);dump('status.json',status);print(json.dumps(status),flush=True)
 if status['status']!='COMPLETED':sys.exit(1)

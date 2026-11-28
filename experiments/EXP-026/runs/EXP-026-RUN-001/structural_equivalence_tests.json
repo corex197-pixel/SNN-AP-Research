@@ -1,0 +1,38 @@
+{
+  "status": "PASSED",
+  "fixed_cases": [
+    {
+      "case": "single",
+      "deleted_count": 1,
+      "gated_error": 1.356818908739029e-07,
+      "compact_error": 0.0,
+      "kept_spikes_equal": true,
+      "predictions_equal": true,
+      "CE_error": 0.0,
+      "parameter_before": 36720484,
+      "parameter_after": 36703999
+    },
+    {
+      "case": "block16",
+      "deleted_count": 16,
+      "gated_error": 1.648406186470374e-07,
+      "compact_error": 0.0,
+      "kept_spikes_equal": true,
+      "predictions_equal": true,
+      "CE_error": 0.0,
+      "parameter_before": 36720484,
+      "parameter_after": 36456724
+    },
+    {
+      "case": "set512",
+      "deleted_count": 512,
+      "gated_error": 1.7094587466731793e-07,
+      "compact_error": 0.0,
+      "kept_spikes_equal": true,
+      "predictions_equal": true,
+      "CE_error": 0.0,
+      "parameter_before": 36720484,
+      "parameter_after": 28280164
+    }
+  ]
+}

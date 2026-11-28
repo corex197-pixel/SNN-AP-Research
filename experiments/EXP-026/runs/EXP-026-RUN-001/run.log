@@ -1,0 +1,11 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-024/run.py", line 109, in <module>
+    try:status['status']=main24()
+                         ^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-024/run.py", line 66, in main24
+    existing=json.loads((E/'admission_gate_audit.json').read_text());assert existing['status']=='PASSED' and all(x['status']=='PASSED' for x in extra) and len(extra)==6
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+{"status": "PARTIAL", "run_id": "EXP-026-RUN-001", "phase": "admission", "code_sha": "e725b5e72177384ab5b4a0872e555657c1b49389", "start_unix": 1795866813.7948213, "gpu_uuid": "GPU-a2cc60c0-2774-a27c-7743-76d6235507f6", "wall_seconds": 8.521098852157593, "cpu_budget_accounted_seconds": 67.71138, "error": "AssertionError()", "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-024/run.py\", line 109, in <module>\n    try:status['status']=main24()\n                         ^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-024/run.py\", line 66, in main24\n    existing=json.loads((E/'admission_gate_audit.json').read_text());assert existing['status']=='PASSED' and all(x['status']=='PASSED' for x in extra) and len(extra)==6\n                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n", "end_unix": 1795866822.3159196, "cpu_accounted_seconds": 68.884991, "process_tree_cpu_seconds": 8.913321000000002, "cpu_prior_conservative_reserve_seconds": 60.0, "peak_allocated_bytes": 3969414144}
