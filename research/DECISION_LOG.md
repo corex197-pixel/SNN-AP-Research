@@ -80,3 +80,6 @@ Stop current ESC-JP/M5 formal advancement; retain UniSparse Controlled Baseline 
 
 ## DEC-024 — HOLD BASELINE SWITCH + DIAGNOSE
 UniSparse remains Controlled Baseline; prior candidates UNDER_REVIEW; M5 remains STOPPED. Prespecified 50%/75% fixed-support readout reconstruction is an exploratory diagnostic, not a claim of novelty. No training or official test set.
+
+## DEC-025 — REPAIR + REPLICATE
+EXP-026 remains INVALID permanently; retain all raw exploration and errors. Freeze UniSparse as Controlled Baseline, pause fixed-support reconstruction advancement and independently retest five locked models under EXP-027. No refitting, new method, training or official test set.

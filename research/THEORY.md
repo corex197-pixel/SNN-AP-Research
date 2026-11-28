@@ -453,3 +453,6 @@ R109: CE logits Hessian H=diag(p)−ppᵀ with p=softmax(z). R110–R111: second
 
 ## v0.3.0 — ROUND-024 R113–R120
 R113: high-compression fixed hidden-neuron subsets; R114 P(r)=36720484−2048r·16485 and R115 R_P=(36720484−P(r))/36720484. R116 E=R[:,S]A[:,S]^T; R117 I_k={i:sum_j M[10k:10k+10,i]>0}; R118 ridge minimization ||Xδ−e||²/N+λ||δ||² with fixed λ=.001 mean_j(sum_n X_nj²/N). R119 primal/dual stable solve, zero support/zero λ yield zero correction. R120 distribute 10δ/m among active effective connections only; preserve inactive raw weights and all other model state. This is an engineering diagnostic, not a novel closed-form technique.
+
+## v0.3.1 — ROUND-025 R121/R122
+R121: for K=10 and e=z_teacher−z_candidate, mean(e²)=mean((e−mean_class(e))²)+mean(mean_class(e)²); common logit shifts do not affect softmax or CE. This is an exploratory identity, not a new fitting objective. R122: evaluation requires a machine-verifiable candidate-specific lock, including fixed model identities, exact data coverage, assertions and true exit statuses; revalidate it at the actual evaluation entry and reject changes.

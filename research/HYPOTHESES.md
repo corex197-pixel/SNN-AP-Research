@@ -68,3 +68,6 @@ H-024 SUPPORTED only for the investigated fixed model and linear readout. H-025 
 
 ## ROUND-024 preregistration
 H-026 UNTESTED: 50% R1 accuracy drops ≥1 percentage point versus B0. H-027 UNTESTED: 50% R3 achieves all fixed D_cal reconstruction, validation accuracy/CE, equal-parameter, support and SOP gates. 75% is auxiliary. Scientific decisions require theory review.
+
+## ROUND-025 theory decision
+EXP-026 remains INVALID; evidence for H-026/H-027 INVALID_EVIDENCE, preserving prior UNTESTED history. EXP-027 is a new independent engineering replication, with the original 50% primary and 75% secondary gates unchanged; scientific decision remains with the theoretical researcher.

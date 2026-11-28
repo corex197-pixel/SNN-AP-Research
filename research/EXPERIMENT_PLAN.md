@@ -74,3 +74,6 @@ ROUND-023 EXP-025 COMPLETED as static audit; three candidates UNDER_REVIEW, not 
 
 ## ROUND-024 EXP-026
 Fixed U2 epoch300; strict FP32; D_grad selection and fitting, D_cal independent reconstruction diagnosis, fixed validation after pushed selection lock; 50% primary and 75% auxiliary; R0 three PCG64 permutations, R1/R2/R3, no SGD. 2000 paired bootstrap; GPU≤1200 s, CPU≤2700 s. Full protocol ROUND-024-TASK.md.
+
+## ROUND-025 EXP-027
+Use five unchanged saved candidates and fixed D_grad/D_cal/validation. First generic preflight; then actual two-pair D_grad elementwise checks, parameter/support/readout and 32-sample parent-gate equivalence; required-set negative tests and pushed admission lock are mandatory before any D_cal/validation loader. R121 is analysis only. No refitting or training. GPU≤600s, CPU≤1800s.

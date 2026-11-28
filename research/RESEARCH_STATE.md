@@ -134,3 +134,5 @@ ROUND-024 DEC-024: retain UniSparse; C-DPSS/SCA/Dynamic and Spik4lite UNDER_REVI
 
 
 ROUND-024 EXP-026 process COMPLETED, formal execution INVALID: baseline reconstructed; preselection check coverage failed and automatically marked PASSED; exploratory evidence retained; H-026/H-027 remain UNTESTED pending theoretical review. No official test or SGD. See ../experiments/EXP-026/REPORT.md.
+
+ROUND-025 DEC-025: EXP-026 remains INVALID and its H-026/H-027 evidence INVALID_EVIDENCE; independent EXP-027 planned with actual-object gate and unchanged candidates. UniSparse remains Controlled Baseline; no switch or new method.
