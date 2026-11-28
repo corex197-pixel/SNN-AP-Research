@@ -60,3 +60,7 @@ ROUND-017 R69–R73 is symmetric two-order cost attribution (Shapley-style accou
 - https://ieeexplore.ieee.org/document/11132570/ — IEEE record; automated bibliographic inspection blocked by site verification.
 - https://proceedings.mlr.press/v306/shi26a.html — UniSparse (Shi, Bu, Yu; ICML 2026).
 Related SynOps/activity/weight-sparsity ideas exist. No first-discovery claim for normalized fanout weighting or convex combination.
+
+
+## ROUND-020 PCGrad prior art
+Yu et al., Gradient Surgery for Multi-Task Learning, NeurIPS 2020, https://arxiv.org/abs/2001.06782. Projection of conflicting gradients onto a constraint boundary is closely related to PCGrad; no novelty claim for the projection or orthogonality constraint.

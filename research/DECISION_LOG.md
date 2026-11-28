@@ -60,3 +60,7 @@ End UniSparse controlled-baseline preparation; test MP-EFR as a specific unprove
 
 ## DEC-019 — REFINE + CONTINUE
 Keep MP-EFR unchanged; perform finite calibration-only G0/G2 budget matching around fixed G1 q=.04. Preserve EXP-020 failure and do not infer training effects.
+
+
+## DEC-020 — REFINE
+Stop standalone unprotected MP-EFR as main candidate; run a single preregistered task-gradient conflict and protected-gradient mechanism experiment. No further modules if valid gate fails.

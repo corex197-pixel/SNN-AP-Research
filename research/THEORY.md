@@ -433,3 +433,7 @@ R74 g0=d(d0 Σ rate[c])/dφ (local eval surrogate); R75 a=(1−ρ)+ρ d/mean(d),
 
 ## v0.2.5 — ROUND-019
 R81 E_m(q)=(C_target,B0−C_target,m(q))/||Δφ_m(q)|| for nonzero update only; local accounting diagnostic, not training loss. R82 q_new=q_a+(R_star−R_a)(q_b−q_a)/(R_b−R_a); actual forward measurement required, with at most four bisections in fixed [0.04,0.08].
+
+
+## v0.2.6 — ROUND-020
+R83 t_l=∇_{phi_l} CE(mean_t(logits),y), full network surrogate gradient; BN eval, original LIF training backward path, per-batch sample weighted. R84 dot(t,g), R85 cosine conflict, first-order prediction −eta dot(t,g), not strict hard-spike loss derivative. R86 min_v ||v−g||²/2 s.t. t·v≥0; R87 v=g−min(0,(t/||t||)·g)(t/||t||), zero-t fallback. R88 norm-match each layer to ||g0|| with zero/degenerate handling; R89 phi=phi0−q||phi0||/||g0|| direction. PCGrad-style projection is prior art.

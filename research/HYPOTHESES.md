@@ -48,3 +48,7 @@ H-016 SUPPORTED only for nominal/effective fanout mismatch at current model and 
 
 ### ROUND-019 theory review
 H-019 SUPPORTED only for fixed U2 epoch300, two target modules, rho=.25, q=.02, designated data and single eval local intervention. H-017 INSUFFICIENT_EVIDENCE; formal training impact UNTESTED. H-016 SUPPORTED and H-018 PARTIALLY_SUPPORTED retain prior scopes and negative evidence.
+
+
+### ROUND-020 theory decision
+H-017 INSUFFICIENT_EVIDENCE: EXP-021 matched G1 vs G0 but failed preregistered accuracy gain; missing fair comparator is no longer the explanation. H-016 SUPPORTED, H-018 PARTIALLY_SUPPORTED, H-019 SUPPORTED retain scopes. H-020 UNTESTED: an actual target-layer G1 activity gradient conflicts with task gradient, cos < −1e−6. H-021 UNTESTED: protected effective-fanout direction may improve matched-SOP task performance vs G0/G1/P0.

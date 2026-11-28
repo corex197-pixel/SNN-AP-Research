@@ -55,3 +55,7 @@ Preregistered protocol ROUND-018-TASK.md. Fixed 512 D_grad and 512 D_cal, seed 2
 
 ## ROUND-019 EXP-021
 Fixed parent, samples, rho and permutations from EXP-020. G1 q=.04; G0/G2 initial [0.04,0.08], R82 then ≤4 bisections, abs calibration reduction mismatch≤0.001 and range 4–6%; commit lock before validation. Fixed performance gates unchanged; GPU≤900s, CPU≤1800s. Full protocol ROUND-019-TASK.md.
+
+
+## ROUND-020 EXP-022
+Fixed parent, D_grad/D_cal, BN target paths, rho=.25 and G0/G1 q from EXP-021. H-020 requires at least one G1 layer cosine <−1e−6; if absent stop protected performance. Otherwise same-q mechanism q=.02, fixed finite P0/P1 SOP matching and preregistered 2×2 tests; GPU≤900s, CPU≤1800s. Full protocol ROUND-020-TASK.md.
