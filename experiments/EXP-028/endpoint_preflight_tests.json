@@ -1,0 +1,296 @@
+{
+  "status": "RUNNING",
+  "tests": [
+    {
+      "test_id": "F0_endpoint_identity",
+      "target_group": "F0",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "epoch5 actual training recovery forward before loading inference; then actual inference load and forward exact",
+      "observed_result": {
+        "checkpoint_sha256": "4171330df3f3a2ab0e98d5a9930128593f1bcfffd7c86f827996b37edede11ea",
+        "recovery_sha256": "38948a7ae3726e5e61b2e032c7c08606039e69a46a7f28dac72554e7206c013e",
+        "recovery_vs_inference_all_state_equal": true,
+        "input_sample_ids": [
+          33540,
+          8359,
+          6955,
+          1052,
+          46576,
+          28652,
+          28391,
+          26154,
+          39955,
+          4156,
+          16954,
+          26064,
+          6984,
+          46888,
+          35999,
+          13837,
+          35114,
+          19534,
+          26179,
+          43715,
+          3366,
+          38441,
+          9009,
+          16512,
+          47739,
+          29907,
+          30496,
+          30545,
+          44664,
+          24673,
+          12052,
+          6298
+        ],
+        "batch_size": 32,
+        "true_before_after_logits_exact": true,
+        "max_abs_logits_difference": 0.0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "F0_endpoint_integrity",
+      "target_group": "F0",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "actual epoch5 structure, full fixed thresholds and F0 protection or full F1 optimizer scope",
+      "observed_result": {
+        "physical_parameters": 11399524,
+        "threshold_exact": true,
+        "parameters_finite": true,
+        "F0_non_target_state_differences": [],
+        "optimizer_scope_exact": true,
+        "optimizer_actual_param_count": 2,
+        "training_optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "F0_frozen_per_epoch": {
+          "1": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "2": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "3": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "4": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "5": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          }
+        }
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "F1_endpoint_identity",
+      "target_group": "F1",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "epoch5 actual training recovery forward before loading inference; then actual inference load and forward exact",
+      "observed_result": {
+        "checkpoint_sha256": "c452e93467ac5952cc2e03196b8c2a6c1e4976167c3295fcb29fc2020c675f51",
+        "recovery_sha256": "9f8ebcac1279d609bfc3a2741509c6d534c210f55a1ed9318d38a8f849d694bc",
+        "recovery_vs_inference_all_state_equal": true,
+        "input_sample_ids": [
+          33540,
+          8359,
+          6955,
+          1052,
+          46576,
+          28652,
+          28391,
+          26154,
+          39955,
+          4156,
+          16954,
+          26064,
+          6984,
+          46888,
+          35999,
+          13837,
+          35114,
+          19534,
+          26179,
+          43715,
+          3366,
+          38441,
+          9009,
+          16512,
+          47739,
+          29907,
+          30496,
+          30545,
+          44664,
+          24673,
+          12052,
+          6298
+        ],
+        "batch_size": 32,
+        "true_before_after_logits_exact": true,
+        "max_abs_logits_difference": 0.0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "F1_endpoint_integrity",
+      "target_group": "F1",
+      "input_ids_sha256": "3a51477124325fad4635926ee847693c92212b3df454712cd1636d455dfeb05f",
+      "actual_sample_count": 32,
+      "expected_sample_count": 32,
+      "assertion": "actual epoch5 structure, full fixed thresholds and F0 protection or full F1 optimizer scope",
+      "observed_result": {
+        "physical_parameters": 11399524,
+        "threshold_exact": true,
+        "parameters_finite": true,
+        "F0_non_target_state_differences": [],
+        "optimizer_scope_exact": true,
+        "optimizer_actual_param_count": 22,
+        "training_optimizer_names": [
+          "bn2.bias",
+          "bn2.weight",
+          "bn5.bias",
+          "bn5.weight",
+          "conv1.conv.weight",
+          "conv1.norm.bias",
+          "conv1.norm.weight",
+          "conv2.weight",
+          "conv3.conv.weight",
+          "conv3.norm.bias",
+          "conv3.norm.weight",
+          "conv4.conv.weight",
+          "conv4.norm.bias",
+          "conv4.norm.weight",
+          "conv5.weight",
+          "fc1.bias",
+          "fc1.weight",
+          "fc2.bias",
+          "fc2.weight",
+          "static_conv.conv.weight",
+          "static_conv.norm.bias",
+          "static_conv.norm.weight"
+        ],
+        "F0_frozen_per_epoch": {
+          "1": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "2": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "3": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "4": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "5": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          }
+        }
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "paired_epoch_and_sample_protocol",
+      "target_group": "BOTH",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "exact 5x175 samples, seeds, dropped indices, learning rates, AMP accounting, F0 frozen audit",
+      "observed_result": {
+        "group_details": {
+          "F0": {
+            "epochs": 5,
+            "steps_attempted": 875,
+            "successful_steps": 875,
+            "amp_skips": 0
+          },
+          "F1": {
+            "epochs": 5,
+            "steps_attempted": 875,
+            "successful_steps": 875,
+            "amp_skips": 0
+          }
+        },
+        "sample_and_schedule_checks_passed": true,
+        "frozen": {
+          "1": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "2": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "3": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "4": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          },
+          "5": {
+            "checked_tensors": 66,
+            "differences": [],
+            "passed": true
+          }
+        }
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "test_id": "fixed_reference_identity",
+      "target_group": "BOTH",
+      "input_ids_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "actual_sample_count": 0,
+      "expected_sample_count": 0,
+      "assertion": "parent and B0 identities and locked configuration preserved",
+      "observed_result": {
+        "P0": "95073e1c9b3731a792fc72d596b3fa1c96b86989b328241b00bb663020c80958",
+        "B0": "cd6e151efe68ee77ef57ce474d0e83737321f271d4bace1ef8809013a66ae60d",
+        "config_sha": "d7668efc56d973dfc15b74d36d5a2f40c5f3df13f6670aadd66cf42f2c259b2f"
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    }
+  ]
+}
