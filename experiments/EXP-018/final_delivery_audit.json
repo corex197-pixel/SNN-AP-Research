@@ -1,0 +1,180 @@
+{
+  "U0": {
+    "epoch_count": 280,
+    "continuous_unique_21_300": true,
+    "lr_max_abs_error": 0.0,
+    "final": {
+      "group": "U0",
+      "epoch": "300",
+      "learning_rate": "2.741531724392843e-06",
+      "train_loss": "0.24198425463267734",
+      "train_accuracy": "0.9149776785714285",
+      "train_samples": "44800",
+      "validation_accuracy": "0.944",
+      "validation_loss": "0.1821459575229221",
+      "FR_sample_weighted": "0.05117369012266473",
+      "FR_author": "0.051180004478888944",
+      "SOP_author": "391626520.2291667",
+      "SOP_sample_weighted": "401025556.71466666",
+      "nonbinary_monitored_inputs": "[]",
+      "validation_samples": "4500",
+      "all_sparse_weight_sparsity": "8.170988496924991e-08",
+      "penalized_weight_sparsity": "8.172527055094747e-08",
+      "min_penalized_density": "0.9999999105930328",
+      "epoch_successful_steps": "175",
+      "epoch_amp_skips": "0",
+      "epoch_manual_updates": "0",
+      "cumulative_successful_steps": "52480",
+      "cumulative_amp_skips": "20",
+      "cumulative_manual_updates": "0",
+      "train_seconds": "28.867965774144977",
+      "validation_seconds": "4.114658990176395",
+      "peak_allocated_bytes": "12422040064",
+      "peak_reserved_bytes": "16710107136",
+      "checkpoint_seconds": "1.726090830983594"
+    },
+    "sum_train_seconds": 8072.692990797572,
+    "sum_validation_seconds": 1157.0409424903337,
+    "sum_checkpoint_seconds": 417.57983631431125
+  },
+  "U2": {
+    "epoch_count": 280,
+    "continuous_unique_21_300": true,
+    "lr_max_abs_error": 0.0,
+    "final": {
+      "group": "U2",
+      "epoch": "300",
+      "learning_rate": "2.741531724392843e-06",
+      "train_loss": "0.24877627866608756",
+      "train_accuracy": "0.9133258928571428",
+      "train_samples": "44800",
+      "validation_accuracy": "0.9424444444444444",
+      "validation_loss": "0.17519400702582466",
+      "FR_sample_weighted": "0.04957846704501978",
+      "FR_author": "0.049586617731461106",
+      "SOP_author": "83993097.36805555",
+      "SOP_sample_weighted": "86008931.7048889",
+      "nonbinary_monitored_inputs": "[]",
+      "validation_samples": "4500",
+      "all_sparse_weight_sparsity": "0.1447020508963247",
+      "penalized_weight_sparsity": "0.14472929757238895",
+      "min_penalized_density": "0.05173068576388889",
+      "epoch_successful_steps": "175",
+      "epoch_amp_skips": "0",
+      "epoch_manual_updates": "175",
+      "cumulative_successful_steps": "52479",
+      "cumulative_amp_skips": "21",
+      "cumulative_manual_updates": "52500",
+      "train_seconds": "40.83101884415373",
+      "validation_seconds": "4.156845092074946",
+      "peak_allocated_bytes": "12422040064",
+      "peak_reserved_bytes": "16710107136",
+      "checkpoint_seconds": "1.6685219900682569"
+    },
+    "sum_train_seconds": 11437.93565165042,
+    "sum_validation_seconds": 1155.4598885565065,
+    "sum_checkpoint_seconds": 414.326196560869
+  },
+  "sampling": {
+    "count": 280,
+    "passed": true
+  },
+  "parents": [
+    {
+      "group": "U0",
+      "match": true
+    },
+    {
+      "group": "U1",
+      "match": true
+    },
+    {
+      "group": "U2",
+      "match": true
+    }
+  ],
+  "final_checkpoints": [
+    {
+      "group": "U0",
+      "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U0/epoch-300.pth",
+      "sha256": "be8d16ba6580ee069fae964686c6989fd737fcbdb369da238c12e68deb6a013f",
+      "hash_match": true,
+      "load_verified": "True"
+    },
+    {
+      "group": "U2",
+      "path": "/home/hym/keyan1/experiments/EXP-018/runs/EXP-018-CONTINUE-001/U2/epoch-300.pth",
+      "sha256": "19b1312cbaae49ad95a7d001270c4357d7ea23b2584d19698b0084b3da4b094f",
+      "hash_match": true,
+      "load_verified": "True"
+    }
+  ],
+  "shards": {
+    "count": 1120,
+    "bad": [],
+    "groups_kinds_counts": {
+      "U0:validation_per_sample": 280,
+      "U0:validation_batch_sops": 280,
+      "U2:validation_per_sample": 280,
+      "U2:validation_batch_sops": 280
+    }
+  },
+  "cost_audits": [
+    {
+      "epoch": 20,
+      "formula_error_max": 0.0,
+      "layer_sum_error_max": 8.498318493366241e-08,
+      "n_layers": 7,
+      "positive_delta_S": 10086990.837111112,
+      "negative_delta_S": -5886.386333333328,
+      "count_audit": "PASSED"
+    },
+    {
+      "epoch": 60,
+      "formula_error_max": 0.0,
+      "layer_sum_error_max": 3.91155481338501e-08,
+      "n_layers": 7,
+      "positive_delta_S": 11377158.477888886,
+      "negative_delta_S": -3799040.49722223,
+      "count_audit": "PASSED"
+    },
+    {
+      "epoch": 100,
+      "formula_error_max": 0.0,
+      "layer_sum_error_max": 1.210719347000122e-08,
+      "n_layers": 7,
+      "positive_delta_S": 8173920.857444445,
+      "negative_delta_S": -2978122.3279999993,
+      "count_audit": "PASSED"
+    },
+    {
+      "epoch": 200,
+      "formula_error_max": 0.0,
+      "layer_sum_error_max": 5.960464477539063e-08,
+      "n_layers": 7,
+      "positive_delta_S": 3959016.267444434,
+      "negative_delta_S": -3957611.342444448,
+      "count_audit": "PASSED"
+    },
+    {
+      "epoch": 300,
+      "formula_error_max": 0.0,
+      "layer_sum_error_max": 7.450580596923828e-09,
+      "n_layers": 7,
+      "positive_delta_S": 2764342.941,
+      "negative_delta_S": -3829505.6094444464,
+      "count_audit": "PASSED"
+    }
+  ],
+  "audit_utc": "2026-11-28T05:16:27.716200+00:00",
+  "scope": "CPU-only verification of saved files; no new training or GPU computation",
+  "supervision": {
+    "original_pid": 1135516,
+    "original_observed": "zombie before restart; cause and exact exit time unknown; prior log contained no explanation",
+    "replacement_pid": 1155554,
+    "replacement": "started 2026-11-27 ~14:48 UTC; completed finalization and push; process exited and remains zombie until reaped",
+    "training_process_affected": false
+  },
+  "data_isolation": "configuration and TrainFileOnly implementation use only training data batches; no OS-level file-access trace was recorded",
+  "resource_accounting": "training run status CPU and budget wall include recorded preflight; delivery_resources reports separate CPU-only finalization; audit overhead not included; short-lived child processes may be missed"
+}

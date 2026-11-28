@@ -1,1 +1,23 @@
 finalized COMPLETED COMPLETED
+[research/round-017-unisparse-baseline 6e7ffce] results(EXP-018,019): deliver staged continuation and cost
+ 26 files changed, 1565 insertions(+), 10 deletions(-)
+ create mode 100644 experiments/EXP-018/REPORT.md
+ create mode 100644 experiments/EXP-018/checkpoint_manifest.json
+ create mode 100644 experiments/EXP-018/delivery_resources.json
+ create mode 100644 experiments/EXP-018/figures/accuracy.png
+ create mode 100644 experiments/EXP-018/figures/accuracy_vs_sops.png
+ create mode 100644 experiments/EXP-018/figures/fanout.png
+ create mode 100644 experiments/EXP-018/figures/layer_density.png
+ create mode 100644 experiments/EXP-018/figures/loss.png
+ create mode 100644 experiments/EXP-018/figures/sops.png
+ create mode 100644 experiments/EXP-018/figures/threshold_weight_ratio.png
+ create mode 100644 experiments/EXP-018/limitations.md
+ create mode 100644 experiments/EXP-018/paired_sampling_audit.json
+ create mode 100644 experiments/EXP-019/REPORT.md
+ create mode 100644 experiments/EXP-019/figures/cost_components.png
+ create mode 100644 experiments/EXP-019/figures/four_costs.png
+ create mode 100644 experiments/EXP-019/figures/relative_components.png
+ create mode 100644 experiments/EXP-019/limitations.md
+ create mode 100644 experiments/EXP-019/status.json
+To github.com:corex197-pixel/SNN-AP-Research.git
+   feba945..6e7ffce  research/round-017-unisparse-baseline -> research/round-017-unisparse-baseline

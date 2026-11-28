@@ -90,3 +90,5 @@ EXP-017 COMPLETED: U0/U1/U2 each 20 epochs, same seed, original UniSparse update
 DEC-017 approved U0/U2 continuation from epoch20, mandatory 60/100/200 gates, epoch20/60/100/200/300 counterfactual cost decomposition; U1 remains backup and EXP-017 remains completed. H-016 PARTIALLY_SUPPORTED, H-017/H-018 UNTESTED. Original UniSparse algorithm, fixed data and official-test isolation preserved; complete reproduction not claimed.
 
 ROUND-017 delivery: EXP-018 COMPLETED at {'U0': 300, 'U2': 300}; EXP-019 COMPLETED at epochs [20, 60, 100, 200, 300]. H-016 PARTIALLY_SUPPORTED; H-017/H-018 UNTESTED pending theory review. See EXP-018/019 reports.
+
+ROUND-017 final delivery verification: original delivery supervisor exited for unknown reason; replacement completed delivery. Epochs 21–300 are continuous for both groups, sample pair audits pass, all parent and epoch-300 checkpoint hashes match, and all 1,120 validation shard hashes match. The epoch-60 H-018 amplitude gate remains unmet; H-017/H-018 remain UNTESTED pending theoretical review. Detailed CPU-only audit: ../experiments/EXP-018/final_delivery_audit.json.
