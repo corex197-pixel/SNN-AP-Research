@@ -125,3 +125,6 @@ ROUND-022 EXP-024 delivery: PARTIAL; admission RUNNING; progression NA. H-024/H-
 EXP-024-RUN-001 PARTIAL: R103 error 1.74997e-5 exceeded 1e-5; no selection or validation. Preserved run; RUN-002 checks strict FP32 by disabling TF32, retains tolerance and counts previous budget.
 
 ROUND-022 EXP-024 delivery: COMPLETED; admission PASSED; progression False. H-024/H-025 UNTESTED pending researcher review. EXP-023 admission deviation remains preserved. See ../experiments/EXP-024/REPORT.md.
+
+
+ROUND-023 DEC-023 STOP + REASSESS: ESC-JP/M5 current formal route STOPPED; UniSparse remains current Controlled Baseline; all candidates UNDER_REVIEW, none ENGINEERING_ADMITTED. EXP-024 COMPLETED and progression FAILED: H-024 SUPPORTED scoped and H-025 PARTIALLY_SUPPORTED (S3 only; gates vs S1/S2 failed). RUN-001 error and 45 strict/default FP32 prediction differences remain preserved; EXP-023 pre-run admission deviation remains. EXP-025 static review COMPLETED; C-DPSS priority conditional on license, repairing CIFAR test-as-validation leakage and remaining checks. No GPU used. See ../experiments/EXP-025/REPORT.md.

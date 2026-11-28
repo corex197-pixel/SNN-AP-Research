@@ -1,0 +1,5 @@
+2026-11-28T11:07:17.308073+00:00 EXP-025-AUDIT-001 static audit delivery generated.
+Task preregistration commit 0d8138080f3bf76a6dd642356c534df15a5f7062; parent 7d5bdba3532ccb5b7dc3a8d69053c39314fe4a93.
+Paper and fixed-SHA source metadata reviewed via online tools; C-DPSS full paper blocked; no third-party source committed.
+No training, inference, dataset/weights download, test-set access, GPU or CUDA execution. CPU accounting limitations: see resource_usage.csv and limitations.md.
+Not a model training or evaluation log.

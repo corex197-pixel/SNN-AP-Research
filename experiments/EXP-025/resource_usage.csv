@@ -1,0 +1,4 @@
+scope,metric,value,unit,provenance,limitation
+whole audit,gpu_use,0,seconds,no GPU or CUDA command executed,not device telemetry
+whole audit,cpu_total,UNKNOWN,seconds,not instrumented from start,cannot reconstruct API server CPU
+report_generation,self_cpu,0.080884,seconds,Python getrusage,only delivery script; not whole audit

@@ -1,0 +1,25 @@
+{
+  "accessed_utc": "2026-11-28T11:07:17.308073+00:00",
+  "SCA": {
+    "paper": "https://arxiv.org/html/2406.01072",
+    "pmlr": "https://proceedings.mlr.press/v235/li24bz.html",
+    "official_code": "UNKNOWN",
+    "weights": "UNKNOWN",
+    "license": "UNKNOWN"
+  },
+  "C-DPSS": {
+    "paper": "https://www.sciencedirect.com/science/article/pii/S0925231226014992",
+    "paper_access": "ABSTRACT_ONLY; full publisher access blocked",
+    "repository": "https://github.com/JunLi0514/C-DPSS",
+    "commit": "ea3a3b3dbef8746e030292fe03a276df18bbef22",
+    "license": "UNKNOWN; no root LICENSE",
+    "weights": "UNKNOWN"
+  },
+  "Dynamic": {
+    "paper": "https://doi.org/10.3389/fnins.2025.1545583",
+    "repository": "https://github.com/gzxdu/SNN_Pruning",
+    "commit": "a137f1bca476d49b2c3d403c6d37688548d81a49",
+    "license": "UNKNOWN; root LICENSE not observed",
+    "weights": "UNKNOWN"
+  }
+}

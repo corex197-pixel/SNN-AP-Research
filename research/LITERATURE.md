@@ -72,3 +72,7 @@ UniSparse https://proceedings.mlr.press/v306/shi26a.html ; Spiking Activity Base
 
 ## ROUND-022 pruning prior work
 Li et al. activity-based SNN pruning https://proceedings.mlr.press/v235/li24bz.html ; Molchanov et al. importance estimation https://research.nvidia.com/publication/2019-06_importance-estimation-neural-network-pruning ; Luo et al. ThiNet https://arxiv.org/abs/1707.06342 ; Ye et al. greedy selection https://proceedings.mlr.press/v119/ye20b.html . Greedy selection, linear readout decomposition, and exact task-loss scoring are not claimed as new; the formulation also applies to suitable ANNs.
+
+
+## ROUND-023 structured pruning evidence
+SCA: Li et al., ICML 2024, https://proceedings.mlr.press/v235/li24bz.html. C-DPSS: Li et al., Neurocomputing 2026, https://doi.org/10.1016/j.neucom.2026.134101 (ABSTRACT_ONLY). Gou et al., Frontiers 2025, https://doi.org/10.3389/fnins.2025.1545583. Yao et al., ICCV 2023, https://openaccess.thecvf.com/content/ICCV2023/html/Yao_Inherent_Redundancy_in_Spiking_Neural_Networks_ICCV_2023_paper.html. Full search record and risks: ../experiments/EXP-025/literature_search_log.md.

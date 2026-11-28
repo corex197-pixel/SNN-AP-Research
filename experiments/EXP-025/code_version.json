@@ -1,4 +1,7 @@
 {
   "parent_result_sha": "7d5bdba3532ccb5b7dc3a8d69053c39314fe4a93",
-  "task_sha": "recorded after precommit"
+  "task_and_audit_sha": "0d8138080f3bf76a6dd642356c534df15a5f7062",
+  "cdpss_sha": "ea3a3b3dbef8746e030292fe03a276df18bbef22",
+  "dynamic_sha": "a137f1bca476d49b2c3d403c6d37688548d81a49",
+  "result_sha": "self-referential; see git commit"
 }

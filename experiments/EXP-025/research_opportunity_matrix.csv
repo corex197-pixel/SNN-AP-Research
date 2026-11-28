@@ -1,0 +1,5 @@
+question,source,mitigation,possible_limitation,observable,minimum_future_validation,competing_explanation,duplication_risk,recommendation
+Q-013A,SCA Eq4,动态再生/训练,绝对电位不直接编码任务贡献,每通道幅度与固定模型删除损失,已授权后固定样本离线相关性,通道冗余/BN尺度/非加性,SCA及C-DPSS已用活动,YES conditional
+Q-013B,SCA Eq4 and section4.3,全局排序和再生,未见除空间面积；实现UNKNOWN,面积/阈值/得分/层排序,未来对同一批数据作面积分层审计,真实活动差异与尺度共同变化,常见尺度归一化风险,YES conditional
+Q-013C,Dynamic 2025 temporal KL,时间步候选与KL,是否保留任务关键时序尚未知,逐时间步损失与时间分布,先文献审查后锁定数据离线分析,样本复杂度及动态输入变化,时序剪枝已有研究,DEFER high duplication
+Q-013D,C-DPSS core merge_filters,结构合并,等通道数不等参数或SOP,依赖图与前后层张量形状,CPU静态参数账本,边界层/残差连接不同,已有结构感知成本研究,YES as fairness control

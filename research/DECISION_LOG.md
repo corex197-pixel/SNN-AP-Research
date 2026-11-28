@@ -72,3 +72,7 @@ Stop MP-EFR/TP-EFR training mainline; retain controlled UniSparse and all negati
 
 ## DEC-022 — STOP + PIVOT
 Stop SEAWP fixed-layer allocation; preserve EXP-023 negative evidence and pretraining test deviation. Investigate exact readout contribution and physically compact 25% pruning under fixed fair controls.
+
+
+## DEC-023 — STOP + REASSESS
+Stop current ESC-JP/M5 formal advancement; retain UniSparse Controlled Baseline and all prior evidence. C-DPSS is the first conditional engineering-review candidate, not a replacement; its license and CIFAR test-set selection leak block admission. SCA official code and weights UNKNOWN. The theoretical researcher decides the next step.

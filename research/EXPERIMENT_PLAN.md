@@ -67,3 +67,6 @@ Fixed U2 epoch100 parent, split and 512+512 exposure samples, alpha=.25, unmodif
 
 ## ROUND-022 EXP-024
 Fixed U2 epoch300 parent, D_grad/D_cal/4500 validation, original FP32 model and FP64 algebra; B0/S0/S1/S2/S3/M5, 512 of 2048 deleted, M5 block=16, seed20261128. Actual admission tests with inputs/batch sizes/assertions/results precede selection; selection commit before D_cal/validation. GPU≤1200s, CPU≤2700s. Full ROUND-022-TASK.md.
+
+
+ROUND-023 EXP-025 COMPLETED as static audit; three candidates UNDER_REVIEW, not admitted. Next-stage conditional engineering proposal in ../experiments/EXP-025/next_stage_proposal.md requires independent user authorization; no experiment started.

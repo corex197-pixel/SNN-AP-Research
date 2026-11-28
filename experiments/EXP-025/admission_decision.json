@@ -1,0 +1,32 @@
+{
+  "status": "UNDER_REVIEW",
+  "recommendation": "C-DPSS conditional priority for further engineering audit; retain UniSparse",
+  "formal_baseline_switch": false,
+  "candidates": {
+    "C-DPSS": {
+      "score": 6.1,
+      "admission": "UNDER_REVIEW",
+      "blockers": [
+        "license unknown",
+        "CIFAR test leakage",
+        "paper full text and weights unavailable"
+      ]
+    },
+    "SCA": {
+      "score": 5.0,
+      "admission": "UNDER_REVIEW",
+      "blockers": [
+        "official implementation and weights unknown"
+      ]
+    },
+    "Dynamic Spatio-Temporal": {
+      "score": 4.15,
+      "admission": "UNDER_REVIEW",
+      "blockers": [
+        "license and weights unknown",
+        "physical structured pruning not established"
+      ]
+    }
+  },
+  "theory_decision": "pending theory researcher"
+}

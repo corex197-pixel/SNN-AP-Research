@@ -445,3 +445,7 @@ R90 W_eff=sign(W) relu(|W|−d); R91 M=I(|W|>d), official mask is authoritative;
 
 ## v0.2.8 — ROUND-022
 R101 r[n,i]=mean_t s[t,n,i]; R102 A[k,i]=mean_{j=10k..10k+9} W_eff_fc2[j,i] and b analogously; R103 z=r Aᵀ+b under fixed channel-independent hidden dynamics and linear boost. R104 z_without_S=z−Σ_{i∈S} r_i A_i; R105 ΔL(S)=mean CE(z_without_S,y)−mean CE(z,y); R106 joint loss generally nonadditive; R107 fixed cardinality minimum objective; R108 conditional score L(S∪{i})−L(S). Fixed 16-per-round block greedy is not global optimality. FP64 algebra checked against real FP32 forward.
+
+
+## ROUND-023 / v0.2.9: R109–R112
+R109: CE logits Hessian H=diag(p)−ppᵀ with p=softmax(z). R110–R111: second-order joint deletion includes cross terms between contribution vectors; this is not SNN-specific. EXP-024 observed nonadditivity; no extrapolation outside the fixed structure. R112: with s=Θ(H−Vth), |δH|≤ε and |H−Vth|>ε guarantee unchanged spike for that time step and specified pre-spike H; this does not establish neuron importance. See ../experiments/EXP-025/REPORT.md.

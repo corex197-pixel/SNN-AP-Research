@@ -1,5 +1,11 @@
 {
-  "status": "PLANNED",
+  "experiment_id": "EXP-025",
   "run_id": "EXP-025-AUDIT-001",
-  "gpu_seconds": 0
+  "execution_status": "COMPLETED",
+  "scope": "static audit",
+  "candidate_status": "UNDER_REVIEW",
+  "gpu_seconds": 0,
+  "cpu_total_seconds": "UNKNOWN; not fully instrumented",
+  "finished_utc": "2026-11-28T11:07:17.308073+00:00",
+  "task_sha": "0d8138080f3bf76a6dd642356c534df15a5f7062"
 }
