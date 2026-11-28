@@ -1,0 +1,359 @@
+{
+  "status": "RUNNING",
+  "tests": [
+    {
+      "id": "data_split",
+      "target_group": "BOTH",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "fixed hashes and disjoint train/validation/old diagnostic",
+      "observed_result": {
+        "train_count": 45000,
+        "validation_count": 4500,
+        "D_grad_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+        "train_file_only": true
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "temporal_real",
+      "target_group": "B0/P0",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "real timestep R127/R128/R129 normalized <=1e-5 and kept spikes elementwise equal",
+      "observed_result": {
+        "R127": 2.7637570965315355e-07,
+        "R128": 4.4131068800184445e-07,
+        "R129": 6.803739994966495e-07,
+        "spike_mismatch": 0
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "weight_nondegenerate",
+      "target_group": "B0/P0",
+      "input_ids_sha256": "93c4c834c3fd3c8b92a64caa88da8a671e27be23dc2df11999c8e5f3dfbe47d8",
+      "actual_sample_count": 512,
+      "expected_sample_count": 512,
+      "assertion": "finite nonnegative d; w in [.5,2.5], per-sample mean=1; >=10% nonuniform, shifted differs",
+      "observed_result": {
+        "samples": 512,
+        "nonuniform_fraction": 1.0,
+        "shift_different_elements": 2037,
+        "zero_damage_fraction": 0.0,
+        "positive_damage_timesteps": 1875,
+        "weight_min": 0.5,
+        "weight_max": 2.5,
+        "max_mean_deviation": 1.1920928955078125e-07,
+        "teacher_time_accuracies": [
+          0.810546875,
+          0.99609375,
+          0.9921875,
+          0.986328125
+        ],
+        "teacher_mean_accuracy": 1.0,
+        "P0_timestep_prediction_differences": 94,
+        "tolerance": 1e-05
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "formula_independent",
+      "target_group": "ALL",
+      "input_ids_sha256": "14cee780dd97cb7ad27477c904c63a8d3e83eb2393787408c9c56497ea4575f7",
+      "actual_sample_count": 3,
+      "expected_sample_count": 3,
+      "assertion": "hand cases, 2+1, zero identical KD and independent FP64 KL within fixed tolerances",
+      "observed_result": {
+        "true_2plus1_normalized_error": 0.0,
+        "zero_damage": true,
+        "single_damage": true,
+        "equal_damage": true,
+        "teacher_wrong_zero": true,
+        "rho0_uniform": true,
+        "shift_multiset": true,
+        "equal_logits_KD": 0.0,
+        "independent_numpy_FP64_KD_abs_errors": {
+          "K1": 9.346905013030149e-07,
+          "K2": 8.413228375081516e-07,
+          "K3": 8.413228375081516e-07,
+          "M6": 8.413228375081516e-07
+        },
+        "configured_fp32_abs_tolerance": 1e-05
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "candidate_K0",
+      "target_group": "K0",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 0.0,
+        "total": 0.46462953090667725,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 3.7456903751008213
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_K1",
+      "target_group": "K1",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 5.344894886016846,
+        "total": 3.1370768547058105,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.14550692401826382
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_K2",
+      "target_group": "K2",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 5.078904151916504,
+        "total": 3.0040817260742188,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.1451130968052894
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_K3",
+      "target_group": "K3",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 4.7087249755859375,
+        "total": 2.8189921379089355,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.2141977718565613
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "candidate_M6",
+      "target_group": "M6",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "temporary real 256 AMP forward/backward, fc2-only update, frozen states and thresholds",
+      "observed_result": {
+        "CE_vs_FP64_abs_error": 1.3749861703327149e-05,
+        "optimizer_names": [
+          "fc2.bias",
+          "fc2.weight"
+        ],
+        "CE": 0.46462953090667725,
+        "KD": 5.849294185638428,
+        "total": 3.3892765045166016,
+        "AMP_CE_repeat_abs_error": 0.0,
+        "gradient_finite": true,
+        "gradient_nonzero": true,
+        "AMP_skipped": false,
+        "updated": true,
+        "non_target_state_changes": [],
+        "thresholds_fixed": true,
+        "teacher_P0_no_grad": true,
+        "batch_shape": [
+          256,
+          3,
+          32,
+          32
+        ],
+        "seconds": 0.2151084439828992
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0,
+      "optimizer_names": [
+        "fc2.bias",
+        "fc2.weight"
+      ]
+    },
+    {
+      "id": "teacher_P0_protected",
+      "target_group": "B0/P0",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "actual B0/P0 state and grad unchanged during five temporary candidate updates",
+      "observed_result": {
+        "state_equal": true,
+        "frozen_students": true,
+        "thresholds_fixed": true,
+        "manual_penalty_calls": 0,
+        "candidate_recovery": {
+          "K0": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "4e1d4da454b3492d63b5fb46749550603db5176500543191622850abded48be3",
+            "optimizer_entries": 2
+          },
+          "K1": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "620ee7322902688122f890c587a084dca4c20b6d889f2c1536233172ae7f59c7",
+            "optimizer_entries": 2
+          },
+          "K2": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "88a512d052c7c64c7705e14deaee954d07cba035384430836a7cdfbad7190586",
+            "optimizer_entries": 2
+          },
+          "K3": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "d7267339bb66d1d72c2fdf7303fcbb7175ee16548cf414d208735988bb2496f6",
+            "optimizer_entries": 2
+          },
+          "M6": {
+            "actual_spikes_equal_P0": true,
+            "restore_exact": true,
+            "checkpoint_sha256": "d8bcc12c73edd7a2bb9c9ee139a73aadc0bca623d39030295f3fed5632f0491e",
+            "optimizer_entries": 2
+          }
+        }
+      },
+      "status": "PASSED",
+      "actual_exit_code": 0
+    },
+    {
+      "id": "resource_benchmark",
+      "target_group": "ALL",
+      "input_ids_sha256": "d6a2a69cb6b00d60f5f449c0c8a9ffdd3dbdaff0073d0e6e0deca9ddc6d61213",
+      "actual_sample_count": 256,
+      "expected_sample_count": 256,
+      "assertion": "conservative one-batch extrapolation fits remaining GPU process-wall budget",
+      "observed_result": {
+        "batch_seconds": {
+          "K0": 3.7456903751008213,
+          "K1": 0.14550692401826382,
+          "K2": 0.1451130968052894,
+          "K3": 0.2141977718565613,
+          "M6": 0.2151084439828992
+        },
+        "estimated_total_training_and_evaluation_seconds": 4107.414535293356,
+        "remaining_process_wall_at_check": 1782.1384395009372,
+        "method": "one actual post-Dgrad warm sample batch per group times 875 plus 200 seconds; estimate only",
+        "fits": false
+      },
+      "status": "FAILED",
+      "actual_exit_code": 1
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PARTIAL",
+  "validity": "NOT_ESTABLISHED",
+  "phase": "preflight",
+  "code_sha": "54cbb042036afb6586107f7a00cdbad98063fb3b",
+  "stage_id": "preflight-001",
+  "error": "AssertionError('resource_benchmark')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/hym/keyan1/experiments/ROUND-027/preflight.py\", line 57, in <module>\n    try:run()\n        ^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-027/preflight.py\", line 52, in run\n    estimate=sum(bench.values())*875+200;remaining=float(os.environ.get('ROUND027_REMAIN_WALL','1800'))-(time.monotonic()-start);benchmark={'batch_seconds':bench,'estimated_total_training_and_evaluation_seconds':estimate,'remaining_process_wall_at_check':remaining,'method':'one actual post-Dgrad warm sample batch per group times 875 plus 200 seconds; estimate only','fits':estimate<remaining};dump('resource_benchmark.json',benchmark);add('resource_benchmark','ALL',sid.tolist(),'conservative one-batch extrapolation fits remaining GPU process-wall budget',benchmark,estimate<remaining)\n                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hym/keyan1/experiments/ROUND-027/preflight.py\", line 10, in add\n    if not ok:raise AssertionError(name)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: resource_benchmark\n",
+  "training_started": false
+}

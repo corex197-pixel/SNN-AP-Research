@@ -1,0 +1,24 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-027/preflight.py", line 57, in <module>
+    try:run()
+        ^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/preflight.py", line 52, in run
+    estimate=sum(bench.values())*875+200;remaining=float(os.environ.get('ROUND027_REMAIN_WALL','1800'))-(time.monotonic()-start);benchmark={'batch_seconds':bench,'estimated_total_training_and_evaluation_seconds':estimate,'remaining_process_wall_at_check':remaining,'method':'one actual post-Dgrad warm sample batch per group times 875 plus 200 seconds; estimate only','fits':estimate<remaining};dump('resource_benchmark.json',benchmark);add('resource_benchmark','ALL',sid.tolist(),'conservative one-batch extrapolation fits remaining GPU process-wall budget',benchmark,estimate<remaining)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/preflight.py", line 10, in add
+    if not ok:raise AssertionError(name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: resource_benchmark
+Traceback (most recent call last):
+  File "/home/hym/keyan1/experiments/ROUND-027/preflight.py", line 57, in <module>
+    try:run()
+        ^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/preflight.py", line 52, in run
+    estimate=sum(bench.values())*875+200;remaining=float(os.environ.get('ROUND027_REMAIN_WALL','1800'))-(time.monotonic()-start);benchmark={'batch_seconds':bench,'estimated_total_training_and_evaluation_seconds':estimate,'remaining_process_wall_at_check':remaining,'method':'one actual post-Dgrad warm sample batch per group times 875 plus 200 seconds; estimate only','fits':estimate<remaining};dump('resource_benchmark.json',benchmark);add('resource_benchmark','ALL',sid.tolist(),'conservative one-batch extrapolation fits remaining GPU process-wall budget',benchmark,estimate<remaining)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hym/keyan1/experiments/ROUND-027/preflight.py", line 10, in add
+    if not ok:raise AssertionError(name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: resource_benchmark

@@ -1,0 +1,13 @@
+{
+  "batch_seconds": {
+    "K0": 3.7456903751008213,
+    "K1": 0.14550692401826382,
+    "K2": 0.1451130968052894,
+    "K3": 0.2141977718565613,
+    "M6": 0.2151084439828992
+  },
+  "estimated_total_training_and_evaluation_seconds": 4107.414535293356,
+  "remaining_process_wall_at_check": 1782.1384395009372,
+  "method": "one actual post-Dgrad warm sample batch per group times 875 plus 200 seconds; estimate only",
+  "fits": false
+}

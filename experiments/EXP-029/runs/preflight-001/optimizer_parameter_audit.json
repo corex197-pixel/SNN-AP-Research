@@ -1,0 +1,22 @@
+{
+  "K0": [
+    "fc2.bias",
+    "fc2.weight"
+  ],
+  "K1": [
+    "fc2.bias",
+    "fc2.weight"
+  ],
+  "K2": [
+    "fc2.bias",
+    "fc2.weight"
+  ],
+  "K3": [
+    "fc2.bias",
+    "fc2.weight"
+  ],
+  "M6": [
+    "fc2.bias",
+    "fc2.weight"
+  ]
+}
