@@ -1,0 +1,3 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+{"status": "COMPLETED", "run_id": "EXP-022-Q0-CHECK-001", "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae", "code_sha": "b47e7c547b62ded7dc192ec038d380abf540aa8e", "phase": "q0_same_input", "wall_seconds": 102.32572722434998, "cpu_seconds": 118.65787800000001, "end_unix": 1795847941.2199934, "peak_allocated_bytes": 1435483136, "peak_reserved_bytes": 1530920960}

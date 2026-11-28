@@ -1,0 +1,22 @@
+{
+  "H020_direction_passed": true,
+  "H020_scientific_status": "UNTESTED_pending_theory_review",
+  "H021_scientific_status": "UNTESTED",
+  "projection_nondegenerate": true,
+  "progression_gate_checks": {
+    "H020_conflict_direction": true,
+    "formula_and_state_checks": true,
+    "projection_constraint_and_nondegenerate": true,
+    "P0_P1_calibration_error_le_0_1pp": true,
+    "P1_validation_reduction_4_to_6pct": true,
+    "P1_validation_budget_vs_G0_G1_P0_within_1pp": true,
+    "P1_accuracy_drop_vs_B0_at_most_0_5pp": true,
+    "P1_accuracy_gain_G0_at_least_0_3pp": false,
+    "P1_accuracy_gain_G1_at_least_0_3pp": false,
+    "P1_accuracy_gain_P0_at_least_0_3pp": false,
+    "masks_and_other_state_unchanged": true
+  },
+  "progression_gate_passed": false,
+  "mechanism_same_q_P1_ce_vs_G1": 0.0015082431491464376,
+  "mechanism_same_q_P0_ce_vs_G0": -0.0018276537593919784
+}

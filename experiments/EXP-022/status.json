@@ -1,4 +1,16 @@
 {
-  "status": "PLANNED",
-  "run_id": "EXP-022-RUN-001"
+  "status": "COMPLETED",
+  "run_id": "EXP-022-RUN-001",
+  "code_sha": "806e44a7c11da60da20b6266b74a8a7521e2b490",
+  "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae",
+  "start_unix": 1795847781.4153244,
+  "phase": "validation",
+  "wall_seconds": 97.34428524971008,
+  "cpu_seconds": 113.40979399999999,
+  "end_unix": 1795847878.759609,
+  "peak_allocated_bytes": 5238976000,
+  "peak_reserved_bytes": 5727322112,
+  "cumulative_wall_seconds": 102.32572722434998,
+  "cumulative_cpu_seconds": 118.65787800000001,
+  "q0_check": "PASSED"
 }

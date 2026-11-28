@@ -1,0 +1,16 @@
+/home/heiyuming/.local/lib/python3.11/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+D_cal B0 0 86348901.18554688
+D_cal G0 0.02 84739604.86523438
+D_cal G1 0.02 84499500.98828125
+D_cal P0 0.02 84700428.41601562
+D_cal P1 0.02 84439577.13476562
+D_cal G0 0.04546005512832126 82534622.17382812
+D_cal G1 0.04 82539922.0390625
+D_cal P0 0.04 82956810.60351562
+D_cal P0 0.08 79297140.47070312
+D_cal P0 0.04455656984726916 82525425.88476562
+D_cal P1 0.04 82461536.94335938
+D_cal P1 0.03920744688562276 82545108.18554688
+locked f19f3f796e805c5649558d98d8934f53dba59f65 {'G0': 0.04546005512832126, 'G1': 0.04, 'P0': 0.04455656984726916, 'P1': 0.03920744688562276}
+{"status": "COMPLETED", "run_id": "EXP-022-RUN-001", "code_sha": "806e44a7c11da60da20b6266b74a8a7521e2b490", "gpu_uuid": "GPU-7b1fc21b-f1b8-5b4e-5188-a1a4a117ffae", "start_unix": 1795847781.4153244, "phase": "validation", "wall_seconds": 97.34428524971008, "cpu_seconds": 113.40979399999999, "end_unix": 1795847878.759609, "peak_allocated_bytes": 5238976000, "peak_reserved_bytes": 5727322112}

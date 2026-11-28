@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED",
+  "halves": [
+    {
+      "bn": "static_conv.norm",
+      "first_norm": 0.005711952050435831,
+      "second_norm": 0.004658172999912206,
+      "cosine_first_second": 0.3385284423081762
+    },
+    {
+      "bn": "conv1.norm",
+      "first_norm": 0.010655849377357224,
+      "second_norm": 0.01156787888149146,
+      "cosine_first_second": 0.23657559648743118
+    }
+  ]
+}

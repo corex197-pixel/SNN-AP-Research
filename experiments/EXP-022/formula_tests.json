@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "nonconflict": true,
+  "orthogonal_boundary": true,
+  "zero_task": true,
+  "zero_activity": true,
+  "antiparallel_degeneracy": true,
+  "small_nonzero_norm": true,
+  "minimum_distance_competitors": true,
+  "positive_scale_preserves_sign": true
+}

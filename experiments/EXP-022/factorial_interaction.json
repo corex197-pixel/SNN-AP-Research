@@ -1,0 +1,16 @@
+{
+  "accuracy_interaction_pp": 0.0,
+  "accuracy_ci95_pp": [
+    -0.5555555555555556,
+    0.5333333333333333
+  ],
+  "CE_interaction": -0.0007725752310209531,
+  "CE_ci95": [
+    -0.01040792404341385,
+    0.009123402647914705
+  ],
+  "rng": "PCG64 continuation",
+  "seed": 20261128,
+  "resamples": 2000,
+  "method": "percentile"
+}

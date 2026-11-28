@@ -1,0 +1,158 @@
+{
+  "status": "PASSED",
+  "checks": [
+    {
+      "group": "G0",
+      "q": 0,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 0.0
+    },
+    {
+      "group": "G0",
+      "q": 0.02,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 0.5780679012565244
+    },
+    {
+      "group": "G1",
+      "q": 0.02,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 0.5780678956260519
+    },
+    {
+      "group": "P0",
+      "q": 0.02,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 0.5780678963737087
+    },
+    {
+      "group": "P1",
+      "q": 0.02,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 0.5780678809969984
+    },
+    {
+      "group": "G0",
+      "q": 0.04546005512832126,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.3139499165937578
+    },
+    {
+      "group": "G1",
+      "q": 0.04,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.1561357713785758
+    },
+    {
+      "group": "P0",
+      "q": 0.04,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.1561357443603328
+    },
+    {
+      "group": "P0",
+      "q": 0.08,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 2.312271602020855
+    },
+    {
+      "group": "P0",
+      "q": 0.04455656984726916,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.287836153715599
+    },
+    {
+      "group": "P1",
+      "q": 0.04,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.156135812648855
+    },
+    {
+      "group": "P1",
+      "q": 0.03920744688562276,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.1332282959914626
+    },
+    {
+      "group": "G0",
+      "q": 0,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 0.0
+    },
+    {
+      "group": "G0",
+      "q": 0.04546005512832126,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.3139499165937578
+    },
+    {
+      "group": "G1",
+      "q": 0.04,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.1561357713785758
+    },
+    {
+      "group": "P0",
+      "q": 0.04455656984726916,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.287836153715599
+    },
+    {
+      "group": "P1",
+      "q": 0.03920744688562276,
+      "non_target_exact": true,
+      "masks_exact": true,
+      "bn_running_exact": true,
+      "finite": true,
+      "update_norm": 1.1332282959914626
+    }
+  ]
+}

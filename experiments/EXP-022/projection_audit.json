@@ -1,0 +1,49 @@
+{
+  "status": "PASSED",
+  "layers": [
+    {
+      "bn": "static_conv.norm",
+      "group": "P0",
+      "before_dot": 5.116285630645016,
+      "before_cosine": 0.1930277582239693,
+      "after_dot": 5.116285630645016,
+      "after_cosine": 0.1930277582239693,
+      "removed_norm": 0.0,
+      "removed_fraction": 0.0,
+      "nondegenerate": true
+    },
+    {
+      "bn": "static_conv.norm",
+      "group": "P1",
+      "before_dot": 8.671623999699479,
+      "before_cosine": 0.257152040997219,
+      "after_dot": 8.671623999699479,
+      "after_cosine": 0.257152040997219,
+      "removed_norm": 0.0,
+      "removed_fraction": 0.0,
+      "nondegenerate": true
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "P0",
+      "before_dot": -7.849620274247425,
+      "before_cosine": -0.15186361976224744,
+      "after_dot": 4.440892098500626e-16,
+      "after_cosine": 8.692444833925022e-18,
+      "removed_norm": 897.9263703519947,
+      "removed_fraction": 0.1518636197622474,
+      "nondegenerate": true
+    },
+    {
+      "bn": "conv1.norm",
+      "group": "P1",
+      "before_dot": -8.442722753147432,
+      "before_cosine": -0.15541949376899555,
+      "after_dot": 1.1102230246251565e-16,
+      "after_cosine": 2.068915818156025e-18,
+      "removed_norm": 965.7719905882569,
+      "removed_fraction": 0.15541949376899555,
+      "nondegenerate": true
+    }
+  ]
+}

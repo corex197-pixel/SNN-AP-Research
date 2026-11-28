@@ -1,0 +1,64 @@
+{
+  "status": "PASSED",
+  "batches": [
+    {
+      "batch": 0,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 1,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 2,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 3,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 4,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 5,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 6,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    },
+    {
+      "batch": 7,
+      "samples": 64,
+      "logits_exact": true,
+      "all_neuron_spike_hashes_match": true,
+      "neuron_count": 7
+    }
+  ],
+  "all_BN_eval": true,
+  "original_cupy_atan_nodes_only_training": true,
+  "model_state_exact": true
+}

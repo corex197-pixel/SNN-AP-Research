@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "activity_vector_source_sha256": "19426f0b80dd5bcce4c09a4cc911a6cb3b5279b52decf21b44cb6834cc1a591c",
+  "row_order_and_raw_matched_verified": true,
+  "validation_reconstruction": {
+    "B0": {
+      "prediction_mismatches": 0,
+      "max_CE_abs_difference": 0.0,
+      "SOP_relative_error": 0.0
+    },
+    "G0": {
+      "prediction_mismatches": 0,
+      "max_CE_abs_difference": 0.0,
+      "SOP_relative_error": 0.0
+    },
+    "G1": {
+      "prediction_mismatches": 0,
+      "max_CE_abs_difference": 0.0,
+      "SOP_relative_error": 0.0
+    }
+  }
+}
